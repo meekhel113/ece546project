@@ -1,0 +1,15 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : column_decoder_read_cell
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt column_decoder_read_cell EN IN<0> IN<1> OUT S Sb
+*.PININFO EN:I IN<0>:I IN<1>:I OUT:O S:I Sb:I
+MM3 net12 S OUT nmos
+MM2 net10 Sb OUT nmos
+MM1 IN<0> EN net10 nmos
+MM0 IN<1> EN net12 nmos
+.ends column_decoder_read_cell
+

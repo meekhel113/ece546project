@@ -1,0 +1,54 @@
+Parsing option_file: xtract.tech (EX-304)
+Running Amd_64b    
+Initializing extraction ... (EX-724)
+Reading binary grd file
+/afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK3/starrc/FreePDK3_RCtyp.nxtgrd ... (EX-135)
+Process 1R 1C
+use_partitioned_sig2idx is Inactive
+[XinLoad] Xin reading and cleaning duration is 0.03 seconds.
+Ary stats nx=40 ny=48 dx=774 dy=791 nentry=46167  max/cell=47 av/cell=24.0453
+ Stats DB 0 17831 0 0 0 0 0 9156 0 0
+[DBinit] Import design duration is 0.02 seconds.
+----- Extracting 394 nets ----- 
+Completed   0%  Time=00:00:00  RemainingTime=00:00:18  Mem=628.719
+Completed   1%  Time=00:00:00  RemainingTime=00:00:19  Mem=628.719
+Completed   2%  Time=00:00:00  RemainingTime=00:00:19  Mem=628.719
+Completed   3%  Time=00:00:00  RemainingTime=00:00:16  Mem=628.719
+Completed   4%  Time=00:00:00  RemainingTime=00:00:14  Mem=628.719
+Completed   5%  Time=00:00:00  RemainingTime=00:00:14  Mem=628.719
+Completed  10%  Time=00:00:00  RemainingTime=00:00:09  Mem=628.719
+Completed  15%  Time=00:00:01  RemainingTime=00:00:06  Mem=628.719
+Completed  20%  Time=00:00:01  RemainingTime=00:00:04  Mem=628.719
+Completed  25%  Time=00:00:01  RemainingTime=00:00:03  Mem=628.719
+Completed  29%  Time=00:00:01  RemainingTime=00:00:03  Mem=628.719
+Completed  34%  Time=00:00:01  RemainingTime=00:00:02  Mem=628.719
+Completed  39%  Time=00:00:01  RemainingTime=00:00:02  Mem=628.719
+Completed  44%  Time=00:00:01  RemainingTime=00:00:02  Mem=628.719
+Completed  49%  Time=00:00:01  RemainingTime=00:00:01  Mem=628.719
+[NetExtr] Net extraction duration is 1.50 seconds.
+ Processing non-critical polygons ... 
+Completed  55%  Time=00:00:01  RemainingTime=00:00:01  Mem=628.719
+Completed  60%  Time=00:00:01  RemainingTime=00:00:01  Mem=628.719
+Completed  65%  Time=00:00:01  RemainingTime=00:00:01  Mem=628.719
+Completed  71%  Time=00:00:01  RemainingTime=00:00:01  Mem=628.719
+Completed  76%  Time=00:00:01  RemainingTime=00:00:01  Mem=628.719
+Completed  81%  Time=00:00:01  RemainingTime=00:00:01  Mem=628.719
+Completed  86%  Time=00:00:02  RemainingTime=00:00:00  Mem=628.719
+Completed  92%  Time=00:00:02  RemainingTime=00:00:00  Mem=628.719
+Completed 100%  Time=00:00:02  RemainingTime=00:00:00  Mem=628.719
+[NCExtr] Non-critical extraction duration is 0.74 seconds.
+ CapExtractionCounters CapEnvD=94282 CapEnvND=20356 NumCap=1216200 Area=188564
+[Extract] Core extraction duration is 2.24 seconds.
+----- Reducing 394 nets ----- 
+----- Floating fill reduction ----- 
+Extracted 55572 capacitors, 0 resistors, 14917 nodes
+Reduced to 0 nodes,  (100%)
+Reduced to 13431 capacitors: 13431 Cc and 0 Cg (75.8314%)
+  
+xTractor      Elp=00:00:04 Cpu=00:00:03 Usr=3.5    Sys=0.4    Mem=629.2 
+  
+Done          Elp=00:00:04 Cpu=00:00:03 Usr=3.5    Sys=0.4    Mem=629.2 
+[Reduc] Fill and Net reduction duration is 0.04 seconds.
+[CircWrt] Final circuit write duration is 0.08 seconds.
+Partition 0 total time is 2.42 seconds.
+

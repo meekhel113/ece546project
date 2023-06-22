@@ -1,0 +1,36 @@
+arrayName {HSPICE_default_HSPICE}
+arraySize {-1}
+cdplJobId {}
+cmdLine { /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/new_sram,row_decoder_4_16_tb,schematic/history_1/simulation/HSPICE_default/PrimeSimHSPICE/nominal/netlist/runSimulation  > /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/new_sram,row_decoder_4_16_tb,schematic/history_1/simulation/HSPICE_default/PrimeSimHSPICE/nominal/results/run.log 2>&1}
+creationTime {1650361749}
+data {resultsDir /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/new_sram,row_decoder_4_16_tb,schematic/history_1/simulation/HSPICE_default/PrimeSimHSPICE/nominal/results masterResultsDir /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/new_sram,row_decoder_4_16_tb,schematic/history_1/simulation/HSPICE_default/PrimeSimHSPICE/nominal/results session saeSession13 testbench HSPICE_default simulator HSPICE historyIndex 1 historyName history_1}
+dataReadyProc {}
+deferred {0}
+exitProc {sa::simulationDone}
+exitStatus {255}
+exitTime {1650361750}
+files {/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/new_sram,row_decoder_4_16_tb,schematic/history_1/simulation/HSPICE_default/PrimeSimHSPICE/nominal/results/hspice.lis /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/new_sram,row_decoder_4_16_tb,schematic/history_1/simulation/HSPICE_default/PrimeSimHSPICE/nominal/results/hspice.valog /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/new_sram,row_decoder_4_16_tb,schematic/history_1/simulation/HSPICE_default/PrimeSimHSPICE/nominal/results/run.log /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/new_sram,row_decoder_4_16_tb,schematic/history_1/simulation/HSPICE_default/PrimeSimHSPICE/nominal/results/hspice.st0}
+gridOptions {}
+group {oa:0x395aae20}
+host {localhost}
+inFd {}
+isCalling {0}
+isLocallyQueued {0}
+isQueued {0}
+isTerminating {0}
+jobClass {oa:0x2c6f65f0}
+jobType {batch}
+menuProc {sa::_utils::populateSimJobCSM}
+name {HSPICE_10}
+outFd {}
+procId {19272}
+queueEngine {}
+queueIdentifier {}
+readOnlyFiles {}
+ready {0}
+readyProc {}
+remoteSubmit {0}
+runDesc {HSPICE simulation:  /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/new_sram,row_decoder_4_16_tb,schematic/history_1/simulation/HSPICE_default/PrimeSimHSPICE/nominal/netlist/runSimulation  > /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/new_sram,row_decoder_4_16_tb,schematic/history_1/simulation/HSPICE_default/PrimeSimHSPICE/nominal/results/run.log 2>&1}
+startTime {1650361749}
+status {FAILED}
+submitHost {}

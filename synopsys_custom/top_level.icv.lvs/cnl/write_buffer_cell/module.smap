@@ -1,0 +1,44 @@
+<module name="vsl: project_backup write_buffer_cell schematic vl: auCdl schematic symbol">
+<scope name="Instance">
+<forward>
+<mapping dst="XI25" src="I25"/>
+<mapping dst="XI24" src="I24"/>
+<mapping dst="MM4" src="M4"/>
+<mapping dst="MM5" src="M5"/>
+<mapping dst="XI23" src="I23"/>
+</forward>
+<reverse>
+<mapping dst="I25" src="XI25"/>
+<mapping dst="I24" src="XI24"/>
+<mapping dst="M4" src="MM4"/>
+<mapping dst="M5" src="MM5"/>
+<mapping dst="I23" src="XI23"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward/>
+<reverse/>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="EN IN OUT OUTb" src="&lt;unmappedTermOrder>"/>
+<mapping dst="EN IN OUT OUTb" src="&lt;termOrder>"/>
+</forward>
+<reverse>
+<mapping dst="&lt;unmappedTermOrder>" src="EN IN OUT OUTb"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="and">
+<instance name="I24"/>
+<instance name="I25"/>
+</instance_header>
+<instance_header master="inverter">
+<instance name="I23"/>
+</instance_header>
+<instance_header master="nmos">
+<instance name="M4"/>
+<instance name="M5"/>
+</instance_header>
+</master_instances>
+</module>

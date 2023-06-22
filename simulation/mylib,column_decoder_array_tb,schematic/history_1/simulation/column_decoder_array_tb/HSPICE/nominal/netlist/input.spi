@@ -1,0 +1,106 @@
+*  Generated for: PrimeSim
+*  Design library name: mylib
+*  Design cell name: column_decoder_array_tb
+*  Design view name: schematic
+.option search='/afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK3/hspice/models'
+
+.param VDD=0.8
+.option PARHIER = LOCAL
+.option PORT_VOLTAGE_SCALE_TO_2X = 1
+
+.option WDF=1
+.temp 25
+.lib 'fet.mod' nfet_typ
+.lib 'fet.mod' pfet_typ
+.vec '/afs/unity.ncsu.edu/users/m/mapatel3/Documents/546/ece546project/mux_out.dat'
+
+
+*Custom Compiler Version S-2021.09
+*Sun Apr 17 22:03:54 2022
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : mylib
+* Cell             : Column_Decoder_2to1
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt column_decoder_2to1 in0 in1 out s sb
+m1 in0 sb out nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m0 in1 s out nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+.ends column_decoder_2to1
+
+********************************************************************************
+* Library          : mylib
+* Cell             : inverter
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt inverter in out
+m0 out in gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m1 out in vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+.ends inverter
+
+********************************************************************************
+* Library          : mylib
+* Cell             : column_decoder_array
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt column_decoder_array a<4> bl<0> bl<1> bl<2> bl<3> bl<4> bl<5> bl<6>
++ bl<7> blb<0> blb<1> blb<2> blb<3> blb<4> blb<5> blb<6> blb<7> q<0> q<1> q<2>
++ q<3> qb<0> qb<1> qb<2> qb<3>
+xi7 blb<0> blb<4> qb<0> a<4> net41 column_decoder_2to1
+xi6 blb<1> blb<5> qb<1> a<4> net41 column_decoder_2to1
+xi5 blb<2> blb<6> qb<2> a<4> net41 column_decoder_2to1
+xi4 blb<3> blb<7> qb<3> a<4> net41 column_decoder_2to1
+xi3 bl<0> bl<4> q<0> a<4> net41 column_decoder_2to1
+xi2 bl<1> bl<5> q<1> a<4> net41 column_decoder_2to1
+xi1 bl<2> bl<6> q<2> a<4> net41 column_decoder_2to1
+xi0 bl<3> bl<7> q<3> a<4> net41 column_decoder_2to1
+xi8 a<4> net41 inverter
+.ends column_decoder_array
+
+********************************************************************************
+* Library          : mylib
+* Cell             : column_decoder_array_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 a<4> bl<0> bl<1> bl<2> bl<3> bl<4> bl<5> bl<6> bl<7> net41 net39 net37 net35
++ net33 net31 net29 net27 q<0> q<1> q<2> q<3> qb<0> qb<1> qb<2> qb<3>
++ column_decoder_array
+xi8 bl<0> net41 inverter
+xi7 bl<1> net39 inverter
+xi6 bl<2> net37 inverter
+xi5 bl<3> net35 inverter
+xi4 bl<4> net33 inverter
+xi3 bl<5> net31 inverter
+xi2 bl<6> net29 inverter
+xi1 bl<7> net27 inverter
+v11 vdd! gnd! dc='VDD'
+
+
+
+
+
+
+
+
+
+
+.tran 1p 120n start=0
+.option opfile=1 split_dp=1
+.option probe=1
+.probe tran v(*) level=1
+.probe tran v(a<4>) v(bl<0>) v(bl<1>) v(bl<2>) v(bl<3>) v(bl<4>) v(bl<5>)
++ v(bl<6>) v(bl<7>) v(q<0>) v(q<1>) v(q<2>) v(q<3>)
+
+
+
+
+.end

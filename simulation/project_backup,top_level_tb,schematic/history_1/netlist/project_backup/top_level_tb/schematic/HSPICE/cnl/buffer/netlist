@@ -1,0 +1,12 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : buffer
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt buffer in out
+xi1 net4 out inverter
+xi0 in net4 inverter
+.ends buffer
+

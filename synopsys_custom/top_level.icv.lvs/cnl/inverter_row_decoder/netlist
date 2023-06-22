@@ -1,0 +1,13 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : inverter_row_decoder
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt inverter_row_decoder in out
+*.PININFO in:I out:O
+MM1 out in vdd! pmos
+MM0 out in gnd! nmos
+.ends inverter_row_decoder
+

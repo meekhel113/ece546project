@@ -1,0 +1,32 @@
+********************************************************************************
+* Library          : mylib
+* Cell             : top_level
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt top_level A<0> A<1> A<2> A<3> A<4> CLK D<0> D<1> D<2> D<3> Q<0> Q<1>
++ Q<2> Q<3> WENB
+*.PININFO A<0>:I A<1>:I A<2>:I A<3>:I A<4>:I CLK:I D<0>:I D<1>:I D<2>:I D<3>:I
+*.PININFO Q<0>:O Q<1>:O Q<2>:O Q<3>:O WENB:I
+XI6 BL<0> BL<1> BL<2> BL<3> BL<4> BL<5> BL<6> BL<7> BLb<0> BLb<1> BLb<2> BLb<3>
++ BLb<4> BLb<5> BLb<6> BLb<7> CLK bitline_conditioning
+XI35 net292 net291 net290 net289 net280 net279 net278 net277 buffer_array
+XI34 net288 net287 net286 net285 net276 net275 net274 net273 buffer_array
+XI33 net284 net283 net282 net281 net272 net271 net270 net269 buffer_array
+XI32 net268 net267 net266 net265 net264 net263 net262 net261 buffer_array
+XI40 net229 net227 net225 net355 Q<3> Q<2> Q<1> Q<0> buffer_array
+XI11 CLK A<0> A<1> A<2> A<3> net292 net291 net290 net289 net288 net287 net286
++ net285 net284 net283 net282 net281 net268 net267 net266 net265
++ row_decoder_4_16
+XI0 BL<0> BL<1> BL<2> BL<3> BL<4> BL<5> BL<6> BL<7> BLb<0> BLb<1> BLb<2> BLb<3>
++ BLb<4> BLb<5> BLb<6> BLb<7> net280 net279 net278 net277 net276 net275 net274
++ net273 net272 net271 net270 net269 net264 net263 net262 net261
++ sram_array_16r_8c
+XI36 A<4> BL<0> BL<1> BL<2> BL<3> BL<4> BL<5> BL<6> BL<7> BLb<0> BLb<1> BLb<2>
++ BLb<3> BLb<4> BLb<5> BLb<6> BLb<7> D<0> D<1> D<2> D<3> WENB
++ column_decoder_write
+XI39 A<4> BL<0> BL<1> BL<2> BL<3> BL<4> BL<5> BL<6> BL<7> net355 net225 net227
++ net229 WENB column_decoder_read
+.ends top_level
+

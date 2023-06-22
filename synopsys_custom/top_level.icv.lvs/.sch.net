@@ -1,0 +1,527 @@
+{netlist .sch.net
+{version 3 1 0}
+{net_global vdd! gnd! }
+{cell inverter_row_decoder
+{port in out}
+{inst MM1=pmos {TYPE MOS} 
+{pin out=DRN in=GATE vdd!=SRC}}
+{inst MM0=nmos {TYPE MOS} 
+{pin out=DRN in=GATE gnd!=SRC}}
+}
+
+{cell sram_6T
+{port BL BLb WL}
+{inst MM4=pmos {TYPE MOS} 
+{pin Q=DRN Qb=GATE vdd!=SRC}}
+{inst MM2=pmos {TYPE MOS} 
+{pin Qb=DRN Q=GATE vdd!=SRC}}
+{inst MM3=nmos {TYPE MOS} 
+{pin Q=DRN Qb=GATE gnd!=SRC}}
+{inst MM1=nmos {TYPE MOS} 
+{pin Qb=DRN Q=GATE gnd!=SRC}}
+{inst MM11=nmos {TYPE MOS} 
+{pin Q=DRN WL=GATE BL=SRC}}
+{inst MM10=nmos {TYPE MOS} 
+{pin Qb=DRN WL=GATE BLb=SRC}}
+}
+
+{cell equalizer
+{port !BL BL clk}
+{inst MM2=pmos {TYPE MOS} 
+{pin BL=DRN clk=GATE !BL=SRC}}
+{inst MM1=pmos {TYPE MOS} 
+{pin BL=DRN clk=GATE vdd!=SRC}}
+{inst MM0=pmos {TYPE MOS} 
+{pin !BL=DRN clk=GATE vdd!=SRC}}
+}
+
+{cell inverter
+{port in out}
+{inst MM1=pmos {TYPE MOS} 
+{pin out=DRN in=GATE vdd!=SRC}}
+{inst MM0=nmos {TYPE MOS} 
+{pin out=DRN in=GATE gnd!=SRC}}
+}
+
+{cell and
+{port A B Z}
+{inst MM11=nmos {TYPE MOS} 
+{pin net27=DRN B=GATE net7=SRC}}
+{inst MM13=nmos {TYPE MOS} 
+{pin Z=DRN net27=GATE gnd!=SRC}}
+{inst MM12=nmos {TYPE MOS} 
+{pin net7=DRN A=GATE gnd!=SRC}}
+{inst MM15=pmos {TYPE MOS} 
+{pin net27=DRN B=GATE vdd!=SRC}}
+{inst MM14=pmos {TYPE MOS} 
+{pin net27=DRN A=GATE vdd!=SRC}}
+{inst MM16=pmos {TYPE MOS} 
+{pin Z=DRN net27=GATE vdd!=SRC}}
+}
+
+{cell column_decoder_write_cell
+{port IN OUT<0> OUT<1> S Sb}
+{inst MM1=nmos {TYPE MOS} 
+{pin IN=DRN Sb=GATE OUT<0>=SRC}}
+{inst MM0=nmos {TYPE MOS} 
+{pin IN=DRN S=GATE OUT<1>=SRC}}
+}
+
+{cell column_decoder_read_cell
+{port EN IN<0> IN<1> OUT S Sb}
+{inst MM3=nmos {TYPE MOS} 
+{pin net12=DRN S=GATE OUT=SRC}}
+{inst MM2=nmos {TYPE MOS} 
+{pin net10=DRN Sb=GATE OUT=SRC}}
+{inst MM1=nmos {TYPE MOS} 
+{pin IN<0>=DRN EN=GATE net10=SRC}}
+{inst MM0=nmos {TYPE MOS} 
+{pin IN<1>=DRN EN=GATE net12=SRC}}
+}
+
+{cell column_decoder_read
+{port A<4> BL<0> BL<1> BL<2> BL<3> BL<4>
+ BL<5> BL<6> BL<7> Q<0> Q<1> Q<2> Q<3>
+ WENB}
+{inst XI30=inverter_row_decoder {TYPE CELL} 
+{pin A<4>=in Ab<4>=out}}
+{inst XI25=column_decoder_read_cell {TYPE CELL} 
+{pin WENB=EN BL<0>=IN<0> BL<4>=IN<1> Q<0>=OUT A<4>=S Ab<4>=Sb}}
+{inst XI24=column_decoder_read_cell {TYPE CELL} 
+{pin WENB=EN BL<1>=IN<0> BL<5>=IN<1> Q<1>=OUT A<4>=S Ab<4>=Sb}}
+{inst XI23=column_decoder_read_cell {TYPE CELL} 
+{pin WENB=EN BL<2>=IN<0> BL<6>=IN<1> Q<2>=OUT A<4>=S Ab<4>=Sb}}
+{inst XI22=column_decoder_read_cell {TYPE CELL} 
+{pin WENB=EN BL<3>=IN<0> BL<7>=IN<1> Q<3>=OUT A<4>=S Ab<4>=Sb}}
+}
+
+{cell row_decoder_4_16
+{port CLK IN<0> IN<1> IN<2> IN<3> WL<0>
+ WL<1> WL<2> WL<3> WL<4> WL<5> WL<6> WL<7>
+ WL<8> WL<9> WL<10> WL<11> WL<12> WL<13> WL<14>
+ WL<15>}
+{inst MM195=nmos {TYPE MOS} 
+{pin WL<15>=DRN net697=GATE gnd!=SRC}}
+{inst MM194=nmos {TYPE MOS} 
+{pin WL<13>=DRN net697=GATE gnd!=SRC}}
+{inst MM193=nmos {TYPE MOS} 
+{pin WL<11>=DRN net697=GATE gnd!=SRC}}
+{inst MM192=nmos {TYPE MOS} 
+{pin WL<9>=DRN net697=GATE gnd!=SRC}}
+{inst MM191=nmos {TYPE MOS} 
+{pin WL<7>=DRN net697=GATE gnd!=SRC}}
+{inst MM190=nmos {TYPE MOS} 
+{pin WL<5>=DRN net697=GATE gnd!=SRC}}
+{inst MM189=nmos {TYPE MOS} 
+{pin WL<3>=DRN net697=GATE gnd!=SRC}}
+{inst MM188=nmos {TYPE MOS} 
+{pin WL<1>=DRN net697=GATE gnd!=SRC}}
+{inst MM187=nmos {TYPE MOS} 
+{pin WL<2>=DRN net698=GATE gnd!=SRC}}
+{inst MM186=nmos {TYPE MOS} 
+{pin WL<3>=DRN net698=GATE gnd!=SRC}}
+{inst MM185=nmos {TYPE MOS} 
+{pin WL<6>=DRN net698=GATE gnd!=SRC}}
+{inst MM184=nmos {TYPE MOS} 
+{pin WL<7>=DRN net698=GATE gnd!=SRC}}
+{inst MM183=nmos {TYPE MOS} 
+{pin WL<10>=DRN net698=GATE gnd!=SRC}}
+{inst MM182=nmos {TYPE MOS} 
+{pin WL<11>=DRN net698=GATE gnd!=SRC}}
+{inst MM181=nmos {TYPE MOS} 
+{pin WL<14>=DRN net698=GATE gnd!=SRC}}
+{inst MM180=nmos {TYPE MOS} 
+{pin WL<15>=DRN net698=GATE gnd!=SRC}}
+{inst MM173=nmos {TYPE MOS} 
+{pin WL<4>=DRN net699=GATE gnd!=SRC}}
+{inst MM172=nmos {TYPE MOS} 
+{pin WL<5>=DRN net699=GATE gnd!=SRC}}
+{inst MM171=nmos {TYPE MOS} 
+{pin WL<6>=DRN net699=GATE gnd!=SRC}}
+{inst MM170=nmos {TYPE MOS} 
+{pin WL<7>=DRN net699=GATE gnd!=SRC}}
+{inst MM169=nmos {TYPE MOS} 
+{pin WL<12>=DRN net699=GATE gnd!=SRC}}
+{inst MM168=nmos {TYPE MOS} 
+{pin WL<13>=DRN net699=GATE gnd!=SRC}}
+{inst MM167=nmos {TYPE MOS} 
+{pin WL<14>=DRN net699=GATE gnd!=SRC}}
+{inst MM166=nmos {TYPE MOS} 
+{pin WL<15>=DRN net699=GATE gnd!=SRC}}
+{inst MM159=nmos {TYPE MOS} 
+{pin WL<8>=DRN net700=GATE gnd!=SRC}}
+{inst MM158=nmos {TYPE MOS} 
+{pin WL<9>=DRN net700=GATE gnd!=SRC}}
+{inst MM157=nmos {TYPE MOS} 
+{pin WL<10>=DRN net700=GATE gnd!=SRC}}
+{inst MM156=nmos {TYPE MOS} 
+{pin WL<11>=DRN net700=GATE gnd!=SRC}}
+{inst MM155=nmos {TYPE MOS} 
+{pin WL<12>=DRN net700=GATE gnd!=SRC}}
+{inst MM154=nmos {TYPE MOS} 
+{pin WL<13>=DRN net700=GATE gnd!=SRC}}
+{inst MM153=nmos {TYPE MOS} 
+{pin WL<14>=DRN net700=GATE gnd!=SRC}}
+{inst MM152=nmos {TYPE MOS} 
+{pin WL<15>=DRN net700=GATE gnd!=SRC}}
+{inst MM131=nmos {TYPE MOS} 
+{pin WL<0>=DRN IN<0>=GATE gnd!=SRC}}
+{inst MM130=nmos {TYPE MOS} 
+{pin WL<2>=DRN IN<0>=GATE gnd!=SRC}}
+{inst MM129=nmos {TYPE MOS} 
+{pin WL<4>=DRN IN<0>=GATE gnd!=SRC}}
+{inst MM128=nmos {TYPE MOS} 
+{pin WL<6>=DRN IN<0>=GATE gnd!=SRC}}
+{inst MM127=nmos {TYPE MOS} 
+{pin WL<8>=DRN IN<0>=GATE gnd!=SRC}}
+{inst MM126=nmos {TYPE MOS} 
+{pin WL<10>=DRN IN<0>=GATE gnd!=SRC}}
+{inst MM125=nmos {TYPE MOS} 
+{pin WL<12>=DRN IN<0>=GATE gnd!=SRC}}
+{inst MM124=nmos {TYPE MOS} 
+{pin WL<14>=DRN IN<0>=GATE gnd!=SRC}}
+{inst MM119=nmos {TYPE MOS} 
+{pin WL<5>=DRN IN<1>=GATE gnd!=SRC}}
+{inst MM118=nmos {TYPE MOS} 
+{pin WL<4>=DRN IN<1>=GATE gnd!=SRC}}
+{inst MM117=nmos {TYPE MOS} 
+{pin WL<1>=DRN IN<1>=GATE gnd!=SRC}}
+{inst MM115=nmos {TYPE MOS} 
+{pin WL<9>=DRN IN<1>=GATE gnd!=SRC}}
+{inst MM114=nmos {TYPE MOS} 
+{pin WL<8>=DRN IN<1>=GATE gnd!=SRC}}
+{inst MM116=nmos {TYPE MOS} 
+{pin WL<0>=DRN IN<1>=GATE gnd!=SRC}}
+{inst MM112=nmos {TYPE MOS} 
+{pin WL<12>=DRN IN<1>=GATE gnd!=SRC}}
+{inst MM111=nmos {TYPE MOS} 
+{pin WL<13>=DRN IN<1>=GATE gnd!=SRC}}
+{inst MM106=nmos {TYPE MOS} 
+{pin WL<3>=DRN IN<2>=GATE gnd!=SRC}}
+{inst MM105=nmos {TYPE MOS} 
+{pin WL<2>=DRN IN<2>=GATE gnd!=SRC}}
+{inst MM104=nmos {TYPE MOS} 
+{pin WL<1>=DRN IN<2>=GATE gnd!=SRC}}
+{inst MM103=nmos {TYPE MOS} 
+{pin WL<0>=DRN IN<2>=GATE gnd!=SRC}}
+{inst MM102=nmos {TYPE MOS} 
+{pin WL<8>=DRN IN<2>=GATE gnd!=SRC}}
+{inst MM101=nmos {TYPE MOS} 
+{pin WL<9>=DRN IN<2>=GATE gnd!=SRC}}
+{inst MM100=nmos {TYPE MOS} 
+{pin WL<10>=DRN IN<2>=GATE gnd!=SRC}}
+{inst MM99=nmos {TYPE MOS} 
+{pin WL<11>=DRN IN<2>=GATE gnd!=SRC}}
+{inst MM94=nmos {TYPE MOS} 
+{pin WL<0>=DRN IN<3>=GATE gnd!=SRC}}
+{inst MM93=nmos {TYPE MOS} 
+{pin WL<1>=DRN IN<3>=GATE gnd!=SRC}}
+{inst MM92=nmos {TYPE MOS} 
+{pin WL<2>=DRN IN<3>=GATE gnd!=SRC}}
+{inst MM91=nmos {TYPE MOS} 
+{pin WL<3>=DRN IN<3>=GATE gnd!=SRC}}
+{inst MM90=nmos {TYPE MOS} 
+{pin WL<4>=DRN IN<3>=GATE gnd!=SRC}}
+{inst MM89=nmos {TYPE MOS} 
+{pin WL<5>=DRN IN<3>=GATE gnd!=SRC}}
+{inst MM88=nmos {TYPE MOS} 
+{pin WL<6>=DRN IN<3>=GATE gnd!=SRC}}
+{inst MM87=nmos {TYPE MOS} 
+{pin WL<7>=DRN IN<3>=GATE gnd!=SRC}}
+{inst XI232=inverter_row_decoder {TYPE CELL} 
+{pin IN<0>=in net697=out}}
+{inst XI233=inverter_row_decoder {TYPE CELL} 
+{pin IN<1>=in net698=out}}
+{inst XI234=inverter_row_decoder {TYPE CELL} 
+{pin IN<2>=in net699=out}}
+{inst XI235=inverter_row_decoder {TYPE CELL} 
+{pin IN<3>=in net700=out}}
+{inst MM11=pmos {TYPE MOS} 
+{pin WL<11>=DRN CLK=GATE vdd!=SRC}}
+{inst MM4=pmos {TYPE MOS} 
+{pin WL<4>=DRN CLK=GATE vdd!=SRC}}
+{inst MM15=pmos {TYPE MOS} 
+{pin WL<15>=DRN CLK=GATE vdd!=SRC}}
+{inst MM14=pmos {TYPE MOS} 
+{pin WL<14>=DRN CLK=GATE vdd!=SRC}}
+{inst MM13=pmos {TYPE MOS} 
+{pin WL<13>=DRN CLK=GATE vdd!=SRC}}
+{inst MM12=pmos {TYPE MOS} 
+{pin WL<12>=DRN CLK=GATE vdd!=SRC}}
+{inst MM10=pmos {TYPE MOS} 
+{pin WL<10>=DRN CLK=GATE vdd!=SRC}}
+{inst MM9=pmos {TYPE MOS} 
+{pin WL<9>=DRN CLK=GATE vdd!=SRC}}
+{inst MM8=pmos {TYPE MOS} 
+{pin WL<8>=DRN CLK=GATE vdd!=SRC}}
+{inst MM7=pmos {TYPE MOS} 
+{pin WL<7>=DRN CLK=GATE vdd!=SRC}}
+{inst MM6=pmos {TYPE MOS} 
+{pin WL<6>=DRN CLK=GATE vdd!=SRC}}
+{inst MM5=pmos {TYPE MOS} 
+{pin WL<5>=DRN CLK=GATE vdd!=SRC}}
+{inst MM3=pmos {TYPE MOS} 
+{pin WL<3>=DRN CLK=GATE vdd!=SRC}}
+{inst MM2=pmos {TYPE MOS} 
+{pin WL<2>=DRN CLK=GATE vdd!=SRC}}
+{inst MM1=pmos {TYPE MOS} 
+{pin WL<1>=DRN CLK=GATE vdd!=SRC}}
+{inst MM0=pmos {TYPE MOS} 
+{pin WL<0>=DRN CLK=GATE vdd!=SRC}}
+}
+
+{cell sram_array_1r_4c
+{port BL<0> BL<1> BL<2> BL<3> BLb<0> BLb<1>
+ BLb<2> BLb<3> WL}
+{inst XI3=sram_6T {TYPE CELL} 
+{pin BL<3>=BL BLb<3>=BLb WL=WL}}
+{inst XI2=sram_6T {TYPE CELL} 
+{pin BL<2>=BL BLb<2>=BLb WL=WL}}
+{inst XI1=sram_6T {TYPE CELL} 
+{pin BL<1>=BL BLb<1>=BLb WL=WL}}
+{inst XI0=sram_6T {TYPE CELL} 
+{pin BL<0>=BL BLb<0>=BLb WL=WL}}
+}
+
+{cell bitline_conditioning
+{port BL<0> BL<1> BL<2> BL<3> BL<4> BL<5>
+ BL<6> BL<7> BLb<0> BLb<1> BLb<2> BLb<3> BLb<4>
+ BLb<5> BLb<6> BLb<7> CLK}
+{inst XI7=equalizer {TYPE CELL} 
+{pin BLb<7>=!BL BL<7>=BL CLK=clk}}
+{inst XI6=equalizer {TYPE CELL} 
+{pin BLb<6>=!BL BL<6>=BL CLK=clk}}
+{inst XI5=equalizer {TYPE CELL} 
+{pin BLb<5>=!BL BL<5>=BL CLK=clk}}
+{inst XI4=equalizer {TYPE CELL} 
+{pin BLb<4>=!BL BL<4>=BL CLK=clk}}
+{inst XI3=equalizer {TYPE CELL} 
+{pin BLb<3>=!BL BL<3>=BL CLK=clk}}
+{inst XI2=equalizer {TYPE CELL} 
+{pin BLb<2>=!BL BL<2>=BL CLK=clk}}
+{inst XI1=equalizer {TYPE CELL} 
+{pin BLb<1>=!BL BL<1>=BL CLK=clk}}
+{inst XI0=equalizer {TYPE CELL} 
+{pin BLb<0>=!BL BL<0>=BL CLK=clk}}
+}
+
+{cell write_buffer_cell
+{port EN IN OUT OUTb}
+{inst XI23=inverter {TYPE CELL} 
+{pin IN=in net62=out}}
+{inst MM5=nmos {TYPE MOS} 
+{pin OUTb=DRN net54=GATE gnd!=SRC}}
+{inst MM4=nmos {TYPE MOS} 
+{pin OUT=DRN net52=GATE gnd!=SRC}}
+{inst XI24=and {TYPE CELL} 
+{pin EN=A net62=B net52=Z}}
+{inst XI25=and {TYPE CELL} 
+{pin EN=A IN=B net54=Z}}
+}
+
+{cell buffer
+{port in out}
+{inst XI1=inverter {TYPE CELL} 
+{pin net4=in out=out}}
+{inst XI0=inverter {TYPE CELL} 
+{pin in=in net4=out}}
+}
+
+{cell sram_array_16r_8c
+{port BL<0> BL<1> BL<2> BL<3> BL<4> BL<5>
+ BL<6> BL<7> BLb<0> BLb<1> BLb<2> BLb<3> BLb<4>
+ BLb<5> BLb<6> BLb<7> WL<0> WL<1> WL<2> WL<3>
+ WL<4> WL<5> WL<6> WL<7> WL<8> WL<9> WL<10>
+ WL<11> WL<12> WL<13> WL<14> WL<15>}
+{inst XI32=sram_array_1r_4c {TYPE CELL} 
+{pin BL<4>=BL<0> BL<5>=BL<1> BL<6>=BL<2> BL<7>=BL<3> BLb<4>=BLb<0> BLb<5>=BLb<1>
+ BLb<6>=BLb<2> BLb<7>=BLb<3> WL<1>=WL}}
+{inst XI33=sram_array_1r_4c {TYPE CELL} 
+{pin BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BLb<0>=BLb<0> BLb<1>=BLb<1>
+ BLb<2>=BLb<2> BLb<3>=BLb<3> WL<1>=WL}}
+{inst XI34=sram_array_1r_4c {TYPE CELL} 
+{pin BL<4>=BL<0> BL<5>=BL<1> BL<6>=BL<2> BL<7>=BL<3> BLb<4>=BLb<0> BLb<5>=BLb<1>
+ BLb<6>=BLb<2> BLb<7>=BLb<3> WL<2>=WL}}
+{inst XI35=sram_array_1r_4c {TYPE CELL} 
+{pin BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BLb<0>=BLb<0> BLb<1>=BLb<1>
+ BLb<2>=BLb<2> BLb<3>=BLb<3> WL<2>=WL}}
+{inst XI36=sram_array_1r_4c {TYPE CELL} 
+{pin BL<4>=BL<0> BL<5>=BL<1> BL<6>=BL<2> BL<7>=BL<3> BLb<4>=BLb<0> BLb<5>=BLb<1>
+ BLb<6>=BLb<2> BLb<7>=BLb<3> WL<3>=WL}}
+{inst XI37=sram_array_1r_4c {TYPE CELL} 
+{pin BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BLb<0>=BLb<0> BLb<1>=BLb<1>
+ BLb<2>=BLb<2> BLb<3>=BLb<3> WL<3>=WL}}
+{inst XI38=sram_array_1r_4c {TYPE CELL} 
+{pin BL<4>=BL<0> BL<5>=BL<1> BL<6>=BL<2> BL<7>=BL<3> BLb<4>=BLb<0> BLb<5>=BLb<1>
+ BLb<6>=BLb<2> BLb<7>=BLb<3> WL<4>=WL}}
+{inst XI39=sram_array_1r_4c {TYPE CELL} 
+{pin BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BLb<0>=BLb<0> BLb<1>=BLb<1>
+ BLb<2>=BLb<2> BLb<3>=BLb<3> WL<4>=WL}}
+{inst XI40=sram_array_1r_4c {TYPE CELL} 
+{pin BL<4>=BL<0> BL<5>=BL<1> BL<6>=BL<2> BL<7>=BL<3> BLb<4>=BLb<0> BLb<5>=BLb<1>
+ BLb<6>=BLb<2> BLb<7>=BLb<3> WL<5>=WL}}
+{inst XI41=sram_array_1r_4c {TYPE CELL} 
+{pin BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BLb<0>=BLb<0> BLb<1>=BLb<1>
+ BLb<2>=BLb<2> BLb<3>=BLb<3> WL<5>=WL}}
+{inst XI31=sram_array_1r_4c {TYPE CELL} 
+{pin BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BLb<0>=BLb<0> BLb<1>=BLb<1>
+ BLb<2>=BLb<2> BLb<3>=BLb<3> WL<0>=WL}}
+{inst XI30=sram_array_1r_4c {TYPE CELL} 
+{pin BL<4>=BL<0> BL<5>=BL<1> BL<6>=BL<2> BL<7>=BL<3> BLb<4>=BLb<0> BLb<5>=BLb<1>
+ BLb<6>=BLb<2> BLb<7>=BLb<3> WL<0>=WL}}
+{inst XI42=sram_array_1r_4c {TYPE CELL} 
+{pin BL<4>=BL<0> BL<5>=BL<1> BL<6>=BL<2> BL<7>=BL<3> BLb<4>=BLb<0> BLb<5>=BLb<1>
+ BLb<6>=BLb<2> BLb<7>=BLb<3> WL<6>=WL}}
+{inst XI43=sram_array_1r_4c {TYPE CELL} 
+{pin BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BLb<0>=BLb<0> BLb<1>=BLb<1>
+ BLb<2>=BLb<2> BLb<3>=BLb<3> WL<6>=WL}}
+{inst XI44=sram_array_1r_4c {TYPE CELL} 
+{pin BL<4>=BL<0> BL<5>=BL<1> BL<6>=BL<2> BL<7>=BL<3> BLb<4>=BLb<0> BLb<5>=BLb<1>
+ BLb<6>=BLb<2> BLb<7>=BLb<3> WL<7>=WL}}
+{inst XI45=sram_array_1r_4c {TYPE CELL} 
+{pin BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BLb<0>=BLb<0> BLb<1>=BLb<1>
+ BLb<2>=BLb<2> BLb<3>=BLb<3> WL<7>=WL}}
+{inst XI46=sram_array_1r_4c {TYPE CELL} 
+{pin BL<4>=BL<0> BL<5>=BL<1> BL<6>=BL<2> BL<7>=BL<3> BLb<4>=BLb<0> BLb<5>=BLb<1>
+ BLb<6>=BLb<2> BLb<7>=BLb<3> WL<8>=WL}}
+{inst XI47=sram_array_1r_4c {TYPE CELL} 
+{pin BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BLb<0>=BLb<0> BLb<1>=BLb<1>
+ BLb<2>=BLb<2> BLb<3>=BLb<3> WL<8>=WL}}
+{inst XI48=sram_array_1r_4c {TYPE CELL} 
+{pin BL<4>=BL<0> BL<5>=BL<1> BL<6>=BL<2> BL<7>=BL<3> BLb<4>=BLb<0> BLb<5>=BLb<1>
+ BLb<6>=BLb<2> BLb<7>=BLb<3> WL<9>=WL}}
+{inst XI49=sram_array_1r_4c {TYPE CELL} 
+{pin BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BLb<0>=BLb<0> BLb<1>=BLb<1>
+ BLb<2>=BLb<2> BLb<3>=BLb<3> WL<9>=WL}}
+{inst XI50=sram_array_1r_4c {TYPE CELL} 
+{pin BL<4>=BL<0> BL<5>=BL<1> BL<6>=BL<2> BL<7>=BL<3> BLb<4>=BLb<0> BLb<5>=BLb<1>
+ BLb<6>=BLb<2> BLb<7>=BLb<3> WL<10>=WL}}
+{inst XI51=sram_array_1r_4c {TYPE CELL} 
+{pin BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BLb<0>=BLb<0> BLb<1>=BLb<1>
+ BLb<2>=BLb<2> BLb<3>=BLb<3> WL<10>=WL}}
+{inst XI52=sram_array_1r_4c {TYPE CELL} 
+{pin BL<4>=BL<0> BL<5>=BL<1> BL<6>=BL<2> BL<7>=BL<3> BLb<4>=BLb<0> BLb<5>=BLb<1>
+ BLb<6>=BLb<2> BLb<7>=BLb<3> WL<11>=WL}}
+{inst XI53=sram_array_1r_4c {TYPE CELL} 
+{pin BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BLb<0>=BLb<0> BLb<1>=BLb<1>
+ BLb<2>=BLb<2> BLb<3>=BLb<3> WL<11>=WL}}
+{inst XI54=sram_array_1r_4c {TYPE CELL} 
+{pin BL<4>=BL<0> BL<5>=BL<1> BL<6>=BL<2> BL<7>=BL<3> BLb<4>=BLb<0> BLb<5>=BLb<1>
+ BLb<6>=BLb<2> BLb<7>=BLb<3> WL<12>=WL}}
+{inst XI55=sram_array_1r_4c {TYPE CELL} 
+{pin BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BLb<0>=BLb<0> BLb<1>=BLb<1>
+ BLb<2>=BLb<2> BLb<3>=BLb<3> WL<12>=WL}}
+{inst XI56=sram_array_1r_4c {TYPE CELL} 
+{pin BL<4>=BL<0> BL<5>=BL<1> BL<6>=BL<2> BL<7>=BL<3> BLb<4>=BLb<0> BLb<5>=BLb<1>
+ BLb<6>=BLb<2> BLb<7>=BLb<3> WL<13>=WL}}
+{inst XI57=sram_array_1r_4c {TYPE CELL} 
+{pin BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BLb<0>=BLb<0> BLb<1>=BLb<1>
+ BLb<2>=BLb<2> BLb<3>=BLb<3> WL<13>=WL}}
+{inst XI58=sram_array_1r_4c {TYPE CELL} 
+{pin BL<4>=BL<0> BL<5>=BL<1> BL<6>=BL<2> BL<7>=BL<3> BLb<4>=BLb<0> BLb<5>=BLb<1>
+ BLb<6>=BLb<2> BLb<7>=BLb<3> WL<14>=WL}}
+{inst XI59=sram_array_1r_4c {TYPE CELL} 
+{pin BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BLb<0>=BLb<0> BLb<1>=BLb<1>
+ BLb<2>=BLb<2> BLb<3>=BLb<3> WL<14>=WL}}
+{inst XI60=sram_array_1r_4c {TYPE CELL} 
+{pin BL<4>=BL<0> BL<5>=BL<1> BL<6>=BL<2> BL<7>=BL<3> BLb<4>=BLb<0> BLb<5>=BLb<1>
+ BLb<6>=BLb<2> BLb<7>=BLb<3> WL<15>=WL}}
+{inst XI61=sram_array_1r_4c {TYPE CELL} 
+{pin BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BLb<0>=BLb<0> BLb<1>=BLb<1>
+ BLb<2>=BLb<2> BLb<3>=BLb<3> WL<15>=WL}}
+}
+
+{cell column_decoder_write
+{port A<4> BL<0> BL<1> BL<2> BL<3> BL<4>
+ BL<5> BL<6> BL<7> BLb<0> BLb<1> BLb<2> BLb<3>
+ BLb<4> BLb<5> BLb<6> BLb<7> D<0> D<1> D<2>
+ D<3> WENB}
+{inst XI17=inverter {TYPE CELL} 
+{pin WENB=in WEN=out}}
+{inst XI8=inverter {TYPE CELL} 
+{pin A<4>=in Ab<4>=out}}
+{inst XI22=write_buffer_cell {TYPE CELL} 
+{pin WEN=EN D<3>=IN net269=OUT net271=OUTb}}
+{inst XI23=write_buffer_cell {TYPE CELL} 
+{pin WEN=EN D<2>=IN net250=OUT net264=OUTb}}
+{inst XI24=write_buffer_cell {TYPE CELL} 
+{pin WEN=EN D<1>=IN net255=OUT net263=OUTb}}
+{inst XI25=write_buffer_cell {TYPE CELL} 
+{pin WEN=EN D<0>=IN net254=OUT net262=OUTb}}
+{inst XI29=column_decoder_write_cell {TYPE CELL} 
+{pin net271=IN BLb<3>=OUT<0> BLb<7>=OUT<1> A<4>=S Ab<4>=Sb}}
+{inst XI27=column_decoder_write_cell {TYPE CELL} 
+{pin net255=IN BL<1>=OUT<0> BL<5>=OUT<1> A<4>=S Ab<4>=Sb}}
+{inst XI26=column_decoder_write_cell {TYPE CELL} 
+{pin net269=IN BL<3>=OUT<0> BL<7>=OUT<1> A<4>=S Ab<4>=Sb}}
+{inst XI9=column_decoder_write_cell {TYPE CELL} 
+{pin net250=IN BL<2>=OUT<0> BL<6>=OUT<1> A<4>=S Ab<4>=Sb}}
+{inst XI30=column_decoder_write_cell {TYPE CELL} 
+{pin net264=IN BLb<2>=OUT<0> BLb<6>=OUT<1> A<4>=S Ab<4>=Sb}}
+{inst XI31=column_decoder_write_cell {TYPE CELL} 
+{pin net263=IN BLb<1>=OUT<0> BLb<5>=OUT<1> A<4>=S Ab<4>=Sb}}
+{inst XI32=column_decoder_write_cell {TYPE CELL} 
+{pin net262=IN BLb<0>=OUT<0> BLb<4>=OUT<1> A<4>=S Ab<4>=Sb}}
+{inst XI28=column_decoder_write_cell {TYPE CELL} 
+{pin net254=IN BL<0>=OUT<0> BL<4>=OUT<1> A<4>=S Ab<4>=Sb}}
+}
+
+{cell buffer_array
+{port in<0> in<1> in<2> in<3> out<0> out<1>
+ out<2> out<3>}
+{inst XI3=buffer {TYPE CELL} 
+{pin in<3>=in out<3>=out}}
+{inst XI2=buffer {TYPE CELL} 
+{pin in<2>=in out<2>=out}}
+{inst XI1=buffer {TYPE CELL} 
+{pin in<1>=in out<1>=out}}
+{inst XI0=buffer {TYPE CELL} 
+{pin in<0>=in out<0>=out}}
+}
+
+{cell top_level
+{port A<0> A<1> A<2> A<3> A<4> CLK
+ D<0> D<1> D<2> D<3> Q<0> Q<1> Q<2>
+ Q<3> WENB}
+{inst XI6=bitline_conditioning {TYPE CELL} 
+{pin BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BL<4>=BL<4> BL<5>=BL<5>
+ BL<6>=BL<6> BL<7>=BL<7> BLb<0>=BLb<0> BLb<1>=BLb<1> BLb<2>=BLb<2> BLb<3>=BLb<3> BLb<4>=BLb<4>
+ BLb<5>=BLb<5> BLb<6>=BLb<6> BLb<7>=BLb<7> CLK=CLK}}
+{inst XI35=buffer_array {TYPE CELL} 
+{pin net292=in<0> net291=in<1> net290=in<2> net289=in<3> net280=out<0> net279=out<1>
+ net278=out<2> net277=out<3>}}
+{inst XI34=buffer_array {TYPE CELL} 
+{pin net288=in<0> net287=in<1> net286=in<2> net285=in<3> net276=out<0> net275=out<1>
+ net274=out<2> net273=out<3>}}
+{inst XI33=buffer_array {TYPE CELL} 
+{pin net284=in<0> net283=in<1> net282=in<2> net281=in<3> net272=out<0> net271=out<1>
+ net270=out<2> net269=out<3>}}
+{inst XI32=buffer_array {TYPE CELL} 
+{pin net268=in<0> net267=in<1> net266=in<2> net265=in<3> net264=out<0> net263=out<1>
+ net262=out<2> net261=out<3>}}
+{inst XI40=buffer_array {TYPE CELL} 
+{pin net229=in<0> net227=in<1> net225=in<2> net355=in<3> Q<3>=out<0> Q<2>=out<1>
+ Q<1>=out<2> Q<0>=out<3>}}
+{inst XI11=row_decoder_4_16 {TYPE CELL} 
+{pin CLK=CLK A<0>=IN<0> A<1>=IN<1> A<2>=IN<2> A<3>=IN<3> net292=WL<0>
+ net291=WL<1> net290=WL<2> net289=WL<3> net288=WL<4> net287=WL<5> net286=WL<6> net285=WL<7>
+ net284=WL<8> net283=WL<9> net282=WL<10> net281=WL<11> net268=WL<12> net267=WL<13> net266=WL<14>
+ net265=WL<15>}}
+{inst XI0=sram_array_16r_8c {TYPE CELL} 
+{pin BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BL<4>=BL<4> BL<5>=BL<5>
+ BL<6>=BL<6> BL<7>=BL<7> BLb<0>=BLb<0> BLb<1>=BLb<1> BLb<2>=BLb<2> BLb<3>=BLb<3> BLb<4>=BLb<4>
+ BLb<5>=BLb<5> BLb<6>=BLb<6> BLb<7>=BLb<7> net280=WL<0> net279=WL<1> net278=WL<2> net277=WL<3>
+ net276=WL<4> net275=WL<5> net274=WL<6> net273=WL<7> net272=WL<8> net271=WL<9> net270=WL<10>
+ net269=WL<11> net264=WL<12> net263=WL<13> net262=WL<14> net261=WL<15>}}
+{inst XI36=column_decoder_write {TYPE CELL} 
+{pin A<4>=A<4> BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BL<4>=BL<4>
+ BL<5>=BL<5> BL<6>=BL<6> BL<7>=BL<7> BLb<0>=BLb<0> BLb<1>=BLb<1> BLb<2>=BLb<2> BLb<3>=BLb<3>
+ BLb<4>=BLb<4> BLb<5>=BLb<5> BLb<6>=BLb<6> BLb<7>=BLb<7> D<0>=D<0> D<1>=D<1> D<2>=D<2>
+ D<3>=D<3> WENB=WENB}}
+{inst XI39=column_decoder_read {TYPE CELL} 
+{pin A<4>=A<4> BL<0>=BL<0> BL<1>=BL<1> BL<2>=BL<2> BL<3>=BL<3> BL<4>=BL<4>
+ BL<5>=BL<5> BL<6>=BL<6> BL<7>=BL<7> net355=Q<0> net225=Q<1> net227=Q<2> net229=Q<3>
+ WENB=WENB}}
+}
+
+}

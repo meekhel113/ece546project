@@ -1,0 +1,56 @@
+<module name="vsl: project_backup column_decoder_write_cell schematic vl: hspice hspiceD schematic spice veriloga">
+<scope name="Instance">
+<forward>
+<mapping dst="m0" src="M0"/>
+<mapping dst="m1" src="M1"/>
+</forward>
+<reverse>
+<mapping dst="M0" src="m0"/>
+<mapping dst="M1" src="m1"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward>
+<mapping dst="s" src="S"/>
+<mapping dst="out&lt;0>" src="OUT&lt;0>"/>
+<mapping dst="out&lt;1>" src="OUT&lt;1>"/>
+<mapping dst="sb" src="Sb"/>
+<mapping dst="in" src="IN"/>
+</forward>
+<reverse>
+<mapping dst="Sb" src="sb"/>
+<mapping dst="OUT&lt;1>" src="out&lt;1>"/>
+<mapping dst="OUT&lt;0>" src="out&lt;0>"/>
+<mapping dst="S" src="s"/>
+<mapping dst="IN" src="in"/>
+</reverse>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="IN OUT&lt;0> OUT&lt;1> S Sb" src="&lt;unmappedTermOrder>"/>
+<mapping dst="in out&lt;0> out&lt;1> s sb" src="&lt;termOrder>"/>
+<mapping dst="s" src="S"/>
+<mapping dst="out&lt;0>" src="OUT&lt;0>"/>
+<mapping dst="out" src="OUT"/>
+<mapping dst="sb" src="Sb"/>
+<mapping dst="out&lt;1>" src="OUT&lt;1>"/>
+<mapping dst="in" src="IN"/>
+</forward>
+<reverse>
+<mapping dst="&lt;unmappedTermOrder>" src="IN OUT&lt;0> OUT&lt;1> S Sb"/>
+<mapping dst="&lt;termOrder>" src="in out&lt;0> out&lt;1> s sb"/>
+<mapping dst="IN" src="in"/>
+<mapping dst="Sb" src="sb"/>
+<mapping dst="S" src="s"/>
+<mapping dst="OUT&lt;0>" src="out&lt;0>"/>
+<mapping dst="OUT&lt;1>" src="out&lt;1>"/>
+<mapping dst="OUT" src="out"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="nmos">
+<instance name="M0"/>
+<instance name="M1"/>
+</instance_header>
+</master_instances>
+</module>

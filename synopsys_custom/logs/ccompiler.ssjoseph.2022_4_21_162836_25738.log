@@ -1,0 +1,656 @@
+[16:28:42.32] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c                  Version S-2021.09 for linux64 - Aug 25, 2021 
+              /c 
+              /c                     Copyright (c) 2004 - 2021 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 6809741 compiled on Wed Aug 25 11:47:50 2021 for CentOS64 7.3
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/customcompiler/S-2021.09/linux64/platform/bin/custom_compiler
+              /c Execution time: Thu Apr 21 16:28:36 2022
+              /c Host: grendel28.ece.ncsu.edu
+              /c Working directory: /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project
+              /c 
+[16:28:57.99] /r giShowFrameTabs true
+[16:28:57.99] /r giWindowId 1
+[16:28:57.99] /r giWindowGeometry 1040x800
+[16:28:58.56] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x733+199+81
+[16:29:02.29] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/recentDesigns/deOpenmylibtoplevellayout} -in [gi::getWindows 1]
+[16:29:02.29] /# 
+[16:29:02.59] /i de::open mylib/top_level/layout
+[16:29:02.62] /m Information: License 'Apex' checked out. (LICENSE-003)
+[16:29:02.66] /o Loading: Callback files...
+[16:29:02.66] /o Loading: scripts/callbacks/callbacks.tcl
+[16:29:02.66] /o 
+              /c [INFO] : Loading display.drf from /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[16:29:02.66] /o 
+[16:29:02.72] /o 	#######################################
+[16:29:02.72] /o 	CC-PDK Library Name	: FreePDK3
+[16:29:02.72] /o 	#######################################
+[16:29:02.72] /o 
+[16:29:02.87] /r giWindowId 2
+[16:29:02.88] /r giWindowGeometry 1224x709
+[16:29:03.49] /o oa:0x2d041160
+[16:29:03.79] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value 290x179
+[16:29:06.32] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 2]
+[16:29:06.32] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 2]]
+[16:29:11.21] /# gi::executeAction {xtDRCSetup} -in [gi::getWindows 2]
+[16:29:11.21] /i xt::showDRCSetup -job drc -window 2
+[16:29:11.99] /i db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 2]] -value 676x512+636+275
+[16:29:16.07] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 2]]
+[16:29:16.19] /# xt::physicalVerification::executePve drc 2 xtDRCExecutePve
+[16:29:16.32] /m Information: Starting 'Stream Export of OA cell 'mylib/top_level/layout''...
+[16:29:18.86] /m Information: "PVE Stream Export finished successfully with 0 error, 52 warnings." (DATA_IO_COMMANDS-002)
+[16:29:18.96] /m Information: Stream Export of OA cell 'mylib/top_level/layout' finished.
+[16:29:19.38] /r giWindowId 3
+[16:29:19.40] /r giWindowGeometry 800x600
+[16:29:30.48] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_126
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[16:29:30.52] /w Warning: Initialize IC Validator VUE Server failed at port 9189: couldn't open socket: address already in use.
+[16:29:30.52] /m Information: Attempt to bind to an available port.
+[16:29:30.52] /m Information: IC Validator VUE Server initialized successfully at port 36573.
+[16:29:37.74] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[16:29:40.82] /# gi::executeAction {xtLVSSetup} -in [gi::getWindows 2]
+[16:29:40.82] /i xt::showLVSSetup -job lvs -window 2
+[16:29:41.60] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]] -value 838x485+636+271
+[16:29:44.73] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[16:29:44.96] /# xt::physicalVerification::executePve lvs 2 xtLVSExecutePve
+[16:29:45.04] /m Information: Starting 'Stream Export of OA cell 'mylib/top_level/layout''...
+[16:29:45.07] /m Information: "Starting netlisting for design "mylib/top_level/schematic"..." (NETLISTING-010)
+[16:29:45.18] /m Information: 
+[16:29:45.18] /o Checking "mylib/top_level/schematic"
+[16:29:45.18] /o No rule violations found in "mylib/top_level/schematic"
+[16:29:45.18] /o No Design Integrity rule violations found in "mylib/top_level/schematic"
+[16:29:45.24] /m Information: 
+[16:29:45.24] /o Checking "project_backup/bitline_conditioning/schematic"
+[16:29:45.24] /o No rule violations found in "project_backup/bitline_conditioning/schematic"
+[16:29:45.27] /m Information: 
+[16:29:45.27] /o Checking "project_backup/equalizer/schematic"
+[16:29:45.27] /o No rule violations found in "project_backup/equalizer/schematic"
+[16:29:45.31] /m Information: 
+[16:29:45.31] /o Checking "project_backup/buffer_array/schematic"
+[16:29:45.32] /o No rule violations found in "project_backup/buffer_array/schematic"
+[16:29:45.35] /m Information: 
+[16:29:45.35] /o Checking "project_backup/buffer/schematic"
+[16:29:45.35] /o No rule violations found in "project_backup/buffer/schematic"
+[16:29:45.38] /m Information: 
+[16:29:45.38] /o Checking "project_backup/inverter/schematic"
+[16:29:45.38] /o No rule violations found in "project_backup/inverter/schematic"
+[16:29:45.44] /m Information: 
+[16:29:45.44] /o Checking "project_backup/row_decoder_4_16/schematic"
+[16:29:45.44] /o No rule violations found in "project_backup/row_decoder_4_16/schematic"
+[16:29:45.46] /m Information: 
+[16:29:45.46] /o Checking "project_backup/inverter_row_decoder/schematic"
+[16:29:45.46] /o No rule violations found in "project_backup/inverter_row_decoder/schematic"
+[16:29:45.52] /m Information: 
+[16:29:45.52] /o Checking "project_backup/sram_array_16r_8c/schematic"
+[16:29:45.52] /o No rule violations found in "project_backup/sram_array_16r_8c/schematic"
+[16:29:45.54] /m Information: 
+[16:29:45.54] /o Checking "project_backup/sram_array_1r_4c/schematic"
+[16:29:45.54] /o No rule violations found in "project_backup/sram_array_1r_4c/schematic"
+[16:29:45.56] /m Information: 
+[16:29:45.56] /o Checking "project_backup/sram_6T/schematic"
+[16:29:45.56] /o No rule violations found in "project_backup/sram_6T/schematic"
+[16:29:45.60] /m Information: 
+[16:29:45.60] /o Checking "project_backup/column_decoder_write/schematic"
+[16:29:45.60] /o No rule violations found in "project_backup/column_decoder_write/schematic"
+[16:29:45.63] /m Information: 
+[16:29:45.63] /o Checking "project_backup/write_buffer_cell/schematic"
+[16:29:45.63] /o No rule violations found in "project_backup/write_buffer_cell/schematic"
+[16:29:45.65] /m Information: 
+[16:29:45.65] /o Checking "project_backup/and/schematic"
+[16:29:45.65] /o No rule violations found in "project_backup/and/schematic"
+[16:29:45.66] /m Information: 
+[16:29:45.66] /o Checking "project_backup/column_decoder_write_cell/schematic"
+[16:29:45.66] /o No rule violations found in "project_backup/column_decoder_write_cell/schematic"
+[16:29:45.69] /m Information: 
+[16:29:45.69] /o Checking "project_backup/column_decoder_read/schematic"
+[16:29:45.69] /o No rule violations found in "project_backup/column_decoder_read/schematic"
+[16:29:45.71] /m Information: 
+[16:29:45.71] /o Checking "project_backup/column_decoder_read_cell/schematic"
+[16:29:45.71] /o No rule violations found in "project_backup/column_decoder_read_cell/schematic"
+[16:29:46.35] /m Information: "Netlisting design "mylib/top_level/schematic" finished successfully." (NETLISTING-012)
+[16:29:47.42] /m Information: "PVE Stream Export finished successfully with 0 error, 52 warnings." (DATA_IO_COMMANDS-002)
+[16:29:47.52] /m Information: Stream Export of OA cell 'mylib/top_level/layout' finished.
+[16:29:47.90] /r giWindowId 4
+[16:29:47.92] /r giWindowGeometry 800x600
+[16:29:52.58] /i gi::setActiveWindow 1
+[16:29:52.58] /i gi::setActiveWindow 1 -raise true
+[16:29:53.73] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[16:29:53.73] /# 
+[16:29:54.03] /i gi::addWindow [dm::openLibraryManager] -to 1
+[16:29:54.03] /r giWindowId 5
+[16:29:54.05] /r giWindowGeometry 660x600+50+75
+[16:29:55.54] /i gi::setCurrentIndex {libs} -index {mylib} -in [gi::getWindows 5]
+[16:29:55.55] /i gi::setItemSelection {libs} -index {mylib} -in [gi::getWindows 5]
+[16:29:58.18] /m Information: 
+              /c =============================
+              /c JobID: icv_lvs_76
+              /c --- ERROR SUMMARY -----------
+              /c LVS Device Extraction Error Summary
+              /c 2 total rules were run.
+              /c 0 rules NOT EXECUTED.
+              /c 0 rules have violations.
+              /c There are 0 total violations.
+              /c Refer to top_level.LAYOUT_ERRORS
+              /c =============================
+              /c 
+[16:29:59.97] /r giWindowId 6
+[16:29:59.99] /r giWindowGeometry 1224x709
+[16:30:12.20] /i gi::setActiveWindow 1
+[16:30:12.20] /i gi::setActiveWindow 1 -raise true
+[16:30:13.49] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[16:30:13.49] /# 
+[16:30:13.79] /i gi::setActiveWindow 5 -raise true
+[16:30:16.13] /i gi::setCurrentIndex {cells} -index {top_level_tb} -in [gi::getWindows 5]
+[16:30:16.16] /i gi::setItemSelection {cells} -index {top_level_tb} -in [gi::getWindows 5]
+[16:30:17.61] /i gi::setCurrentIndex {views} -index {top_level_tb} -in [gi::getWindows 5]
+[16:30:17.61] /i gi::setItemSelection {views} -index {top_level_tb} -in [gi::getWindows 5]
+[16:30:17.73] /i gi::executeAction {dmOpen} -in [gi::getWindows 5]
+[16:30:32.85] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[16:30:33.27] /r giWindowId 7
+[16:30:33.31] /r giWindowGeometry 600x500
+[16:30:34.11] /m Information: Launching Background pw_shell Server Process "cd /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project && pw_shell -log pw_shell_session0_job1 -libDefFile /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/lib.defs"
+[16:30:51.38] /m Information: Received ready-for-commands signal from background job 'pw_shell_session0_job1' after 17 seconds.
+[16:33:24.38] /m Information: Connection closed with 'IC Validator VUE' running on 'grendel28.ece.ncsu.edu'.
+[16:33:28.38] /m Information: Connection closed with 'IC Validator VUE' running on 'grendel28.ece.ncsu.edu'.
+[16:33:31.71] /# gi::executeAction {xtDRCSetup} -in [gi::getWindows 2]
+[16:33:31.71] /i xt::showDRCSetup -job drc -window 2
+[16:33:32.40] /i db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 2]] -value 676x512+636+275
+[16:33:33.47] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 2]]
+[16:33:33.59] /# xt::physicalVerification::executePve drc 2 xtDRCExecutePve
+[16:33:33.67] /m Information: Starting 'Stream Export of OA cell 'mylib/top_level/layout''...
+[16:33:36.22] /m Information: "PVE Stream Export finished successfully with 0 error, 52 warnings." (DATA_IO_COMMANDS-002)
+[16:33:36.32] /m Information: Stream Export of OA cell 'mylib/top_level/layout' finished.
+[16:33:36.70] /r giWindowId 8
+[16:33:36.75] /r giWindowGeometry 800x600
+[16:33:48.08] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_127
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[16:34:01.98] /m Information: Connection closed with 'IC Validator VUE' running on 'grendel28.ece.ncsu.edu'.
+[16:34:04.09] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[16:34:05.79] /i gi::executeAction giCloseWindow -in [gi::getWindows 8]
+[16:34:09.19] /# gi::executeAction {xtLVSSetup} -in [gi::getWindows 2]
+[16:34:09.19] /i xt::showLVSSetup -job lvs -window 2
+[16:34:10.11] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]] -value 838x487+602+271
+[16:34:12.10] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[16:34:12.23] /# xt::physicalVerification::executePve lvs 2 xtLVSExecutePve
+[16:34:12.32] /m Information: Starting 'Stream Export of OA cell 'mylib/top_level/layout''...
+[16:34:12.34] /m Information: "Starting netlisting for design "mylib/top_level/schematic"..." (NETLISTING-010)
+[16:34:12.46] /m Information: 
+[16:34:12.46] /o Checking "mylib/top_level/schematic"
+[16:34:12.46] /o No rule violations found in "mylib/top_level/schematic"
+[16:34:12.46] /o No Design Integrity rule violations found in "mylib/top_level/schematic"
+[16:34:12.49] /m Information: 
+[16:34:12.49] /o Checking "project_backup/bitline_conditioning/schematic"
+[16:34:12.49] /o No rule violations found in "project_backup/bitline_conditioning/schematic"
+[16:34:12.50] /m Information: 
+[16:34:12.50] /o Checking "project_backup/equalizer/schematic"
+[16:34:12.50] /o No rule violations found in "project_backup/equalizer/schematic"
+[16:34:12.51] /m Information: 
+[16:34:12.51] /o Checking "project_backup/buffer_array/schematic"
+[16:34:12.51] /o No rule violations found in "project_backup/buffer_array/schematic"
+[16:34:12.52] /m Information: 
+[16:34:12.52] /o Checking "project_backup/buffer/schematic"
+[16:34:12.52] /o No rule violations found in "project_backup/buffer/schematic"
+[16:34:12.52] /m Information: 
+[16:34:12.52] /o Checking "project_backup/inverter/schematic"
+[16:34:12.52] /o No rule violations found in "project_backup/inverter/schematic"
+[16:34:12.55] /m Information: 
+[16:34:12.55] /o Checking "project_backup/row_decoder_4_16/schematic"
+[16:34:12.55] /o No rule violations found in "project_backup/row_decoder_4_16/schematic"
+[16:34:12.56] /m Information: 
+[16:34:12.56] /o Checking "project_backup/inverter_row_decoder/schematic"
+[16:34:12.56] /o No rule violations found in "project_backup/inverter_row_decoder/schematic"
+[16:34:12.60] /m Information: 
+[16:34:12.60] /o Checking "project_backup/sram_array_16r_8c/schematic"
+[16:34:12.61] /o No rule violations found in "project_backup/sram_array_16r_8c/schematic"
+[16:34:12.61] /m Information: 
+[16:34:12.61] /o Checking "project_backup/sram_array_1r_4c/schematic"
+[16:34:12.61] /o No rule violations found in "project_backup/sram_array_1r_4c/schematic"
+[16:34:12.62] /m Information: 
+[16:34:12.62] /o Checking "project_backup/sram_6T/schematic"
+[16:34:12.62] /o No rule violations found in "project_backup/sram_6T/schematic"
+[16:34:12.64] /m Information: 
+[16:34:12.64] /o Checking "project_backup/column_decoder_write/schematic"
+[16:34:12.64] /o No rule violations found in "project_backup/column_decoder_write/schematic"
+[16:34:12.64] /m Information: 
+[16:34:12.64] /o Checking "project_backup/write_buffer_cell/schematic"
+[16:34:12.65] /o No rule violations found in "project_backup/write_buffer_cell/schematic"
+[16:34:12.65] /m Information: 
+[16:34:12.65] /o Checking "project_backup/and/schematic"
+[16:34:12.65] /o No rule violations found in "project_backup/and/schematic"
+[16:34:12.66] /m Information: 
+[16:34:12.66] /o Checking "project_backup/column_decoder_write_cell/schematic"
+[16:34:12.66] /o No rule violations found in "project_backup/column_decoder_write_cell/schematic"
+[16:34:12.67] /m Information: 
+[16:34:12.67] /o Checking "project_backup/column_decoder_read/schematic"
+[16:34:12.67] /o No rule violations found in "project_backup/column_decoder_read/schematic"
+[16:34:12.67] /m Information: 
+[16:34:12.67] /o Checking "project_backup/column_decoder_read_cell/schematic"
+[16:34:12.67] /o No rule violations found in "project_backup/column_decoder_read_cell/schematic"
+[16:34:13.22] /m Information: "Netlisting design "mylib/top_level/schematic" finished successfully." (NETLISTING-012)
+[16:34:14.68] /m Information: "PVE Stream Export finished successfully with 0 error, 52 warnings." (DATA_IO_COMMANDS-002)
+[16:34:14.78] /m Information: Stream Export of OA cell 'mylib/top_level/layout' finished.
+[16:34:15.18] /r giWindowId 9
+[16:34:15.22] /r giWindowGeometry 800x600
+[16:34:24.98] /m Information: 
+              /c =============================
+              /c JobID: icv_lvs_77
+              /c --- ERROR SUMMARY -----------
+              /c LVS Device Extraction Error Summary
+              /c 2 total rules were run.
+              /c 0 rules NOT EXECUTED.
+              /c 0 rules have violations.
+              /c There are 0 total violations.
+              /c Refer to top_level.LAYOUT_ERRORS
+              /c =============================
+              /c 
+[16:35:23.21] /i gi::setActiveWindow 2
+[16:35:23.21] /i gi::setActiveWindow 2 -raise true
+[16:35:25.99] /i gi::executeAction {dePropertyEditorToggleExtended} -in [gi::getWindows 2]
+[16:35:25.99] /# db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value true
+[16:35:26.28] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value 290x519
+[16:35:31.19] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:35:31.19] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.0605 -0.077}
+[16:35:31.26] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:35:31.26] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.06 -0.0775}
+[16:35:32.60] /# gi::executeAction {deFitView} -in [gi::getWindows 2]
+[16:35:32.60] /i de::fit -window 2 -fitView true
+[16:35:33.68] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:35:33.68] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.044 -0.0855}
+[16:35:40.48] /# gi::executeAction {leRuler} -in [gi::getWindows 2]
+[16:35:40.48] /i ile::createRuler
+[16:35:41.31] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:35:41.31] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {0.016 -0.061}
+[16:35:41.94] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:35:41.94] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0155 -0.0695}
+[16:35:42.13] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:35:42.13] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0115 -0.0775}
+[16:35:42.35] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:35:42.35] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.0115 -0.0775}
+[16:35:43.34] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:35:43.34] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {-0.0015 -0.011}
+[16:35:43.50] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:35:43.50] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {-0.0015 -0.011}
+[16:35:43.82] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:35:43.82] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {-0.0015 -0.011}
+[16:35:51.33] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[16:35:51.33] /i de::addPoint {-0.0135 0.004} -context [db::getNext [de::getContexts -window 2]]
+[16:35:53.04] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:35:53.04] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {-0.0125 0.0015}
+[16:35:53.66] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:35:53.66] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {-0.013 0.001}
+[16:35:54.16] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:35:54.16] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {-0.0125 0.001}
+[16:35:54.94] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:35:54.94] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {-0.0125 0.0015}
+[16:35:55.59] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:35:55.59] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {-0.0125 0.001}
+[16:35:56.39] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:35:56.39] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {-0.013 0.001}
+[16:35:58.57] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:35:58.57] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.0605 0.0175}
+[16:35:59.17] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:35:59.17] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.0605 0.0175}
+[16:35:59.44] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:35:59.44] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.0605 0.0175}
+[16:35:59.69] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:35:59.69] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.0605 0.0175}
+[16:36:01.02] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:36:01.02] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {3.079 0.003}
+[16:36:01.13] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:36:01.13] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {3.0795 0.0025}
+[16:36:01.24] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:36:01.24] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {3.0795 0.003}
+[16:36:01.74] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:36:01.74] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.079 0.003}
+[16:36:01.82] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:36:01.82] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.079 0.003}
+[16:36:01.94] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:36:01.94] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.079 0.003}
+[16:36:02.00] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:36:02.00] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.079 0.003}
+[16:36:02.77] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:36:02.77] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.079 0.003}
+[16:36:02.99] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:36:02.99] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.079 0.003}
+[16:36:04.38] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[16:36:04.38] /i de::addPoint {3.0795 0.003} -context [db::getNext [de::getContexts -window 2]]
+[16:36:15.24] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:36:15.24] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {3.076 0.0105}
+[16:36:17.87] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:36:17.87] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.073 -0.017}
+[16:36:19.29] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[16:36:19.29] /i de::addPoint {3.0735 -0.016} -context [db::getNext [de::getContexts -window 2]]
+[16:36:21.42] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:36:21.42] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.0735 -0.0135}
+[16:36:21.99] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:36:21.99] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {3.0735 -0.0135}
+[16:36:22.06] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:36:22.06] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {3.0735 -0.0135}
+[16:36:22.26] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:36:22.26] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {3.0735 -0.014}
+[16:36:22.46] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:36:22.46] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {3.074 -0.0135}
+[16:36:22.60] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:36:22.60] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {3.0735 -0.014}
+[16:36:22.74] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:36:22.74] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {3.072 -0.0165}
+[16:36:23.34] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:36:23.34] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {3.0695 -0.023}
+[16:36:23.61] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:36:23.61] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {3.07 -0.0225}
+[16:36:24.01] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[16:36:24.02] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {3.0695 -0.0225}
+[16:36:25.39] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:36:25.39] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.0215 3.844}
+[16:36:25.60] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:36:25.60] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.0215 3.836}
+[16:36:25.82] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:36:25.82] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.0215 3.836}
+[16:36:25.95] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:36:25.95] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.0235 3.832}
+[16:36:26.92] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:36:26.92] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.068 3.7775}
+[16:36:27.11] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:36:27.12] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.068 3.776}
+[16:36:27.41] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:36:27.41] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.0695 3.7755}
+[16:36:27.54] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:36:27.54] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.0705 3.775}
+[16:36:28.88] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:36:28.88] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.0735 3.7755}
+[16:36:29.44] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[16:36:29.44] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {3.0735 3.7755}
+[16:36:30.78] /# gi::executeAction {deAddPoint} -in [gi::getWindows 2]
+[16:36:30.78] /i de::addPoint {3.0735 3.776} -context [db::getNext [de::getContexts -window 2]]
+[16:36:41.43] /# gi::executeAction {deFitView} -in [gi::getWindows 2]
+[16:36:41.43] /i de::fit -window 2 -fitView true
+[16:36:48.17] /i gi::setActiveWindow 7
+[16:36:48.17] /i gi::setActiveWindow 7 -raise true
+[16:36:58.47] /i gi::executeAction {menuPreShow} -in [gi::getWindows 7]
+[16:36:58.47] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 7]]
+[16:37:01.54] /# gi::executeAction {saShowEnvironmentOptions} -in [gi::getWindows 7]
+[16:37:01.54] /i sa::showEnvironmentOptions -parent 7
+[16:37:01.59] /i gi::setActiveDialog [gi::getDialogs {saEnvOptionsDialog} -parent [gi::getWindows 7]]
+[16:37:01.88] /i db::setAttr geometry -of [gi::getDialogs {saEnvOptionsDialog} -parent [gi::getWindows 7]] -value 445x473+602+327
+[16:37:14.00] /i gi::closeWindows [gi::getDialogs {saEnvOptionsDialog} -parent [gi::getWindows 7]]
+[16:37:17.41] /i gi::executeAction {menuPreShow} -in [gi::getWindows 7]
+[16:37:17.42] /r giMenuAccess db::getNext [gi::getMenus saConsoleOutputsMenu -from [gi::getWindows 7]]
+[16:37:21.16] /# gi::executeAction {saSelectInDesign} -in [gi::getWindows 7]
+[16:37:21.16] /i sa::selectOutputs -window 7 -useCustomColors true 
+[16:37:21.28] /r giWindowId 10
+[16:37:21.32] /r giWindowGeometry 1224x709
+[16:37:28.29] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[16:37:28.29] /i de::addPoint {3.7875 3.46875} -context [db::getNext [de::getContexts -window 10]]
+[16:37:28.58] /i de::commandOption acceptDelayedAddPoint
+[16:37:30.21] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[16:37:30.21] /i de::addPoint {4.01875 3.46875} -context [db::getNext [de::getContexts -window 10]]
+[16:37:30.50] /i de::commandOption acceptDelayedAddPoint
+[16:37:31.91] /# gi::executeAction {deAddPoint} -in [gi::getWindows 10]
+[16:37:31.91] /i de::addPoint {3.91875 3.48125} -context [db::getNext [de::getContexts -window 10]]
+[16:37:32.07] /# gi::executeAction {deCompleteShape} -in [gi::getWindows 10]
+[16:37:32.07] /i de::completeShape -context [db::getNext [de::getContexts -window 10]]
+[16:37:32.10] /# Navigating to project_backup/top_level/starrc (I35)
+[16:37:32.11] /w Warning: Could not execute Tcl procedure '::rt::_impl::useNewIRPrefChangedProc'. expected boolean value but got "oa:0x3bfd22f0" (PREFERENCE-077)
+[16:37:32.11] /w Warning: Could not execute Tcl procedure '::rt::_impl::useNewIRPrefChangedProc'. expected boolean value but got "oa:0x3be42d20" (PREFERENCE-077)
+[16:37:32.72] /# gi::setItemSelection {sets} -index {Valid} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[16:37:32.72] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]]
+[16:37:32.88] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 10]] -value 200x545
+[16:37:48.41] /i gi::setActiveWindow 7
+[16:37:48.41] /i gi::setActiveWindow 7 -raise true
+[16:37:50.20] /i gi::executeAction {menuPreShow} -in [gi::getWindows 7]
+[16:37:50.20] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 7]]
+[16:37:51.29] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 7]
+[16:37:51.29] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 7] -mode [sa::_utils::findRunMode 7]
+[16:37:51.56] /r giDialog gi::setActiveDialog [gi::getDialogs {xtShowDesignsPrompt}]
+[16:37:51.56] /r giDialog gi::setCurrentIndex {target} -index {0,0} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[16:37:51.86] /r giDialog db::setAttr geometry -of [gi::getDialogs {xtShowDesignsPrompt}] -value 649x290+386+234
+[16:37:53.71] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[16:37:53.79] /r giWindowId 11
+[16:37:53.85] /r giWindowGeometry 800x600
+[16:37:53.96] /m Information: "Starting incremental netlisting for design "project_backup/top_level_tb/schematic"..." (NETLISTING-010)
+[16:37:54.09] /m Information: 
+[16:37:54.09] /o Checking "project_backup/top_level_tb/schematic"
+[16:37:54.09] /o No rule violations found in "project_backup/top_level_tb/schematic"
+[16:37:54.09] /o No Design Integrity rule violations found in "project_backup/top_level_tb/schematic"
+[16:37:54.14] /m Information: 
+[16:37:54.14] /o Checking "project_backup/inputbuf/schematic"
+[16:37:54.14] /o No rule violations found in "project_backup/inputbuf/schematic"
+[16:37:54.17] /m Information: 
+              /c Cross view checking for project_backup/top_level/symbol with project_backup/top_level/starrc
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BL<4> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BL<3> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BL<2> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BLb<0> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BL<5> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BL<1> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BL<0> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BLb<7> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BL<7> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BLb<6> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BL<6> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BLb<5> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BLb<4> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BLb<3> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BLb<2> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BLb<1> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net280 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net279 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net278 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net277 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net276 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net275 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net274 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net273 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net272 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net271 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net270 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net269 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net264 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net263 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net262 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net261 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net291 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net289 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net287 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net292 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net290 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net288 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net285 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net283 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net281 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net286 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net284 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net282 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net267 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net265 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net268 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net266 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net229 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net227 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net225 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net355 found in starrc is missing in symbol (DE_EDIT-007)
+[16:37:54.17] /w Warning: "Terminal BL<4> found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal BL<3> found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal BL<2> found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal BLb<0> found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal BL<5> found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal BL<1> found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal BL<0> found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal BLb<7> found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal BL<7> found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal BLb<6> found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal BL<6> found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal BLb<5> found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal BLb<4> found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal BLb<3> found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal BLb<2> found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal BLb<1> found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net280 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net279 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net278 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net277 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net276 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net275 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net274 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net273 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net272 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net271 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net270 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net269 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net264 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net263 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net262 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net261 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net291 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net289 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net287 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net292 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net290 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net288 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net285 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net283 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net281 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net286 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net284 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net282 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net267 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net265 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net268 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net266 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net229 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net227 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net225 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.17] /w Warning: "Terminal net355 found in starrc is missing in symbol" (NETLISTING-003)
+[16:37:54.65] /m Information: "Netlisting design "project_backup/top_level_tb/schematic" finished successfully." (NETLISTING-012)
+[16:37:54.71] /m Information: "Composing simulator input file for design "project_backup/top_level_tb/schematic"..."
+[16:37:55.25] /m Information: "Simulator input file composed successfully for design "project_backup/top_level_tb/schematic""
+[16:37:56.43] /m Information: "Starting PrimeSim HSPICE simulation for design: project_backup/top_level_tb/schematic"
+[16:37:58.29] /m Information: Launching Result Viewer "cd /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/S-2021.09/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -log rvcmd.log -ptype rv -k -cdesigner -parent_cc_pid 25738 -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/S-2021.09/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_ndMaRy -unique_string 76792db1901cae2d919710c87a2a86a53b3a965d3326affad62ca06c255f2b1065f989a094f7851a7fe26548fd52d801c7a6c52d5f021c10 -lic_type 3    > /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/rviewer.log 2>&1"
+[16:38:00.06] /r giWindowId 12
+[16:38:00.13] /r giWindowGeometry 100x100
+[16:38:09.80] /i gi::setActiveWindow 11
+[16:38:09.81] /i gi::setActiveWindow 11 -raise true
+[16:38:49.39] /m Information: Simulation completed successfully for design: project_backup/top_level_tb/schematic  (PW-651)
+[16:38:49.48] /m Information: "Evaluating and plotting outputs..."
+[16:38:51.79] /m Information: Launching Waveform Viewer "cd /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/S-2021.09/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/S-2021.09/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_vypYjm -unique_string 76792db1901cae2d919710c87a2a86a53b3a965d3326affad62ca06c255f2b1065f989a094f7851adc5592ee74767039a518f400f835448b -lic_type 3    > /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/viewer.log 2>&1"
+[16:38:51.79] /i gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 11]
+[16:38:58.42] /m Information: Launching Background pw_shell Server Process "cd /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project && pw_shell -log pw_shell_session0_job2 -libDefFile /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/lib.defs"
+[16:38:58.43] /i gi::collapse {jobMonitorTable} -index {0.0.1,0} -in [gi::getWindows 11]
+[16:38:58.50] /r giWindowId 13
+[16:38:58.58] /r giWindowGeometry 1024x768
+[16:38:58.96] /i db::setAttr geometry -of [gi::getFrames 2] -value 1024x738+5+81
+[16:38:59.59] /m Information: Measurement calculations completed for testbench: top_level_tb in 0s
+[16:39:08.97] /i db::setAttr geometry -of [gi::getFrames 2] -value 1075x738+5+81
+[16:39:09.77] /i db::setAttr geometry -of [gi::getFrames 2] -value 1238x738+5+81
+[16:39:15.78] /m Information: Received ready-for-commands signal from background job 'pw_shell_session0_job2' after 17 seconds.
+[16:39:21.48] /i gi::setActiveWindow 11
+[16:39:21.48] /i gi::setActiveWindow 11 -raise true
+[16:39:21.49] /i db::setAttr iconified -of [gi::getFrames 2] -value true
+[16:39:23.62] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[16:39:43.73] /i db::setAttr iconified -of [gi::getFrames 1] -value false
+[16:39:49.68] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x733+204+145
+[16:39:50.38] /i gi::setActiveWindow 7
+[16:39:50.39] /i gi::setActiveWindow 7 -raise true
+[16:41:22.51] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[16:57:35.71] /i db::setAttr iconified -of [gi::getFrames 2] -value false
+[16:57:35.73] /i gi::setActiveWindow 13
+[16:57:35.73] /i gi::setActiveWindow 13 -raise true
+[16:57:41.29] /i gi::executeAction giCloseWindow -in [gi::getWindows 13]
+[16:57:41.80] /m Information: Waveform viewer exited normally.
+[17:00:31.42] /i db::setAttr iconified -of [gi::getFrames 1] -value false
+[17:00:31.43] /i gi::setActiveWindow 7
+[17:00:31.43] /i gi::setActiveWindow 7 -raise true
+[17:00:39.05] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x735+350+81
+[17:00:41.21] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x736+350+81
+[17:00:50.27] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[17:00:53.29] /i db::setAttr iconified -of [gi::getFrames 1] -value false
+[17:00:55.73] /r giDialog gi::setActiveDialog [gi::getDialogs {giCloseFrame}]
+[17:00:56.10] /r giDialog db::setAttr geometry -of [gi::getDialogs {giCloseFrame}] -value 299x110+721+368
+[17:00:57.07] /r giDialog gi::pressButton {giCloseTabsButton} -in [gi::getDialogs {giCloseFrame}]
+[17:00:57.09] /i exit
+[17:00:57.14] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 7]]
+[17:00:57.40] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 7]] -value 419x181+651+307
+[17:00:57.76] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 7]] -value 419x181+661+332
+[17:00:58.79] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 7]]
+[17:00:59.08] /m Information: Stopped sharing "Primewave" license. (WAVEFORM-111)
+[17:01:02.65] /o Shutdown time: Thu Apr 21 17:01:02 2022
+[17:01:02.65] /o Elapsed session real time: 32.35 minutes
+[17:01:02.65] /o Session terminated. Log is at /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/logs/ccompiler.ssjoseph.2022_4_21_162836_25738.log

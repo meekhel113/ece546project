@@ -1,0 +1,377 @@
+VENDOR: Synopsys Inc.
+PROGRAM: StarRC
+PROGRAM VERSION: S-2021.06-SP3
+PROGRAM DATE: Oct 12 2021 20:30:24
+GPD VERSION: 2.11
+GPD DATE: Thu Apr 21 06:37:01 2022
+NETS: 394 (662)
+CELLS: 1180 (3014)
+PORTS: 67 (67)
+IDEAL NETS: 2 (69)
+IDEAL CELLS: 0 (0)
+IDEAL PORTS: 0 (0)
+UNCONNECTED PORTS: 0 (0)
+UNCONNECTED PINS: 0
+MIN GND CAP: 0
+GPD CONTENTS: DATAP,DATAF,STITCH_EXT,CONV_FILE
+NAME MAP COMPLETE: YES
+GPD DATA COMPLETE: YES
+HAS VIA PILLAR: NO
+RESISTANCE DETAIL NO
+RESISTANCE BOUNDING BOXNO
+INSTANCE SECTION: YES
+SCALE FACTOR: 1
+COORDINATES SCALED: NO
+RESISTOR PROPERTIES SCALED: NO
+DEVICE PROPERTIES SCALED: NO
+INSTANCE_PORT_LOCATION_CLOSER_TO_DRIVER: NO
+
+NUM_CORNERS: 1
+NUM_CAP_CORNERS: 1
+CORNER 1
+  NAME: 
+  PROCESS: /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK3/starrc/FreePDK3_RCtyp.nxtgrd
+  TEMPERATURE: 25
+  CAP_INDEX: 0
+
+
+COUPLING_ABS_THRESHOLD: 3
+COUPLING_REL_THRESHOLD: 0.03
+FILTERING_OPERATION: AND
+
+CAPACITANCE UNIT: 1
+RESISTANCE UNIT: 1
+BUS BIT DELIMITER: []
+PIN DELIMITER: :
+HIERARCHY DELIMITER: /
+NET_SHORTING_CONDUCTANCE: 100
+OPEN_IP_SHORTING_CONDUCTANCE: 10
+NETLIST NODE SECTION: YES
+NETLIST_COMPRESSION: NO
+NETLIST PRECISION: 6
+NETLIST_INPUT_DRIVERS: NO
+NETLIST_NAME_MAP: YES
+NETLIST_INCREMENTAL: NO
+LUMPED_CAP_FORMATTING: YES
+NETLIST_NODENAME_NETNAME: NO
+NETLIST_SUBNODE_SELECTION: NO
+TEMPERATURE_SENSITIVITY: NO
+NETLIST_INTEGRITY_CHECK: GPIO_VIOLATION_LOCAL_NODE_ID
+
+Layer 1
+  ID: 0
+  Layer name: SUBSTRATE
+
+Layer 2
+  ID: 1
+  Layer name: SUBSTRATENWELL
+  ITF Layer name: SUBSTRATE
+
+Layer 3
+  ID: 2
+  Layer name: SUBSTRATEPWELL
+  ITF Layer name: SUBSTRATE
+
+Layer 4
+  ID: 3
+  Layer name: SUBSTRATEVNW
+  ITF Layer name: SUBSTRATE
+
+Layer 5
+  ID: 4
+  Layer name: SUBSTRATEVPW
+  ITF Layer name: SUBSTRATE
+
+Layer 6
+  ID: 5
+  Layer name: ACTNFINS
+  ITF Layer name: ACT
+  Pic Level: 2
+  Layer Wmin: 0.021
+
+Layer 7
+  ID: 6
+  Layer name: ACTPFINS
+  ITF Layer name: ACT
+  Pic Level: 2
+  Layer Wmin: 0.021
+
+Layer 8
+  ID: 7
+  Layer name: GATEPOLY
+  ITF Layer name: GATE
+  Pic Level: 2
+  Layer Wmin: 0.015
+
+Layer 9
+  ID: 8
+  Layer name: M0A
+  ITF Layer name: M0A
+  Pic Level: 2
+  Layer Wmin: 0.015
+
+Layer 10
+  ID: 9
+  Layer name: M0B
+  ITF Layer name: M0B
+  Pic Level: 3
+  Layer Wmin: 0.011
+
+Layer 11
+  ID: 10
+  Layer name: M1
+  ITF Layer name: M1
+  Pic Level: 4
+  Layer Wmin: 0.015
+
+Layer 12
+  ID: 11
+  Layer name: M2
+  ITF Layer name: M2
+  Pic Level: 5
+  Layer Wmin: 0.015
+
+Layer 13
+  ID: 12
+  Layer name: M3
+  ITF Layer name: M3
+  Pic Level: 6
+  Layer Wmin: 0.015
+
+Layer 14
+  ID: 13
+  Layer name: M4
+  ITF Layer name: M4
+  Pic Level: 7
+  Layer Wmin: 0.024
+
+Layer 15
+  ID: 14
+  Layer name: M5
+  ITF Layer name: M5
+  Pic Level: 8
+  Layer Wmin: 0.024
+
+Layer 16
+  ID: 15
+  Layer name: M6
+  ITF Layer name: M6
+  Pic Level: 9
+  Layer Wmin: 0.024
+
+Layer 17
+  ID: 16
+  Layer name: M7
+  ITF Layer name: M7
+  Pic Level: 10
+  Layer Wmin: 0.04
+
+Layer 18
+  ID: 17
+  Layer name: M8
+  ITF Layer name: M8
+  Pic Level: 11
+  Layer Wmin: 0.04
+
+Layer 19
+  ID: 18
+  Layer name: M9
+  ITF Layer name: M9
+  Pic Level: 12
+  Layer Wmin: 0.04
+
+Layer 20
+  ID: 19
+  Layer name: M10
+  ITF Layer name: M10
+  Pic Level: 13
+  Layer Wmin: 0.08
+
+Layer 21
+  ID: 20
+  Layer name: M11
+  ITF Layer name: M11
+  Pic Level: 14
+  Layer Wmin: 0.08
+
+Layer 22
+  ID: 21
+  Layer name: M12
+  ITF Layer name: M12
+  Pic Level: 15
+  Layer Wmin: 0.16
+
+Layer 23
+  ID: 22
+  Layer name: M13
+  ITF Layer name: M13
+  Pic Level: 16
+  Layer Wmin: 0.16
+
+Layer 24
+  ID: 23
+  Layer name: RDL
+  ITF Layer name: RDL
+  Pic Level: 17
+  Layer Wmin: 1.6
+
+Layer 25
+  ID: 24
+  Layer name: BPR
+  ITF Layer name: BPR
+  Pic Level: 1
+  Layer Wmin: 0.0315
+
+Layer 26
+  ID: 25
+  Layer name: VBPR
+  ITF Layer name: VBPR
+  from ID: 24
+  to ID: 8
+  Pic Level: 1
+  Table Via Grd Level Index: 0
+
+Layer 27
+  ID: 26
+  Layer name: GCON
+  ITF Layer name: GCON
+  from ID: 7
+  to ID: 9
+  Pic Level: 2
+  Table Via Grd Level Index: 1
+
+Layer 28
+  ID: 27
+  Layer name: V0A
+  ITF Layer name: V0A
+  from ID: 8
+  to ID: 9
+  Pic Level: 2
+  Table Via Grd Level Index: 2
+
+Layer 29
+  ID: 28
+  Layer name: V0B
+  ITF Layer name: V0B
+  from ID: 9
+  to ID: 10
+  Pic Level: 3
+  Table Via Grd Level Index: 3
+
+Layer 30
+  ID: 29
+  Layer name: V1
+  ITF Layer name: V1
+  from ID: 10
+  to ID: 11
+  Pic Level: 4
+  Table Via Grd Level Index: 4
+
+Layer 31
+  ID: 30
+  Layer name: V2
+  ITF Layer name: V2
+  from ID: 11
+  to ID: 12
+  Pic Level: 5
+  Table Via Grd Level Index: 5
+
+Layer 32
+  ID: 31
+  Layer name: V3
+  ITF Layer name: V3
+  from ID: 12
+  to ID: 13
+  Pic Level: 6
+  Table Via Grd Level Index: 6
+
+Layer 33
+  ID: 32
+  Layer name: V4
+  ITF Layer name: V4
+  from ID: 13
+  to ID: 14
+  Pic Level: 7
+  Table Via Grd Level Index: 7
+
+Layer 34
+  ID: 33
+  Layer name: V5
+  ITF Layer name: V5
+  from ID: 14
+  to ID: 15
+  Pic Level: 8
+  Table Via Grd Level Index: 8
+
+Layer 35
+  ID: 34
+  Layer name: V6
+  ITF Layer name: V6
+  from ID: 15
+  to ID: 16
+  Pic Level: 9
+  Table Via Grd Level Index: 9
+
+Layer 36
+  ID: 35
+  Layer name: V7
+  ITF Layer name: V7
+  from ID: 16
+  to ID: 17
+  Pic Level: 10
+  Table Via Grd Level Index: 10
+
+Layer 37
+  ID: 36
+  Layer name: V8
+  ITF Layer name: V8
+  from ID: 17
+  to ID: 18
+  Pic Level: 11
+  Table Via Grd Level Index: 11
+
+Layer 38
+  ID: 37
+  Layer name: V9
+  ITF Layer name: V9
+  from ID: 18
+  to ID: 19
+  Pic Level: 12
+  Table Via Grd Level Index: 12
+
+Layer 39
+  ID: 38
+  Layer name: V10
+  ITF Layer name: V10
+  from ID: 19
+  to ID: 20
+  Pic Level: 13
+  Table Via Grd Level Index: 13
+
+Layer 40
+  ID: 39
+  Layer name: V11
+  ITF Layer name: V11
+  from ID: 20
+  to ID: 21
+  Pic Level: 14
+  Table Via Grd Level Index: 14
+
+Layer 41
+  ID: 40
+  Layer name: V12
+  ITF Layer name: V12
+  from ID: 21
+  to ID: 22
+  Pic Level: 15
+  Table Via Grd Level Index: 15
+
+Layer 42
+  ID: 41
+  Layer name: VRDL
+  ITF Layer name: VRDL
+  from ID: 22
+  to ID: 23
+  Pic Level: 16
+  Table Via Grd Level Index: 16
+

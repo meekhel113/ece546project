@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--Custom Compiler Version S-2021.09-->
+<file-format version="2.0" name="synopsysPrefs"/>
+<preferences>
+	<pref name="xtLPEEnableLPEJob" value="true"/>
+	<pref name="xtLPEEnableLVSJob" value="false"/>
+	<pref name="xtLPELayLCV" value="mylib/top_level/layout"/>
+	<pref name="xtLPEStarCornerFile" value="/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/top_level.starrc.lpe/corners_file"/>
+	<pref name="xtLPEStarOACellName" value="top_level"/>
+	<pref name="xtLPEStarOALibName" value="mylib"/>
+	<pref name="xtLPEStarOAPortAnnotationView" value="//"/>
+	<pref name="xtLPEStarOAPropertyAnnotationView" value="//"/>
+	<pref name="xtLPEStarOutputRunset" value="/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/top_level.starrc.lpe/starrc_cmd.custom_compiler"/>
+	<pref name="xtLPETool" value="StarRC"/>
+	<pref name="xtStarExtraction" value="C"/>
+	<pref name="xtStarICVRunsetReportFile" value="/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/top_level.icv.lvs/pex_runset_report"/>
+	<pref name="xtStarSpiceSubcktFile" value="/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/top_level.icv.lvs/top_level.icv.sp"/>
+</preferences>
+

@@ -1,0 +1,11 @@
+Parsing option_file: xtract.tech (EX-304)
+Initializing extraction ... (EX-724)
+Reading binary grd file
+/afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK3/starrc/FreePDK3_RCtyp.nxtgrd ... (EX-135)
+Extracted 55572 capacitors, 0 resistors, 14917 nodes
+Reduced to 0 nodes,  (100%)
+Reduced to 13431 capacitors: 13431 Cc and 0 Cg (75.8314%)
+  
+xTractor      Elp=00:00:04 Cpu=00:00:03 Usr=3.5    Sys=0.4    Mem=629.2 
+  
+Done          Elp=00:00:04 Cpu=00:00:03 Usr=3.5    Sys=0.4    Mem=629.2 

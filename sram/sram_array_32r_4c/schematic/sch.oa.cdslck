@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      ssjoseph
+HostName                       grendel30.ece.ncsu.edu
+ProcessIdentifier              22988
+ProcessCreationTime_UTC        1649195431
+ProcessCreationTime_Readable   Tue 05 Apr 2022 05:50:31 PM EDT EDT
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/sram/sram_array_32r_4c/schematic/sch.oa.cdslck
+TimeEditLocked                 Tue 05 Apr 2022 05:51:05 PM EDT EDT

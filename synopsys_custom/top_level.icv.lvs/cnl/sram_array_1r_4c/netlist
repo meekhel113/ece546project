@@ -1,0 +1,16 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : sram_array_1r_4c
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt sram_array_1r_4c BL<0> BL<1> BL<2> BL<3> BLb<0> BLb<1> BLb<2> BLb<3> WL
+*.PININFO BL<0>:B BL<1>:B BL<2>:B BL<3>:B BLb<0>:B BLb<1>:B BLb<2>:B BLb<3>:B
+*.PININFO WL:I
+XI3 BL<3> BLb<3> WL sram_6T
+XI2 BL<2> BLb<2> WL sram_6T
+XI1 BL<1> BLb<1> WL sram_6T
+XI0 BL<0> BLb<0> WL sram_6T
+.ends sram_array_1r_4c
+

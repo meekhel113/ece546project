@@ -1,0 +1,17 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : and
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt and A B Z
+*.PININFO A:I B:I Z:O
+MM11 net27 B net7 nmos
+MM13 Z net27 gnd! nmos
+MM12 net7 A gnd! nmos
+MM15 net27 B vdd! pmos
+MM14 net27 A vdd! pmos
+MM16 Z net27 vdd! pmos
+.ends and
+

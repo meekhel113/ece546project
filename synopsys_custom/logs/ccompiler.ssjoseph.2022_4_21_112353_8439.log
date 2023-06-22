@@ -1,0 +1,662 @@
+[11:23:59.39] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c                  Version S-2021.09 for linux64 - Aug 25, 2021 
+              /c 
+              /c                     Copyright (c) 2004 - 2021 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 6809741 compiled on Wed Aug 25 11:47:50 2021 for CentOS64 7.3
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/customcompiler/S-2021.09/linux64/platform/bin/custom_compiler
+              /c Execution time: Thu Apr 21 11:23:53 2022
+              /c Host: grendel25.ece.ncsu.edu
+              /c Working directory: /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project
+              /c 
+[11:24:13.47] /r giShowFrameTabs true
+[11:24:13.47] /r giWindowId 1
+[11:24:13.48] /r giWindowGeometry 1040x800
+[11:24:14.16] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x744+199+81
+[11:24:16.29] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[11:24:16.29] /# 
+[11:24:16.59] /i gi::addWindow [dm::openLibraryManager] -to 1
+[11:24:16.59] /r giWindowId 2
+[11:24:16.60] /r giWindowGeometry 660x600+50+75
+[11:24:18.34] /i gi::setCurrentIndex {libs} -index {mylib} -in [gi::getWindows 2]
+[11:24:18.35] /i gi::setItemSelection {libs} -index {mylib} -in [gi::getWindows 2]
+[11:24:22.91] /i gi::setCurrentIndex {cells} -index {top_level} -in [gi::getWindows 2]
+[11:24:22.92] /i gi::setItemSelection {cells} -index {top_level} -in [gi::getWindows 2]
+[11:24:25.76] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 2]
+[11:24:25.77] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 2]
+[11:24:25.93] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[11:24:25.96] /m Information: License 'Apex' checked out. (LICENSE-003)
+[11:24:26.01] /o Loading: Callback files...
+[11:24:26.01] /o Loading: scripts/callbacks/callbacks.tcl
+[11:24:26.01] /o 
+              /c [INFO] : Loading display.drf from /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[11:24:26.01] /o 
+[11:24:26.08] /o 	#######################################
+[11:24:26.08] /o 	CC-PDK Library Name	: FreePDK3
+[11:24:26.08] /o 	#######################################
+[11:24:26.08] /o 
+[11:24:26.15] /r giWindowId 3
+[11:24:26.16] /r giWindowGeometry 1224x723
+[11:24:29.00] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 3]
+[11:24:29.00] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 3]]
+[11:24:38.88] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[11:24:39.23] /i db::setAttr geometry -of [gi::getFrames 1] -value 1042x744+199+81
+[11:24:39.66] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x744+5+81
+[11:24:53.23] /# gi::executeAction {xtLVSSetup} -in [gi::getWindows 3]
+[11:24:53.23] /i xt::showLVSSetup -job lvs -window 3
+[11:24:53.97] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]] -value 838x485+637+276
+[11:24:57.92] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 3]]
+[11:24:58.10] /# xt::physicalVerification::executePve lvs 3 xtLVSExecutePve
+[11:24:58.23] /m Information: Starting 'Stream Export of OA cell 'mylib/top_level/layout''...
+[11:24:58.25] /m Information: "Starting netlisting for design "mylib/top_level/schematic"..." (NETLISTING-010)
+[11:24:58.37] /m Information: 
+[11:24:58.37] /o Checking "mylib/top_level/schematic"
+[11:24:58.37] /o No rule violations found in "mylib/top_level/schematic"
+[11:24:58.38] /o No Design Integrity rule violations found in "mylib/top_level/schematic"
+[11:24:58.40] /m Information: 
+[11:24:58.40] /o Checking "project_backup/bitline_conditioning/schematic"
+[11:24:58.40] /o No rule violations found in "project_backup/bitline_conditioning/schematic"
+[11:24:58.41] /m Information: 
+[11:24:58.41] /o Checking "project_backup/equalizer/schematic"
+[11:24:58.41] /o No rule violations found in "project_backup/equalizer/schematic"
+[11:24:58.42] /m Information: 
+[11:24:58.42] /o Checking "project_backup/buffer_array/schematic"
+[11:24:58.42] /o No rule violations found in "project_backup/buffer_array/schematic"
+[11:24:58.43] /m Information: 
+[11:24:58.43] /o Checking "project_backup/buffer/schematic"
+[11:24:58.43] /o No rule violations found in "project_backup/buffer/schematic"
+[11:24:58.44] /m Information: 
+[11:24:58.44] /o Checking "project_backup/inverter/schematic"
+[11:24:58.44] /o No rule violations found in "project_backup/inverter/schematic"
+[11:24:58.47] /m Information: 
+[11:24:58.47] /o Checking "project_backup/row_decoder_4_16/schematic"
+[11:24:58.47] /o No rule violations found in "project_backup/row_decoder_4_16/schematic"
+[11:24:58.48] /m Information: 
+[11:24:58.48] /o Checking "project_backup/inverter_row_decoder/schematic"
+[11:24:58.48] /o No rule violations found in "project_backup/inverter_row_decoder/schematic"
+[11:24:58.52] /m Information: 
+[11:24:58.52] /o Checking "project_backup/sram_array_16r_8c/schematic"
+[11:24:58.52] /o No rule violations found in "project_backup/sram_array_16r_8c/schematic"
+[11:24:58.53] /m Information: 
+[11:24:58.53] /o Checking "project_backup/sram_array_1r_4c/schematic"
+[11:24:58.53] /o No rule violations found in "project_backup/sram_array_1r_4c/schematic"
+[11:24:58.54] /m Information: 
+[11:24:58.54] /o Checking "project_backup/sram_6T/schematic"
+[11:24:58.54] /o No rule violations found in "project_backup/sram_6T/schematic"
+[11:24:58.56] /m Information: 
+[11:24:58.56] /o Checking "project_backup/column_decoder_write/schematic"
+[11:24:58.56] /o No rule violations found in "project_backup/column_decoder_write/schematic"
+[11:24:58.57] /m Information: 
+[11:24:58.57] /o Checking "project_backup/write_buffer_cell/schematic"
+[11:24:58.57] /o No rule violations found in "project_backup/write_buffer_cell/schematic"
+[11:24:58.57] /m Information: 
+[11:24:58.57] /o Checking "project_backup/and/schematic"
+[11:24:58.57] /o No rule violations found in "project_backup/and/schematic"
+[11:24:58.58] /m Information: 
+[11:24:58.58] /o Checking "project_backup/column_decoder_write_cell/schematic"
+[11:24:58.58] /o No rule violations found in "project_backup/column_decoder_write_cell/schematic"
+[11:24:58.59] /m Information: 
+[11:24:58.59] /o Checking "project_backup/column_decoder_read/schematic"
+[11:24:58.59] /o No rule violations found in "project_backup/column_decoder_read/schematic"
+[11:24:58.60] /m Information: 
+[11:24:58.60] /o Checking "project_backup/column_decoder_read_cell/schematic"
+[11:24:58.60] /o No rule violations found in "project_backup/column_decoder_read_cell/schematic"
+[11:24:59.21] /m Information: "Netlisting design "mylib/top_level/schematic" finished successfully." (NETLISTING-012)
+[11:25:00.80] /m Information: "PVE Stream Export finished successfully with 0 error, 52 warnings." (DATA_IO_COMMANDS-002)
+[11:25:00.90] /m Information: Stream Export of OA cell 'mylib/top_level/layout' finished.
+[11:25:01.28] /r giWindowId 4
+[11:25:01.30] /r giWindowGeometry 800x600
+[11:25:11.46] /m Information: 
+              /c =============================
+              /c JobID: icv_lvs_76
+              /c --- ERROR SUMMARY -----------
+              /c LVS Device Extraction Error Summary
+              /c 2 total rules were run.
+              /c 0 rules NOT EXECUTED.
+              /c 0 rules have violations.
+              /c There are 0 total violations.
+              /c Refer to top_level.LAYOUT_ERRORS
+              /c =============================
+              /c 
+[11:25:11.57] /m Information: IC Validator VUE Server initialized successfully at port 9189.
+[11:25:13.28] /r giWindowId 5
+[11:25:13.30] /r giWindowGeometry 1224x723
+[11:25:23.11] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[11:25:26.53] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[11:25:26.53] /i db::setAttr iconified -of [gi::getFrames 1] -value false
+[11:25:28.84] /i gi::setActiveWindow 3
+[11:25:28.84] /i gi::setActiveWindow 3 -raise true
+[11:25:32.66] /# gi::executeAction {xtDRCSetup} -in [gi::getWindows 3]
+[11:25:32.66] /i xt::showDRCSetup -job drc -window 3
+[11:25:33.26] /i db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]] -value 676x512+637+280
+[11:25:37.43] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]]
+[11:25:37.55] /# xt::physicalVerification::executePve drc 3 xtDRCExecutePve
+[11:25:37.64] /m Information: Starting 'Stream Export of OA cell 'mylib/top_level/layout''...
+[11:25:39.97] /m Information: "PVE Stream Export finished successfully with 0 error, 52 warnings." (DATA_IO_COMMANDS-002)
+[11:25:40.07] /m Information: Stream Export of OA cell 'mylib/top_level/layout' finished.
+[11:25:40.46] /r giWindowId 6
+[11:25:40.49] /r giWindowGeometry 800x600
+[11:25:51.16] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_126
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[11:25:56.46] /m Information: Connection closed with 'IC Validator VUE' running on 'grendel25.ece.ncsu.edu'.
+[11:25:58.43] /i gi::setActiveWindow 5
+[11:25:58.43] /i gi::setActiveWindow 5 -raise true
+[11:26:05.17] /i gi::executeAction giCloseWindow -in [gi::getWindows 5]
+[11:26:06.96] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[11:26:08.61] /i gi::executeAction giCloseWindow -in [gi::getWindows 6]
+[11:26:10.45] /# gi::executeAction {deFitView} -in [gi::getWindows 3]
+[11:26:10.45] /i de::fit -window 3 -fitView true
+[11:27:14.78] /i gi::setActiveWindow 2
+[11:27:14.78] /i gi::setActiveWindow 2 -raise true
+[11:28:16.54] /i gi::setCurrentIndex {cells} -index {top_level_tb} -in [gi::getWindows 2]
+[11:28:16.55] /i gi::setItemSelection {cells} -index {top_level_tb} -in [gi::getWindows 2]
+[11:28:20.80] /i gi::setCurrentIndex {views} -index {top_level_tb} -in [gi::getWindows 2]
+[11:28:20.80] /i gi::setItemSelection {views} -index {top_level_tb} -in [gi::getWindows 2]
+[11:28:20.94] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[11:28:35.73] /m Information: Started sharing "Primewave" license. (WAVEFORM-110)
+[11:28:35.97] /r giWindowId 7
+[11:28:35.99] /r giWindowGeometry 600x500
+[11:28:36.72] /m Information: Launching Background pw_shell Server Process "cd /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project && pw_shell -log pw_shell_session0_job1 -libDefFile /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/lib.defs"
+[11:28:54.66] /m Information: Received ready-for-commands signal from background job 'pw_shell_session0_job1' after 18 seconds.
+[11:29:02.06] /i gi::executeAction {menuPreShow} -in [gi::getWindows 7]
+[11:29:02.06] /r giMenuAccess db::getNext [gi::getMenus saVariablesMenu -from [gi::getWindows 7]]
+[11:29:03.59] /i gi::executeAction {menuPreShow} -in [gi::getWindows 7]
+[11:29:03.59] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 7]]
+[11:29:05.56] /# gi::executeAction {saEditIncludeFiles} -in [gi::getWindows 7]
+[11:29:05.56] /i sa::showIncludeFiles -parent 7
+[11:29:05.58] /i gi::setActiveDialog [gi::getDialogs {saIncludeFilesSetup} -parent [gi::getWindows 7]]
+[11:29:05.58] /i gi::setCurrentIndex {includeFilesTable} -index {0,0} -in [gi::getDialogs {saIncludeFilesSetup} -parent [gi::getWindows 7]]
+[11:29:05.86] /i db::setAttr geometry -of [gi::getDialogs {saIncludeFilesSetup} -parent [gi::getWindows 7]] -value 760x330+330+236
+[11:29:11.30] /i gi::setCurrentIndex {includeFilesTable} -index {0,2} -in [gi::getDialogs {saIncludeFilesSetup} -parent [gi::getWindows 7]]
+[11:29:11.30] /i gi::setItemSelection {includeFilesTable} -index {0,2} -in [gi::getDialogs {saIncludeFilesSetup} -parent [gi::getWindows 7]]
+[11:29:30.93] /r giFileDialog accept invec_local.dat
+[11:29:30.93] /i gi::setField {includeFilesTable} -index {0,2} -value {/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/invec_local.dat} -in [gi::getDialogs {saIncludeFilesSetup} -parent [gi::getWindows 7]]
+[11:29:30.93] /i gi::setField {includeFilesTable} -index {0,2} -value {/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/invec_local.dat} -in [gi::getDialogs {saIncludeFilesSetup} -parent [gi::getWindows 7]]
+[11:29:33.79] /i gi::setCurrentIndex {includeFilesTable} -index {1,2} -in [gi::getDialogs {saIncludeFilesSetup} -parent [gi::getWindows 7]]
+[11:29:33.79] /i gi::setItemSelection {includeFilesTable} -index {1,2} -in [gi::getDialogs {saIncludeFilesSetup} -parent [gi::getWindows 7]]
+[11:29:36.91] /r giFileDialog accept outvec_local.dat
+[11:29:36.91] /i gi::setField {includeFilesTable} -index {1,2} -value {/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/outvec_local.dat} -in [gi::getDialogs {saIncludeFilesSetup} -parent [gi::getWindows 7]]
+[11:29:36.91] /i gi::setField {includeFilesTable} -index {1,2} -value {/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/outvec_local.dat} -in [gi::getDialogs {saIncludeFilesSetup} -parent [gi::getWindows 7]]
+[11:29:38.32] /i gi::setItemSelection {includeFilesTable} -index {} -in [gi::getDialogs {saIncludeFilesSetup} -parent [gi::getWindows 7]]
+[11:29:42.86] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x867+5+28
+[11:29:43.51] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[11:30:16.19] /i gi::pressButton {ok} -in [gi::getDialogs {saIncludeFilesSetup} -parent [gi::getWindows 7]]
+[11:30:19.24] /i gi::executeAction {menuPreShow} -in [gi::getWindows 7]
+[11:30:19.24] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 7]]
+[11:30:21.46] /# gi::executeAction {saEditIncludeFiles} -in [gi::getWindows 7]
+[11:30:21.46] /i sa::showIncludeFiles -parent 7
+[11:30:21.47] /i gi::setActiveDialog [gi::getDialogs {saIncludeFilesSetup} -parent [gi::getWindows 7]]
+[11:30:24.28] /i gi::pressButton {ok} -in [gi::getDialogs {saIncludeFilesSetup} -parent [gi::getWindows 7]]
+[11:30:26.30] /i gi::executeAction {menuPreShow} -in [gi::getWindows 7]
+[11:30:26.30] /r giMenuAccess db::getNext [gi::getMenus saVariablesMenu -from [gi::getWindows 7]]
+[11:30:26.89] /i gi::executeAction {menuPreShow} -in [gi::getWindows 7]
+[11:30:26.89] /r giMenuAccess db::getNext [gi::getMenus saConsoleSetupMenu -from [gi::getWindows 7]]
+[11:30:54.75] /# gi::executeAction {saShowEnvironmentOptions} -in [gi::getWindows 7]
+[11:30:54.75] /i sa::showEnvironmentOptions -parent 7
+[11:30:54.79] /i gi::setActiveDialog [gi::getDialogs {saEnvOptionsDialog} -parent [gi::getWindows 7]]
+[11:30:55.08] /i db::setAttr geometry -of [gi::getDialogs {saEnvOptionsDialog} -parent [gi::getWindows 7]] -value 445x473+603+341
+[11:31:02.16] /i gi::pressButton {/ok} -in [gi::getDialogs {saEnvOptionsDialog} -parent [gi::getWindows 7]]
+[11:31:09.66] /m Information: Connection closed with 'IC Validator VUE' running on 'grendel25.ece.ncsu.edu'.
+[11:31:59.66] /i gi::setCurrentIndex {variablesTable} -index {1,1} -in [gi::getWindows 7]
+[11:31:59.66] /i gi::setItemSelection {variablesTable} -index {1,1} -in [gi::getWindows 7]
+[11:32:07.98] /i gi::setField {variablesTable} -index {1,1} -value {0.21n} -in [gi::getWindows 7]
+[11:32:07.99] /i gi::executeAction {menuPreShow} -in [gi::getWindows 7]
+[11:32:07.99] /r giMenuAccess db::getNext [gi::getMenus saConsoleSimMenu -from [gi::getWindows 7]]
+[11:32:09.45] /# gi::executeAction {saNetlistAndRun} -in [gi::getWindows 7]
+[11:32:09.45] /i isa::netlistAndRun -testbench [sa::findActiveTestbench -window 7] -mode [sa::_utils::findRunMode 7]
+[11:32:09.92] /r giWindowId 8
+[11:32:09.95] /r giWindowGeometry 800x600
+[11:32:10.13] /m Information: "Starting incremental netlisting for design "project_backup/top_level_tb/schematic"..." (NETLISTING-010)
+[11:32:10.31] /m Information: 
+[11:32:10.31] /o Checking "project_backup/top_level_tb/schematic"
+[11:32:10.31] /o No rule violations found in "project_backup/top_level_tb/schematic"
+[11:32:10.31] /o No Design Integrity rule violations found in "project_backup/top_level_tb/schematic"
+[11:32:10.33] /m Information: 
+[11:32:10.33] /o Checking "project_backup/inputbuf/schematic"
+[11:32:10.33] /o No rule violations found in "project_backup/inputbuf/schematic"
+[11:32:10.35] /m Information: 
+              /c Cross view checking for project_backup/top_level/symbol with project_backup/top_level/starrc
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BL<4> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BL<3> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BL<2> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BLb<0> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BL<5> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BL<1> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BL<0> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BLb<7> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BL<7> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BLb<6> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BL<6> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BLb<5> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BLb<4> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BLb<3> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BLb<2> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal BLb<1> found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net280 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net279 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net278 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net277 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net276 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net275 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net274 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net273 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net272 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net271 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net270 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net269 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net264 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net263 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net262 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net261 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net291 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net289 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net287 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net292 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net290 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net288 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net285 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net283 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net281 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net286 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net284 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net282 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net267 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net265 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net268 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net266 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net229 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net227 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net225 found in starrc is missing in symbol
+              /c 	[warning] Missing Terminal
+              /c 		Terminal net355 found in starrc is missing in symbol (DE_EDIT-007)
+[11:32:10.35] /w Warning: "Terminal BL<4> found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal BL<3> found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal BL<2> found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal BLb<0> found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal BL<5> found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal BL<1> found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal BL<0> found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal BLb<7> found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal BL<7> found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal BLb<6> found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal BL<6> found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal BLb<5> found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal BLb<4> found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal BLb<3> found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal BLb<2> found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal BLb<1> found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net280 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net279 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net278 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net277 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net276 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net275 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net274 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net273 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net272 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net271 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net270 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net269 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net264 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net263 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net262 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net261 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net291 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net289 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net287 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net292 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net290 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net288 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net285 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net283 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net281 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net286 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net284 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net282 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net267 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.35] /w Warning: "Terminal net265 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.36] /w Warning: "Terminal net268 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.36] /w Warning: "Terminal net266 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.36] /w Warning: "Terminal net229 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.36] /w Warning: "Terminal net227 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.36] /w Warning: "Terminal net225 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.36] /w Warning: "Terminal net355 found in starrc is missing in symbol" (NETLISTING-003)
+[11:32:10.46] /m Information: "project_backup inputbuf schematic" renetlisted. (NETLISTING-056)
+[11:32:14.66] /m Information: "project_backup top_level starrc" renetlisted. (NETLISTING-056)
+[11:32:14.78] /m Information: "project_backup top_level_tb schematic" renetlisted. (NETLISTING-056)
+[11:32:15.04] /m Information: "Netlisting design "project_backup/top_level_tb/schematic" finished successfully." (NETLISTING-012)
+[11:32:15.08] /m Information: "Composing simulator input file for design "project_backup/top_level_tb/schematic"..."
+[11:32:15.64] /m Information: "Simulator input file composed successfully for design "project_backup/top_level_tb/schematic""
+[11:32:16.52] /m Information: "Starting PrimeSim HSPICE simulation for design: project_backup/top_level_tb/schematic"
+[11:32:18.09] /m Information: Launching Result Viewer "cd /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/S-2021.09/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -log rvcmd.log -ptype rv -k -cdesigner -parent_cc_pid 8439 -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/S-2021.09/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_NhhoxD -unique_string 411dab44b4bf4f63017ce6bfc166f0fec1cb7792ad94754249cf01be711ef247eb2070ad53df9c905d4816befaa78c0e6a11b438fe12765b -lic_type 3    > /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/rviewer.log 2>&1"
+[11:32:20.13] /r giWindowId 9
+[11:32:20.16] /r giWindowGeometry 100x100
+[11:32:27.70] /i gi::setActiveWindow 8
+[11:32:27.70] /i gi::setActiveWindow 8 -raise true
+[11:33:09.07] /m Information: Simulation completed successfully for design: project_backup/top_level_tb/schematic  (PW-651)
+[11:33:09.16] /m Information: "Evaluating and plotting outputs..."
+[11:33:11.32] /m Information: Launching Waveform Viewer "cd /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom &&  /mnt/apps/public/COE/synopsys_apps/primewave/S-2021.09/bin/../auxx/auxx_for_cc/../../linux64/swv/bin/swv  -bg_gui -k -cdesigner -ptype wv -spxkey /mnt/apps/public/COE/synopsys_apps/primewave/S-2021.09/auxx/auxx_for_cc/waveform/sae.spxkey -spxrc /tmp/tmp_sae_spxrc_uLGFp6 -unique_string 411dab44b4bf4f63017ce6bfc166f0fec1cb7792ad94754249cf01be711ef247eb2070ad53df9c906d79155e3f3088a77facb76a30e4504b -lic_type 3    > /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/viewer.log 2>&1"
+[11:33:11.32] /i gi::collapse {jobMonitorTable} -index {0.0,0} -in [gi::getWindows 8]
+[11:33:15.84] /m Information: Launching Background pw_shell Server Process "cd /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project && pw_shell -log pw_shell_session0_job2 -libDefFile /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/lib.defs"
+[11:33:15.84] /i gi::collapse {jobMonitorTable} -index {0.0.1,0} -in [gi::getWindows 8]
+[11:33:15.91] /r giWindowId 10
+[11:33:15.94] /r giWindowGeometry 1024x768
+[11:33:16.42] /i db::setAttr geometry -of [gi::getFrames 2] -value 1430x867+5+28
+[11:33:16.97] /m Information: Measurement calculations completed for testbench: top_level_tb in 0s
+[11:33:33.26] /m Information: Received ready-for-commands signal from background job 'pw_shell_session0_job2' after 18 seconds.
+[11:33:48.90] /i gi::setActiveWindow 8
+[11:33:48.90] /i gi::setActiveWindow 8 -raise true
+[11:34:38.20] /i gi::setActiveWindow 10
+[11:34:38.20] /i gi::setActiveWindow 10 -raise true
+[11:34:49.88] /i gi::setActiveWindow 8
+[11:34:49.88] /i gi::setActiveWindow 8 -raise true
+[11:34:51.76] /i gi::setActiveWindow 10
+[11:34:51.76] /i gi::setActiveWindow 10 -raise true
+[11:35:23.77] /i gi::setActiveWindow 8
+[11:35:23.77] /i gi::setActiveWindow 8 -raise true
+[11:36:41.66] /i gi::setActiveWindow 10
+[11:36:41.66] /i gi::setActiveWindow 10 -raise true
+[11:40:10.90] /i gi::setActiveWindow 8
+[11:40:10.90] /i gi::setActiveWindow 8 -raise true
+[11:40:13.29] /i gi::setActiveWindow 3
+[11:40:13.29] /i gi::setActiveWindow 3 -raise true
+[11:40:14.79] /# gi::executeAction {deFitView} -in [gi::getWindows 3]
+[11:40:14.80] /i de::fit -window 3 -fitView true
+[11:40:34.13] /i gi::setActiveWindow 10
+[11:40:34.13] /i gi::setActiveWindow 10 -raise true
+[11:40:42.35] /i gi::executeAction giCloseWindow -in [gi::getWindows 10]
+[11:40:42.80] /i gi::setActiveWindow 3
+[11:40:42.80] /i gi::setActiveWindow 3 -raise true
+[11:40:43.07] /m Information: Waveform viewer exited normally.
+[11:41:04.76] /# gi::executeAction {xtDRCSetup} -in [gi::getWindows 3]
+[11:41:04.76] /i xt::showDRCSetup -job drc -window 3
+[11:41:05.46] /i db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]] -value 676x512+637+280
+[11:41:08.45] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 3]]
+[11:41:08.54] /# xt::physicalVerification::executePve drc 3 xtDRCExecutePve
+[11:41:08.90] /m Information: Starting 'Stream Export of OA cell 'mylib/top_level/layout''...
+[11:41:11.53] /m Information: "PVE Stream Export finished successfully with 0 error, 52 warnings." (DATA_IO_COMMANDS-002)
+[11:41:11.63] /m Information: Stream Export of OA cell 'mylib/top_level/layout' finished.
+[11:41:12.08] /r giWindowId 11
+[11:41:12.11] /r giWindowGeometry 800x600
+[11:41:23.06] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_127
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[11:43:09.26] /m Information: Connection closed with 'IC Validator VUE' running on 'grendel25.ece.ncsu.edu'.
+[11:43:17.08] /i gi::executeAction giCloseWindow -in [gi::getWindows 11]
+[11:43:21.97] /i gi::setActiveWindow 9
+[11:43:21.97] /i gi::setActiveWindow 9 -raise true
+[11:43:32.54] /i gi::setActiveWindow 3
+[11:43:32.54] /i gi::setActiveWindow 3 -raise true
+[11:43:44.67] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 3]
+[11:43:44.67] /i de::zoom -window [gi::getWindows 3] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {1.842 -0.1265}
+[11:43:44.74] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 3]
+[11:43:44.74] /i de::zoom -window [gi::getWindows 3] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {1.842 -0.1265}
+[11:43:50.71] /# gi::setItemSelection {sets} -index {Design} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:43:50.71] /# gi::setCurrentIndex {sets} -index {Design} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:43:50.71] /# gi::executeAction {leOLPApplySet} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:43:50.71] /i db::setPrefValue leLPPSet -value "{Design}" -scope [de::getContexts -window 3]
+[11:43:50.72] /# gi::setItemSelection {sets} -index {Design} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:43:50.72] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:43:50.72] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:43:50.72] /o oa:0x2bcb2840
+[11:43:56.30] /i db::setAttr visible -of [de::getLPPs -from [de::getContexts -window 3]] -value false
+[11:43:56.32] /i gi::setField {allVisible} -value {false} -in [db::getAttr toolbar -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]]
+[11:44:04.62] /# gi::setItemSelection {lpps} -index {NIM drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:44:04.62] /# gi::setCurrentIndex {lpps} -index {NIM drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:44:04.79] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:44:04.79] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="NIM drawing"}]
+[11:44:06.10] /# gi::setItemSelection {lpps} -index {PIM drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:44:06.10] /# gi::setCurrentIndex {lpps} -index {PIM drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:44:06.19] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:44:06.19] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="PIM drawing"}]
+[11:44:10.63] /i de::createOLPPreset {Preset 1} -id 1 -from [ed]
+[11:44:10.63] /o oa:0x39fd6960
+[11:44:29.37] /i db::setAttr visible -of [de::getLPPs -from [de::getContexts -window 3]] -value false
+[11:44:29.39] /i gi::setField {allVisible} -value {false} -in [db::getAttr toolbar -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]]
+[11:45:06.50] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:45:06.50] /# gi::setCurrentIndex {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:45:07.41] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:45:07.41] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="BPR drawing"}]
+[11:45:16.93] /# gi::setItemSelection {lpps} -index {VBPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:45:16.93] /# gi::setCurrentIndex {lpps} -index {VBPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:45:18.13] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:45:18.13] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="VBPR drawing"}]
+[11:45:22.71] /# gi::setItemSelection {lpps} -index {GATE drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:45:22.71] /# gi::setCurrentIndex {lpps} -index {GATE drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:45:23.50] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:45:23.50] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="GATE drawing"}]
+[11:45:24.70] /# gi::setItemSelection {lpps} -index {GCUT drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:45:24.70] /# gi::setCurrentIndex {lpps} -index {GCUT drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:45:24.70] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:45:24.70] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="GCUT drawing"}]
+[11:45:25.97] /# gi::setItemSelection {lpps} -index {DUMMY drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:45:25.97] /# gi::setCurrentIndex {lpps} -index {DUMMY drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:45:25.99] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:45:25.99] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="DUMMY drawing"}]
+[11:45:33.69] /# gi::setItemSelection {lpps} -index {M0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:45:33.69] /# gi::setCurrentIndex {lpps} -index {M0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:45:33.69] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:45:33.69] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="M0A drawing"}]
+[11:46:24.54] /# gi::setItemSelection {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:46:24.54] /# gi::setCurrentIndex {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:46:24.54] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:46:24.54] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="V0A drawing"}]
+[11:46:25.41] /# gi::setItemSelection {lpps} -index {GCON drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:46:25.41] /# gi::setCurrentIndex {lpps} -index {GCON drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:46:25.41] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:46:25.41] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="GCON drawing"}]
+[11:46:28.25] /# gi::setItemSelection {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:46:28.25] /# gi::setCurrentIndex {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:46:28.25] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:46:28.25] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="M0B drawing"}]
+[11:47:42.41] /i de::createOLPPreset {Preset 2} -id 2 -from [ed]
+[11:47:42.41] /o oa:0x2d36f310
+[11:47:48.15] /i db::setAttr visible -of [de::getLPPs -from [de::getContexts -window 3]] -value false
+[11:47:48.16] /i gi::setField {allVisible} -value {false} -in [db::getAttr toolbar -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]]
+[11:47:50.00] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:47:50.00] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="M0B drawing"}]
+[11:47:50.99] /# gi::setItemSelection {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:47:50.99] /# gi::setCurrentIndex {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:47:50.99] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:47:50.99] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="V0A drawing"}]
+[11:47:51.67] /# gi::setItemSelection {lpps} -index {GCON drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:47:51.67] /# gi::setCurrentIndex {lpps} -index {GCON drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:47:51.69] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:47:51.69] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="GCON drawing"}]
+[11:47:52.54] /# gi::setItemSelection {lpps} -index {V0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:47:52.54] /# gi::setCurrentIndex {lpps} -index {V0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:47:52.54] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:47:52.54] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="V0B drawing"}]
+[11:47:53.36] /# gi::setItemSelection {lpps} -index {M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:47:53.36] /# gi::setCurrentIndex {lpps} -index {M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:47:53.37] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:47:53.37] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="M1 drawing"}]
+[11:47:55.42] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:47:55.42] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="M1 drawing"}]
+[11:47:57.12] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:47:57.12] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="M1 drawing"}]
+[11:48:00.18] /# gi::setItemSelection {lpps} -index {V1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:00.18] /# gi::setCurrentIndex {lpps} -index {V1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:00.19] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:00.19] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="V1 drawing"}]
+[11:48:09.86] /i db::setAttr visible -of [de::getLPPs -from [de::getContexts -window 3]] -value false
+[11:48:09.87] /i gi::setField {allVisible} -value {false} -in [db::getAttr toolbar -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]]
+[11:48:11.64] /# gi::setItemSelection {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:11.64] /# gi::setCurrentIndex {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:11.65] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:11.65] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="V0A drawing"}]
+[11:48:16.36] /# gi::setItemSelection {lpps} -index {GCON drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:16.36] /# gi::setCurrentIndex {lpps} -index {GCON drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:17.70] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:17.70] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="GCON drawing"}]
+[11:48:18.90] /# gi::setItemSelection {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:18.90] /# gi::setCurrentIndex {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:18.90] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:18.90] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="M0B drawing"}]
+[11:48:20.45] /# gi::setItemSelection {lpps} -index {V0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:20.45] /# gi::setCurrentIndex {lpps} -index {V0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:20.45] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:20.45] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="V0B drawing"}]
+[11:48:21.50] /# gi::setItemSelection {lpps} -index {M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:21.50] /# gi::setCurrentIndex {lpps} -index {M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:21.52] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:21.52] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="M1 drawing"}]
+[11:48:25.71] /i de::createOLPPreset {Preset 3} -id 3 -from [ed]
+[11:48:25.71] /o oa:0x3a633ac0
+[11:48:29.45] /i db::setAttr visible -of [de::getLPPs -from [de::getContexts -window 3]] -value false
+[11:48:29.46] /i gi::setField {allVisible} -value {false} -in [db::getAttr toolbar -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]]
+[11:48:31.10] /# gi::setItemSelection {lpps} -index {V1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:31.10] /# gi::setCurrentIndex {lpps} -index {V1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:31.10] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:31.10] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="V1 drawing"}]
+[11:48:32.15] /# gi::setItemSelection {lpps} -index {M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:32.15] /# gi::setCurrentIndex {lpps} -index {M1 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:32.15] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:32.15] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="M1 drawing"}]
+[11:48:33.06] /# gi::setItemSelection {lpps} -index {M2 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:33.06] /# gi::setCurrentIndex {lpps} -index {M2 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:33.06] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:33.06] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="M2 drawing"}]
+[11:48:34.02] /# gi::setItemSelection {lpps} -index {V2 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:34.02] /# gi::setCurrentIndex {lpps} -index {V2 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:34.04] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:34.04] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="V2 drawing"}]
+[11:48:36.01] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:36.02] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="V2 drawing"}]
+[11:48:39.13] /# gi::setItemSelection {lpps} -index {M3 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:39.13] /# gi::setCurrentIndex {lpps} -index {M3 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:39.13] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:39.13] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="M3 drawing"}]
+[11:48:42.79] /i de::createOLPPreset {Preset 4} -id 4 -from [ed]
+[11:48:42.79] /o oa:0x2bcc0cf0
+[11:48:48.82] /# gi::setItemSelection {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:48.82] /# gi::setCurrentIndex {lpps} -index {M0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:48.83] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:48.83] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="M0B drawing"}]
+[11:48:52.84] /# gi::setItemSelection {lpps} -index {V0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:52.84] /# gi::setCurrentIndex {lpps} -index {V0B drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:52.84] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:52.84] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="V0B drawing"}]
+[11:48:54.20] /# gi::setItemSelection {lpps} -index {V3 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:54.20] /# gi::setCurrentIndex {lpps} -index {V3 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:54.20] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:54.20] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="V3 drawing"}]
+[11:48:55.16] /# gi::setItemSelection {lpps} -index {M4 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:55.16] /# gi::setCurrentIndex {lpps} -index {M4 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:55.16] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:55.16] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="M4 drawing"}]
+[11:48:56.61] /# gi::setItemSelection {lpps} -index {V4 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:56.61] /# gi::setCurrentIndex {lpps} -index {V4 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:56.61] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:48:56.61] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="V4 drawing"}]
+[11:49:03.06] /# gi::setItemSelection {lpps} -index {M5 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:49:03.06] /# gi::setCurrentIndex {lpps} -index {M5 drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:49:03.07] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:49:03.07] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="M5 drawing"}]
+[11:50:11.38] /# gi::executeAction {deFitView} -in [gi::getWindows 3]
+[11:50:11.38] /i de::fit -window 3 -fitView true
+[11:51:38.21] /# gi::setItemSelection {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:51:38.21] /# gi::setCurrentIndex {lpps} -index {V0A drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:51:38.22] /# gi::executeAction {leOLPSetActiveLPP} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:51:38.22] /i de::setActiveLPP [de::getLPPs -from [oa::DesignFind mylib top_level layout] -filter {%lpp =="V0A drawing"}]
+[11:51:41.71] /i de::createOLPPreset {Preset 5} -id 5 -from [ed]
+[11:51:41.71] /o oa:0x3a5c3dc0
+[11:52:20.53] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[11:52:22.32] /i gi::executeAction giCloseWindow -in [gi::getWindows 9]
+[11:52:24.72] /i gi::executeAction giCloseWindow -in [gi::getWindows 8]
+[12:00:06.07] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x744+5+81
+[12:00:18.95] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[12:00:27.71] /i gi::executeAction giCloseWindow -in [gi::getWindows 7]
+[12:00:27.76] /r giDialog gi::setActiveDialog [gi::getDialogs {giPrompt} -parent [gi::getWindows 7]]
+[12:00:28.16] /r giDialog db::setAttr geometry -of [gi::getDialogs {giPrompt} -parent [gi::getWindows 7]] -value 292x82+574+385
+[12:00:30.43] /r giDialog gi::pressButton {save} -in [gi::getDialogs {giPrompt} -parent [gi::getWindows 7]]
+[12:00:30.86] /r giDialog gi::setActiveDialog [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 7]]
+[12:00:31.26] /r giDialog db::setAttr geometry -of [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 7]] -value 528x666+470+223
+[12:00:33.36] /r giDialog db::setAttr geometry -of [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 7]] -value 528x666+456+93
+[12:00:35.16] /r giDialog gi::setField {/categories/modelsCheckbox} -value {true} -in [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 7]]
+[12:00:40.16] /r giDialog gi::pressButton {/categories/checkAll} -in [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 7]]
+[12:00:41.89] /r giDialog gi::pressButton {/ok} -in [gi::getDialogs {saShowSaveState} -parent [gi::getWindows 7]]
+[12:00:43.04] /m Information: Waveform viewer exited normally.
+[12:00:47.07] /i exit
+[12:00:47.10] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]]
+[12:00:47.46] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]] -value 419x233+511+310
+[12:00:48.64] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]]
+[12:00:51.28] /o Shutdown time: Thu Apr 21 12:00:51 2022
+[12:00:51.28] /o Elapsed session real time: 36.88 minutes
+[12:00:51.28] /o Session terminated. Log is at /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/logs/ccompiler.ssjoseph.2022_4_21_112353_8439.log

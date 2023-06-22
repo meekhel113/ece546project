@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Mon Apr  4 16:58:05 2022-->
+<file-format version="1.0" name="stateData">
+ <attribute name="description" value="" type="giString"/>
+ <attribute name="design" value="sram/sram_6T_tb/schematic" type="dmCellView"/>
+ <attribute name="enabled" value="1" type="giBoolean"/>
+ <attribute name="enabledJobClass" value="0" type="giBoolean"/>
+ <attribute name="migratedSimulator" value="HSPICE" type="giString"/>
+ <attribute name="name" value="HSPICE_default" type="giString"/>
+ <attribute name="openaccessState" value="sram/sram_6T_tb/HSPICE_default" type="dmCellView"/>
+ <attribute name="simulator" value="HSPICE" type="giString"/>
+ <comment></comment>
+ <resultsDir>./simulation</resultsDir>
+ <integration version="1"/>
+</file-format>

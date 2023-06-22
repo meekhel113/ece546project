@@ -1,0 +1,54 @@
+**---------------------------------------------------------------------------**
+** NOTICE: This StarRC command file was automatically generated
+**         by: Custom Compiler S-2021.09
+**---------------------------------------------------------------------------**
+
+BLOCK: top_level
+CASE_SENSITIVE: YES
+COUPLE_TO_GROUND: NO
+COUPLING_ABS_THRESHOLD: 3e-15
+COUPLING_MULTIPLIER: 1.0
+COUPLING_REL_THRESHOLD: 0.03
+COUPLING_REPORT_NUMBER: 1000
+COUPLING_THRESHOLD_OPERATION: AND
+DENSITY_BASED_THICKNESS: YES
+DPT: NO
+EXTRACT_VIA_CAPS: NO
+EXTRACTION: C
+HIERARCHICAL_SEPARATOR: /
+ICV_RUNSET_REPORT_FILE: /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/top_level.icv.lvs/pex_runset_report
+IGNORE_CAPACITANCE: ALL
+KEEP_VIA_NODES: NO
+MAGNIFY_DEVICE_PARAMS: YES
+MODEL_TYPE: LAYOUT
+MOS_GATE_DELTA_RESISTANCE: NO
+NETLIST_CONNECT_OPENS: *
+NETLIST_COUPLE_UNSELECTED_NETS: NO
+NETLIST_FORMAT: OA
+NETLIST_GROUND_NODE_NAME: 0
+NETLIST_INSTANCE_SECTION: SELECTED
+NETLIST_MINCAP_THRESHOLD: 0.0
+NETLIST_MINRES_THRESHOLD: 0.0
+NETLIST_PARASITIC_RESISTOR_MODEL: NO
+NETLIST_TAIL_COMMENTS: NO
+NETLIST_TOTALCAP_THRESHOLD: 0.0
+OA_CELL_NAME: top_level
+OA_DEVICE_MAPPING_FILE: /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK3/starrc/oa.device.map
+OA_LAYER_MAPPING_FILE: /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK3/starrc/oa.layer.map
+OA_LIB_DEF: /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/top_level.starrc.lpe/lib.defs
+OA_LIB_NAME: mylib
+OA_MARKER_SIZE: 0.1
+OA_VIEW_NAME: starrc
+POWER_EXTRACT: NO
+REDUCTION: LAYER
+REDUCTION_MAX_DELAY_ERROR: 1e-12
+REMOVE_DANGLING_NETS: NO
+REMOVE_FLOATING_NETS: YES
+SHORT_PINS: YES
+SKIP_CELLS: !*
+STAR_DIRECTORY: star
+TCAD_GRD_FILE: /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK3/starrc/FreePDK3_RCtyp.nxtgrd
+TRANSLATE_RETAIN_BULK_LAYERS: NO
+XREF: Yes
+XREF_USE_LAYOUT_DEVICE_NAME: NO
+

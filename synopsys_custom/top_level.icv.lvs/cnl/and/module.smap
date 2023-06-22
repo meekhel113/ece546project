@@ -1,0 +1,45 @@
+<module name="vsl: project_backup and schematic vl: auCdl schematic symbol">
+<scope name="Instance">
+<forward>
+<mapping dst="MM16" src="M16"/>
+<mapping dst="MM14" src="M14"/>
+<mapping dst="MM15" src="M15"/>
+<mapping dst="MM12" src="M12"/>
+<mapping dst="MM13" src="M13"/>
+<mapping dst="MM11" src="M11"/>
+</forward>
+<reverse>
+<mapping dst="M16" src="MM16"/>
+<mapping dst="M15" src="MM15"/>
+<mapping dst="M12" src="MM12"/>
+<mapping dst="M13" src="MM13"/>
+<mapping dst="M14" src="MM14"/>
+<mapping dst="M11" src="MM11"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward/>
+<reverse/>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="A B Z" src="&lt;unmappedTermOrder>"/>
+<mapping dst="A B Z" src="&lt;termOrder>"/>
+</forward>
+<reverse>
+<mapping dst="&lt;unmappedTermOrder>" src="A B Z"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="nmos">
+<instance name="M11"/>
+<instance name="M12"/>
+<instance name="M13"/>
+</instance_header>
+<instance_header master="pmos">
+<instance name="M14"/>
+<instance name="M15"/>
+<instance name="M16"/>
+</instance_header>
+</master_instances>
+</module>

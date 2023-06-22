@@ -1,0 +1,63 @@
+<module name="vsl: mylib write_buffer_cell schematic vl: hspice hspiceD schematic spice veriloga">
+<scope name="Instance">
+<forward>
+<mapping src="I25" dst="xi25"/>
+<mapping src="I24" dst="xi24"/>
+<mapping src="I23" dst="xi23"/>
+<mapping src="M4" dst="m4"/>
+<mapping src="M5" dst="m5"/>
+</forward>
+<reverse>
+<mapping src="xi24" dst="I24"/>
+<mapping src="xi25" dst="I25"/>
+<mapping src="xi23" dst="I23"/>
+<mapping src="m4" dst="M4"/>
+<mapping src="m5" dst="M5"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward>
+<mapping src="OUTb" dst="outb"/>
+<mapping src="OUT" dst="out"/>
+<mapping src="IN" dst="in"/>
+<mapping src="EN" dst="en"/>
+</forward>
+<reverse>
+<mapping src="outb" dst="OUTb"/>
+<mapping src="out" dst="OUT"/>
+<mapping src="in" dst="IN"/>
+<mapping src="en" dst="EN"/>
+</reverse>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping src="&lt;unmappedTermOrder>" dst="EN IN OUT OUTb"/>
+<mapping src="&lt;termOrder>" dst="en in out outb"/>
+<mapping src="OUTb" dst="outb"/>
+<mapping src="OUT" dst="out"/>
+<mapping src="IN" dst="in"/>
+<mapping src="EN" dst="en"/>
+</forward>
+<reverse>
+<mapping src="EN IN OUT OUTb" dst="&lt;unmappedTermOrder>"/>
+<mapping src="outb" dst="OUTb"/>
+<mapping src="en in out outb" dst="&lt;termOrder>"/>
+<mapping src="out" dst="OUT"/>
+<mapping src="in" dst="IN"/>
+<mapping src="en" dst="EN"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="and">
+<instance name="I24"/>
+<instance name="I25"/>
+</instance_header>
+<instance_header master="inverter">
+<instance name="I23"/>
+</instance_header>
+<instance_header master="nmos">
+<instance name="M4"/>
+<instance name="M5"/>
+</instance_header>
+</master_instances>
+</module>

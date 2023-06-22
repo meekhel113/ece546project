@@ -1,0 +1,167 @@
+<module name="vsl: mylib column_decoder_array schematic vl: hspice hspiceD schematic spice veriloga">
+<scope name="Instance">
+<forward>
+<mapping dst="xi8" src="I8"/>
+<mapping dst="xi5" src="I5"/>
+<mapping dst="xi1" src="I1"/>
+<mapping dst="xi2" src="I2"/>
+<mapping dst="xi0" src="I0"/>
+<mapping dst="xi3" src="I3"/>
+<mapping dst="xi4" src="I4"/>
+<mapping dst="xi6" src="I6"/>
+<mapping dst="xi7" src="I7"/>
+</forward>
+<reverse>
+<mapping dst="I8" src="xi8"/>
+<mapping dst="I0" src="xi0"/>
+<mapping dst="I3" src="xi3"/>
+<mapping dst="I1" src="xi1"/>
+<mapping dst="I2" src="xi2"/>
+<mapping dst="I4" src="xi4"/>
+<mapping dst="I5" src="xi5"/>
+<mapping dst="I6" src="xi6"/>
+<mapping dst="I7" src="xi7"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward>
+<mapping dst="q&lt;3>" src="Q&lt;3>"/>
+<mapping dst="qb&lt;3>" src="Qb&lt;3>"/>
+<mapping dst="qb&lt;2>" src="Qb&lt;2>"/>
+<mapping dst="blb&lt;3>" src="BLb&lt;3>"/>
+<mapping dst="q&lt;0>" src="Q&lt;0>"/>
+<mapping dst="blb&lt;7>" src="BLb&lt;7>"/>
+<mapping dst="qb&lt;1>" src="Qb&lt;1>"/>
+<mapping dst="blb&lt;0>" src="BLb&lt;0>"/>
+<mapping dst="qb&lt;0>" src="Qb&lt;0>"/>
+<mapping dst="q&lt;2>" src="Q&lt;2>"/>
+<mapping dst="q&lt;1>" src="Q&lt;1>"/>
+<mapping dst="blb&lt;4>" src="BLb&lt;4>"/>
+<mapping dst="bl&lt;7>" src="BL&lt;7>"/>
+<mapping dst="blb&lt;6>" src="BLb&lt;6>"/>
+<mapping dst="bl&lt;4>" src="BL&lt;4>"/>
+<mapping dst="blb&lt;2>" src="BLb&lt;2>"/>
+<mapping dst="bl&lt;3>" src="BL&lt;3>"/>
+<mapping dst="blb&lt;1>" src="BLb&lt;1>"/>
+<mapping dst="bl&lt;1>" src="BL&lt;1>"/>
+<mapping dst="bl&lt;5>" src="BL&lt;5>"/>
+<mapping dst="blb&lt;5>" src="BLb&lt;5>"/>
+<mapping dst="bl&lt;6>" src="BL&lt;6>"/>
+<mapping dst="bl&lt;0>" src="BL&lt;0>"/>
+<mapping dst="bl&lt;2>" src="BL&lt;2>"/>
+<mapping dst="a&lt;4>" src="A&lt;4>"/>
+</forward>
+<reverse>
+<mapping dst="Q&lt;1>" src="q&lt;1>"/>
+<mapping dst="BL&lt;6>" src="bl&lt;6>"/>
+<mapping dst="Qb&lt;2>" src="qb&lt;2>"/>
+<mapping dst="Q&lt;0>" src="q&lt;0>"/>
+<mapping dst="Qb&lt;1>" src="qb&lt;1>"/>
+<mapping dst="BL&lt;1>" src="bl&lt;1>"/>
+<mapping dst="BLb&lt;2>" src="blb&lt;2>"/>
+<mapping dst="BLb&lt;7>" src="blb&lt;7>"/>
+<mapping dst="BLb&lt;5>" src="blb&lt;5>"/>
+<mapping dst="BLb&lt;6>" src="blb&lt;6>"/>
+<mapping dst="BLb&lt;3>" src="blb&lt;3>"/>
+<mapping dst="BLb&lt;0>" src="blb&lt;0>"/>
+<mapping dst="BLb&lt;1>" src="blb&lt;1>"/>
+<mapping dst="BL&lt;5>" src="bl&lt;5>"/>
+<mapping dst="BL&lt;7>" src="bl&lt;7>"/>
+<mapping dst="BL&lt;2>" src="bl&lt;2>"/>
+<mapping dst="Q&lt;2>" src="q&lt;2>"/>
+<mapping dst="BL&lt;3>" src="bl&lt;3>"/>
+<mapping dst="BL&lt;4>" src="bl&lt;4>"/>
+<mapping dst="BL&lt;0>" src="bl&lt;0>"/>
+<mapping dst="Qb&lt;3>" src="qb&lt;3>"/>
+<mapping dst="Qb&lt;0>" src="qb&lt;0>"/>
+<mapping dst="BLb&lt;4>" src="blb&lt;4>"/>
+<mapping dst="Q&lt;3>" src="q&lt;3>"/>
+<mapping dst="A&lt;4>" src="a&lt;4>"/>
+</reverse>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="a&lt;4> bl&lt;0> bl&lt;1> bl&lt;2> bl&lt;3> bl&lt;4> bl&lt;5> bl&lt;6> bl&lt;7> blb&lt;0> blb&lt;1> blb&lt;2> blb&lt;3> blb&lt;4> blb&lt;5> blb&lt;6> blb&lt;7> q&lt;0> q&lt;1> q&lt;2> q&lt;3> qb&lt;0> qb&lt;1> qb&lt;2> qb&lt;3>" src="&lt;termOrder>"/>
+<mapping dst="qb&lt;3>" src="Qb&lt;3>"/>
+<mapping dst="q&lt;3>" src="Q&lt;3>"/>
+<mapping dst="q" src="Q"/>
+<mapping dst="qb&lt;2>" src="Qb&lt;2>"/>
+<mapping dst="A&lt;4> BL&lt;0> BL&lt;1> BL&lt;2> BL&lt;3> BL&lt;4> BL&lt;5> BL&lt;6> BL&lt;7> BLb&lt;0> BLb&lt;1> BLb&lt;2> BLb&lt;3> BLb&lt;4> BLb&lt;5> BLb&lt;6> BLb&lt;7> Q&lt;0> Q&lt;1> Q&lt;2> Q&lt;3> Qb&lt;0> Qb&lt;1> Qb&lt;2> Qb&lt;3>" src="&lt;unmappedTermOrder>"/>
+<mapping dst="blb&lt;3>" src="BLb&lt;3>"/>
+<mapping dst="q&lt;0>" src="Q&lt;0>"/>
+<mapping dst="qb" src="Qb"/>
+<mapping dst="qb&lt;1>" src="Qb&lt;1>"/>
+<mapping dst="blb&lt;0>" src="BLb&lt;0>"/>
+<mapping dst="qb&lt;0>" src="Qb&lt;0>"/>
+<mapping dst="q&lt;2>" src="Q&lt;2>"/>
+<mapping dst="q&lt;1>" src="Q&lt;1>"/>
+<mapping dst="blb&lt;4>" src="BLb&lt;4>"/>
+<mapping dst="bl&lt;7>" src="BL&lt;7>"/>
+<mapping dst="blb&lt;2>" src="BLb&lt;2>"/>
+<mapping dst="blb&lt;6>" src="BLb&lt;6>"/>
+<mapping dst="bl&lt;4>" src="BL&lt;4>"/>
+<mapping dst="bl&lt;3>" src="BL&lt;3>"/>
+<mapping dst="blb" src="BLb"/>
+<mapping dst="blb&lt;1>" src="BLb&lt;1>"/>
+<mapping dst="blb&lt;5>" src="BLb&lt;5>"/>
+<mapping dst="bl&lt;1>" src="BL&lt;1>"/>
+<mapping dst="bl&lt;5>" src="BL&lt;5>"/>
+<mapping dst="bl&lt;6>" src="BL&lt;6>"/>
+<mapping dst="bl&lt;0>" src="BL&lt;0>"/>
+<mapping dst="bl&lt;2>" src="BL&lt;2>"/>
+<mapping dst="a&lt;4>" src="A&lt;4>"/>
+<mapping dst="bl" src="BL"/>
+<mapping dst="blb&lt;7>" src="BLb&lt;7>"/>
+<mapping dst="a" src="A"/>
+</forward>
+<reverse>
+<mapping dst="Q&lt;1>" src="q&lt;1>"/>
+<mapping dst="BL&lt;6>" src="bl&lt;6>"/>
+<mapping dst="Qb&lt;2>" src="qb&lt;2>"/>
+<mapping dst="Qb" src="qb"/>
+<mapping dst="Qb&lt;1>" src="qb&lt;1>"/>
+<mapping dst="Q&lt;0>" src="q&lt;0>"/>
+<mapping dst="Q" src="q"/>
+<mapping dst="BLb&lt;7>" src="blb&lt;7>"/>
+<mapping dst="BLb&lt;6>" src="blb&lt;6>"/>
+<mapping dst="&lt;termOrder>" src="a&lt;4> bl&lt;0> bl&lt;1> bl&lt;2> bl&lt;3> bl&lt;4> bl&lt;5> bl&lt;6> bl&lt;7> blb&lt;0> blb&lt;1> blb&lt;2> blb&lt;3> blb&lt;4> blb&lt;5> blb&lt;6> blb&lt;7> q&lt;0> q&lt;1> q&lt;2> q&lt;3> qb&lt;0> qb&lt;1> qb&lt;2> qb&lt;3>"/>
+<mapping dst="BLb&lt;3>" src="blb&lt;3>"/>
+<mapping dst="BLb&lt;0>" src="blb&lt;0>"/>
+<mapping dst="BLb&lt;5>" src="blb&lt;5>"/>
+<mapping dst="&lt;unmappedTermOrder>" src="A&lt;4> BL&lt;0> BL&lt;1> BL&lt;2> BL&lt;3> BL&lt;4> BL&lt;5> BL&lt;6> BL&lt;7> BLb&lt;0> BLb&lt;1> BLb&lt;2> BLb&lt;3> BLb&lt;4> BLb&lt;5> BLb&lt;6> BLb&lt;7> Q&lt;0> Q&lt;1> Q&lt;2> Q&lt;3> Qb&lt;0> Qb&lt;1> Qb&lt;2> Qb&lt;3>"/>
+<mapping dst="BLb" src="blb"/>
+<mapping dst="BLb&lt;1>" src="blb&lt;1>"/>
+<mapping dst="BL&lt;5>" src="bl&lt;5>"/>
+<mapping dst="BL&lt;2>" src="bl&lt;2>"/>
+<mapping dst="BL&lt;7>" src="bl&lt;7>"/>
+<mapping dst="BL&lt;1>" src="bl&lt;1>"/>
+<mapping dst="Q&lt;2>" src="q&lt;2>"/>
+<mapping dst="BL&lt;3>" src="bl&lt;3>"/>
+<mapping dst="BL&lt;4>" src="bl&lt;4>"/>
+<mapping dst="BL&lt;0>" src="bl&lt;0>"/>
+<mapping dst="Qb&lt;3>" src="qb&lt;3>"/>
+<mapping dst="Qb&lt;0>" src="qb&lt;0>"/>
+<mapping dst="BLb&lt;4>" src="blb&lt;4>"/>
+<mapping dst="BL" src="bl"/>
+<mapping dst="Q&lt;3>" src="q&lt;3>"/>
+<mapping dst="A&lt;4>" src="a&lt;4>"/>
+<mapping dst="A" src="a"/>
+<mapping dst="BLb&lt;2>" src="blb&lt;2>"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="column_decoder_2to1">
+<instance name="I0"/>
+<instance name="I1"/>
+<instance name="I2"/>
+<instance name="I3"/>
+<instance name="I4"/>
+<instance name="I5"/>
+<instance name="I6"/>
+<instance name="I7"/>
+</instance_header>
+<instance_header master="inverter">
+<instance name="I8"/>
+</instance_header>
+</master_instances>
+</module>

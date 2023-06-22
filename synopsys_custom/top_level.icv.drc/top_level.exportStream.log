@@ -1,0 +1,236 @@
+*****************************************************************************
+Tool:		exportStream        S-2021.09
+*****************************************************************************
+Running: exportStream -logFile /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/top_level.icv.drc/top_level.exportStream.log -lib mylib -libDefFile /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/lib.defs -cell "top_level" -hierDepth 256 -view "layout" -referenceMap /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/top_level.icv.drc/top_level.custom_compiler.xml -keepPcells -keepVias -keepAbuts -useTechLayerMap -useTechObjectMap -textHeight matchOABBox -gds /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/top_level.icv.drc/top_level.custom_compiler.gds -colorMapping honor
+Started: Thu Apr 21 16:33:35 2022 (Hostname: grendel28.ece.ncsu.edu)
+Reading layer map /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK3/syncust/NCSU_TechLib_FreePDK3/NCSU_TechLib_FreePDK3.layermap
+
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/nmos/layout as "nmos".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/GATE_M0B/layout as "GATE_M0B".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/BPR_M0A/layout as "BPR_M0A".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/M0A_M0B/layout as "M0A_M0B".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/sram_6T_1finger_inverted/layout as "sram_6T_1finger_inverted".
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "sram_6T_1finger_inverted" layer GATE purpose drawing beginning at (0.126000, 0.155000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "sram_6T_1finger_inverted" layer GATE purpose drawing beginning at (0.084000, 0.155000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "sram_6T_1finger_inverted" layer GATE purpose drawing beginning at (0.210000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "sram_6T_1finger_inverted" layer GATE purpose drawing beginning at (0.168000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "sram_6T_1finger_inverted" layer GATE purpose drawing beginning at (0.126000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "sram_6T_1finger_inverted" layer GATE purpose drawing beginning at (0.084000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "sram_6T_1finger_inverted" layer GATE purpose drawing beginning at (0.000000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "sram_6T_1finger_inverted" layer GATE purpose drawing beginning at (0.042000, 0.000000).
+WARNING: (EXPORT_STREAM-12064): Shape isn't mapped to any layer/purpose, layer:"prBoundary" purpose:"drawing" cutSize(0.21:0.155).
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/fill_sram_inverted/layout as "fill_sram_inverted".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/M0B_M1/layout as "M0B_M1".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/M1_M2/layout as "M1_M2".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/sram_array_1r_4c_inverted/layout as "sram_array_1r_4c_inverted".
+WARNING: (EXPORT_STREAM-12064): Shape isn't mapped to any layer/purpose, layer:"prBoundary" purpose:"drawing" cutSize(0.966:0.159).
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/fill_sram/layout as "fill_sram".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/M2_M3/layout as "M2_M3".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/sram_array_16r_8c_routing/layout as "sram_array_16r_8c_routing".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/sram_6T_1finger/layout as "sram_6T_1finger".
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "sram_6T_1finger" layer GATE purpose drawing beginning at (0.126000, 0.155000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "sram_6T_1finger" layer GATE purpose drawing beginning at (0.084000, 0.155000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "sram_6T_1finger" layer GATE purpose drawing beginning at (0.210000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "sram_6T_1finger" layer GATE purpose drawing beginning at (0.168000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "sram_6T_1finger" layer GATE purpose drawing beginning at (0.126000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "sram_6T_1finger" layer GATE purpose drawing beginning at (0.084000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "sram_6T_1finger" layer GATE purpose drawing beginning at (0.000000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "sram_6T_1finger" layer GATE purpose drawing beginning at (0.042000, 0.000000).
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/sram_array_1r_4c/layout as "sram_array_1r_4c".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/sram_array_16r_8c/layout as "sram_array_16r_8c".
+WARNING: (EXPORT_STREAM-12064): Shape isn't mapped to any layer/purpose, layer:"prBoundary" purpose:"drawing" cutSize(1.974:2.616).
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/pmos/layout as "pmos".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/fill_sram_nmos/layout as "fill_sram_nmos".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/equalizer/layout as "equalizer".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/M3_M4/layout as "M3_M4".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/bitline_conditioning/layout as "bitline_conditioning".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/inverter_buf_top_leve/layout as "inverter_buf_top_leve".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/inverter_buf_top_level_v1/layout as "inverter_buf_top_level_v1".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/buffer_top/layout as "buffer_top".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/buffer_array/layout as "buffer_array".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/fill_sram_inverted_read/layout as "fill_sram_inverted_read".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/fill_sram_inverted_pmos_read/layout as "fill_sram_inverted_pmos_read".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/column_decoder_read_cell/layout as "column_decoder_read_cell".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/inverter_column_decoder_read/layout as "inverter_column_decoder_read".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/column_decoder_read/layout as "column_decoder_read".
+WARNING: (EXPORT_STREAM-12064): Shape isn't mapped to any layer/purpose, layer:"annotate" purpose:"drawing".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/buffer_top_inverted/layout as "buffer_top_inverted".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/buffer_array_top_routing/layout as "buffer_array_top_routing".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/buffer_array_top/layout as "buffer_array_top".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/fill_sram_column_decoder_write/layout as "fill_sram_column_decoder_write".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/M4_M5/layout as "M4_M5".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/top_level_routing/layout as "top_level_routing".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/sram_lvs_grid/layout as "sram_lvs_grid".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/inverter_row_decoder/layout as "inverter_row_decoder".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/row_decoder_4_16_routing/layout as "row_decoder_4_16_routing".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/fill_sram_pmos/layout as "fill_sram_pmos".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/fill_sram_inverted_nmos/layout as "fill_sram_inverted_nmos".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/row_decoder_4_16_oneword/layout as "row_decoder_4_16_oneword".
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.01 length segment is less than half of the total path width which is 0.01 in cell "row_decoder_4_16_oneword" layer GATE purpose drawing beginning at (0.349500, 0.344000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.01 length segment is less than half of the total path width which is 0.01 in cell "row_decoder_4_16_oneword" layer GATE purpose drawing beginning at (0.307500, 0.344000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.01 length segment is less than half of the total path width which is 0.01 in cell "row_decoder_4_16_oneword" layer GATE purpose drawing beginning at (0.265500, 0.344000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.01 length segment is less than half of the total path width which is 0.01 in cell "row_decoder_4_16_oneword" layer GATE purpose drawing beginning at (0.223500, 0.344000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.01 length segment is less than half of the total path width which is 0.01 in cell "row_decoder_4_16_oneword" layer GATE purpose drawing beginning at (0.181500, 0.344000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.01 length segment is less than half of the total path width which is 0.01 in cell "row_decoder_4_16_oneword" layer GATE purpose drawing beginning at (0.139500, 0.344000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.01 length segment is less than half of the total path width which is 0.01 in cell "row_decoder_4_16_oneword" layer GATE purpose drawing beginning at (0.097500, 0.344000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.01 length segment is less than half of the total path width which is 0.01 in cell "row_decoder_4_16_oneword" layer GATE purpose drawing beginning at (0.055500, 0.344000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.01 length segment is less than half of the total path width which is 0.01 in cell "row_decoder_4_16_oneword" layer GATE purpose drawing beginning at (0.013500, 0.344000).
+WARNING: (EXPORT_STREAM-12064): Shape isn't mapped to any layer/purpose, layer:"prBoundary" purpose:"drawing" cutSize(0.336:0.327).
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/row_decoder_4_16/layout as "row_decoder_4_16".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/and/layout as "and".
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and" layer GATE purpose drawing beginning at (0.042000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and" layer GATE purpose drawing beginning at (0.084000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and" layer GATE purpose drawing beginning at (0.126000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and" layer GATE purpose drawing beginning at (0.168000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and" layer GATE purpose drawing beginning at (0.000000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and" layer GATE purpose drawing beginning at (0.168000, 0.159000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and" layer GATE purpose drawing beginning at (0.126000, 0.159000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and" layer GATE purpose drawing beginning at (0.084000, 0.159000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and" layer GATE purpose drawing beginning at (0.042000, 0.159000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and" layer GATE purpose drawing beginning at (0.000000, 0.159000).
+WARNING: (EXPORT_STREAM-12064): Shape isn't mapped to any layer/purpose, layer:"prBoundary" purpose:"drawing" cutSize(0.168:0.1635).
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/and_v1/layout as "and_v1".
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and_v1" layer GATE purpose drawing beginning at (0.042000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and_v1" layer GATE purpose drawing beginning at (0.084000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and_v1" layer GATE purpose drawing beginning at (0.126000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and_v1" layer GATE purpose drawing beginning at (0.168000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and_v1" layer GATE purpose drawing beginning at (0.000000, 0.000000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and_v1" layer GATE purpose drawing beginning at (0.168000, 0.159000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and_v1" layer GATE purpose drawing beginning at (0.126000, 0.159000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and_v1" layer GATE purpose drawing beginning at (0.084000, 0.159000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and_v1" layer GATE purpose drawing beginning at (0.042000, 0.159000).
+WARNING: (EXPORT_STREAM-12118): The path will be written as a boundary record in the gds file due to a 0.00 length segment is less than half of the total path width which is 0.01 in cell "and_v1" layer GATE purpose drawing beginning at (0.000000, 0.159000).
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/fill_sram_inverted_pmos_write/layout as "fill_sram_inverted_pmos_write".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/inverter_write/layout as "inverter_write".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/write_buffer_cell/layout as "write_buffer_cell".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/column_decoder_write_routing/layout as "column_decoder_write_routing".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/fill_sram_inverted_write_pmos/layout as "fill_sram_inverted_write_pmos".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/column_decoder_write_cell/layout as "column_decoder_write_cell".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/inverter_column_decoder_write/layout as "inverter_column_decoder_write".
+INFO: (EXPORT_STREAM-80033): Translating design project_backup/column_decoder_write/layout as "column_decoder_write".
+INFO: (EXPORT_STREAM-80033): Translating design mylib/top_level/layout as "top_level".
+WARNING: (EXPORT_STREAM-12064): Shape isn't mapped to any layer/purpose, layer:"prBoundary" purpose:"drawing" cutSize(3.0735:3.76).
+
+Primary Cell(s):
+	1.top_level
+
+Cell Statistics:
+	CellName                        Rectangles  Polygons    Paths       PathSegs    Labels      Instances   Arrays      Nodes       
+	BPR_M0A                         3           0           0           0           0           0           0           0           
+	GATE_M0B                        3           0           0           0           0           0           0           0           
+	M0A_M0B                         3           0           0           0           0           0           0           0           
+	M0B_M1                          3           0           0           0           0           0           0           0           
+	M1_M2                           3           0           0           0           0           0           0           0           
+	M2_M3                           3           0           0           0           0           0           0           0           
+	M3_M4                           3           0           0           0           0           0           0           0           
+	M4_M5                           3           0           0           0           0           0           0           0           
+	and                             21          10          3           0           5           11          3           0           
+	and_v1                          21          10          3           0           5           11          3           0           
+	bitline_conditioning            22          0           69          0           16          84          8           0           
+	buffer_array                    8           0           0           0           8           4           4           0           
+	buffer_array_top                0           0           0           0           0           17          0           0           
+	buffer_array_top_routing        0           0           88          0           0           64          0           0           
+	buffer_top                      3           0           1           0           2           2           0           0           
+	buffer_top_inverted             3           0           1           0           2           2           0           0           
+	column_decoder_read             15          0           20          0           14          25          5           0           
+	column_decoder_read_cell        14          0           6           0           6           7           2           0           
+	column_decoder_write            32          0           0           0           22          18          14          0           
+	column_decoder_write_cell       9           0           5           0           5           6           3           0           
+	column_decoder_write_routing    0           0           64          0           0           62          0           0           
+	equalizer                       21          0           6           0           3           14          5           0           
+	fill_sram                       23          0           0           0           2           0           0           0           
+	fill_sram_column_decoder_write  21          0           0           0           2           0           0           0           
+	fill_sram_inverted              23          0           0           0           2           0           0           0           
+	fill_sram_inverted_nmos         18          0           0           0           2           0           0           0           
+	fill_sram_inverted_pmos_read    18          0           0           0           2           0           0           0           
+	fill_sram_inverted_pmos_write   19          0           0           0           2           0           0           0           
+	fill_sram_inverted_read         21          0           0           0           2           0           0           0           
+	fill_sram_inverted_write_pmos   16          0           0           0           2           0           0           0           
+	fill_sram_nmos                  19          0           0           0           2           0           0           0           
+	fill_sram_pmos                  19          0           0           0           2           0           0           0           
+	inverter_buf_top_leve           35          0           1           0           4           3           3           0           
+	inverter_buf_top_level_v1       36          0           1           0           4           3           3           0           
+	inverter_column_decoder_read    39          0           4           0           4           3           2           0           
+	inverter_column_decoder_write   35          0           1           0           4           3           3           0           
+	inverter_row_decoder            35          0           1           0           4           3           3           0           
+	inverter_write                  28          0           0           0           4           2           3           0           
+	nmos                            7           0           0           0           0           0           0           0           
+	pmos                            8           0           0           0           0           0           0           0           
+	row_decoder_4_16                21          0           0           0           21          23          1           0           
+	row_decoder_4_16_oneword        30          9           23          0           0           17          6           0           
+	row_decoder_4_16_routing        0           0           309         0           0           283         0           0           
+	sram_6T_1finger                 50          8           14          0           5           12          1           0           
+	sram_6T_1finger_inverted        50          8           14          0           5           12          1           0           
+	sram_array_16r_8c               32          0           0           0           32          49          0           0           
+	sram_array_16r_8c_routing       0           0           80          0           0           256         0           0           
+	sram_array_1r_4c                18          0           21          0           11          31          0           0           
+	sram_array_1r_4c_inverted       18          0           21          0           11          31          0           0           
+	sram_lvs_grid                   0           0           25          0           0           92          23          0           
+	top_level                       17          0           0           0           17          10          7           0           
+	top_level_routing               0           0           140         0           0           111         0           0           
+	write_buffer_cell               30          0           9           0           4           15          3           0           
+
+Layer Statistics:
+	Layer       Purpose  StreamLayer     StreamDataType  Rectangles  Polygons    Paths       PathSegs    Labels      Nodes       
+	M5          drawing  22              0               2           0           7           0           1           0
+	V4          drawing  21              0               1           0           0           0           0           0
+	M4          drawing  20              0               9           0           18          0           7           0
+	V2          drawing  17              0               1           0           0           0           0           0
+	V3          drawing  19              0               1           0           0           0           0           0
+	M3          drawing  18              0               42          0           79          0           40          0
+	V1          drawing  15              0               1           0           0           0           0           0
+	M1          drawing  14              0               2           0           255         0           0           0
+	DUMMY       drawing  6               0               65          0           30          0           0           0
+	NW          drawing  2               0               60          0           0           0           0           0
+	PIM         drawing  8               0               58          0           0           0           0           0
+	V0A         drawing  10              0               1           0           0           0           0           0
+	BPR         drawing  0               0               95          0           0           0           46          0
+	M0B         drawing  12              0               94          0           259         0           89          0
+	GCUT        drawing  5               0               40          0           0           0           0           0
+	GCON        drawing  11              0               1           0           0           0           0           0
+	NIM         drawing  7               0               31          0           0           0           0           0
+	V0B         drawing  13              0               1           0           0           0           0           0
+	M2          drawing  16              0               57          0           256         0           55          0
+	ACT         drawing  3               0               31          0           0           0           0           0
+	M0A         drawing  9               0               119         0           16          0           0           0
+	GATE        drawing  4               0               130         45          10          0           0           0
+	VBPR        drawing  1               0               37          0           0           0           0           0
+
+Summary of Objects:
+	Scalar Instances:             1286
+	Array Instances:              106
+	Vector Instances:             0
+	Vector Instance Bits:         0
+	Polygons:                     45
+	Paths:                        930
+	Rectangles:                   879
+	Lines:                        0
+	Arcs:                         0
+	Donuts:                       0
+	Dots:                         0
+	Ellipses:                     0
+	Blockages:                    0
+	Boundaries:                   0
+	Routes:                       0
+	Text:                         40
+	Text Displays:                
+	  PropDisplay:                0
+	  AttrDisplay:                198
+	  TextOverride:               0
+	PathSeg:                      0
+	StdVia:                       0
+	CustomVia:                    0
+	Cells:                        53
+
+
+Layers not streamed out:
+	Layer     Purpose   
+	prBoundarydrawing   
+	annotate  drawing   
+
+Finished:     exportStream
+Time Elapsed: 1.34 seconds
+CPU Time:     1.06742 seconds
+System Time:  0.152056 seconds
+Peak VM:      14712832 bytes
+Messages:     0 error, 52 warnings

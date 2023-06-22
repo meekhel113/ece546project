@@ -1,0 +1,7 @@
+INCLUDE /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK3/syncust/lib.defs
+DEFINE mylib ./mylib
+DEFINE sram ./sram
+DEFINE proj_common /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/ece546/proj_common
+DEFINE grid ./grid
+DEFINE FreePDK3_examples /afs/eos/lockers/research/ece/wdavis/tech/FreePDK3/examples/FreePDK3_examples
+DEFINE project_backup ./project_backup

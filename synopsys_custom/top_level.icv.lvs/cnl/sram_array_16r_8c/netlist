@@ -1,0 +1,49 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : sram_array_16r_8c
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt sram_array_16r_8c BL<0> BL<1> BL<2> BL<3> BL<4> BL<5> BL<6> BL<7> BLb<0>
++  BLb<1> BLb<2> BLb<3> BLb<4> BLb<5> BLb<6> BLb<7> WL<0> WL<1> WL<2> WL<3>
++ WL<4> WL<5> WL<6> WL<7> WL<8> WL<9> WL<10> WL<11> WL<12> WL<13> WL<14> WL<15>
+*.PININFO BL<0>:B BL<1>:B BL<2>:B BL<3>:B BL<4>:B BL<5>:B BL<6>:B BL<7>:B
+*.PININFO BLb<0>:B BLb<1>:B BLb<2>:B BLb<3>:B BLb<4>:B BLb<5>:B BLb<6>:B
+*.PININFO BLb<7>:B WL<0>:I WL<1>:I WL<2>:I WL<3>:I WL<4>:I WL<5>:I WL<6>:I
+*.PININFO WL<7>:I WL<8>:I WL<9>:I WL<10>:I WL<11>:I WL<12>:I WL<13>:I WL<14>:I
+*.PININFO WL<15>:I
+XI32 BL<4> BL<5> BL<6> BL<7> BLb<4> BLb<5> BLb<6> BLb<7> WL<1> sram_array_1r_4c
+XI33 BL<0> BL<1> BL<2> BL<3> BLb<0> BLb<1> BLb<2> BLb<3> WL<1> sram_array_1r_4c
+XI34 BL<4> BL<5> BL<6> BL<7> BLb<4> BLb<5> BLb<6> BLb<7> WL<2> sram_array_1r_4c
+XI35 BL<0> BL<1> BL<2> BL<3> BLb<0> BLb<1> BLb<2> BLb<3> WL<2> sram_array_1r_4c
+XI36 BL<4> BL<5> BL<6> BL<7> BLb<4> BLb<5> BLb<6> BLb<7> WL<3> sram_array_1r_4c
+XI37 BL<0> BL<1> BL<2> BL<3> BLb<0> BLb<1> BLb<2> BLb<3> WL<3> sram_array_1r_4c
+XI38 BL<4> BL<5> BL<6> BL<7> BLb<4> BLb<5> BLb<6> BLb<7> WL<4> sram_array_1r_4c
+XI39 BL<0> BL<1> BL<2> BL<3> BLb<0> BLb<1> BLb<2> BLb<3> WL<4> sram_array_1r_4c
+XI40 BL<4> BL<5> BL<6> BL<7> BLb<4> BLb<5> BLb<6> BLb<7> WL<5> sram_array_1r_4c
+XI41 BL<0> BL<1> BL<2> BL<3> BLb<0> BLb<1> BLb<2> BLb<3> WL<5> sram_array_1r_4c
+XI31 BL<0> BL<1> BL<2> BL<3> BLb<0> BLb<1> BLb<2> BLb<3> WL<0> sram_array_1r_4c
+XI30 BL<4> BL<5> BL<6> BL<7> BLb<4> BLb<5> BLb<6> BLb<7> WL<0> sram_array_1r_4c
+XI42 BL<4> BL<5> BL<6> BL<7> BLb<4> BLb<5> BLb<6> BLb<7> WL<6> sram_array_1r_4c
+XI43 BL<0> BL<1> BL<2> BL<3> BLb<0> BLb<1> BLb<2> BLb<3> WL<6> sram_array_1r_4c
+XI44 BL<4> BL<5> BL<6> BL<7> BLb<4> BLb<5> BLb<6> BLb<7> WL<7> sram_array_1r_4c
+XI45 BL<0> BL<1> BL<2> BL<3> BLb<0> BLb<1> BLb<2> BLb<3> WL<7> sram_array_1r_4c
+XI46 BL<4> BL<5> BL<6> BL<7> BLb<4> BLb<5> BLb<6> BLb<7> WL<8> sram_array_1r_4c
+XI47 BL<0> BL<1> BL<2> BL<3> BLb<0> BLb<1> BLb<2> BLb<3> WL<8> sram_array_1r_4c
+XI48 BL<4> BL<5> BL<6> BL<7> BLb<4> BLb<5> BLb<6> BLb<7> WL<9> sram_array_1r_4c
+XI49 BL<0> BL<1> BL<2> BL<3> BLb<0> BLb<1> BLb<2> BLb<3> WL<9> sram_array_1r_4c
+XI50 BL<4> BL<5> BL<6> BL<7> BLb<4> BLb<5> BLb<6> BLb<7> WL<10> sram_array_1r_4c
+XI51 BL<0> BL<1> BL<2> BL<3> BLb<0> BLb<1> BLb<2> BLb<3> WL<10> sram_array_1r_4c
+XI52 BL<4> BL<5> BL<6> BL<7> BLb<4> BLb<5> BLb<6> BLb<7> WL<11> sram_array_1r_4c
+XI53 BL<0> BL<1> BL<2> BL<3> BLb<0> BLb<1> BLb<2> BLb<3> WL<11> sram_array_1r_4c
+XI54 BL<4> BL<5> BL<6> BL<7> BLb<4> BLb<5> BLb<6> BLb<7> WL<12> sram_array_1r_4c
+XI55 BL<0> BL<1> BL<2> BL<3> BLb<0> BLb<1> BLb<2> BLb<3> WL<12> sram_array_1r_4c
+XI56 BL<4> BL<5> BL<6> BL<7> BLb<4> BLb<5> BLb<6> BLb<7> WL<13> sram_array_1r_4c
+XI57 BL<0> BL<1> BL<2> BL<3> BLb<0> BLb<1> BLb<2> BLb<3> WL<13> sram_array_1r_4c
+XI58 BL<4> BL<5> BL<6> BL<7> BLb<4> BLb<5> BLb<6> BLb<7> WL<14> sram_array_1r_4c
+XI59 BL<0> BL<1> BL<2> BL<3> BLb<0> BLb<1> BLb<2> BLb<3> WL<14> sram_array_1r_4c
+XI60 BL<4> BL<5> BL<6> BL<7> BLb<4> BLb<5> BLb<6> BLb<7> WL<15> sram_array_1r_4c
+XI61 BL<0> BL<1> BL<2> BL<3> BLb<0> BLb<1> BLb<2> BLb<3> WL<15> sram_array_1r_4c
+.ends sram_array_16r_8c
+

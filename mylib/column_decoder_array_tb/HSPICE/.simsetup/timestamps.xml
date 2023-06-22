@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Fri Apr  8 21:28:38 2022-->
+<file-format name="stateCategory" version="1.0">
+ <object name="timestamps" version="1" type="saTimestamps">
+  <attribute name="designData" value="" type="giString"/>
+  <attribute name="designTimestamp" value="0" type="giInt"/>
+  <attribute name="filterList" value="" type="giString"/>
+  <attribute name="includeFilesData" value="" type="giString"/>
+  <attribute name="lastFullScan" value="0" type="giInt"/>
+  <attribute name="resultsUpToDate" value="0" type="giBoolean"/>
+  <attribute name="saeSessionData" value="" type="giString"/>
+ </object>
+</file-format>

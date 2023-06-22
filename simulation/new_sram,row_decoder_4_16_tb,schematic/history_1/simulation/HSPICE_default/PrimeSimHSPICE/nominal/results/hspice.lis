@@ -1,0 +1,25 @@
+ ****** PrimeSim HSPICE -- S-2021.09 linux64 (Aug 25 2021 7230000) ******
+  Copyright (c) 1986 - 2022 by Synopsys, Inc. All Rights Reserved.
+  This software and the associated documentation are proprietary
+  to Synopsys, Inc. This software may only be used in accordance
+  with the terms and conditions of a written license agreement with
+  Synopsys, Inc. All other use, reproduction, or distribution of
+  this software is strictly prohibited.
+  Input File:                                                                   
+  Command line options: /mnt/apps/public/COE/synopsys_apps/hspice/S-2021.09/hspice/linux64/hspice -i /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/new_sram,row_decoder_4_16_tb,schematic/history_1/simulation/HSPICE_default/PrimeSimHSPICE/nominal/netlist/input.spi -o hspice
+  Start time: Tue Apr 19 05:49:10 2022
+ lic:  
+ lic: FLEXlm: SDK_12.9.6 
+ lic: USER:   ssjoseph             HOSTNAME: grendel33.ece.ncsu.edu 
+ lic: HOSTID: e985262              PID:      19301 
+ lic: Using FLEXlm license file: 
+ lic: 27000@ece-lic-35.ece.ncsu.edu 
+ lic: Checkout 1 hspice 
+ lic: License/Maintenance for hspice will expire on 30-oct-2024/2021.09 
+ lic: 1(in_use)/160(total) FLOATING license(s) on SERVER 27000@ece-lic-35.ece.ncsu.edu 
+ lic:   
+  **error** (/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/decode.dat:1) unexpected symbol before or at ";"
+
+               ***** job aborted
+ lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        0.29(s)

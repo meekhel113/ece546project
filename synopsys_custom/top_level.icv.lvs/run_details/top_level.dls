@@ -1,0 +1,48 @@
++--------------------------------------------------------------------------------+
+|                        ICV Device Leveling Summary                             |
++--------------------------------------------------------------------------------+
+
+Device Leveling Summary Results:
+
+Body Layer                         |Cell                     |Layer Interacted:   
+-----------------------------------+-------------------------+-------------------
+gPOLY.polygonlayer.0002             inverter_row_decoder      temp.polygonlayer.0003,aDUMMY.polygonlayer.0003,temp.polygonlayer.0001
+
+gPOLY.polygonlayer.0002             inverter_write            aDUMMY.polygonlayer.0003,temp.polygonlayer.0001
+
+gPOLY.polygonlayer.0002             inverter_buf_top_level_v1 temp.polygonlayer.0003,aDUMMY.polygonlayer.0003,temp.polygonlayer.0001
+
+gPOLY.polygonlayer.0002             and_v1                    aDUMMY.polygonlayer.0003,temp.polygonlayer.0001
+
+gPOLY.polygonlayer.0002             and                       aDUMMY.polygonlayer.0003,temp.polygonlayer.0001
+
+gPOLY.polygonlayer.0002             inverter_buf_top_leve     temp.polygonlayer.0003,aDUMMY.polygonlayer.0003,temp.polygonlayer.0001
+
+gPOLY.polygonlayer.0002             sram_6T_1finger           temp.polygonlayer.0003,aDUMMY.polygonlayer.0003,temp.polygonlayer.0001
+
+gPOLY.polygonlayer.0002             sram_6T_1finger_inverted  temp.polygonlayer.0003,aDUMMY.polygonlayer.0003,temp.polygonlayer.0001
+
+gPOLY.polygonlayer.0002             inverter_column_decoder_write temp.polygonlayer.0003,aDUMMY.polygonlayer.0003,temp.polygonlayer.0001
+
+gPOLY.polygonlayer.0002             column_decoder_write_cell aDUMMY.polygonlayer.0003,temp.polygonlayer.0001
+
+gPOLY.polygonlayer.0002             buffer_top_inverted       temp.polygonlayer.0003,aDUMMY.polygonlayer.0003,temp.polygonlayer.0001
+
+gPOLY.polygonlayer.0002             column_decoder_read_cell  aDUMMY.polygonlayer.0003,temp.polygonlayer.0001
+
+gPOLY.polygonlayer.0002             equalizer                 temp.polygonlayer.0003,aDUMMY.polygonlayer.0003
+
+gPOLY.polygonlayer.0002             sram_array_1r_4c          temp.polygonlayer.0003,aDUMMY.polygonlayer.0003,temp.polygonlayer.0001
+
+gPOLY.polygonlayer.0002             buffer_top                temp.polygonlayer.0003,aDUMMY.polygonlayer.0003,temp.polygonlayer.0001
+
+gPOLY.polygonlayer.0002             column_decoder_write      aDUMMY.polygonlayer.0003,temp.polygonlayer.0001
+
+gPOLY.polygonlayer.0002             row_decoder_4_16          temp.polygonlayer.0003,aDUMMY.polygonlayer.0003,temp.polygonlayer.0001
+
+gPOLY.polygonlayer.0002             column_decoder_read       temp.polygonlayer.0003,aDUMMY.polygonlayer.0003,temp.polygonlayer.0001
+
+gPOLY.polygonlayer.0002             buffer_array              temp.polygonlayer.0003,aDUMMY.polygonlayer.0003
+
+gPOLY.polygonlayer.0002             sram_array_16r_8c         aDUMMY.polygonlayer.0003,temp.polygonlayer.0001
+

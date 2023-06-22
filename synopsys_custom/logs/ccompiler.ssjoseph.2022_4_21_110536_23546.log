@@ -1,0 +1,80 @@
+[11:05:42.22] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c                  Version S-2021.09 for linux64 - Aug 25, 2021 
+              /c 
+              /c                     Copyright (c) 2004 - 2021 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 6809741 compiled on Wed Aug 25 11:47:50 2021 for CentOS64 7.3
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/customcompiler/S-2021.09/linux64/platform/bin/custom_compiler
+              /c Execution time: Thu Apr 21 11:05:36 2022
+              /c Host: grendel25.ece.ncsu.edu
+              /c Working directory: /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project
+              /c 
+[11:05:56.97] /r giShowFrameTabs true
+[11:05:56.97] /r giWindowId 1
+[11:05:56.97] /r giWindowGeometry 1040x800
+[11:05:57.57] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x744+199+81
+[11:06:04.03] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[11:06:04.36] /i db::setAttr geometry -of [gi::getFrames 1] -value 1044x744+199+81
+[11:06:04.73] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x744+5+81
+[11:06:08.06] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x867+5+28
+[11:06:08.28] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[11:06:09.39] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/recentDesigns/deOpenmylibtoplevellayout} -in [gi::getWindows 1]
+[11:06:09.39] /# 
+[11:06:09.69] /i de::open mylib/top_level/layout
+[11:06:09.72] /m Information: License 'Apex' checked out. (LICENSE-003)
+[11:06:09.76] /o Loading: Callback files...
+[11:06:09.77] /o Loading: scripts/callbacks/callbacks.tcl
+[11:06:09.77] /o 
+              /c [INFO] : Loading display.drf from /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[11:06:09.77] /o 
+[11:06:09.84] /o 	#######################################
+[11:06:09.84] /o 	CC-PDK Library Name	: FreePDK3
+[11:06:09.84] /o 	#######################################
+[11:06:09.84] /o 
+[11:06:09.98] /r giWindowId 2
+[11:06:09.98] /r giWindowGeometry 1224x723
+[11:06:10.57] /o oa:0x2be62310
+[11:06:18.91] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 2]
+[11:06:18.91] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 2]]
+[11:06:25.58] /# gi::executeAction {deFitView} -in [gi::getWindows 2]
+[11:06:25.58] /i de::fit -window 2 -fitView true
+[11:06:28.52] /# gi::executeAction {leDisplayTopLevel} -in [gi::getWindows 2]
+[11:06:28.52] /i db::setPrefValue leStopLevel -value 0 -scope [db::getNext [de::getContexts -window 2]]; db::setPrefValue leStartLevel -value 0 -scope [db::getNext [de::getContexts -window 2]]; de::redraw -window 2
+[11:06:46.34] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 2]
+[11:06:46.34] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 2]]
+[11:06:54.26] /# gi::executeAction {leDisplayTopLevel} -in [gi::getWindows 2]
+[11:06:54.26] /i db::setPrefValue leStopLevel -value 0 -scope [db::getNext [de::getContexts -window 2]]; db::setPrefValue leStartLevel -value 0 -scope [db::getNext [de::getContexts -window 2]]; de::redraw -window 2
+[11:06:55.29] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 2]
+[11:06:55.29] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 2]]
+[11:07:04.16] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x867+-148+264
+[11:07:08.07] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 2]
+[11:07:08.23] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 2]
+[11:07:08.41] /i gi::executeAction {deCanvasDragCancel} -in [gi::getWindows 2]
+[11:07:09.97] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value 290x530
+[11:07:10.05] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x744+5+81
+[11:07:10.28] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[11:07:11.19] /i exit
+[11:07:11.22] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]]
+[11:07:11.56] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]] -value 419x181+511+336
+[11:07:12.89] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]]
+[11:07:14.26] /o Shutdown time: Thu Apr 21 11:07:14 2022
+[11:07:14.26] /o Elapsed session real time: 1.55 minutes
+[11:07:14.26] /o Session terminated. Log is at /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/logs/ccompiler.ssjoseph.2022_4_21_110536_23546.log

@@ -1,0 +1,54 @@
+<module name="vsl: mylib Column_Decoder_2to1 schematic vl: hspice hspiceD schematic spice veriloga">
+<scope name="Instance">
+<forward>
+<mapping src="M0" dst="m0"/>
+<mapping src="M1" dst="m1"/>
+</forward>
+<reverse>
+<mapping src="m0" dst="M0"/>
+<mapping src="m1" dst="M1"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward>
+<mapping src="Sb" dst="sb"/>
+<mapping src="OUT" dst="out"/>
+<mapping src="IN1" dst="in1"/>
+<mapping src="S" dst="s"/>
+<mapping src="IN0" dst="in0"/>
+</forward>
+<reverse>
+<mapping src="sb" dst="Sb"/>
+<mapping src="s" dst="S"/>
+<mapping src="in1" dst="IN1"/>
+<mapping src="out" dst="OUT"/>
+<mapping src="in0" dst="IN0"/>
+</reverse>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping src="&lt;unmappedTermOrder>" dst="IN0 IN1 OUT S Sb"/>
+<mapping src="&lt;termOrder>" dst="in0 in1 out s sb"/>
+<mapping src="OUT" dst="out"/>
+<mapping src="Sb" dst="sb"/>
+<mapping src="IN1" dst="in1"/>
+<mapping src="S" dst="s"/>
+<mapping src="IN0" dst="in0"/>
+</forward>
+<reverse>
+<mapping src="in0 in1 out s sb" dst="&lt;termOrder>"/>
+<mapping src="out" dst="OUT"/>
+<mapping src="in1" dst="IN1"/>
+<mapping src="sb" dst="Sb"/>
+<mapping src="s" dst="S"/>
+<mapping src="IN0 IN1 OUT S Sb" dst="&lt;unmappedTermOrder>"/>
+<mapping src="in0" dst="IN0"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="nmos">
+<instance name="M0"/>
+<instance name="M1"/>
+</instance_header>
+</master_instances>
+</module>

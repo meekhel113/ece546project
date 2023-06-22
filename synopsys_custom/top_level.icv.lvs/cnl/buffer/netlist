@@ -1,0 +1,13 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : buffer
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt buffer in out
+*.PININFO in:I out:O
+XI1 net4 out inverter
+XI0 in net4 inverter
+.ends buffer
+

@@ -1,0 +1,16 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : write_buffer_cell
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt write_buffer_cell EN IN OUT OUTb
+*.PININFO EN:I IN:I OUT:O OUTb:O
+XI23 IN net62 inverter
+MM5 OUTb net54 gnd! nmos
+MM4 OUT net52 gnd! nmos
+XI24 EN net62 net52 and
+XI25 EN IN net54 and
+.ends write_buffer_cell
+

@@ -1,0 +1,37 @@
+<module name="vsl: mylib buffer_array schematic vl: hspice hspiceD schematic spice veriloga">
+<scope name="Instance">
+<forward>
+<mapping src="I0" dst="xi0"/>
+<mapping src="I2" dst="xi2"/>
+<mapping src="I1" dst="xi1"/>
+<mapping src="I3" dst="xi3"/>
+</forward>
+<reverse>
+<mapping src="xi0" dst="I0"/>
+<mapping src="xi3" dst="I3"/>
+<mapping src="xi1" dst="I1"/>
+<mapping src="xi2" dst="I2"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward/>
+<reverse/>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping src="&lt;termOrder>" dst="in&lt;0> in&lt;1> in&lt;2> in&lt;3> out&lt;0> out&lt;1> out&lt;2> out&lt;3>"/>
+<mapping src="&lt;unmappedTermOrder>" dst="in&lt;0> in&lt;1> in&lt;2> in&lt;3> out&lt;0> out&lt;1> out&lt;2> out&lt;3>"/>
+</forward>
+<reverse>
+<mapping src="in&lt;0> in&lt;1> in&lt;2> in&lt;3> out&lt;0> out&lt;1> out&lt;2> out&lt;3>" dst="&lt;unmappedTermOrder>"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="buffer">
+<instance name="I0"/>
+<instance name="I1"/>
+<instance name="I2"/>
+<instance name="I3"/>
+</instance_header>
+</master_instances>
+</module>

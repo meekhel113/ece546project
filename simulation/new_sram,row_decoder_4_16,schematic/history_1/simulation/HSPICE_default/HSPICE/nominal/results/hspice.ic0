@@ -1,0 +1,39 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "S-2021.09 linux64"
+* "format" "HSP"
+* "rundate" "05:22:27 04/19/2022 "
+* "netlist" "/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/new_sram,row_decoder_4_16,schematic/history_1/simulation/HSPICE_default/HSPICE/nominal/netlist/input.spi "
+* "runtitle" "*  generated for: primesim"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ clk =   0.            
++ in<0> =   0.            
++ in<1> =   0.            
++ in<2> =   0.            
++ in<3> =   0.            
++ net697 =   0.            
++ net698 =   0.            
++ net699 =   0.            
++ net700 =   0.            
++ vdd! =   0.            
++ wl<0> =   0.            
++ wl<10> =   0.            
++ wl<11> =   0.            
++ wl<12> =   0.            
++ wl<13> =   0.            
++ wl<14> =   0.            
++ wl<15> =   0.            
++ wl<1> =   0.            
++ wl<2> =   0.            
++ wl<3> =   0.            
++ wl<4> =   0.            
++ wl<5> =   0.            
++ wl<6> =   0.            
++ wl<7> =   0.            
++ wl<8> =   0.            
++ wl<9> =   0.            
+***   END: Saved Operating Point ***                     

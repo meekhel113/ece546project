@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Thu Apr  7 18:09:24 2022-->
+<file-format name="stateCategory" version="1.0">
+ <collection name="includeFiles">
+  <object name="includeFiles" version="1" type="saIncludeFile">
+   <attribute value="1" name="enabled" type="giBoolean"/>
+   <attribute value="/afs/unity.ncsu.edu/users/m/mapatel3/Documents/546/ece546project/tri.dat" name="filename" type="giString"/>
+   <attribute value="Digital Vector" name="includeType" type="giString"/>
+   <attribute value="" name="section" type="giString"/>
+  </object>
+ </collection>
+</file-format>

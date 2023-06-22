@@ -1,0 +1,281 @@
+<module name="vsl: project_backup row_decoder_4_16 schematic vl: auCdl schematic symbol">
+<scope name="Instance">
+<forward>
+<mapping dst="MM1" src="M1"/>
+<mapping dst="MM3" src="M3"/>
+<mapping dst="MM6" src="M6"/>
+<mapping dst="MM7" src="M7"/>
+<mapping dst="MM12" src="M12"/>
+<mapping dst="MM10" src="M10"/>
+<mapping dst="MM13" src="M13"/>
+<mapping dst="MM9" src="M9"/>
+<mapping dst="MM4" src="M4"/>
+<mapping dst="MM11" src="M11"/>
+<mapping dst="XI235" src="I235"/>
+<mapping dst="XI234" src="I234"/>
+<mapping dst="MM14" src="M14"/>
+<mapping dst="XI232" src="I232"/>
+<mapping dst="MM87" src="M87"/>
+<mapping dst="MM89" src="M89"/>
+<mapping dst="MM93" src="M93"/>
+<mapping dst="MM100" src="M100"/>
+<mapping dst="MM101" src="M101"/>
+<mapping dst="MM102" src="M102"/>
+<mapping dst="MM103" src="M103"/>
+<mapping dst="MM104" src="M104"/>
+<mapping dst="MM105" src="M105"/>
+<mapping dst="MM111" src="M111"/>
+<mapping dst="MM114" src="M114"/>
+<mapping dst="MM117" src="M117"/>
+<mapping dst="MM119" src="M119"/>
+<mapping dst="MM125" src="M125"/>
+<mapping dst="MM126" src="M126"/>
+<mapping dst="MM116" src="M116"/>
+<mapping dst="MM8" src="M8"/>
+<mapping dst="MM128" src="M128"/>
+<mapping dst="MM129" src="M129"/>
+<mapping dst="MM0" src="M0"/>
+<mapping dst="MM130" src="M130"/>
+<mapping dst="MM131" src="M131"/>
+<mapping dst="MM153" src="M153"/>
+<mapping dst="MM106" src="M106"/>
+<mapping dst="MM156" src="M156"/>
+<mapping dst="MM166" src="M166"/>
+<mapping dst="MM159" src="M159"/>
+<mapping dst="MM167" src="M167"/>
+<mapping dst="MM168" src="M168"/>
+<mapping dst="MM169" src="M169"/>
+<mapping dst="MM170" src="M170"/>
+<mapping dst="MM173" src="M173"/>
+<mapping dst="MM112" src="M112"/>
+<mapping dst="MM15" src="M15"/>
+<mapping dst="MM157" src="M157"/>
+<mapping dst="MM127" src="M127"/>
+<mapping dst="MM5" src="M5"/>
+<mapping dst="MM172" src="M172"/>
+<mapping dst="MM180" src="M180"/>
+<mapping dst="XI233" src="I233"/>
+<mapping dst="MM94" src="M94"/>
+<mapping dst="MM158" src="M158"/>
+<mapping dst="MM171" src="M171"/>
+<mapping dst="MM124" src="M124"/>
+<mapping dst="MM99" src="M99"/>
+<mapping dst="MM182" src="M182"/>
+<mapping dst="MM185" src="M185"/>
+<mapping dst="MM118" src="M118"/>
+<mapping dst="MM186" src="M186"/>
+<mapping dst="MM92" src="M92"/>
+<mapping dst="MM90" src="M90"/>
+<mapping dst="MM183" src="M183"/>
+<mapping dst="MM115" src="M115"/>
+<mapping dst="MM187" src="M187"/>
+<mapping dst="MM181" src="M181"/>
+<mapping dst="MM188" src="M188"/>
+<mapping dst="MM189" src="M189"/>
+<mapping dst="MM190" src="M190"/>
+<mapping dst="MM155" src="M155"/>
+<mapping dst="MM192" src="M192"/>
+<mapping dst="MM2" src="M2"/>
+<mapping dst="MM193" src="M193"/>
+<mapping dst="MM88" src="M88"/>
+<mapping dst="MM152" src="M152"/>
+<mapping dst="MM194" src="M194"/>
+<mapping dst="MM154" src="M154"/>
+<mapping dst="MM184" src="M184"/>
+<mapping dst="MM195" src="M195"/>
+<mapping dst="MM91" src="M91"/>
+<mapping dst="MM191" src="M191"/>
+</forward>
+<reverse>
+<mapping dst="M0" src="MM0"/>
+<mapping dst="M1" src="MM1"/>
+<mapping dst="M2" src="MM2"/>
+<mapping dst="M6" src="MM6"/>
+<mapping dst="M7" src="MM7"/>
+<mapping dst="M8" src="MM8"/>
+<mapping dst="M9" src="MM9"/>
+<mapping dst="M12" src="MM12"/>
+<mapping dst="M13" src="MM13"/>
+<mapping dst="M4" src="MM4"/>
+<mapping dst="M3" src="MM3"/>
+<mapping dst="M88" src="MM88"/>
+<mapping dst="M89" src="MM89"/>
+<mapping dst="I235" src="XI235"/>
+<mapping dst="M91" src="MM91"/>
+<mapping dst="M93" src="MM93"/>
+<mapping dst="I233" src="XI233"/>
+<mapping dst="M99" src="MM99"/>
+<mapping dst="M92" src="MM92"/>
+<mapping dst="M100" src="MM100"/>
+<mapping dst="M102" src="MM102"/>
+<mapping dst="M104" src="MM104"/>
+<mapping dst="M105" src="MM105"/>
+<mapping dst="M106" src="MM106"/>
+<mapping dst="M111" src="MM111"/>
+<mapping dst="M90" src="MM90"/>
+<mapping dst="M112" src="MM112"/>
+<mapping dst="M115" src="MM115"/>
+<mapping dst="M119" src="MM119"/>
+<mapping dst="I234" src="XI234"/>
+<mapping dst="M125" src="MM125"/>
+<mapping dst="M128" src="MM128"/>
+<mapping dst="M129" src="MM129"/>
+<mapping dst="M130" src="MM130"/>
+<mapping dst="M126" src="MM126"/>
+<mapping dst="M131" src="MM131"/>
+<mapping dst="M15" src="MM15"/>
+<mapping dst="M153" src="MM153"/>
+<mapping dst="M154" src="MM154"/>
+<mapping dst="M157" src="MM157"/>
+<mapping dst="M167" src="MM167"/>
+<mapping dst="M14" src="MM14"/>
+<mapping dst="M158" src="MM158"/>
+<mapping dst="M103" src="MM103"/>
+<mapping dst="M168" src="MM168"/>
+<mapping dst="M152" src="MM152"/>
+<mapping dst="M170" src="MM170"/>
+<mapping dst="M118" src="MM118"/>
+<mapping dst="M117" src="MM117"/>
+<mapping dst="M171" src="MM171"/>
+<mapping dst="I232" src="XI232"/>
+<mapping dst="M172" src="MM172"/>
+<mapping dst="M159" src="MM159"/>
+<mapping dst="M127" src="MM127"/>
+<mapping dst="M180" src="MM180"/>
+<mapping dst="M10" src="MM10"/>
+<mapping dst="M182" src="MM182"/>
+<mapping dst="M156" src="MM156"/>
+<mapping dst="M173" src="MM173"/>
+<mapping dst="M183" src="MM183"/>
+<mapping dst="M5" src="MM5"/>
+<mapping dst="M11" src="MM11"/>
+<mapping dst="M185" src="MM185"/>
+<mapping dst="M94" src="MM94"/>
+<mapping dst="M188" src="MM188"/>
+<mapping dst="M189" src="MM189"/>
+<mapping dst="M87" src="MM87"/>
+<mapping dst="M181" src="MM181"/>
+<mapping dst="M169" src="MM169"/>
+<mapping dst="M187" src="MM187"/>
+<mapping dst="M190" src="MM190"/>
+<mapping dst="M191" src="MM191"/>
+<mapping dst="M101" src="MM101"/>
+<mapping dst="M193" src="MM193"/>
+<mapping dst="M166" src="MM166"/>
+<mapping dst="M116" src="MM116"/>
+<mapping dst="M186" src="MM186"/>
+<mapping dst="M184" src="MM184"/>
+<mapping dst="M155" src="MM155"/>
+<mapping dst="M192" src="MM192"/>
+<mapping dst="M114" src="MM114"/>
+<mapping dst="M124" src="MM124"/>
+<mapping dst="M194" src="MM194"/>
+<mapping dst="M195" src="MM195"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward/>
+<reverse/>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="CLK IN WL" src="&lt;unmappedTermOrder>"/>
+<mapping dst="CLK IN WL" src="&lt;termOrder>"/>
+</forward>
+<reverse>
+<mapping dst="&lt;unmappedTermOrder>" src="CLK IN WL"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="inverter_row_decoder">
+<instance name="I232"/>
+<instance name="I233"/>
+<instance name="I234"/>
+<instance name="I235"/>
+</instance_header>
+<instance_header master="nmos">
+<instance name="M100"/>
+<instance name="M101"/>
+<instance name="M102"/>
+<instance name="M103"/>
+<instance name="M104"/>
+<instance name="M105"/>
+<instance name="M106"/>
+<instance name="M111"/>
+<instance name="M112"/>
+<instance name="M114"/>
+<instance name="M115"/>
+<instance name="M116"/>
+<instance name="M117"/>
+<instance name="M118"/>
+<instance name="M119"/>
+<instance name="M124"/>
+<instance name="M125"/>
+<instance name="M126"/>
+<instance name="M127"/>
+<instance name="M128"/>
+<instance name="M129"/>
+<instance name="M130"/>
+<instance name="M131"/>
+<instance name="M152"/>
+<instance name="M153"/>
+<instance name="M154"/>
+<instance name="M155"/>
+<instance name="M156"/>
+<instance name="M157"/>
+<instance name="M158"/>
+<instance name="M159"/>
+<instance name="M166"/>
+<instance name="M167"/>
+<instance name="M168"/>
+<instance name="M169"/>
+<instance name="M170"/>
+<instance name="M171"/>
+<instance name="M172"/>
+<instance name="M173"/>
+<instance name="M180"/>
+<instance name="M181"/>
+<instance name="M182"/>
+<instance name="M183"/>
+<instance name="M184"/>
+<instance name="M185"/>
+<instance name="M186"/>
+<instance name="M187"/>
+<instance name="M188"/>
+<instance name="M189"/>
+<instance name="M190"/>
+<instance name="M191"/>
+<instance name="M192"/>
+<instance name="M193"/>
+<instance name="M194"/>
+<instance name="M195"/>
+<instance name="M87"/>
+<instance name="M88"/>
+<instance name="M89"/>
+<instance name="M90"/>
+<instance name="M91"/>
+<instance name="M92"/>
+<instance name="M93"/>
+<instance name="M94"/>
+<instance name="M99"/>
+</instance_header>
+<instance_header master="pmos">
+<instance name="M0"/>
+<instance name="M1"/>
+<instance name="M10"/>
+<instance name="M11"/>
+<instance name="M12"/>
+<instance name="M13"/>
+<instance name="M14"/>
+<instance name="M15"/>
+<instance name="M2"/>
+<instance name="M3"/>
+<instance name="M4"/>
+<instance name="M5"/>
+<instance name="M6"/>
+<instance name="M7"/>
+<instance name="M8"/>
+<instance name="M9"/>
+</instance_header>
+</master_instances>
+</module>

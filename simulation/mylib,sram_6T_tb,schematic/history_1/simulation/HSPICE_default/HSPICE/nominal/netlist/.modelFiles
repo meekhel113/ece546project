@@ -1,0 +1,3 @@
+.lib 'fet.mod' nfet_typ
+.lib 'fet.mod' pfet_typ
+.vec '/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/sram.dat'

@@ -1,0 +1,39 @@
+<module name="vsl: project_backup inputbuf schematic vl: starrc hspice hspiceD schematic spice veriloga">
+<scope name="Instance">
+<forward>
+<mapping dst="m8" src="M8"/>
+<mapping dst="m9" src="M9"/>
+<mapping dst="m10" src="M10"/>
+<mapping dst="m11" src="M11"/>
+</forward>
+<reverse>
+<mapping dst="M8" src="m8"/>
+<mapping dst="M9" src="m9"/>
+<mapping dst="M10" src="m10"/>
+<mapping dst="M11" src="m11"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward/>
+<reverse/>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="out in" src="&lt;termOrder>"/>
+<mapping dst="out in" src="&lt;unmappedTermOrder>"/>
+</forward>
+<reverse>
+<mapping dst="&lt;unmappedTermOrder>" src="out in"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="nmos">
+<instance name="M8"/>
+<instance name="M9"/>
+</instance_header>
+<instance_header master="pmos">
+<instance name="M10"/>
+<instance name="M11"/>
+</instance_header>
+</master_instances>
+</module>

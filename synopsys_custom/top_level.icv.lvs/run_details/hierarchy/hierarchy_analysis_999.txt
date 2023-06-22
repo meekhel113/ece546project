@@ -1,0 +1,370 @@
+* Description of frequently used terms in hierarchy_analysis files*
+M indicates that the value of that column is in millions
+Hier Plc Count(Hierarchical Placement Count) : Number of unique instances of the cell in another cell (Parent)
+Flat Plc Count(Flat Placement Count)         : Total number of instances of the cell in the layout
+
+Example : 
+                               A                     
+                              / \                   Cell  Hier Plc Count Flat Plc Count 
+                             /   \                     A               1              1 
+                            B     B                    B               2              2 
+                           / \  /  \                   C               2              4 
+                          C   C C   C                
+------------------------------------------------------------------------------------------------------ 
+
+
+* Cells with flat area > 0.01 of top cell *
+Reports cells with flat area > 0.01 of top cell
+
+Flat A(Flat Area) : Total area covered by this cell in the layout(cell area * flat placement count)
+Cell A(Cell Area) : Area of this cell
+Percent of top    : Percentage of area of this cell w.r.t area of top cell
+This table contains 31 entries
+Original table contains 31 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Flat Plc Count, Hier Plc Count, Percent of top
+-----------------------------------------------
+ top_level                                     |         0.000,         0.000,              1,              1,       100.00 %
+ VCELLR4                                       |         0.000,         0.000,              8,              8,        45.87 %
+ sram_array_16r_8c                             |         0.000,         0.000,              1,              1,        45.17 %
+ fill_sram_inverted                            |         0.000,         0.000,            278,            130,        31.89 %
+ sram_array_1r_4c                              |         0.000,         0.000,             16,              2,        26.42 %
+ fill_sram                                     |         0.000,         0.000,            220,            135,        25.24 %
+ sram_6T_1finger_inverted                      |         0.000,         0.000,             64,              8,        25.22 %
+ row_decoder_4_16                              |         0.000,         0.000,              1,              1,        16.75 %
+ VCELLR3                                       |         0.000,         0.000,              8,              8,        16.41 %
+ fill_sram_pmos                                |         0.000,         0.000,            128,             16,        12.13 %
+ column_decoder_write                          |         0.000,         0.000,              1,              1,         9.47 %
+ sram_lvs_grid                                 |         0.000,         0.000,              2,              2,         7.18 %
+ fill_sram_nmos                                |         0.000,         0.000,             64,              8,         6.70 %
+ bitline_conditioning                          |         0.000,         0.000,              1,              1,         6.12 %
+ buffer_top                                    |         0.000,         0.000,             12,             12,         5.57 %
+ write_buffer_cell                             |         0.000,         0.000,              4,              4,         5.47 %
+ inverter_buf_top_leve                         |         0.000,         0.000,             20,              2,         5.09 %
+ equalizer                                     |         0.000,         0.000,              8,              8,         4.83 %
+ fill_sram_column_decoder_write                |         0.000,         0.000,             41,             39,         4.70 %
+ buffer_top_inverted                           |         0.000,         0.000,              8,              8,         3.71 %
+ fill_sram_inverted_write_pmos                 |         0.000,         0.000,             32,              4,         3.67 %
+ column_decoder_read                           |         0.000,         0.000,              1,              1,         3.54 %
+ fill_sram_inverted_read                       |         0.000,         0.000,             27,             27,         3.10 %
+ buffer_array                                  |         0.000,         0.000,              1,              1,         3.05 %
+ fill_sram_inverted_nmos                       |         0.000,         0.000,             32,              4,         3.03 %
+ column_decoder_write_cell                     |         0.000,         0.000,              8,              8,         2.59 %
+ fill_sram_inverted_pmos_read                  |         0.000,         0.000,             20,              5,         2.29 %
+ fill_sram_inverted_pmos_write                 |         0.000,         0.000,             16,              4,         1.84 %
+ column_decoder_read_cell                      |         0.000,         0.000,              4,              4,         1.58 %
+ and                                           |         0.000,         0.000,              4,              1,         1.30 %
+ inverter_row_decoder                          |         0.000,         0.000,              4,              4,         1.02 %
+===============================================
+
+* Large-Area cells and child area ratio *
+This table reports cells with large areas and ratio of its area with total area covered by its children
+
+Num Inst(Number of instances) : Total Number of instances of the cell
+Child A(Child Area)           : Total area covered by all the children of the cell
+Pct of parent(Percent of area): Percentage of total area covered by its childern w.r.t area of this cell
+This table contains 31 entries
+Original table contains 31 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Num Inst (M), Child A (mm^2), Pct of parent
+-----------------------------------------------
+ top_level                                     |         0.000,         0.000,        0.000,         0.000,      113.60 %
+ VCELLR4                                       |         0.000,         0.000,        0.000,         0.000,      124.57 %
+ sram_array_16r_8c                             |         0.000,         0.000,        0.000,         0.000,      105.61 %
+ fill_sram_inverted                            |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ sram_array_1r_4c                              |         0.000,         0.000,        0.000,         0.000,      116.31 %
+ fill_sram                                     |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ sram_6T_1finger_inverted                      |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ row_decoder_4_16                              |         0.000,         0.000,        0.000,         0.000,      106.78 %
+ VCELLR3                                       |         0.000,         0.000,        0.000,         0.000,      159.49 %
+ fill_sram_pmos                                |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ column_decoder_write                          |         0.000,         0.000,        0.000,         0.000,      129.28 %
+ sram_lvs_grid                                 |         0.000,         0.000,        0.000,         0.000,      147.04 %
+ fill_sram_nmos                                |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ bitline_conditioning                          |         0.000,         0.000,        0.000,         0.000,      135.21 %
+ buffer_top                                    |         0.000,         0.000,        0.000,         0.000,      109.68 %
+ write_buffer_cell                             |         0.000,         0.000,        0.000,         0.000,      144.93 %
+ inverter_buf_top_leve                         |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ equalizer                                     |         0.000,         0.000,        0.000,         0.000,      138.84 %
+ fill_sram_column_decoder_write                |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ buffer_top_inverted                           |         0.000,         0.000,        0.000,         0.000,      109.68 %
+ fill_sram_inverted_write_pmos                 |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ column_decoder_read                           |         0.000,         0.000,        0.000,         0.000,      132.16 %
+ fill_sram_inverted_read                       |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ buffer_array                                  |         0.000,         0.000,        0.000,         0.000,      132.41 %
+ fill_sram_inverted_nmos                       |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ column_decoder_write_cell                     |         0.000,         0.000,        0.000,         0.000,      141.54 %
+ fill_sram_inverted_pmos_read                  |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ fill_sram_inverted_pmos_write                 |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ column_decoder_read_cell                      |         0.000,         0.000,        0.000,         0.000,      145.57 %
+ and                                           |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ inverter_row_decoder                          |         0.000,         0.000,        0.000,         0.000,        0.00 %
+===============================================
+
+* Exploded Cell Information *
+Displays information of exploded cells
+
+Parent cell           : Name of the parent cell the cell has exploded into
+Exploded Inst Count   : Total number of instances of the cell that has expldoed to the parent cell
+Parent Flat Plc Count : Parent cell flat placement count
+Parent Hier Plc Count : Parent cell hierarchical placement count
+This table contains 98 entries
+Original table contains 98 entries
+
+ Exploded Cell                                 | Parent Cell                                   | Exploded Inst Count, Parent Flat Plc Count, Parent Hier Plc Count
+----------------------------------------------- -----------------------------------------------
+ M2_M3                                         | sram_array_16r_8c                             |                 256,                     1,                     1
+ M1_M2                                         | row_decoder_4_16                              |                 104,                     1,                     1
+ M0B_M1                                        | row_decoder_4_16                              |                  88,                     1,                     1
+ M0B_M1                                        | top_level                                     |                  76,                     1,                     1
+ M2_M3                                         | row_decoder_4_16                              |                  64,                     1,                     1
+ M1_M2                                         | top_level                                     |                  64,                     1,                     1
+ M0A_M0B                                       | sram_lvs_grid                                 |                  46,                     2,                     2
+ M0B_M1                                        | sram_lvs_grid                                 |                  46,                     2,                     2
+ M0B_M1                                        | column_decoder_write                          |                  39,                     1,                     1
+ M0B_M1                                        | VCELLR4                                       |                  24,                     8,                     8
+ M1_M2                                         | VCELLR4                                       |                  24,                     8,                     8
+ M0B_M1                                        | bitline_conditioning                          |                  24,                     1,                     1
+ M1_M2                                         | bitline_conditioning                          |                  24,                     1,                     1
+ M2_M3                                         | bitline_conditioning                          |                  24,                     1,                     1
+ M1_M2                                         | column_decoder_write                          |                  23,                     1,                     1
+ M2_M3                                         | top_level                                     |                  22,                     1,                     1
+ M3_M4                                         | row_decoder_4_16                              |                  16,                     1,                     1
+ nmos                                          | VCELLR3                                       |                  14,                     8,                     8
+ M0B_M1                                        | sram_array_1r_4c                              |                  12,                    16,                    16
+ M1_M2                                         | sram_array_1r_4c                              |                  12,                    16,                    16
+ M4_M5                                         | row_decoder_4_16                              |                  11,                     1,                     1
+ BPR_M0A                                       | VCELLR3                                       |                  10,                     8,                     8
+ GATE_M0B                                      | VCELLR3                                       |                  10,                     8,                     8
+ M0A_M0B                                       | VCELLR3                                       |                  10,                     8,                     8
+ M0B_M1                                        | column_decoder_read                           |                  10,                     1,                     1
+ M1_M2                                         | column_decoder_read                           |                  10,                     1,                     1
+ pmos                                          | equalizer                                     |                  10,                     8,                     8
+ M3_M4                                         | top_level                                     |                   8,                     1,                     1
+ pmos                                          | and                                           |                   6,                     4,                     1
+ pmos                                          | and_v1                                        |                   6,                     4,                     1
+ nmos                                          | column_decoder_write_cell                     |                   6,                     8,                     8
+ GATE_M0B                                      | equalizer                                     |                   6,                     8,                     8
+ M0A_M0B                                       | equalizer                                     |                   5,                     8,                     8
+ M4_M5                                         | top_level                                     |                   5,                     1,                     1
+ M0B_M1                                        | VCELLR3                                       |                   4,                     8,                     8
+ pmos                                          | VCELLR3                                       |                   4,                     8,                     8
+ M3_M4                                         | bitline_conditioning                          |                   4,                     1,                     1
+ GATE_M0B                                      | column_decoder_read_cell                      |                   4,                     4,                     4
+ nmos                                          | column_decoder_read_cell                      |                   4,                     4,                     4
+ M0A_M0B                                       | column_decoder_write_cell                     |                   4,                     8,                     8
+ pmos                                          | inverter_buf_top_leve                         |                   4,                    20,                     2
+ pmos                                          | inverter_buf_top_level_v1                     |                   4,                    20,                     2
+ pmos                                          | inverter_column_decoder_write                 |                   4,                     2,                     2
+ pmos                                          | inverter_row_decoder                          |                   4,                     4,                     4
+ BPR_M0A                                       | sram_6T_1finger                               |                   4,                    64,                     4
+ GATE_M0B                                      | sram_6T_1finger                               |                   4,                    64,                     4
+ M0A_M0B                                       | sram_6T_1finger                               |                   4,                    64,                     4
+ nmos                                          | sram_6T_1finger                               |                   4,                    64,                     4
+ BPR_M0A                                       | sram_6T_1finger_inverted                      |                   4,                    64,                     4
+ GATE_M0B                                      | sram_6T_1finger_inverted                      |                   4,                    64,                     4
+ M0A_M0B                                       | sram_6T_1finger_inverted                      |                   4,                    64,                     4
+ nmos                                          | sram_6T_1finger_inverted                      |                   4,                    64,                     4
+ M0B_M1                                        | write_buffer_cell                             |                   4,                     4,                     4
+ BPR_M0A                                       | and                                           |                   3,                     4,                     1
+ GATE_M0B                                      | and                                           |                   3,                     4,                     1
+ M0A_M0B                                       | and                                           |                   3,                     4,                     1
+ nmos                                          | and                                           |                   3,                     4,                     1
+ BPR_M0A                                       | and_v1                                        |                   3,                     4,                     1
+ GATE_M0B                                      | and_v1                                        |                   3,                     4,                     1
+ M0A_M0B                                       | and_v1                                        |                   3,                     4,                     1
+ nmos                                          | and_v1                                        |                   3,                     4,                     1
+ M0A_M0B                                       | column_decoder_read_cell                      |                   3,                     4,                     4
+ BPR_M0A                                       | equalizer                                     |                   3,                     8,                     8
+ row_decoder_4_16_oneword                      | VCELLR3                                       |                   2,                     8,                     8
+ sram_array_1r_4c_inverted                     | VCELLR4                                       |                   2,                     8,                     8
+ M0B_M1                                        | and                                           |                   2,                     4,                     1
+ M0B_M1                                        | and_v1                                        |                   2,                     4,                     1
+ GATE_M0B                                      | column_decoder_read                           |                   2,                     1,                     1
+ nmos                                          | column_decoder_read                           |                   2,                     1,                     1
+ pmos                                          | column_decoder_read                           |                   2,                     1,                     1
+ GATE_M0B                                      | column_decoder_write_cell                     |                   2,                     8,                     8
+ GATE_M0B                                      | inverter_buf_top_leve                         |                   2,                    20,                     2
+ nmos                                          | inverter_buf_top_leve                         |                   2,                    20,                     2
+ GATE_M0B                                      | inverter_buf_top_level_v1                     |                   2,                    20,                     2
+ nmos                                          | inverter_buf_top_level_v1                     |                   2,                    20,                     2
+ GATE_M0B                                      | inverter_column_decoder_write                 |                   2,                     2,                     2
+ nmos                                          | inverter_column_decoder_write                 |                   2,                     2,                     2
+ GATE_M0B                                      | inverter_row_decoder                          |                   2,                     4,                     4
+ nmos                                          | inverter_row_decoder                          |                   2,                     4,                     4
+ pmos                                          | inverter_write                                |                   2,                     4,                     1
+ BPR_M0A                                       | write_buffer_cell                             |                   2,                     4,                     4
+ GATE_M0B                                      | write_buffer_cell                             |                   2,                     4,                     4
+ M0A_M0B                                       | write_buffer_cell                             |                   2,                     4,                     4
+ nmos                                          | write_buffer_cell                             |                   2,                     4,                     4
+ M0A_M0B                                       | column_decoder_read                           |                   1,                     1,                     1
+ inverter_column_decoder_read                  | column_decoder_read                           |                   1,                     1,                     1
+ column_decoder_write_routing                  | column_decoder_write                          |                   1,                     1,                     1
+ M0A_M0B                                       | inverter_buf_top_leve                         |                   1,                    20,                     2
+ M0A_M0B                                       | inverter_buf_top_level_v1                     |                   1,                    20,                     2
+ M0A_M0B                                       | inverter_column_decoder_write                 |                   1,                     2,                     2
+ M0A_M0B                                       | inverter_row_decoder                          |                   1,                     4,                     4
+ GATE_M0B                                      | inverter_write                                |                   1,                     4,                     1
+ M0A_M0B                                       | inverter_write                                |                   1,                     4,                     1
+ nmos                                          | inverter_write                                |                   1,                     4,                     1
+ row_decoder_4_16_routing                      | row_decoder_4_16                              |                   1,                     1,                     1
+ sram_array_16r_8c_routing                     | sram_array_16r_8c                             |                   1,                     1,                     1
+ buffer_array_top_routing                      | top_level                                     |                   1,                     1,                     1
+ top_level_routing                             | top_level                                     |                   1,                     1,                     1
+=============================================== ===============================================
+
+* Layer Report with Estimated Data *
+Reports information of layers present in the layout
+
+Trap        : Number of hierarchical trapezoids in the layer
+Poly        : Number of hierarchical polygons in the layer
+Text        : Number of hierarchical text primitives in the layer
+Flat Trap   : Number of flat trapezoids 
+Flat Poly   : Number of flat polygons
+Flat Text   : Number of flat text primitives 
+Trap F/H    : Ratio of flat and hierarchical placements of the trapezoids
+Base, Metal, Via, Fill, Colored : Indicates layer intent
+This table contains 29 entries
+Original table contains 29 entries
+
+ Name                                          | Trap (M), Poly (M), Text (M), Flat Trap (M), Flat Poly (M), Flat Text (M), Trap F/H, Base, Metal, Via, Fill, Colored
+-----------------------------------------------
+ aM2                                           |    0.001,    0.001,    0.000,         0.002,         0.002,         0.000,     1.67,    0,     0,   0,    0,       0
+ aM1                                           |    0.001,    0.001,    0.000,         0.002,         0.002,         0.000,     2.36,    0,     0,   0,    0,       0
+ aM0B                                          |    0.001,    0.001,    0.000,         0.004,         0.004,         0.000,     5.08,    0,     0,   0,    0,       0
+ aGATE                                         |    0.001,    0.001,    0.000,         0.009,         0.009,         0.000,    17.51,    0,     0,   0,    0,       0
+ aM3                                           |    0.001,    0.001,    0.000,         0.001,         0.001,         0.000,     1.00,    0,     0,   0,    0,       0
+ aM0A                                          |    0.000,    0.000,    0.000,         0.008,         0.008,         0.000,    18.31,    0,     0,   0,    0,       0
+ aV2                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ aV0B                                          |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,     2.35,    0,     0,   0,    0,       0
+ aV1                                           |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,     2.33,    0,     0,   0,    0,       0
+ aBPR                                          |    0.000,    0.000,    0.000,         0.005,         0.005,         0.000,    38.93,    0,     0,   0,    0,       0
+ aACT                                          |    0.000,    0.000,    0.000,         0.004,         0.004,         0.000,    30.21,    0,     0,   0,    0,       0
+ aDUMMY                                        |    0.000,    0.000,    0.000,         0.003,         0.003,         0.000,    24.02,    0,     0,   0,    0,       0
+ aNW                                           |    0.000,    0.000,    0.000,         0.002,         0.002,         0.000,    25.68,    0,     0,   0,    0,       0
+ aV0A                                          |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,     9.46,    0,     0,   0,    0,       0
+ aPIM                                          |    0.000,    0.000,    0.000,         0.002,         0.002,         0.000,    25.30,    0,     0,   0,    0,       0
+ tM0B                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.001,     0.00,    0,     0,   0,    0,       0
+ aNIM                                          |    0.000,    0.000,    0.000,         0.002,         0.002,         0.000,    24.20,    0,     0,   0,    0,       0
+ aM4                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ aVBPR                                         |    0.000,    0.000,    0.000,         0.002,         0.002,         0.000,    34.89,    0,     0,   0,    0,       0
+ aGCON                                         |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,    16.37,    0,     0,   0,    0,       0
+ tM2                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+ tBPR                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.002,     0.00,    0,     0,   0,    0,       0
+ tM3                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+ aV3                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ aM5                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ aV4                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     1.00,    0,     0,   0,    0,       0
+ tM4                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+ tM5                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+ tM0A                                          |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+===============================================
+
+* Explosion tries on no explode cells *
+Reports the attempts to explode cells which can not be exploded
+Explosion Try         : Reason behind the attempt to explode that particular cell
+Not Exploding Reason  : Reason why the cell is not being exploded
+This table contains 10 entries
+Original table contains 10 entries
+
+ Cell Name                                     | Explosion Try                                 |                          Not Exploding Reason
+----------------------------------------------- ----------------------------------------------- -----------------------------------------------
+ sram_array_16r_8c                             | AUTO_EXPLODED (PLACEMENT_LIMIT)               |                             USED (NO EXPLODE)
+ column_decoder_read                           | AUTO_EXPLODED (PLACEMENT_LIMIT)               |                             USED (NO EXPLODE)
+ column_decoder_write                          | AUTO_EXPLODED (BIG_SPARSE_CELL)               |                             USED (NO EXPLODE)
+ bitline_conditioning                          | AUTO_EXPLODED (PLACEMENT_LIMIT)               |                             USED (NO EXPLODE)
+ row_decoder_4_16                              | AUTO_EXPLODED (BIG_SPARSE_CELL)               |                             USED (NO EXPLODE)
+ buffer_array                                  | AUTO_EXPLODED (PLACEMENT_LIMIT)               |                             USED (NO EXPLODE)
+ sram_array_16r_8c                             | AUTO_EXPLODED (BIG_SPARSE_CELL)               |                             USED (NO EXPLODE)
+ bitline_conditioning                          | AUTO_EXPLODED (BIG_SPARSE_CELL)               |                             USED (NO EXPLODE)
+ column_decoder_write                          | AUTO_EXPLODED (PLACEMENT_LIMIT)               |                             USED (NO EXPLODE)
+ row_decoder_4_16                              | AUTO_EXPLODED (PLACEMENT_LIMIT)               |                             USED (NO EXPLODE)
+=============================================== =============================================== ===============================================
+
+* Top cells pushing ref->ref data *
+Reports cells sorted on count of pushed references
+Cell Snum           : Indicates an unique structure number to identify the cell
+Reference Count     : Indicates the number of references pushed by the cell
+This table contains 33 entries
+Original table contains 33 entries
+
+ Name                                          |    Reference Count,     Cell Snum
+-----------------------------------------------
+ fill_sram_nmos                                |                 77,            23
+ fill_sram_inverted_read                       |                 57,            14
+ fill_sram_inverted_write_pmos                 |                 45,            33
+ fill_sram_inverted_pmos_read                  |                 44,            26
+ fill_sram_column_decoder_write                |                 32,             7
+ inverter_buf_top_level_v1                     |                 27,            25
+ inverter_buf_top_leve                         |                 26,            24
+ buffer_top                                    |                 23,            13
+ VCELLR3                                       |                 22,            34
+ sram_array_16r_8c                             |                 19,             1
+ buffer_top_inverted                           |                 19,            16
+ fill_sram_inverted_nmos                       |                 18,            28
+ row_decoder_4_16                              |                 17,             9
+ VCELLR4                                       |                 16,            35
+ sram_array_1r_4c                              |                 14,            11
+ fill_sram_inverted_pmos_write                 |                 14,            31
+ column_decoder_write_cell                     |                 13,            19
+ equalizer                                     |                 11,            12
+ column_decoder_read_cell                      |                 10,            15
+ write_buffer_cell                             |                  8,            18
+ inverter_column_decoder_write                 |                  8,            20
+ sram_lvs_grid                                 |                  7,             8
+ inverter_row_decoder                          |                  6,            17
+ and                                           |                  5,            29
+ bitline_conditioning                          |                  4,             2
+ column_decoder_read                           |                  4,             5
+ column_decoder_write                          |                  3,            10
+ and_v1                                        |                  3,            30
+ fill_sram_inverted                            |                  2,             3
+ buffer_array                                  |                  2,             4
+ fill_sram                                     |                  2,             6
+ fill_sram_pmos                                |                  2,            27
+ inverter_write                                |                  2,            32
+===============================================
+
+* Top cells accepting ref->ref data *
+Reports cells sorted on count of accepted references
+Cell Snum           : Indicates an unique structure number to identify the cell
+Reference Count     : Indicates the number of references accepted by the cell
+This table contains 32 entries
+Original table contains 32 entries
+
+ Name                                          |    Reference Count,     Cell Snum
+-----------------------------------------------
+ sram_array_16r_8c                             |                122,             1
+ bitline_conditioning                          |                 64,             2
+ buffer_array                                  |                 50,             4
+ column_decoder_write                          |                 40,            10
+ sram_lvs_grid                                 |                 36,             8
+ row_decoder_4_16                              |                 33,             9
+ buffer_top_inverted                           |                 32,            16
+ buffer_top                                    |                 31,            13
+ column_decoder_read                           |                 22,             5
+ fill_sram_column_decoder_write                |                 18,             7
+ VCELLR3                                       |                 17,            34
+ write_buffer_cell                             |                 16,            18
+ equalizer                                     |                 12,            12
+ inverter_column_decoder_write                 |                 12,            20
+ column_decoder_write_cell                     |                  9,            19
+ inverter_row_decoder                          |                  7,            17
+ fill_sram_inverted_read                       |                  6,            14
+ fill_sram_inverted_pmos_write                 |                  6,            31
+ and                                           |                  3,            29
+ and_v1                                        |                  3,            30
+ VCELLR4                                       |                  3,            35
+ fill_sram_inverted                            |                  2,             3
+ fill_sram                                     |                  2,             6
+ column_decoder_read_cell                      |                  2,            15
+ fill_sram_nmos                                |                  2,            23
+ fill_sram_inverted_pmos_read                  |                  2,            26
+ fill_sram_pmos                                |                  2,            27
+ fill_sram_inverted_nmos                       |                  2,            28
+ inverter_write                                |                  2,            32
+ fill_sram_inverted_write_pmos                 |                  2,            33
+ inverter_buf_top_leve                         |                  1,            24
+ inverter_buf_top_level_v1                     |                  1,            25
+===============================================
+

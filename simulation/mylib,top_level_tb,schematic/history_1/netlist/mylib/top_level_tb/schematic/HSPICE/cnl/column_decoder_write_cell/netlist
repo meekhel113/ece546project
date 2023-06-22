@@ -1,0 +1,12 @@
+********************************************************************************
+* Library          : mylib
+* Cell             : column_decoder_write_cell
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt column_decoder_write_cell in out<0> out<1> s sb
+m1 in sb out<0> nfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m0 in s out<1> nfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+.ends column_decoder_write_cell
+

@@ -1,0 +1,372 @@
+<module name="vsl: mylib row_decoder_4_16 schematic vl: hspice hspiceD schematic spice veriloga">
+<scope name="Instance">
+<forward>
+<mapping dst="m101" src="M101"/>
+<mapping dst="xi231" src="I231"/>
+<mapping dst="m103" src="M103"/>
+<mapping dst="m93" src="M93"/>
+<mapping dst="m100" src="M100"/>
+<mapping dst="m87" src="M87"/>
+<mapping dst="m89" src="M89"/>
+<mapping dst="m124" src="M124"/>
+<mapping dst="m158" src="M158"/>
+<mapping dst="m171" src="M171"/>
+<mapping dst="m99" src="M99"/>
+<mapping dst="m94" src="M94"/>
+<mapping dst="m119" src="M119"/>
+<mapping dst="m102" src="M102"/>
+<mapping dst="m104" src="M104"/>
+<mapping dst="m114" src="M114"/>
+<mapping dst="m105" src="M105"/>
+<mapping dst="m159" src="M159"/>
+<mapping dst="m166" src="M166"/>
+<mapping dst="m111" src="M111"/>
+<mapping dst="m167" src="M167"/>
+<mapping dst="m117" src="M117"/>
+<mapping dst="m125" src="M125"/>
+<mapping dst="m126" src="M126"/>
+<mapping dst="m116" src="M116"/>
+<mapping dst="m129" src="M129"/>
+<mapping dst="m106" src="M106"/>
+<mapping dst="m153" src="M153"/>
+<mapping dst="m156" src="M156"/>
+<mapping dst="m168" src="M168"/>
+<mapping dst="m173" src="M173"/>
+<mapping dst="m112" src="M112"/>
+<mapping dst="xi229" src="I229"/>
+<mapping dst="xi230" src="I230"/>
+<mapping dst="m182" src="M182"/>
+<mapping dst="m185" src="M185"/>
+<mapping dst="m118" src="M118"/>
+<mapping dst="m90" src="M90"/>
+<mapping dst="m92" src="M92"/>
+<mapping dst="m186" src="M186"/>
+<mapping dst="m183" src="M183"/>
+<mapping dst="m115" src="M115"/>
+<mapping dst="m181" src="M181"/>
+<mapping dst="m187" src="M187"/>
+<mapping dst="m188" src="M188"/>
+<mapping dst="m155" src="M155"/>
+<mapping dst="m190" src="M190"/>
+<mapping dst="m184" src="M184"/>
+<mapping dst="m194" src="M194"/>
+<mapping dst="m152" src="M152"/>
+<mapping dst="m154" src="M154"/>
+<mapping dst="m191" src="M191"/>
+<mapping dst="m91" src="M91"/>
+<mapping dst="m195" src="M195"/>
+<mapping dst="m88" src="M88"/>
+<mapping dst="m193" src="M193"/>
+<mapping dst="m2" src="M2"/>
+<mapping dst="m6" src="M6"/>
+<mapping dst="m3" src="M3"/>
+<mapping dst="m192" src="M192"/>
+<mapping dst="m8" src="M8"/>
+<mapping dst="m128" src="M128"/>
+<mapping dst="m1" src="M1"/>
+<mapping dst="m170" src="M170"/>
+<mapping dst="m12" src="M12"/>
+<mapping dst="m13" src="M13"/>
+<mapping dst="m10" src="M10"/>
+<mapping dst="m7" src="M7"/>
+<mapping dst="m169" src="M169"/>
+<mapping dst="xi228" src="I228"/>
+<mapping dst="m14" src="M14"/>
+<mapping dst="m0" src="M0"/>
+<mapping dst="m130" src="M130"/>
+<mapping dst="m127" src="M127"/>
+<mapping dst="m180" src="M180"/>
+<mapping dst="m5" src="M5"/>
+<mapping dst="m172" src="M172"/>
+<mapping dst="m15" src="M15"/>
+<mapping dst="m157" src="M157"/>
+<mapping dst="m131" src="M131"/>
+<mapping dst="m4" src="M4"/>
+<mapping dst="m9" src="M9"/>
+<mapping dst="m189" src="M189"/>
+<mapping dst="m11" src="M11"/>
+</forward>
+<reverse>
+<mapping dst="M117" src="m117"/>
+<mapping dst="I228" src="xi228"/>
+<mapping dst="M93" src="m93"/>
+<mapping dst="M194" src="m194"/>
+<mapping dst="M89" src="m89"/>
+<mapping dst="I229" src="xi229"/>
+<mapping dst="M129" src="m129"/>
+<mapping dst="M88" src="m88"/>
+<mapping dst="M155" src="m155"/>
+<mapping dst="M90" src="m90"/>
+<mapping dst="M106" src="m106"/>
+<mapping dst="M92" src="m92"/>
+<mapping dst="M91" src="m91"/>
+<mapping dst="M94" src="m94"/>
+<mapping dst="M112" src="m112"/>
+<mapping dst="M7" src="m7"/>
+<mapping dst="M195" src="m195"/>
+<mapping dst="M184" src="m184"/>
+<mapping dst="M100" src="m100"/>
+<mapping dst="M154" src="m154"/>
+<mapping dst="M130" src="m130"/>
+<mapping dst="M111" src="m111"/>
+<mapping dst="M103" src="m103"/>
+<mapping dst="M166" src="m166"/>
+<mapping dst="M114" src="m114"/>
+<mapping dst="M104" src="m104"/>
+<mapping dst="M116" src="m116"/>
+<mapping dst="M118" src="m118"/>
+<mapping dst="I230" src="xi230"/>
+<mapping dst="M125" src="m125"/>
+<mapping dst="M99" src="m99"/>
+<mapping dst="M127" src="m127"/>
+<mapping dst="M153" src="m153"/>
+<mapping dst="M156" src="m156"/>
+<mapping dst="M157" src="m157"/>
+<mapping dst="M152" src="m152"/>
+<mapping dst="M167" src="m167"/>
+<mapping dst="M170" src="m170"/>
+<mapping dst="M171" src="m171"/>
+<mapping dst="M131" src="m131"/>
+<mapping dst="M173" src="m173"/>
+<mapping dst="M181" src="m181"/>
+<mapping dst="M168" src="m168"/>
+<mapping dst="M87" src="m87"/>
+<mapping dst="M105" src="m105"/>
+<mapping dst="M182" src="m182"/>
+<mapping dst="M186" src="m186"/>
+<mapping dst="M188" src="m188"/>
+<mapping dst="M115" src="m115"/>
+<mapping dst="M101" src="m101"/>
+<mapping dst="M190" src="m190"/>
+<mapping dst="M172" src="m172"/>
+<mapping dst="M192" src="m192"/>
+<mapping dst="M183" src="m183"/>
+<mapping dst="M3" src="m3"/>
+<mapping dst="M5" src="m5"/>
+<mapping dst="M159" src="m159"/>
+<mapping dst="M189" src="m189"/>
+<mapping dst="M8" src="m8"/>
+<mapping dst="M2" src="m2"/>
+<mapping dst="M9" src="m9"/>
+<mapping dst="M180" src="m180"/>
+<mapping dst="M1" src="m1"/>
+<mapping dst="M187" src="m187"/>
+<mapping dst="M13" src="m13"/>
+<mapping dst="M119" src="m119"/>
+<mapping dst="M128" src="m128"/>
+<mapping dst="M14" src="m14"/>
+<mapping dst="M102" src="m102"/>
+<mapping dst="M15" src="m15"/>
+<mapping dst="M124" src="m124"/>
+<mapping dst="I231" src="xi231"/>
+<mapping dst="M169" src="m169"/>
+<mapping dst="M10" src="m10"/>
+<mapping dst="M4" src="m4"/>
+<mapping dst="M0" src="m0"/>
+<mapping dst="M185" src="m185"/>
+<mapping dst="M158" src="m158"/>
+<mapping dst="M126" src="m126"/>
+<mapping dst="M6" src="m6"/>
+<mapping dst="M12" src="m12"/>
+<mapping dst="M191" src="m191"/>
+<mapping dst="M11" src="m11"/>
+<mapping dst="M193" src="m193"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward>
+<mapping dst="wl&lt;15>" src="WL&lt;15>"/>
+<mapping dst="wl&lt;7>" src="WL&lt;7>"/>
+<mapping dst="wl&lt;9>" src="WL&lt;9>"/>
+<mapping dst="wl&lt;4>" src="WL&lt;4>"/>
+<mapping dst="wl&lt;2>" src="WL&lt;2>"/>
+<mapping dst="wl&lt;1>" src="WL&lt;1>"/>
+<mapping dst="wl&lt;3>" src="WL&lt;3>"/>
+<mapping dst="wl&lt;8>" src="WL&lt;8>"/>
+<mapping dst="wl&lt;6>" src="WL&lt;6>"/>
+<mapping dst="wl&lt;12>" src="WL&lt;12>"/>
+<mapping dst="wl&lt;0>" src="WL&lt;0>"/>
+<mapping dst="wl&lt;13>" src="WL&lt;13>"/>
+<mapping dst="wl&lt;5>" src="WL&lt;5>"/>
+<mapping dst="in&lt;3>" src="IN&lt;3>"/>
+<mapping dst="wl&lt;11>" src="WL&lt;11>"/>
+<mapping dst="in&lt;1>" src="IN&lt;1>"/>
+<mapping dst="wl&lt;10>" src="WL&lt;10>"/>
+<mapping dst="wl&lt;14>" src="WL&lt;14>"/>
+<mapping dst="in&lt;0>" src="IN&lt;0>"/>
+<mapping dst="clk" src="CLK"/>
+<mapping dst="in&lt;2>" src="IN&lt;2>"/>
+</forward>
+<reverse>
+<mapping dst="WL&lt;15>" src="wl&lt;15>"/>
+<mapping dst="WL&lt;13>" src="wl&lt;13>"/>
+<mapping dst="WL&lt;11>" src="wl&lt;11>"/>
+<mapping dst="WL&lt;9>" src="wl&lt;9>"/>
+<mapping dst="WL&lt;14>" src="wl&lt;14>"/>
+<mapping dst="WL&lt;6>" src="wl&lt;6>"/>
+<mapping dst="WL&lt;5>" src="wl&lt;5>"/>
+<mapping dst="WL&lt;12>" src="wl&lt;12>"/>
+<mapping dst="WL&lt;1>" src="wl&lt;1>"/>
+<mapping dst="WL&lt;4>" src="wl&lt;4>"/>
+<mapping dst="WL&lt;10>" src="wl&lt;10>"/>
+<mapping dst="WL&lt;0>" src="wl&lt;0>"/>
+<mapping dst="IN&lt;3>" src="in&lt;3>"/>
+<mapping dst="WL&lt;2>" src="wl&lt;2>"/>
+<mapping dst="WL&lt;7>" src="wl&lt;7>"/>
+<mapping dst="WL&lt;8>" src="wl&lt;8>"/>
+<mapping dst="IN&lt;2>" src="in&lt;2>"/>
+<mapping dst="WL&lt;3>" src="wl&lt;3>"/>
+<mapping dst="IN&lt;1>" src="in&lt;1>"/>
+<mapping dst="IN&lt;0>" src="in&lt;0>"/>
+<mapping dst="CLK" src="clk"/>
+</reverse>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="CLK IN&lt;0> IN&lt;1> IN&lt;2> IN&lt;3> WL&lt;0> WL&lt;1> WL&lt;2> WL&lt;3> WL&lt;4> WL&lt;5> WL&lt;6> WL&lt;7> WL&lt;8> WL&lt;9> WL&lt;10> WL&lt;11> WL&lt;12> WL&lt;13> WL&lt;14> WL&lt;15>" src="&lt;unmappedTermOrder>"/>
+<mapping dst="wl&lt;9>" src="WL&lt;9>"/>
+<mapping dst="clk in&lt;0> in&lt;1> in&lt;2> in&lt;3> wl&lt;0> wl&lt;1> wl&lt;2> wl&lt;3> wl&lt;4> wl&lt;5> wl&lt;6> wl&lt;7> wl&lt;8> wl&lt;9> wl&lt;10> wl&lt;11> wl&lt;12> wl&lt;13> wl&lt;14> wl&lt;15>" src="&lt;termOrder>"/>
+<mapping dst="wl&lt;7>" src="WL&lt;7>"/>
+<mapping dst="wl&lt;2>" src="WL&lt;2>"/>
+<mapping dst="wl&lt;1>" src="WL&lt;1>"/>
+<mapping dst="wl&lt;3>" src="WL&lt;3>"/>
+<mapping dst="wl&lt;8>" src="WL&lt;8>"/>
+<mapping dst="wl&lt;6>" src="WL&lt;6>"/>
+<mapping dst="wl&lt;12>" src="WL&lt;12>"/>
+<mapping dst="wl&lt;0>" src="WL&lt;0>"/>
+<mapping dst="wl&lt;15>" src="WL&lt;15>"/>
+<mapping dst="wl" src="WL"/>
+<mapping dst="wl&lt;13>" src="WL&lt;13>"/>
+<mapping dst="wl&lt;5>" src="WL&lt;5>"/>
+<mapping dst="in&lt;3>" src="IN&lt;3>"/>
+<mapping dst="wl&lt;11>" src="WL&lt;11>"/>
+<mapping dst="wl&lt;10>" src="WL&lt;10>"/>
+<mapping dst="in&lt;1>" src="IN&lt;1>"/>
+<mapping dst="wl&lt;14>" src="WL&lt;14>"/>
+<mapping dst="in&lt;0>" src="IN&lt;0>"/>
+<mapping dst="in" src="IN"/>
+<mapping dst="wl&lt;4>" src="WL&lt;4>"/>
+<mapping dst="clk" src="CLK"/>
+<mapping dst="in&lt;2>" src="IN&lt;2>"/>
+</forward>
+<reverse>
+<mapping dst="WL&lt;6>" src="wl&lt;6>"/>
+<mapping dst="WL&lt;14>" src="wl&lt;14>"/>
+<mapping dst="&lt;termOrder>" src="clk in&lt;0> in&lt;1> in&lt;2> in&lt;3> wl&lt;0> wl&lt;1> wl&lt;2> wl&lt;3> wl&lt;4> wl&lt;5> wl&lt;6> wl&lt;7> wl&lt;8> wl&lt;9> wl&lt;10> wl&lt;11> wl&lt;12> wl&lt;13> wl&lt;14> wl&lt;15>"/>
+<mapping dst="WL&lt;15>" src="wl&lt;15>"/>
+<mapping dst="WL&lt;13>" src="wl&lt;13>"/>
+<mapping dst="WL&lt;11>" src="wl&lt;11>"/>
+<mapping dst="WL&lt;9>" src="wl&lt;9>"/>
+<mapping dst="WL&lt;5>" src="wl&lt;5>"/>
+<mapping dst="WL&lt;12>" src="wl&lt;12>"/>
+<mapping dst="WL&lt;10>" src="wl&lt;10>"/>
+<mapping dst="WL&lt;1>" src="wl&lt;1>"/>
+<mapping dst="WL&lt;4>" src="wl&lt;4>"/>
+<mapping dst="WL" src="wl"/>
+<mapping dst="IN&lt;3>" src="in&lt;3>"/>
+<mapping dst="WL&lt;2>" src="wl&lt;2>"/>
+<mapping dst="WL&lt;7>" src="wl&lt;7>"/>
+<mapping dst="WL&lt;8>" src="wl&lt;8>"/>
+<mapping dst="IN&lt;2>" src="in&lt;2>"/>
+<mapping dst="WL&lt;3>" src="wl&lt;3>"/>
+<mapping dst="IN&lt;1>" src="in&lt;1>"/>
+<mapping dst="IN&lt;0>" src="in&lt;0>"/>
+<mapping dst="&lt;unmappedTermOrder>" src="CLK IN&lt;0> IN&lt;1> IN&lt;2> IN&lt;3> WL&lt;0> WL&lt;1> WL&lt;2> WL&lt;3> WL&lt;4> WL&lt;5> WL&lt;6> WL&lt;7> WL&lt;8> WL&lt;9> WL&lt;10> WL&lt;11> WL&lt;12> WL&lt;13> WL&lt;14> WL&lt;15>"/>
+<mapping dst="WL&lt;0>" src="wl&lt;0>"/>
+<mapping dst="IN" src="in"/>
+<mapping dst="CLK" src="clk"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="inverter">
+<instance name="I228"/>
+<instance name="I229"/>
+<instance name="I230"/>
+<instance name="I231"/>
+</instance_header>
+<instance_header master="nmos">
+<instance name="M100"/>
+<instance name="M101"/>
+<instance name="M102"/>
+<instance name="M103"/>
+<instance name="M104"/>
+<instance name="M105"/>
+<instance name="M106"/>
+<instance name="M111"/>
+<instance name="M112"/>
+<instance name="M114"/>
+<instance name="M115"/>
+<instance name="M116"/>
+<instance name="M117"/>
+<instance name="M118"/>
+<instance name="M119"/>
+<instance name="M124"/>
+<instance name="M125"/>
+<instance name="M126"/>
+<instance name="M127"/>
+<instance name="M128"/>
+<instance name="M129"/>
+<instance name="M130"/>
+<instance name="M131"/>
+<instance name="M152"/>
+<instance name="M153"/>
+<instance name="M154"/>
+<instance name="M155"/>
+<instance name="M156"/>
+<instance name="M157"/>
+<instance name="M158"/>
+<instance name="M159"/>
+<instance name="M166"/>
+<instance name="M167"/>
+<instance name="M168"/>
+<instance name="M169"/>
+<instance name="M170"/>
+<instance name="M171"/>
+<instance name="M172"/>
+<instance name="M173"/>
+<instance name="M180"/>
+<instance name="M181"/>
+<instance name="M182"/>
+<instance name="M183"/>
+<instance name="M184"/>
+<instance name="M185"/>
+<instance name="M186"/>
+<instance name="M187"/>
+<instance name="M188"/>
+<instance name="M189"/>
+<instance name="M190"/>
+<instance name="M191"/>
+<instance name="M192"/>
+<instance name="M193"/>
+<instance name="M194"/>
+<instance name="M195"/>
+<instance name="M87"/>
+<instance name="M88"/>
+<instance name="M89"/>
+<instance name="M90"/>
+<instance name="M91"/>
+<instance name="M92"/>
+<instance name="M93"/>
+<instance name="M94"/>
+<instance name="M99"/>
+</instance_header>
+<instance_header master="pmos">
+<instance name="M0"/>
+<instance name="M1"/>
+<instance name="M10"/>
+<instance name="M11"/>
+<instance name="M12"/>
+<instance name="M13"/>
+<instance name="M14"/>
+<instance name="M15"/>
+<instance name="M2"/>
+<instance name="M3"/>
+<instance name="M4"/>
+<instance name="M5"/>
+<instance name="M6"/>
+<instance name="M7"/>
+<instance name="M8"/>
+<instance name="M9"/>
+</instance_header>
+</master_instances>
+</module>

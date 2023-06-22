@@ -1,0 +1,408 @@
+[10:12:03.61] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c                  Version S-2021.09 for linux64 - Aug 25, 2021 
+              /c 
+              /c                     Copyright (c) 2004 - 2021 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 6809741 compiled on Wed Aug 25 11:47:50 2021 for CentOS64 7.3
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/customcompiler/S-2021.09/linux64/platform/bin/custom_compiler
+              /c Execution time: Thu Apr 21 10:11:56 2022
+              /c Host: grendel30.ece.ncsu.edu
+              /c Working directory: /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project
+              /c 
+[10:12:21.21] /r giShowFrameTabs true
+[10:12:21.21] /r giWindowId 1
+[10:12:21.21] /r giWindowGeometry 1040x800
+[10:12:28.57] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x824+2433+28
+[10:12:29.59] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x824+2410+52
+[10:12:30.29] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x824+2409+53
+[10:12:31.97] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[10:12:32.29] /i db::setAttr geometry -of [gi::getFrames 1] -value 1910x1047+1925+28
+[10:12:33.68] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/recentDesigns/deOpenmylibtoplevellayout} -in [gi::getWindows 1]
+[10:12:33.68] /# 
+[10:12:33.98] /i de::open mylib/top_level/layout
+[10:12:34.01] /m Information: License 'Apex' checked out. (LICENSE-003)
+[10:12:34.09] /o Loading: Callback files...
+[10:12:34.10] /o Loading: scripts/callbacks/callbacks.tcl
+[10:12:34.10] /o 
+              /c [INFO] : Loading display.drf from /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[10:12:34.10] /o 
+[10:12:34.22] /o 	#######################################
+[10:12:34.22] /o 	CC-PDK Library Name	: FreePDK3
+[10:12:34.22] /o 	#######################################
+[10:12:34.22] /o 
+[10:12:34.43] /r giWindowId 2
+[10:12:34.43] /r giWindowGeometry 1632x912
+[10:12:35.21] /o oa:0x25f5e410
+[10:12:36.46] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 2]
+[10:12:36.46] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 2]]
+[10:12:38.30] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[10:12:39.61] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]] -value 290x833
+[10:12:56.25] /# gi::executeAction {leDisplayTopLevel} -in [gi::getWindows 2]
+[10:12:56.25] /i db::setPrefValue leStopLevel -value 0 -scope [db::getNext [de::getContexts -window 2]]; db::setPrefValue leStartLevel -value 0 -scope [db::getNext [de::getContexts -window 2]]; de::redraw -window 2
+[10:13:54.36] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[10:13:54.36] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[10:13:54.36] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {0.264 2.5715} -index 0 -intent none]
+[10:13:54.36] /o oa:0x2e6bce50
+[10:13:57.89] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[10:13:57.89] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[10:13:57.89] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {1.7935 2.0685} -index 0 -intent none]
+[10:13:57.90] /o oa:0x2e707f10
+[10:13:58.77] /# gi::executeAction {deDescendInPlace} -in [gi::getWindows 2]
+[10:13:58.77] /i ide::descend 2 -type instance -inPlace true -readOnly auto
+[10:13:58.82] /# Navigating to mylib/sram_array_16r_8c/layout (sram_array)
+[10:13:58.94] /# gi::setItemSelection {sets} -index {Valid} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[10:13:58.95] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[10:14:00.59] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 2]
+[10:14:00.59] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 2]]
+[10:14:03.16] /i de::applyOLPPreset 2 -to [de::getContexts -window 2] -operation replace
+[10:14:03.18] /# gi::setItemSelection {sets} -index {Design} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[10:14:03.18] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[10:14:03.18] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[10:14:05.00] /i de::applyOLPPreset 3 -to [de::getContexts -window 2] -operation replace
+[10:14:05.01] /# gi::setItemSelection {sets} -index {Design} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[10:14:05.01] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[10:14:05.01] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[10:14:06.87] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[10:14:06.87] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {1.465 2.618}
+[10:14:06.92] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[10:14:06.92] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {1.465 2.618}
+[10:14:20.64] /# gi::executeAction {deReturnToTop} -in [gi::getWindows 2]
+[10:14:20.64] /i de::return [db::getNext [de::getContexts -window 2]] -levels -1 -errorOnFail false
+[10:14:20.64] /# Navigating to mylib/top_level/layout
+[10:14:20.72] /# gi::setItemSelection {sets} -index {Design} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[10:14:20.73] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[10:14:22.01] /# gi::executeAction {deFitView} -in [gi::getWindows 2]
+[10:14:22.01] /i de::fit -window 2 -fitView true
+[10:14:22.87] /# gi::executeAction {deDeselectAll} -in [gi::getWindows 2]
+[10:14:22.87] /i if { [db::getCount [de::getSelected  -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]]] != 0 } {  de::deselectAll [db::getNext [de::getContexts -window 2]];  }
+              /c                           if { [db::getAttr editor -of [db::getNext [de::getContexts -window 2]]] == "" ||
+              /c                                [db::getAttr editDesign.viewType -of [db::getNext [de::getContexts -window 2]]] != "maskLayout" } {  de::deselectAllLogic -context [de::getContexts -filter  {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]}]  } 
+[10:14:23.91] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[10:14:29.05] /# gi::executeAction {xtDRCSetup} -in [gi::getWindows 2]
+[10:14:29.05] /i xt::showDRCSetup -job drc -window 2
+[10:14:29.90] /i db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 2]] -value 676x512+2797+379
+[10:14:31.13] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 2]]
+[10:14:31.32] /# xt::physicalVerification::executePve drc 2 xtDRCExecutePve
+[10:14:31.50] /m Information: Starting 'Stream Export of OA cell 'mylib/top_level/layout''...
+[10:14:34.63] /m Information: "PVE Stream Export finished successfully with 0 error, 52 warnings." (DATA_IO_COMMANDS-002)
+[10:14:34.73] /m Information: Stream Export of OA cell 'mylib/top_level/layout' finished.
+[10:14:35.24] /r giWindowId 3
+[10:14:35.26] /r giWindowGeometry 800x600
+[10:14:50.10] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_124
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[10:14:50.16] /m Information: IC Validator VUE Server initialized successfully at port 9189.
+[10:15:01.59] /i gi::setActiveWindow 2
+[10:15:01.60] /i gi::setActiveWindow 2 -raise true
+[10:15:11.14] /# gi::executeAction {xtLVSSetup} -in [gi::getWindows 2]
+[10:15:11.14] /i xt::showLVSSetup -job lvs -window 2
+[10:15:12.17] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]] -value 838x485+2797+375
+[10:15:19.64] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[10:15:20.01] /# xt::physicalVerification::executePve lvs 2 xtLVSExecutePve
+[10:15:20.12] /m Information: Starting 'Stream Export of OA cell 'mylib/top_level/layout''...
+[10:15:20.15] /m Information: "Starting netlisting for design "mylib/top_level/schematic"..." (NETLISTING-010)
+[10:15:20.30] /o No Design Integrity rule violations found in "mylib/top_level/schematic"
+[10:15:20.55] /m Information: 
+[10:15:20.55] /o Checking "mylib/bitline_conditioning/schematic"
+[10:15:20.55] /o No rule violations found in "mylib/bitline_conditioning/schematic"
+[10:15:20.63] /m Information: 
+[10:15:20.63] /o Checking "mylib/buffer_array/schematic"
+[10:15:20.63] /o No rule violations found in "mylib/buffer_array/schematic"
+[10:15:20.67] /m Information: 
+[10:15:20.67] /o Checking "mylib/buffer/schematic"
+[10:15:20.67] /o No rule violations found in "mylib/buffer/schematic"
+[10:15:20.81] /m Information: 
+[10:15:20.81] /o Checking "mylib/column_decoder_write_cell/schematic"
+[10:15:20.81] /o No rule violations found in "mylib/column_decoder_write_cell/schematic"
+[10:15:21.74] /m Information: "Netlisting design "mylib/top_level/schematic" finished successfully." (NETLISTING-012)
+[10:15:23.11] /m Information: "PVE Stream Export finished successfully with 0 error, 52 warnings." (DATA_IO_COMMANDS-002)
+[10:15:23.22] /m Information: Stream Export of OA cell 'mylib/top_level/layout' finished.
+[10:15:23.79] /r giWindowId 4
+[10:15:23.81] /r giWindowGeometry 800x600
+[10:15:39.30] /m Information: 
+              /c =============================
+              /c JobID: icv_lvs_74
+              /c --- ERROR SUMMARY -----------
+              /c LVS Device Extraction Error Summary
+              /c 2 total rules were run.
+              /c 0 rules NOT EXECUTED.
+              /c 0 rules have violations.
+              /c There are 0 total violations.
+              /c Refer to top_level.LAYOUT_ERRORS
+              /c =============================
+              /c 
+[10:15:43.97] /r giWindowId 5
+[10:15:44.00] /r giWindowGeometry 1632x912
+[10:16:22.86] /i gi::executeAction giCloseWindow -in [gi::getWindows 3]
+[10:16:25.16] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[10:16:27.16] /i gi::setActiveWindow 2
+[10:16:27.16] /i gi::setActiveWindow 2 -raise true
+[10:16:29.31] /i de::applyOLPPreset 1 -to [de::getContexts -window 2] -operation replace
+[10:16:29.32] /# gi::setItemSelection {sets} -index {Design} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[10:16:29.32] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[10:16:29.33] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[10:16:30.83] /i de::applyOLPPreset 0 -to [de::getContexts -window 2] -operation replace
+[10:16:30.85] /# gi::setItemSelection {sets} -index {Valid} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[10:16:30.85] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[10:16:30.85] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]]
+[10:17:01.64] /# gi::executeAction {leDisplayTopLevel} -in [gi::getWindows 2]
+[10:17:01.64] /i db::setPrefValue leStopLevel -value 0 -scope [db::getNext [de::getContexts -window 2]]; db::setPrefValue leStartLevel -value 0 -scope [db::getNext [de::getContexts -window 2]]; de::redraw -window 2
+[10:17:05.99] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[10:17:05.99] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[10:17:05.99] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {3.0765 0.555} -index 0 -intent none]
+[10:17:05.99] /o oa:0x2e14ab40
+[10:17:06.99] /i gi::executeAction {dePropertyEditorToggleExtended} -in [gi::getWindows 2]
+[10:17:06.99] /# db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value true
+[10:17:08.83] /i gi::executeAction {dePropertyEditorToggleExtended} -in [gi::getWindows 2]
+[10:17:08.83] /# db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value false
+[10:17:09.12] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]] -value 290x859
+[10:17:09.39] /i gi::executeAction {dePropertyEditorToggleExtended} -in [gi::getWindows 2]
+[10:17:09.39] /# db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]] -value true
+[10:17:09.69] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 2]] -value 290x833
+[10:17:09.84] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[10:17:09.84] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[10:17:09.84] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {3.03 0.4725} -index 0 -intent none]
+[10:17:09.84] /o oa:0x2eba6da0
+[10:17:10.53] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[10:17:10.53] /i de::cycleActiveFigure [gi::getWindows 2] -direction next
+[10:17:10.53] /o oa:0x2e24f370
+[10:17:10.53] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[10:17:10.53] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {3.03 0.4725} -index 1 -intent none]
+[10:17:10.53] /o oa:0x2f478d30
+[10:17:11.25] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[10:17:11.25] /i de::cycleActiveFigure [gi::getWindows 2] -direction next
+[10:17:11.25] /o oa:0x2f3505d0
+[10:17:11.25] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[10:17:11.25] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {3.03 0.4725} -index 2 -intent none]
+[10:17:11.25] /o oa:0x2ef1c2f0
+[10:18:03.86] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[10:18:03.86] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {1.978 -0.0305}
+[10:18:03.96] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[10:18:03.96] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {1.978 -0.0305}
+[10:18:04.14] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[10:18:04.14] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {1.978 -0.0305}
+[10:18:04.66] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[10:18:04.66] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {1.978 -0.0305}
+[10:18:04.72] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[10:18:04.72] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {1.978 -0.0305}
+[10:18:04.87] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[10:18:04.87] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {1.978 -0.0305}
+[10:18:05.07] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[10:18:05.07] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {1.978 -0.0305}
+[10:18:07.02] /# gi::executeAction {deFitView} -in [gi::getWindows 2]
+[10:18:07.02] /i de::fit -window 2 -fitView true
+[10:18:38.23] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[10:18:38.23] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[10:18:38.23] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {2.1165 2.8435} -index 0 -intent none]
+[10:18:38.23] /o oa:0x2d7642c0
+[10:18:41.19] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[10:18:41.19] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[10:18:41.20] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {2.953 3.5775} -index 0 -intent none]
+[10:18:41.20] /o oa:0x2dce95c0
+[10:18:41.94] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[10:18:41.94] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[10:18:41.94] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {2.8815 3.5315} -index 0 -intent none]
+[10:18:41.94] /o oa:0x2e637250
+[10:18:42.69] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[10:18:42.69] /i de::cycleActiveFigure [gi::getWindows 2] -direction next
+[10:18:42.69] /o oa:0x26e347c0
+[10:18:42.69] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[10:18:42.69] /i de::select [de::getActiveFigure [gi::getWindows 2] -point {2.8815 3.5315} -index 1 -intent none]
+[10:18:42.69] /o oa:0x2f5e5060
+[10:18:44.33] /i gi::setItemSelection {attributes} -index {name,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[10:18:44.33] /i gi::setCurrentIndex {attributes} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[10:18:56.59] /i gi::setField {attributes} -value {integration} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[10:18:57.31] /i gi::executeAction {dePropertyEditorApplyChanges} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[10:19:11.32] /# gi::executeAction {deSelectActive} -in [gi::getWindows 2]
+[10:19:11.32] /i de::deselectAll [db::getNext [de::getContexts -window 2]]
+[10:19:20.78] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 2]
+[10:19:20.78] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 2]]
+[10:22:07.86] /i gi::setSectionSizes {attributes} -values {78 200} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[10:22:12.42] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[10:22:12.42] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {1.9625 3.403}
+[10:22:12.51] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[10:22:12.52] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {1.9625 3.403}
+[10:22:12.64] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[10:22:12.64] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {1.9625 3.403}
+[10:22:13.55] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[10:22:13.55] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {1.9625 3.403}
+[10:22:13.61] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[10:22:13.61] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {1.9625 3.403}
+[10:22:13.69] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[10:22:13.69] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {1.9625 3.403}
+[10:22:13.79] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[10:22:13.79] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {1.9625 3.403}
+[10:22:15.16] /i gi::setActiveWindow 5
+[10:22:15.16] /i gi::setActiveWindow 5 -raise true
+[10:22:18.27] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[10:25:25.99] /m Information: Connection closed with 'IC Validator VUE' running on 'grendel30.ece.ncsu.edu'.
+[10:25:29.29] /m Information: Connection closed with 'IC Validator VUE' running on 'grendel30.ece.ncsu.edu'.
+[10:25:30.16] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[10:25:30.16] /i db::setAttr iconified -of [gi::getFrames 1] -value false
+[10:25:32.61] /r giDialog gi::setActiveDialog [gi::getDialogs {giCloseFrame}]
+[10:25:32.97] /r giDialog db::setAttr geometry -of [gi::getDialogs {giCloseFrame}] -value 299x108+2731+505
+[10:25:34.95] /r giDialog gi::pressButton {giCloseTabsButton} -in [gi::getDialogs {giCloseFrame}]
+[10:25:34.96] /i exit
+[10:25:35.03] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 5]]
+[10:25:35.38] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 5]] -value 419x233+2671+442
+[10:25:36.17] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 5]]
+[10:25:36.26] /r giDialog gi::setActiveDialog [gi::getDialogs {deCloseDesign}]
+[10:25:36.52] /r giDialog db::setAttr geometry -of [gi::getDialogs {deCloseDesign}] -value 417x82+2662+454
+[10:25:40.51] /r giDialog gi::closeWindows [gi::getDialogs {deCloseDesign}]
+[10:25:41.88] /i gi::setActiveWindow 2
+[10:25:41.88] /i gi::setActiveWindow 2 -raise true
+[10:25:43.21] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[10:25:43.21] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {2.897 -1.2155}
+[10:25:43.74] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[10:25:43.74] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {1.665 -0.6205}
+[10:25:43.84] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[10:25:43.85] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {1.665 -0.6205}
+[10:25:44.99] /# gi::executeAction {deFitView} -in [gi::getWindows 2]
+[10:25:44.99] /i de::fit -window 2 -fitView true
+[10:25:46.41] /# gi::executeAction {deDeselectAll} -in [gi::getWindows 2]
+[10:25:46.41] /i if { [db::getCount [de::getSelected  -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]]] != 0 } {  de::deselectAll [db::getNext [de::getContexts -window 2]];  }
+              /c                           if { [db::getAttr editor -of [db::getNext [de::getContexts -window 2]]] == "" ||
+              /c                                [db::getAttr editDesign.viewType -of [db::getNext [de::getContexts -window 2]]] != "maskLayout" } {  de::deselectAllLogic -context [de::getContexts -filter  {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]}]  } 
+[10:25:50.23] /# gi::executeAction {deUndo} -in [gi::getWindows 2]
+[10:25:50.23] /i de::undoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]
+[10:25:54.55] /# gi::executeAction {deRedo} -in [gi::getWindows 2]
+[10:25:54.55] /i de::redoTransaction -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]
+[10:25:58.81] /i gi::setItemSelection {attributes} -index {name,all} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[10:25:58.81] /i gi::setCurrentIndex {attributes} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[10:26:08.05] /i gi::setField {attributes} -value {top_routing} -index {name,Value} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[10:26:09.09] /i gi::executeAction {dePropertyEditorApplyChanges} -in [gi::getAssistants dePropertyEditor -from [gi::getWindows 2]]
+[10:26:11.26] /# gi::executeAction {leDisplayTopLevel} -in [gi::getWindows 2]
+[10:26:11.26] /i db::setPrefValue leStopLevel -value 0 -scope [db::getNext [de::getContexts -window 2]]; db::setPrefValue leStartLevel -value 0 -scope [db::getNext [de::getContexts -window 2]]; de::redraw -window 2
+[10:26:16.24] /# gi::executeAction {xtLVSSetup} -in [gi::getWindows 2]
+[10:26:16.24] /i xt::showLVSSetup -job lvs -window 2
+[10:26:17.29] /i db::setAttr geometry -of [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]] -value 838x485+2797+375
+[10:26:18.39] /i gi::pressButton {/ok} -in [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[10:26:18.55] /r giDialog gi::setActiveDialog [gi::getDialogs {xtShowDesignsPrompt}]
+[10:26:18.55] /r giDialog gi::setCurrentIndex {target} -index {0,0} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[10:26:18.80] /r giDialog db::setAttr geometry -of [gi::getDialogs {xtShowDesignsPrompt}] -value 649x290+2546+350
+[10:26:19.90] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {xtShowDesignsPrompt}]
+[10:26:20.03] /# xt::physicalVerification::executePve lvs 2 xtLVSExecutePve
+[10:26:20.13] /m Information: Starting 'Stream Export of OA cell 'mylib/top_level/layout''...
+[10:26:20.16] /m Information: "Starting netlisting for design "mylib/top_level/schematic"..." (NETLISTING-010)
+[10:26:20.38] /o No Design Integrity rule violations found in "mylib/top_level/schematic"
+[10:26:20.48] /m Information: 
+[10:26:20.48] /o Checking "mylib/bitline_conditioning/schematic"
+[10:26:20.49] /o No rule violations found in "mylib/bitline_conditioning/schematic"
+[10:26:20.50] /m Information: 
+[10:26:20.50] /o Checking "mylib/buffer_array/schematic"
+[10:26:20.50] /o No rule violations found in "mylib/buffer_array/schematic"
+[10:26:20.51] /m Information: 
+[10:26:20.51] /o Checking "mylib/buffer/schematic"
+[10:26:20.51] /o No rule violations found in "mylib/buffer/schematic"
+[10:26:20.55] /m Information: 
+[10:26:20.55] /o Checking "mylib/column_decoder_write_cell/schematic"
+[10:26:20.55] /o No rule violations found in "mylib/column_decoder_write_cell/schematic"
+[10:26:21.36] /m Information: "Netlisting design "mylib/top_level/schematic" finished successfully." (NETLISTING-012)
+[10:26:21.86] /# gi::setActiveDialog [gi::getDialogs {xtLVSSetup} -parent [gi::getWindows 2]]
+[10:26:23.11] /m Information: "PVE Stream Export finished successfully with 0 error, 52 warnings." (DATA_IO_COMMANDS-002)
+[10:26:23.21] /m Information: Stream Export of OA cell 'mylib/top_level/layout' finished.
+[10:26:23.79] /r giWindowId 6
+[10:26:23.82] /r giWindowGeometry 800x600
+[10:26:37.20] /m Information: 
+              /c =============================
+              /c JobID: icv_lvs_75
+              /c --- ERROR SUMMARY -----------
+              /c LVS Device Extraction Error Summary
+              /c 2 total rules were run.
+              /c 0 rules NOT EXECUTED.
+              /c 0 rules have violations.
+              /c There are 0 total violations.
+              /c Refer to top_level.LAYOUT_ERRORS
+              /c =============================
+              /c 
+[10:26:42.19] /m Information: Connection closed with 'IC Validator VUE' running on 'grendel30.ece.ncsu.edu'.
+[10:26:43.00] /i gi::setActiveWindow 2
+[10:26:43.00] /i gi::setActiveWindow 2 -raise true
+[10:26:47.05] /# gi::executeAction {xtDRCSetup} -in [gi::getWindows 2]
+[10:26:47.05] /i xt::showDRCSetup -job drc -window 2
+[10:26:47.79] /i db::setAttr geometry -of [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 2]] -value 676x512+2797+379
+[10:26:48.49] /i gi::pressButton {/ok} -in [gi::getDialogs {xtDRCSetup} -parent [gi::getWindows 2]]
+[10:26:48.60] /# xt::physicalVerification::executePve drc 2 xtDRCExecutePve
+[10:26:48.70] /m Information: Starting 'Stream Export of OA cell 'mylib/top_level/layout''...
+[10:26:51.60] /m Information: "PVE Stream Export finished successfully with 0 error, 52 warnings." (DATA_IO_COMMANDS-002)
+[10:26:51.70] /m Information: Stream Export of OA cell 'mylib/top_level/layout' finished.
+[10:26:52.29] /r giWindowId 7
+[10:26:52.33] /r giWindowGeometry 800x600
+[10:27:05.80] /m Information: 
+              /c =============================
+              /c JobID: icv_drc_125
+              /c Completed with no errors.
+              /c =============================
+              /c 
+[10:27:12.79] /m Information: Connection closed with 'IC Validator VUE' running on 'grendel30.ece.ncsu.edu'.
+[10:27:15.00] /i gi::executeAction giCloseWindow -in [gi::getWindows 5]
+[10:27:17.05] /i gi::executeAction giCloseWindow -in [gi::getWindows 6]
+[10:27:18.30] /i gi::executeAction giCloseWindow -in [gi::getWindows 7]
+[10:27:20.50] /# gi::executeAction {deDeselectAll} -in [gi::getWindows 2]
+[10:27:20.50] /i if { [db::getCount [de::getSelected  -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]]] != 0 } {  de::deselectAll [db::getNext [de::getContexts -window 2]];  }
+              /c                           if { [db::getAttr editor -of [db::getNext [de::getContexts -window 2]]] == "" ||
+              /c                                [db::getAttr editDesign.viewType -of [db::getNext [de::getContexts -window 2]]] != "maskLayout" } {  de::deselectAllLogic -context [de::getContexts -filter  {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]}]  } 
+[10:27:26.33] /# gi::executeAction {deZoomInCursor} -in [gi::getWindows 2]
+[10:27:28.88] /# gi::executeAction {deEndDrag} -in [gi::getWindows 2]
+[10:27:28.89] /i de::setViewport -window [gi::getWindows 2] -box {{1.152 -0.478} {3.1175 0.597}}
+[10:27:30.29] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[10:27:30.29] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {2.646 -0.3665}
+[10:27:30.40] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[10:27:30.40] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {2.6455 -0.3665}
+[10:27:30.53] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[10:27:30.53] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {2.646 -0.3665}
+[10:27:30.73] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[10:27:30.73] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {2.6455 -0.3665}
+[10:27:31.60] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[10:27:31.60] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2035 1.675}
+[10:27:31.68] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[10:27:31.68] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {0.2035 1.675}
+[10:27:33.39] /# gi::executeAction {deZoomInCursor} -in [gi::getWindows 2]
+[10:27:34.99] /# gi::executeAction {deEndDrag} -in [gi::getWindows 2]
+[10:27:34.99] /i de::setViewport -window [gi::getWindows 2] -box {{-1.978 1.67} {1.9945 3.842}}
+[10:27:40.00] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[10:27:40.00] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {-0.213 2.7975}
+[10:27:41.56] /# gi::executeAction {deCanvasZoomInAtPoint} -in [gi::getWindows 2]
+[10:27:41.56] /i de::zoom -window [gi::getWindows 2] -factor [db::getPrefValue deCanvasMouseZoomFactor] -center {2.3915 3.966}
+[10:27:42.76] /# gi::executeAction {deZoomInCursor} -in [gi::getWindows 2]
+[10:27:44.25] /# gi::executeAction {deEndDrag} -in [gi::getWindows 2]
+[10:27:44.25] /i de::setViewport -window [gi::getWindows 2] -box {{1.1625 3.273} {3.0035 4.28}}
+[10:27:45.11] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[10:27:45.11] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {2.4165 3.9925}
+[10:27:45.39] /# gi::executeAction {deCanvasZoomOutAtPoint} -in [gi::getWindows 2]
+[10:27:45.39] /i de::zoom -window [gi::getWindows 2] -factor [expr {1.0/[db::getPrefValue deCanvasMouseZoomFactor]}] -center {2.4165 3.993}
+[10:27:46.20] /# gi::executeAction {deFitView} -in [gi::getWindows 2]
+[10:27:46.20] /i de::fit -window 2 -fitView true
+[10:27:47.33] /# gi::executeAction {deDeselectAll} -in [gi::getWindows 2]
+[10:27:47.33] /i if { [db::getCount [de::getSelected  -design [db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]]] != 0 } {  de::deselectAll [db::getNext [de::getContexts -window 2]];  }
+              /c                           if { [db::getAttr editor -of [db::getNext [de::getContexts -window 2]]] == "" ||
+              /c                                [db::getAttr editDesign.viewType -of [db::getNext [de::getContexts -window 2]]] != "maskLayout" } {  de::deselectAllLogic -context [de::getContexts -filter  {%editDesign==[db::getAttr editDesign -of [db::getNext [de::getContexts -window 2]]]}]  } 
+[10:27:50.75] /i gi::executeAction giCloseWindow -in [gi::getWindows 2]
+[10:27:53.04] /i exit
+[10:27:53.09] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]]
+[10:27:53.39] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]] -value 419x233+2671+442
+[10:27:58.18] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 1]]
+[10:28:00.01] /o Shutdown time: Thu Apr 21 10:28:00 2022
+[10:28:00.01] /o Elapsed session real time: 15.96 minutes
+[10:28:00.01] /o Session terminated. Log is at /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/logs/ccompiler.ssjoseph.2022_4_21_101156_5189.log

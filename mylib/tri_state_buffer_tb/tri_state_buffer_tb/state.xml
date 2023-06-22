@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<!--Created by Custom Compiler (TM), build , on Thu Apr  7 18:09:24 2022-->
+<file-format name="stateData" version="1.0">
+ <attribute name="description" value="" type="giString"/>
+ <attribute name="design" value="project_backup/tri_state_buffer_tb/schematic" type="dmCellView"/>
+ <attribute name="enabled" value="1" type="giBoolean"/>
+ <attribute name="enabledJobClass" value="0" type="giBoolean"/>
+ <attribute name="migratedSimulator" value="" type="giString"/>
+ <attribute name="name" value="tri_state_buffer_tb" type="giString"/>
+ <attribute name="openaccessState" value="//" type="dmCellView"/>
+ <attribute name="simulator" value="HSPICE" type="giString"/>
+ <comment/>
+ <resultsDir>./simulation</resultsDir>
+ <integration version="1"/>
+</file-format>

@@ -1,0 +1,16 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : column_decoder_read
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt column_decoder_read a<4> bl<0> bl<1> bl<2> bl<3> bl<4> bl<5> bl<6> bl<7>
++  q<0> q<1> q<2> q<3> wenb
+xi30 a<4> ab<4> inverter_row_decoder
+xi25 wenb bl<0> bl<4> q<0> a<4> ab<4> column_decoder_read_cell
+xi24 wenb bl<1> bl<5> q<1> a<4> ab<4> column_decoder_read_cell
+xi23 wenb bl<2> bl<6> q<2> a<4> ab<4> column_decoder_read_cell
+xi22 wenb bl<3> bl<7> q<3> a<4> ab<4> column_decoder_read_cell
+.ends column_decoder_read
+

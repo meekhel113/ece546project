@@ -1,0 +1,12 @@
+  
+ReadLayHNdb         Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=400.5 
+XtrNet              Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=400.5 
+NETLIST_SELECT_NETS Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=400.5 
+WrtSelectNets       Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=400.5 
+ReadSchHNdb         Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=400.5 
+WritePowerNets      Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=400.5 
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=400.5 
+
+End Time: Thu Apr 21 06:36:35 2022
+

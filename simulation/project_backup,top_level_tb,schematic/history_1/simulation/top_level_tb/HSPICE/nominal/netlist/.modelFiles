@@ -1,0 +1,5 @@
+.lib 'fet.mod' nfet_typ
+.lib 'fet.mod' pfet_typ
+.vec '/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/invec_local.dat'
+
+.vec '/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/outvec_local.dat'

@@ -1,0 +1,21 @@
+********************************************************************************
+* Library          : mylib
+* Cell             : column_decoder_array
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt column_decoder_array a<4> bl<0> bl<1> bl<2> bl<3> bl<4> bl<5> bl<6>
++ bl<7> blb<0> blb<1> blb<2> blb<3> blb<4> blb<5> blb<6> blb<7> q<0> q<1> q<2>
++ q<3> qb<0> qb<1> qb<2> qb<3>
+xi7 blb<0> blb<4> qb<0> a<4> net41 column_decoder_2to1
+xi6 blb<1> blb<5> qb<1> a<4> net41 column_decoder_2to1
+xi5 blb<2> blb<6> qb<2> a<4> net41 column_decoder_2to1
+xi4 blb<3> blb<7> qb<3> a<4> net41 column_decoder_2to1
+xi3 bl<0> bl<4> q<0> a<4> net41 column_decoder_2to1
+xi2 bl<1> bl<5> q<1> a<4> net41 column_decoder_2to1
+xi1 bl<2> bl<6> q<2> a<4> net41 column_decoder_2to1
+xi0 bl<3> bl<7> q<3> a<4> net41 column_decoder_2to1
+xi8 a<4> net41 inverter
+.ends column_decoder_array
+

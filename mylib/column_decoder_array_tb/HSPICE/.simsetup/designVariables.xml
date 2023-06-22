@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Fri Apr  8 21:28:38 2022-->
+<file-format name="stateCategory" version="1.0">
+ <object name="designVariables" version="1" type="saDesignVariables">
+  <attribute name="variableSet" value="default" type="giString"/>
+  <collection name="variableSets">
+   <object name="variableSets" version="1" type="saDesignVariableSet">
+    <collection name="designVariables">
+     <object name="designVariables" version="1" type="saDesignVariable">
+      <attribute name="description" value="" type="giString"/>
+      <attribute name="name" value="VDD" type="giString"/>
+      <attribute name="useLocal" value="1" type="giBoolean"/>
+      <attribute name="value" value="0.8" type="giString"/>
+      <attribute name="variableType" value="none" type="enVariableType"/>
+     </object>
+    </collection>
+    <attribute name="name" value="default" type="giString"/>
+   </object>
+  </collection>
+ </object>
+</file-format>

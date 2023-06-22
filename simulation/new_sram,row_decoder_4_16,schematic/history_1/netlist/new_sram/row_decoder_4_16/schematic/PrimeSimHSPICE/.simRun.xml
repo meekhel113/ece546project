@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Tue Apr 19 05:08:43 2022-->
+<file-format name="simRunData" version="1.0">
+ <object name="simRunData" version="1" type="saSimRun">
+  <attribute name="dmCellView" type="giString" value="new_sram/row_decoder_4_16/schematic"/>
+  <attribute name="simJobName" type="giString" value=""/>
+  <attribute name="status" type="giString" value=""/>
+  <attribute name="stopViewList" type="giString" value="hspice hspiceD"/>
+  <attribute name="switchViewList" type="giString" value="hspice hspiceD schematic spice veriloga"/>
+  <attribute name="timestamps" type="giStringList" value="./netlist 1650359323"/>
+ </object>
+</file-format>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Tue Apr 19 04:33:14 2022-->
+<file-format name="stateCategory" version="1.0">
+ <collection name="includeFiles">
+  <object name="includeFiles" version="1" type="saIncludeFile">
+   <attribute name="enabled" type="giBoolean" value="1"/>
+   <attribute name="filename" type="giString" value="/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/sram.dat"/>
+   <attribute name="includeType" type="giString" value="Digital Vector"/>
+   <attribute name="section" type="giString" value=""/>
+  </object>
+ </collection>
+</file-format>

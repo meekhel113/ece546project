@@ -1,0 +1,6 @@
+.option opfile=1 split_dp=1
+.option probe=1
+.probe tran v(*) level=1
+.probe tran v(clk) v(in<0>) v(in<1>) v(in<2>) v(in<3>) v(wl<0>) v(wl<10>)
++ v(wl<11>) v(wl<12>) v(wl<13>) v(wl<14>) v(wl<15>) v(wl<1>) v(wl<2>) v(wl<3>)
++ v(wl<4>) v(wl<5>) v(wl<6>) v(wl<7>) v(wl<8>) v(wl<9>)

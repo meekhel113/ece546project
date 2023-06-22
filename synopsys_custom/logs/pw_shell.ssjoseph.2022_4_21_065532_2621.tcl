@@ -1,0 +1,5 @@
+::sa::_backgroundSaeShell::signalProcessReady 1650538527
+::sa::_backgroundSaeShell::runScript /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/mylib,top_level_tb,schematic/history_1/simulation/top_level_tb/HSPICE/nominal/.bg_measurement_script.tcl sa::_resultsDatabase::saeShellProcessingCompletedProc testSuiteName saeSession6 testbenchName top_level_tb resultsDir /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/mylib,top_level_tb,schematic/history_1/simulation/top_level_tb/HSPICE/nominal/results testSuiteDir /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/mylib,top_level_tb,schematic/history_1/simulation/top_level_tb/HSPICE/nominal databaseName /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/mylib,top_level_tb,schematic/history_1/simulation/top_level_tb/HSPICE/nominal/resultsDatabase remoteRun {} testbenchId 1 saveImages true
+::wf::viewerExited
+::wf::viewerExited
+::sa::_backgroundSaeShell::exit

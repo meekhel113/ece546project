@@ -1,0 +1,69 @@
+<module name="vsl: mylib top_level schematic vl: auCdl schematic symbol">
+<scope name="Instance">
+<forward>
+<mapping dst="XI39" src="I39"/>
+<mapping dst="XI0" src="I0"/>
+<mapping dst="XI11" src="I11"/>
+<mapping dst="XI40" src="I40"/>
+<mapping dst="XI32" src="I32"/>
+<mapping dst="XI33" src="I33"/>
+<mapping dst="XI36" src="I36"/>
+<mapping dst="XI34" src="I34"/>
+<mapping dst="XI35" src="I35"/>
+<mapping dst="XI6" src="I6"/>
+</forward>
+<reverse>
+<mapping dst="I39" src="XI39"/>
+<mapping dst="I36" src="XI36"/>
+<mapping dst="I0" src="XI0"/>
+<mapping dst="I11" src="XI11"/>
+<mapping dst="I32" src="XI32"/>
+<mapping dst="I33" src="XI33"/>
+<mapping dst="I34" src="XI34"/>
+<mapping dst="I40" src="XI40"/>
+<mapping dst="I35" src="XI35"/>
+<mapping dst="I6" src="XI6"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward>
+<mapping dst="CLK" src="clk"/>
+</forward>
+<reverse>
+<mapping dst="clk" src="CLK"/>
+</reverse>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="A CLK D Q WENB" src="&lt;unmappedTermOrder>"/>
+<mapping dst="A CLK D Q WENB" src="&lt;termOrder>"/>
+</forward>
+<reverse>
+<mapping dst="&lt;unmappedTermOrder>" src="A CLK D Q WENB"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="bitline_conditioning">
+<instance name="I6"/>
+</instance_header>
+<instance_header master="buffer_array">
+<instance name="I32"/>
+<instance name="I33"/>
+<instance name="I34"/>
+<instance name="I35"/>
+<instance name="I40"/>
+</instance_header>
+<instance_header master="column_decoder_read">
+<instance name="I39"/>
+</instance_header>
+<instance_header master="column_decoder_write">
+<instance name="I36"/>
+</instance_header>
+<instance_header master="row_decoder_4_16">
+<instance name="I11"/>
+</instance_header>
+<instance_header master="sram_array_16r_8c">
+<instance name="I0"/>
+</instance_header>
+</master_instances>
+</module>

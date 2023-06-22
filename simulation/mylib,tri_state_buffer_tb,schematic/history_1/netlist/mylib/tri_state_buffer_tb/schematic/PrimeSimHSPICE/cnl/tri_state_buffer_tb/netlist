@@ -1,0 +1,10 @@
+********************************************************************************
+* Library          : mylib
+* Cell             : tri_state_buffer_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 en net5 in out tri_state_buffer
+xi1 en net5 inverter
+v3 vdd! gnd! dc='VDD'

@@ -1,0 +1,36 @@
+arrayName {column_decoder_array_tb_HSPICE}
+arraySize {-1}
+cdplJobId {}
+cmdLine { /afs/unity.ncsu.edu/users/m/mapatel3/Documents/546/ece546project/simulation/mylib,column_decoder_array_tb,schematic/history_1/simulation/column_decoder_array_tb/HSPICE/nominal/netlist/runSimulation  > /afs/unity.ncsu.edu/users/m/mapatel3/Documents/546/ece546project/simulation/mylib,column_decoder_array_tb,schematic/history_1/simulation/column_decoder_array_tb/HSPICE/nominal/results/run.log 2>&1}
+creationTime {1650247436}
+data {resultsDir /afs/unity.ncsu.edu/users/m/mapatel3/Documents/546/ece546project/simulation/mylib,column_decoder_array_tb,schematic/history_1/simulation/column_decoder_array_tb/HSPICE/nominal/results masterResultsDir /afs/unity.ncsu.edu/users/m/mapatel3/Documents/546/ece546project/simulation/mylib,column_decoder_array_tb,schematic/history_1/simulation/column_decoder_array_tb/HSPICE/nominal/results session saeSession4 testbench column_decoder_array_tb simulator HSPICE historyIndex 1 historyName history_1}
+dataReadyProc {}
+deferred {0}
+exitProc {sa::simulationDone}
+exitStatus {0}
+exitTime {1650247439}
+files {/afs/unity.ncsu.edu/users/m/mapatel3/Documents/546/ece546project/simulation/mylib,column_decoder_array_tb,schematic/history_1/simulation/column_decoder_array_tb/HSPICE/nominal/results/hspice.lis /afs/unity.ncsu.edu/users/m/mapatel3/Documents/546/ece546project/simulation/mylib,column_decoder_array_tb,schematic/history_1/simulation/column_decoder_array_tb/HSPICE/nominal/results/hspice.valog /afs/unity.ncsu.edu/users/m/mapatel3/Documents/546/ece546project/simulation/mylib,column_decoder_array_tb,schematic/history_1/simulation/column_decoder_array_tb/HSPICE/nominal/results/run.log /afs/unity.ncsu.edu/users/m/mapatel3/Documents/546/ece546project/simulation/mylib,column_decoder_array_tb,schematic/history_1/simulation/column_decoder_array_tb/HSPICE/nominal/results/hspice.st0}
+gridOptions {}
+group {oa:0x39370c80}
+host {localhost}
+inFd {}
+isCalling {0}
+isLocallyQueued {0}
+isQueued {0}
+isTerminating {0}
+jobClass {oa:0x39370c60}
+jobType {batch}
+menuProc {sa::_utils::populateSimJobCSM}
+name {HSPICE_36}
+outFd {}
+procId {6184}
+queueEngine {}
+queueIdentifier {}
+readOnlyFiles {}
+ready {0}
+readyProc {}
+remoteSubmit {0}
+runDesc {HSPICE simulation:  /afs/unity.ncsu.edu/users/m/mapatel3/Documents/546/ece546project/simulation/mylib,column_decoder_array_tb,schematic/history_1/simulation/column_decoder_array_tb/HSPICE/nominal/netlist/runSimulation  > /afs/unity.ncsu.edu/users/m/mapatel3/Documents/546/ece546project/simulation/mylib,column_decoder_array_tb,schematic/history_1/simulation/column_decoder_array_tb/HSPICE/nominal/results/run.log 2>&1}
+startTime {1650247436}
+status {FINISHED}
+submitHost {}

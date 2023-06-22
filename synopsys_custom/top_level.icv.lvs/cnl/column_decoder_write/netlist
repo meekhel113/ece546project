@@ -1,0 +1,29 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : column_decoder_write
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt column_decoder_write A<4> BL<0> BL<1> BL<2> BL<3> BL<4> BL<5> BL<6>
++ BL<7> BLb<0> BLb<1> BLb<2> BLb<3> BLb<4> BLb<5> BLb<6> BLb<7> D<0> D<1> D<2>
++ D<3> WENB
+*.PININFO A<4>:I BL<0>:O BL<1>:O BL<2>:O BL<3>:O BL<4>:O BL<5>:O BL<6>:O BL<7>:O
+*.PININFO BLb<0>:O BLb<1>:O BLb<2>:O BLb<3>:O BLb<4>:O BLb<5>:O BLb<6>:O
+*.PININFO BLb<7>:O D<0>:I D<1>:I D<2>:I D<3>:I WENB:I
+XI17 WENB WEN inverter
+XI8 A<4> Ab<4> inverter
+XI22 WEN D<3> net269 net271 write_buffer_cell
+XI23 WEN D<2> net250 net264 write_buffer_cell
+XI24 WEN D<1> net255 net263 write_buffer_cell
+XI25 WEN D<0> net254 net262 write_buffer_cell
+XI29 net271 BLb<3> BLb<7> A<4> Ab<4> column_decoder_write_cell
+XI27 net255 BL<1> BL<5> A<4> Ab<4> column_decoder_write_cell
+XI26 net269 BL<3> BL<7> A<4> Ab<4> column_decoder_write_cell
+XI9 net250 BL<2> BL<6> A<4> Ab<4> column_decoder_write_cell
+XI30 net264 BLb<2> BLb<6> A<4> Ab<4> column_decoder_write_cell
+XI31 net263 BLb<1> BLb<5> A<4> Ab<4> column_decoder_write_cell
+XI32 net262 BLb<0> BLb<4> A<4> Ab<4> column_decoder_write_cell
+XI28 net254 BL<0> BL<4> A<4> Ab<4> column_decoder_write_cell
+.ends column_decoder_write
+

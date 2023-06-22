@@ -1,0 +1,40 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "S-2021.09 linux64"
+* "format" "HSP"
+* "rundate" "22:03:56 04/17/2022 "
+* "netlist" "/afs/unity.ncsu.edu/users/m/mapatel3/Documents/546/ece546project/simulation/mylib,column_decoder_array_tb,schematic/history_1/simulation/column_decoder_array_tb/HSPICE/nominal/netlist/input.spi "
+* "runtitle" "*  generated for: primesim"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a<4> =   0.            
++ bl<0> =   0.            
++ bl<1> =   0.            
++ bl<2> =   0.            
++ bl<3> =   0.            
++ bl<4> =   0.            
++ bl<5> =   0.            
++ bl<6> =   0.            
++ bl<7> =   0.            
++ net27 = 799.9859m       
++ net29 = 799.9859m       
++ net31 = 799.9859m       
++ net33 = 799.9859m       
++ net35 = 799.9859m       
++ net37 = 799.9859m       
++ net39 = 799.9859m       
++ net41 = 799.9859m       
++ q<0> =   0.            
++ q<1> =   0.            
++ q<2> =   0.            
++ q<3> =   0.            
++ qb<0> = 799.9859m       
++ qb<1> = 799.9859m       
++ qb<2> = 799.9859m       
++ qb<3> = 799.9859m       
++ vdd! = 800.0000m       
++ xi0.net41 = 799.9859m       
+***   END: Saved Operating Point ***                     

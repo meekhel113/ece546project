@@ -1,0 +1,22 @@
+********************************************************************
+
+Preprocess Step 11 : Vcell_pass Pairs Iteration   0 (   0 )
+
+ count    shift nameA                 nameB                overlaps shift      VCELL    overlap_area
+       16  _Y   sram_array_1r_4c_inverted  sram_array_1r_4c       16  16 (  -0.164) VCELLR1         (1) 0.042
+       14  _Y   sram_array_1r_4c      sram_array_1r_4c_inverted   16  16 (   0.164) VCELLR2         (2) 0.042
+       14  _Y   row_decoder_4_16_oneword  -                       8   8 (  -0.327) VCELLR3             0.018
+ 2 New Array_id vcells
+
+ 0 New Pair vcells
+
+********************************************************************
+
+Preprocess Step 12 : Vcell_pass Pairs Iteration   0 (   1 )
+
+ count    shift nameA                 nameB                overlaps shift      VCELL    overlap_area
+       14  _Y   VCELLR1               -                       8   8 (  -0.327) VCELLR4             0.051
+ 1 New Array_id vcells
+
+ 0 New Pair vcells
+

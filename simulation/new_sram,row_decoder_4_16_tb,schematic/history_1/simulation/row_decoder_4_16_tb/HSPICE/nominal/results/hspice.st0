@@ -1,0 +1,37 @@
+****** PrimeSim HSPICE -- S-2021.09 linux64 (Aug 25 2021 7230000) ******
+Input File:
+lic:
+lic: FLEXlm: SDK_12.9.6
+lic: USER:   ssjoseph             HOSTNAME: grendel33.ece.ncsu.edu
+lic: HOSTID: e985262              PID:      18447
+lic: Using FLEXlm license file:
+lic: 27000@ece-lic-35.ece.ncsu.edu
+lic: Checkout 1 hspice
+lic: License/Maintenance for hspice will expire on 30-oct-2024/2021.09
+lic: 1(in_use)/160(total) FLOATING license(s) on SERVER 27000@ece-lic-35.ece.ncsu.edu
+lic:
+
+ init: begin read circuit files, cpu clock= 1.21E-01
+       option search = /mnt/apps/public/COE/synopsys_apps//hspice/S-2021.09/hspice/parts/ad
+       option search = /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK3/hspice/models
+       option search = /mnt/apps/public/COE/synopsys_apps//hspice/S-2021.09/hspice/parts/behave
+       option search = /mnt/apps/public/COE/synopsys_apps//hspice/S-2021.09/hspice/parts/bjt
+       option search = /mnt/apps/public/COE/synopsys_apps//hspice/S-2021.09/hspice/parts/burr_brn
+       option search = /mnt/apps/public/COE/synopsys_apps//hspice/S-2021.09/hspice/parts/dio
+       option search = /mnt/apps/public/COE/synopsys_apps//hspice/S-2021.09/hspice/parts/fet
+       option search = /mnt/apps/public/COE/synopsys_apps//hspice/S-2021.09/hspice/parts/lin_tech
+       option search = /mnt/apps/public/COE/synopsys_apps//hspice/S-2021.09/hspice/parts/pci
+       option search = /mnt/apps/public/COE/synopsys_apps//hspice/S-2021.09/hspice/parts/signet
+       option search = /mnt/apps/public/COE/synopsys_apps//hspice/S-2021.09/hspice/parts/ti
+       option search = /mnt/apps/public/COE/synopsys_apps//hspice/S-2021.09/hspice/parts/tline
+       option search = /mnt/apps/public/COE/synopsys_apps//hspice/S-2021.09/hspice/parts/xilinx
+       option parhier = local
+       option port_voltage_scale_to_2x =     1.00
+       option wdf =     1.00
+       option opfile =     1.00
+       option split_dp =     1.00
+       option probe =     1.00
+ init: end read circuit files, cpu clock= 1.24E-01 peak memory=     496 mb
+ init: begin check errors, cpu clock= 1.24E-01
+>error          ***** hspice job aborted
+ lic: Release hspice token(s)

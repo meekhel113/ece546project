@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Thu Apr 21 18:03:19 2022-->
+<file-format version="2.0" name="netlisting-timestamps">
+<module timestamp="2660" contextID="switched: project_backup sram_6T schematic vl: hspice hspiceD schematic spice veriloga sl: hspice hspiceD" viewSearchList="hspice hspiceD schematic spice veriloga" viewStopList="hspice hspiceD" isSubcircuit="1">
+<parameterizedConnections>
+<connectDefs timestamp="0"/>
+<oaAssignments timestamp="0"/>
+<dbAssignValue timestamp="0"/>
+<dbAssignAssignment timestamp="0"/>
+</parameterizedConnections>
+<parameters timestamp="3"/>
+<lib_parameters timestamp="1"/>
+<LineageParams/>
+<ParentParams/>
+<Terms timestamp="1097"/>
+<PortOrder><![CDATA[BLBLbWL]]></PortOrder>
+<ShortOptions timestamp="3580584169"/>
+</module>
+</file-format>

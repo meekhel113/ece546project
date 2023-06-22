@@ -1,0 +1,86 @@
+top_level Level=0 Count=1
+   column_decoder_read Level=1 Count=1
+      column_decoder_read_cell Level=2 Count=4
+      inverter_row_decoder Level=2 Count=1
+   buffer_array Level=1 Count=5
+      buffer Level=2 Count=20
+         inverter Level=3 Count=40
+   column_decoder_write Level=1 Count=1
+      column_decoder_write_cell Level=2 Count=8
+      write_buffer_cell Level=2 Count=4
+         inverter Level=3 Count=4
+         and Level=3 Count=8
+      inverter Level=2 Count=2
+   bitline_conditioning Level=1 Count=1
+      equalizer Level=2 Count=8
+   sram_array_16r_8c Level=1 Count=1
+      sram_array_1r_4c Level=2 Count=32
+         sram_6T Level=3 Count=128
+   row_decoder_4_16 Level=1 Count=1
+      inverter_row_decoder Level=2 Count=4
+
++--------------------------------------------------------------------------+
+|                             CELL STATISTICS                              |
++--------------------------------------------------------------------------+
+
+
+CELL = top_level
+	Flat Placements      =	1
+
+CELL = buffer_array
+	Flat Placements      =	5
+
+CELL = column_decoder_write
+	Flat Placements      =	1
+
+CELL = sram_array_16r_8c
+	Flat Placements      =	1
+
+CELL = buffer
+	Flat Placements      =	20
+
+CELL = write_buffer_cell
+	Flat Placements      =	4
+
+CELL = bitline_conditioning
+	Flat Placements      =	1
+
+CELL = sram_array_1r_4c
+	Flat Placements      =	32
+
+CELL = row_decoder_4_16
+	Flat Placements      =	1
+
+CELL = column_decoder_read
+	Flat Placements      =	1
+
+CELL = column_decoder_read_cell
+	Flat Placements      =	4
+
+CELL = column_decoder_write_cell
+	Flat Placements      =	8
+
+CELL = and
+	Flat Placements      =	8
+
+CELL = inverter
+	Flat Placements      =	46
+
+CELL = equalizer
+	Flat Placements      =	8
+
+CELL = sram_6T
+	Flat Placements      =	128
+
+CELL = inverter_row_decoder
+	Flat Placements      =	5
+
+TOP CELL = top_level
+	Ports                =	17
+
++--------------------------------------------------------------------------+
+|                            DEVICE STATISTICS                             |
++--------------------------------------------------------------------------+
+
+	NMOS[nmos] = 691
+	PMOS[pmos] = 371

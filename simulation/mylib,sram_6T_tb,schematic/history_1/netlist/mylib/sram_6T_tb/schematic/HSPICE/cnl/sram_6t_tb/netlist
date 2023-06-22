@@ -1,0 +1,13 @@
+********************************************************************************
+* Library          : mylib
+* Cell             : sram_6T_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 bl_out blb_out wl sram_6t
+c2 bl_out gnd! c=0.2f
+c1 blb_out gnd! c=0.2f
+v5 vdd! gnd! dc='VDD_VAL'
+m12 bl_out bl_en bl_in nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m11 blb_out bl_en blb_in nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n

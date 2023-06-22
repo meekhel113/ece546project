@@ -1,0 +1,258 @@
+<module name="vsl: mylib sram_array_16r_8c schematic vl: hspice hspiceD schematic spice veriloga">
+<scope name="Instance">
+<forward>
+<mapping src="I61" dst="xi61"/>
+<mapping src="I60" dst="xi60"/>
+<mapping src="I44" dst="xi44"/>
+<mapping src="I56" dst="xi56"/>
+<mapping src="I55" dst="xi55"/>
+<mapping src="I54" dst="xi54"/>
+<mapping src="I50" dst="xi50"/>
+<mapping src="I52" dst="xi52"/>
+<mapping src="I59" dst="xi59"/>
+<mapping src="I49" dst="xi49"/>
+<mapping src="I30" dst="xi30"/>
+<mapping src="I53" dst="xi53"/>
+<mapping src="I48" dst="xi48"/>
+<mapping src="I43" dst="xi43"/>
+<mapping src="I31" dst="xi31"/>
+<mapping src="I51" dst="xi51"/>
+<mapping src="I46" dst="xi46"/>
+<mapping src="I57" dst="xi57"/>
+<mapping src="I40" dst="xi40"/>
+<mapping src="I39" dst="xi39"/>
+<mapping src="I58" dst="xi58"/>
+<mapping src="I47" dst="xi47"/>
+<mapping src="I38" dst="xi38"/>
+<mapping src="I35" dst="xi35"/>
+<mapping src="I41" dst="xi41"/>
+<mapping src="I36" dst="xi36"/>
+<mapping src="I37" dst="xi37"/>
+<mapping src="I42" dst="xi42"/>
+<mapping src="I34" dst="xi34"/>
+<mapping src="I33" dst="xi33"/>
+<mapping src="I45" dst="xi45"/>
+<mapping src="I32" dst="xi32"/>
+</forward>
+<reverse>
+<mapping src="xi58" dst="I58"/>
+<mapping src="xi41" dst="I41"/>
+<mapping src="xi54" dst="I54"/>
+<mapping src="xi38" dst="I38"/>
+<mapping src="xi53" dst="I53"/>
+<mapping src="xi56" dst="I56"/>
+<mapping src="xi51" dst="I51"/>
+<mapping src="xi52" dst="I52"/>
+<mapping src="xi59" dst="I59"/>
+<mapping src="xi46" dst="I46"/>
+<mapping src="xi55" dst="I55"/>
+<mapping src="xi45" dst="I45"/>
+<mapping src="xi43" dst="I43"/>
+<mapping src="xi57" dst="I57"/>
+<mapping src="xi47" dst="I47"/>
+<mapping src="xi31" dst="I31"/>
+<mapping src="xi40" dst="I40"/>
+<mapping src="xi30" dst="I30"/>
+<mapping src="xi37" dst="I37"/>
+<mapping src="xi36" dst="I36"/>
+<mapping src="xi35" dst="I35"/>
+<mapping src="xi34" dst="I34"/>
+<mapping src="xi42" dst="I42"/>
+<mapping src="xi61" dst="I61"/>
+<mapping src="xi60" dst="I60"/>
+<mapping src="xi39" dst="I39"/>
+<mapping src="xi44" dst="I44"/>
+<mapping src="xi50" dst="I50"/>
+<mapping src="xi49" dst="I49"/>
+<mapping src="xi33" dst="I33"/>
+<mapping src="xi48" dst="I48"/>
+<mapping src="xi32" dst="I32"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward>
+<mapping src="WL&lt;15>" dst="wl&lt;15>"/>
+<mapping src="WL&lt;7>" dst="wl&lt;7>"/>
+<mapping src="WL&lt;11>" dst="wl&lt;11>"/>
+<mapping src="WL&lt;10>" dst="wl&lt;10>"/>
+<mapping src="WL&lt;0>" dst="wl&lt;0>"/>
+<mapping src="WL&lt;12>" dst="wl&lt;12>"/>
+<mapping src="WL&lt;6>" dst="wl&lt;6>"/>
+<mapping src="WL&lt;5>" dst="wl&lt;5>"/>
+<mapping src="WL&lt;13>" dst="wl&lt;13>"/>
+<mapping src="BLb&lt;7>" dst="blb&lt;7>"/>
+<mapping src="WL&lt;4>" dst="wl&lt;4>"/>
+<mapping src="BLb&lt;0>" dst="blb&lt;0>"/>
+<mapping src="WL&lt;2>" dst="wl&lt;2>"/>
+<mapping src="BLb&lt;4>" dst="blb&lt;4>"/>
+<mapping src="WL&lt;9>" dst="wl&lt;9>"/>
+<mapping src="BLb&lt;3>" dst="blb&lt;3>"/>
+<mapping src="BL&lt;7>" dst="bl&lt;7>"/>
+<mapping src="WL&lt;14>" dst="wl&lt;14>"/>
+<mapping src="BL&lt;4>" dst="bl&lt;4>"/>
+<mapping src="BLb&lt;6>" dst="blb&lt;6>"/>
+<mapping src="BLb&lt;2>" dst="blb&lt;2>"/>
+<mapping src="WL&lt;1>" dst="wl&lt;1>"/>
+<mapping src="WL&lt;8>" dst="wl&lt;8>"/>
+<mapping src="WL&lt;3>" dst="wl&lt;3>"/>
+<mapping src="BL&lt;3>" dst="bl&lt;3>"/>
+<mapping src="BLb&lt;1>" dst="blb&lt;1>"/>
+<mapping src="BL&lt;1>" dst="bl&lt;1>"/>
+<mapping src="BL&lt;5>" dst="bl&lt;5>"/>
+<mapping src="BLb&lt;5>" dst="blb&lt;5>"/>
+<mapping src="BL&lt;6>" dst="bl&lt;6>"/>
+<mapping src="BL&lt;0>" dst="bl&lt;0>"/>
+<mapping src="BL&lt;2>" dst="bl&lt;2>"/>
+</forward>
+<reverse>
+<mapping src="wl&lt;3>" dst="WL&lt;3>"/>
+<mapping src="wl&lt;15>" dst="WL&lt;15>"/>
+<mapping src="wl&lt;13>" dst="WL&lt;13>"/>
+<mapping src="blb&lt;5>" dst="BLb&lt;5>"/>
+<mapping src="wl&lt;6>" dst="WL&lt;6>"/>
+<mapping src="wl&lt;14>" dst="WL&lt;14>"/>
+<mapping src="wl&lt;8>" dst="WL&lt;8>"/>
+<mapping src="wl&lt;2>" dst="WL&lt;2>"/>
+<mapping src="wl&lt;7>" dst="WL&lt;7>"/>
+<mapping src="blb&lt;7>" dst="BLb&lt;7>"/>
+<mapping src="wl&lt;12>" dst="WL&lt;12>"/>
+<mapping src="wl&lt;10>" dst="WL&lt;10>"/>
+<mapping src="wl&lt;4>" dst="WL&lt;4>"/>
+<mapping src="wl&lt;1>" dst="WL&lt;1>"/>
+<mapping src="blb&lt;4>" dst="BLb&lt;4>"/>
+<mapping src="blb&lt;2>" dst="BLb&lt;2>"/>
+<mapping src="wl&lt;11>" dst="WL&lt;11>"/>
+<mapping src="blb&lt;6>" dst="BLb&lt;6>"/>
+<mapping src="blb&lt;0>" dst="BLb&lt;0>"/>
+<mapping src="blb&lt;3>" dst="BLb&lt;3>"/>
+<mapping src="bl&lt;6>" dst="BL&lt;6>"/>
+<mapping src="wl&lt;9>" dst="WL&lt;9>"/>
+<mapping src="blb&lt;1>" dst="BLb&lt;1>"/>
+<mapping src="bl&lt;5>" dst="BL&lt;5>"/>
+<mapping src="wl&lt;0>" dst="WL&lt;0>"/>
+<mapping src="bl&lt;2>" dst="BL&lt;2>"/>
+<mapping src="bl&lt;7>" dst="BL&lt;7>"/>
+<mapping src="wl&lt;5>" dst="WL&lt;5>"/>
+<mapping src="bl&lt;1>" dst="BL&lt;1>"/>
+<mapping src="bl&lt;3>" dst="BL&lt;3>"/>
+<mapping src="bl&lt;4>" dst="BL&lt;4>"/>
+<mapping src="bl&lt;0>" dst="BL&lt;0>"/>
+</reverse>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping src="&lt;unmappedTermOrder>" dst="BL&lt;0> BL&lt;1> BL&lt;2> BL&lt;3> BL&lt;4> BL&lt;5> BL&lt;6> BL&lt;7> BLb&lt;0> BLb&lt;1> BLb&lt;2> BLb&lt;3> BLb&lt;4> BLb&lt;5> BLb&lt;6> BLb&lt;7> WL&lt;0> WL&lt;1> WL&lt;2> WL&lt;3> WL&lt;4> WL&lt;5> WL&lt;6> WL&lt;7> WL&lt;8> WL&lt;9> WL&lt;10> WL&lt;11> WL&lt;12> WL&lt;13> WL&lt;14> WL&lt;15>"/>
+<mapping src="WL&lt;9>" dst="wl&lt;9>"/>
+<mapping src="BLb&lt;3>" dst="blb&lt;3>"/>
+<mapping src="WL&lt;14>" dst="wl&lt;14>"/>
+<mapping src="BL&lt;4>" dst="bl&lt;4>"/>
+<mapping src="BLb&lt;6>" dst="blb&lt;6>"/>
+<mapping src="&lt;termOrder>" dst="bl&lt;0> bl&lt;1> bl&lt;2> bl&lt;3> bl&lt;4> bl&lt;5> bl&lt;6> bl&lt;7> blb&lt;0> blb&lt;1> blb&lt;2> blb&lt;3> blb&lt;4> blb&lt;5> blb&lt;6> blb&lt;7> wl&lt;0> wl&lt;1> wl&lt;2> wl&lt;3> wl&lt;4> wl&lt;5> wl&lt;6> wl&lt;7> wl&lt;8> wl&lt;9> wl&lt;10> wl&lt;11> wl&lt;12> wl&lt;13> wl&lt;14> wl&lt;15>"/>
+<mapping src="WL&lt;11>" dst="wl&lt;11>"/>
+<mapping src="WL&lt;10>" dst="wl&lt;10>"/>
+<mapping src="WL&lt;7>" dst="wl&lt;7>"/>
+<mapping src="WL&lt;6>" dst="wl&lt;6>"/>
+<mapping src="WL&lt;0>" dst="wl&lt;0>"/>
+<mapping src="WL&lt;12>" dst="wl&lt;12>"/>
+<mapping src="WL&lt;4>" dst="wl&lt;4>"/>
+<mapping src="WL&lt;2>" dst="wl&lt;2>"/>
+<mapping src="WL" dst="wl"/>
+<mapping src="WL&lt;15>" dst="wl&lt;15>"/>
+<mapping src="BLb&lt;7>" dst="blb&lt;7>"/>
+<mapping src="BLb&lt;4>" dst="blb&lt;4>"/>
+<mapping src="BLb&lt;0>" dst="blb&lt;0>"/>
+<mapping src="BL&lt;7>" dst="bl&lt;7>"/>
+<mapping src="BLb&lt;2>" dst="blb&lt;2>"/>
+<mapping src="BLb&lt;1>" dst="blb&lt;1>"/>
+<mapping src="BLb" dst="blb"/>
+<mapping src="BL&lt;3>" dst="bl&lt;3>"/>
+<mapping src="WL&lt;3>" dst="wl&lt;3>"/>
+<mapping src="WL&lt;8>" dst="wl&lt;8>"/>
+<mapping src="WL&lt;1>" dst="wl&lt;1>"/>
+<mapping src="BLb&lt;5>" dst="blb&lt;5>"/>
+<mapping src="BL&lt;5>" dst="bl&lt;5>"/>
+<mapping src="BL&lt;1>" dst="bl&lt;1>"/>
+<mapping src="BL&lt;6>" dst="bl&lt;6>"/>
+<mapping src="BL&lt;0>" dst="bl&lt;0>"/>
+<mapping src="BL&lt;2>" dst="bl&lt;2>"/>
+<mapping src="WL&lt;5>" dst="wl&lt;5>"/>
+<mapping src="WL&lt;13>" dst="wl&lt;13>"/>
+<mapping src="BL" dst="bl"/>
+</forward>
+<reverse>
+<mapping src="BL&lt;0> BL&lt;1> BL&lt;2> BL&lt;3> BL&lt;4> BL&lt;5> BL&lt;6> BL&lt;7> BLb&lt;0> BLb&lt;1> BLb&lt;2> BLb&lt;3> BLb&lt;4> BLb&lt;5> BLb&lt;6> BLb&lt;7> WL&lt;0> WL&lt;1> WL&lt;2> WL&lt;3> WL&lt;4> WL&lt;5> WL&lt;6> WL&lt;7> WL&lt;8> WL&lt;9> WL&lt;10> WL&lt;11> WL&lt;12> WL&lt;13> WL&lt;14> WL&lt;15>" dst="&lt;unmappedTermOrder>"/>
+<mapping src="wl&lt;8>" dst="WL&lt;8>"/>
+<mapping src="wl&lt;2>" dst="WL&lt;2>"/>
+<mapping src="wl&lt;7>" dst="WL&lt;7>"/>
+<mapping src="wl&lt;15>" dst="WL&lt;15>"/>
+<mapping src="wl&lt;3>" dst="WL&lt;3>"/>
+<mapping src="bl&lt;0> bl&lt;1> bl&lt;2> bl&lt;3> bl&lt;4> bl&lt;5> bl&lt;6> bl&lt;7> blb&lt;0> blb&lt;1> blb&lt;2> blb&lt;3> blb&lt;4> blb&lt;5> blb&lt;6> blb&lt;7> wl&lt;0> wl&lt;1> wl&lt;2> wl&lt;3> wl&lt;4> wl&lt;5> wl&lt;6> wl&lt;7> wl&lt;8> wl&lt;9> wl&lt;10> wl&lt;11> wl&lt;12> wl&lt;13> wl&lt;14> wl&lt;15>" dst="&lt;termOrder>"/>
+<mapping src="wl&lt;13>" dst="WL&lt;13>"/>
+<mapping src="blb&lt;5>" dst="BLb&lt;5>"/>
+<mapping src="wl&lt;6>" dst="WL&lt;6>"/>
+<mapping src="wl&lt;14>" dst="WL&lt;14>"/>
+<mapping src="wl" dst="WL"/>
+<mapping src="blb&lt;7>" dst="BLb&lt;7>"/>
+<mapping src="wl&lt;11>" dst="WL&lt;11>"/>
+<mapping src="blb&lt;6>" dst="BLb&lt;6>"/>
+<mapping src="blb&lt;2>" dst="BLb&lt;2>"/>
+<mapping src="blb&lt;3>" dst="BLb&lt;3>"/>
+<mapping src="blb&lt;0>" dst="BLb&lt;0>"/>
+<mapping src="blb" dst="BLb"/>
+<mapping src="bl&lt;6>" dst="BL&lt;6>"/>
+<mapping src="wl&lt;9>" dst="WL&lt;9>"/>
+<mapping src="blb&lt;1>" dst="BLb&lt;1>"/>
+<mapping src="bl&lt;5>" dst="BL&lt;5>"/>
+<mapping src="wl&lt;0>" dst="WL&lt;0>"/>
+<mapping src="bl&lt;7>" dst="BL&lt;7>"/>
+<mapping src="bl&lt;2>" dst="BL&lt;2>"/>
+<mapping src="wl&lt;5>" dst="WL&lt;5>"/>
+<mapping src="bl&lt;1>" dst="BL&lt;1>"/>
+<mapping src="bl&lt;4>" dst="BL&lt;4>"/>
+<mapping src="bl&lt;3>" dst="BL&lt;3>"/>
+<mapping src="bl&lt;0>" dst="BL&lt;0>"/>
+<mapping src="wl&lt;10>" dst="WL&lt;10>"/>
+<mapping src="wl&lt;12>" dst="WL&lt;12>"/>
+<mapping src="blb&lt;4>" dst="BLb&lt;4>"/>
+<mapping src="bl" dst="BL"/>
+<mapping src="wl&lt;1>" dst="WL&lt;1>"/>
+<mapping src="wl&lt;4>" dst="WL&lt;4>"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="sram_array_1r_4c">
+<instance name="I30"/>
+<instance name="I31"/>
+<instance name="I32"/>
+<instance name="I33"/>
+<instance name="I34"/>
+<instance name="I35"/>
+<instance name="I36"/>
+<instance name="I37"/>
+<instance name="I38"/>
+<instance name="I39"/>
+<instance name="I40"/>
+<instance name="I41"/>
+<instance name="I42"/>
+<instance name="I43"/>
+<instance name="I44"/>
+<instance name="I45"/>
+<instance name="I46"/>
+<instance name="I47"/>
+<instance name="I48"/>
+<instance name="I49"/>
+<instance name="I50"/>
+<instance name="I51"/>
+<instance name="I52"/>
+<instance name="I53"/>
+<instance name="I54"/>
+<instance name="I55"/>
+<instance name="I56"/>
+<instance name="I57"/>
+<instance name="I58"/>
+<instance name="I59"/>
+<instance name="I60"/>
+<instance name="I61"/>
+</instance_header>
+</master_instances>
+</module>

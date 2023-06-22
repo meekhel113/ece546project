@@ -1,0 +1,49 @@
+<module name="vsl: project_backup bitline_conditioning schematic vl: auCdl schematic symbol">
+<scope name="Instance">
+<forward>
+<mapping dst="XI0" src="I0"/>
+<mapping dst="XI2" src="I2"/>
+<mapping dst="XI3" src="I3"/>
+<mapping dst="XI4" src="I4"/>
+<mapping dst="XI1" src="I1"/>
+<mapping dst="XI5" src="I5"/>
+<mapping dst="XI6" src="I6"/>
+<mapping dst="XI7" src="I7"/>
+</forward>
+<reverse>
+<mapping dst="I1" src="XI1"/>
+<mapping dst="I2" src="XI2"/>
+<mapping dst="I3" src="XI3"/>
+<mapping dst="I0" src="XI0"/>
+<mapping dst="I4" src="XI4"/>
+<mapping dst="I5" src="XI5"/>
+<mapping dst="I6" src="XI6"/>
+<mapping dst="I7" src="XI7"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward/>
+<reverse/>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="BL BLb CLK" src="&lt;unmappedTermOrder>"/>
+<mapping dst="BL BLb CLK" src="&lt;termOrder>"/>
+</forward>
+<reverse>
+<mapping dst="&lt;unmappedTermOrder>" src="BL BLb CLK"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="equalizer">
+<instance name="I0"/>
+<instance name="I1"/>
+<instance name="I2"/>
+<instance name="I3"/>
+<instance name="I4"/>
+<instance name="I5"/>
+<instance name="I6"/>
+<instance name="I7"/>
+</instance_header>
+</master_instances>
+</module>

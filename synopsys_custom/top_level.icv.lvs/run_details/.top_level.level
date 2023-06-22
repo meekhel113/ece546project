@@ -1,0 +1,51 @@
+inverter_row_decoder 2
+1-nmos
+1-pmos
+inverter_write 1
+1-nmos
+inverter_buf_top_level_v1 2
+1-nmos
+1-pmos
+and_v1 1
+1-nmos
+and 1
+1-nmos
+inverter_buf_top_leve 2
+1-nmos
+1-pmos
+sram_6T_1finger 2
+1-nmos
+1-pmos
+sram_6T_1finger_inverted 2
+1-nmos
+1-pmos
+inverter_column_decoder_write 2
+1-nmos
+1-pmos
+column_decoder_write_cell 1
+1-nmos
+buffer_top_inverted 2
+1-nmos
+1-pmos
+column_decoder_read_cell 1
+1-nmos
+equalizer 1
+1-pmos
+sram_array_1r_4c 2
+1-nmos
+1-pmos
+buffer_top 2
+1-nmos
+1-pmos
+column_decoder_write 1
+1-nmos
+row_decoder_4_16 2
+1-nmos
+1-pmos
+column_decoder_read 2
+1-nmos
+1-pmos
+buffer_array 1
+1-pmos
+sram_array_16r_8c 1
+1-nmos

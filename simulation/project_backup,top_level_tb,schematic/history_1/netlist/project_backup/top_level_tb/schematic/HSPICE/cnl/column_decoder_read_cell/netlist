@@ -1,0 +1,14 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : column_decoder_read_cell
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt column_decoder_read_cell en in<0> in<1> out s sb
+m3 net12 s out nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m2 net10 sb out nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m1 in<0> en net10 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m0 in<1> en net12 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+.ends column_decoder_read_cell
+

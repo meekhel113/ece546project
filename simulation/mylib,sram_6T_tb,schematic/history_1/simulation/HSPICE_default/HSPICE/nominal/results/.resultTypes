@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Tue Apr 19 04:33:18 2022-->
+<file-format name="cacheCategory" version="1.0">
+ <attribute name="resultTypes" type="giString" value="tran variables"/>
+</file-format>

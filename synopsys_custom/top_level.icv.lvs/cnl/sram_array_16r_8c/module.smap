@@ -1,0 +1,121 @@
+<module name="vsl: project_backup sram_array_16r_8c schematic vl: auCdl schematic symbol">
+<scope name="Instance">
+<forward>
+<mapping dst="XI61" src="I61"/>
+<mapping dst="XI60" src="I60"/>
+<mapping dst="XI56" src="I56"/>
+<mapping dst="XI55" src="I55"/>
+<mapping dst="XI54" src="I54"/>
+<mapping dst="XI59" src="I59"/>
+<mapping dst="XI52" src="I52"/>
+<mapping dst="XI50" src="I50"/>
+<mapping dst="XI49" src="I49"/>
+<mapping dst="XI53" src="I53"/>
+<mapping dst="XI48" src="I48"/>
+<mapping dst="XI57" src="I57"/>
+<mapping dst="XI46" src="I46"/>
+<mapping dst="XI44" src="I44"/>
+<mapping dst="XI30" src="I30"/>
+<mapping dst="XI51" src="I51"/>
+<mapping dst="XI31" src="I31"/>
+<mapping dst="XI43" src="I43"/>
+<mapping dst="XI40" src="I40"/>
+<mapping dst="XI39" src="I39"/>
+<mapping dst="XI58" src="I58"/>
+<mapping dst="XI47" src="I47"/>
+<mapping dst="XI38" src="I38"/>
+<mapping dst="XI35" src="I35"/>
+<mapping dst="XI41" src="I41"/>
+<mapping dst="XI36" src="I36"/>
+<mapping dst="XI37" src="I37"/>
+<mapping dst="XI42" src="I42"/>
+<mapping dst="XI34" src="I34"/>
+<mapping dst="XI33" src="I33"/>
+<mapping dst="XI45" src="I45"/>
+<mapping dst="XI32" src="I32"/>
+</forward>
+<reverse>
+<mapping dst="I61" src="XI61"/>
+<mapping dst="I60" src="XI60"/>
+<mapping dst="I57" src="XI57"/>
+<mapping dst="I56" src="XI56"/>
+<mapping dst="I55" src="XI55"/>
+<mapping dst="I54" src="XI54"/>
+<mapping dst="I50" src="XI50"/>
+<mapping dst="I49" src="XI49"/>
+<mapping dst="I48" src="XI48"/>
+<mapping dst="I53" src="XI53"/>
+<mapping dst="I46" src="XI46"/>
+<mapping dst="I45" src="XI45"/>
+<mapping dst="I42" src="XI42"/>
+<mapping dst="I59" src="XI59"/>
+<mapping dst="I31" src="XI31"/>
+<mapping dst="I39" src="XI39"/>
+<mapping dst="I58" src="XI58"/>
+<mapping dst="I38" src="XI38"/>
+<mapping dst="I52" src="XI52"/>
+<mapping dst="I43" src="XI43"/>
+<mapping dst="I37" src="XI37"/>
+<mapping dst="I47" src="XI47"/>
+<mapping dst="I36" src="XI36"/>
+<mapping dst="I44" src="XI44"/>
+<mapping dst="I51" src="XI51"/>
+<mapping dst="I35" src="XI35"/>
+<mapping dst="I41" src="XI41"/>
+<mapping dst="I40" src="XI40"/>
+<mapping dst="I34" src="XI34"/>
+<mapping dst="I33" src="XI33"/>
+<mapping dst="I30" src="XI30"/>
+<mapping dst="I32" src="XI32"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward/>
+<reverse/>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="BL BLb WL" src="&lt;unmappedTermOrder>"/>
+<mapping dst="BL BLb WL" src="&lt;termOrder>"/>
+</forward>
+<reverse>
+<mapping dst="&lt;unmappedTermOrder>" src="BL BLb WL"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="sram_array_1r_4c">
+<instance name="I30"/>
+<instance name="I31"/>
+<instance name="I32"/>
+<instance name="I33"/>
+<instance name="I34"/>
+<instance name="I35"/>
+<instance name="I36"/>
+<instance name="I37"/>
+<instance name="I38"/>
+<instance name="I39"/>
+<instance name="I40"/>
+<instance name="I41"/>
+<instance name="I42"/>
+<instance name="I43"/>
+<instance name="I44"/>
+<instance name="I45"/>
+<instance name="I46"/>
+<instance name="I47"/>
+<instance name="I48"/>
+<instance name="I49"/>
+<instance name="I50"/>
+<instance name="I51"/>
+<instance name="I52"/>
+<instance name="I53"/>
+<instance name="I54"/>
+<instance name="I55"/>
+<instance name="I56"/>
+<instance name="I57"/>
+<instance name="I58"/>
+<instance name="I59"/>
+<instance name="I60"/>
+<instance name="I61"/>
+</instance_header>
+</master_instances>
+</module>

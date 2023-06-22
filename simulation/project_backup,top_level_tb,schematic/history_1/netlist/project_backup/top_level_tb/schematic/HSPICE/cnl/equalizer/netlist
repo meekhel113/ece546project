@@ -1,0 +1,13 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : equalizer
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt equalizer !bl bl clk
+m2 bl clk !bl pfet nfin=8 adeo=2.268e-15 aseo=2.268e-15 pdeo=4.68e-07 pseo=4.68e-07
+m1 bl clk vdd! pfet nfin=8 adeo=2.268e-15 aseo=2.268e-15 pdeo=4.68e-07 pseo=4.68e-07
+m0 !bl clk vdd! pfet nfin=8 adeo=2.268e-15 aseo=2.268e-15 pdeo=4.68e-07 pseo=4.68e-07
+.ends equalizer
+

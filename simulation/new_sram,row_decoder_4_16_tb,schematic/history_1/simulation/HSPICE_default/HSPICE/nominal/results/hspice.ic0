@@ -1,0 +1,39 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "S-2021.09 linux64"
+* "format" "HSP"
+* "rundate" "06:03:08 04/19/2022 "
+* "netlist" "/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/new_sram,row_decoder_4_16_tb,schematic/history_1/simulation/HSPICE_default/HSPICE/nominal/netlist/input.spi "
+* "runtitle" "*  generated for: primesim"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ a<0> =   0.            
++ a<1> =   0.            
++ a<2> =   0.            
++ a<3> =   0.            
++ clk =   0.            
++ vdd! = 800.0000m       
++ wl<0> = 799.9436m       
++ wl<10> =  68.7040m       
++ wl<11> =  44.9070m       
++ wl<12> =  68.7040m       
++ wl<13> =  44.9070m       
++ wl<14> =  44.9070m       
++ wl<15> =  33.4655m       
++ wl<1> = 156.8967m       
++ wl<2> = 156.8967m       
++ wl<3> =  68.7040m       
++ wl<4> = 156.8967m       
++ wl<5> =  68.7040m       
++ wl<6> =  68.7040m       
++ wl<7> =  44.9070m       
++ wl<8> = 156.8967m       
++ wl<9> =  68.7040m       
++ xi0.net697 = 799.9859m       
++ xi0.net698 = 799.9859m       
++ xi0.net699 = 799.9859m       
++ xi0.net700 = 799.9859m       
+***   END: Saved Operating Point ***                     

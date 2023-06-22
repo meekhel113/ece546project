@@ -1,0 +1,176 @@
+<module name="vsl: project_backup column_decoder_write schematic vl: hspice hspiceD schematic spice veriloga">
+<scope name="Instance">
+<forward>
+<mapping dst="xi32" src="I32"/>
+<mapping dst="xi30" src="I30"/>
+<mapping dst="xi26" src="I26"/>
+<mapping dst="xi24" src="I24"/>
+<mapping dst="xi28" src="I28"/>
+<mapping dst="xi31" src="I31"/>
+<mapping dst="xi27" src="I27"/>
+<mapping dst="xi29" src="I29"/>
+<mapping dst="xi25" src="I25"/>
+<mapping dst="xi22" src="I22"/>
+<mapping dst="xi23" src="I23"/>
+<mapping dst="xi8" src="I8"/>
+<mapping dst="xi9" src="I9"/>
+<mapping dst="xi17" src="I17"/>
+</forward>
+<reverse>
+<mapping dst="I28" src="xi28"/>
+<mapping dst="I31" src="xi31"/>
+<mapping dst="I30" src="xi30"/>
+<mapping dst="I9" src="xi9"/>
+<mapping dst="I27" src="xi27"/>
+<mapping dst="I24" src="xi24"/>
+<mapping dst="I25" src="xi25"/>
+<mapping dst="I23" src="xi23"/>
+<mapping dst="I22" src="xi22"/>
+<mapping dst="I8" src="xi8"/>
+<mapping dst="I32" src="xi32"/>
+<mapping dst="I26" src="xi26"/>
+<mapping dst="I29" src="xi29"/>
+<mapping dst="I17" src="xi17"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward>
+<mapping dst="wen" src="WEN"/>
+<mapping dst="d&lt;3>" src="D&lt;3>"/>
+<mapping dst="d&lt;1>" src="D&lt;1>"/>
+<mapping dst="d&lt;2>" src="D&lt;2>"/>
+<mapping dst="wenb" src="WENB"/>
+<mapping dst="d&lt;0>" src="D&lt;0>"/>
+<mapping dst="blb&lt;7>" src="BLb&lt;7>"/>
+<mapping dst="blb&lt;4>" src="BLb&lt;4>"/>
+<mapping dst="blb&lt;3>" src="BLb&lt;3>"/>
+<mapping dst="blb&lt;0>" src="BLb&lt;0>"/>
+<mapping dst="ab" src="Ab"/>
+<mapping dst="bl&lt;7>" src="BL&lt;7>"/>
+<mapping dst="blb&lt;6>" src="BLb&lt;6>"/>
+<mapping dst="bl&lt;4>" src="BL&lt;4>"/>
+<mapping dst="blb&lt;2>" src="BLb&lt;2>"/>
+<mapping dst="ab&lt;4>" src="Ab&lt;4>"/>
+<mapping dst="blb&lt;1>" src="BLb&lt;1>"/>
+<mapping dst="bl&lt;3>" src="BL&lt;3>"/>
+<mapping dst="blb&lt;5>" src="BLb&lt;5>"/>
+<mapping dst="bl&lt;5>" src="BL&lt;5>"/>
+<mapping dst="bl&lt;1>" src="BL&lt;1>"/>
+<mapping dst="bl&lt;6>" src="BL&lt;6>"/>
+<mapping dst="bl&lt;0>" src="BL&lt;0>"/>
+<mapping dst="bl&lt;2>" src="BL&lt;2>"/>
+<mapping dst="a&lt;4>" src="A&lt;4>"/>
+</forward>
+<reverse>
+<mapping dst="Ab&lt;4>" src="ab&lt;4>"/>
+<mapping dst="WENB" src="wenb"/>
+<mapping dst="D&lt;2>" src="d&lt;2>"/>
+<mapping dst="D&lt;3>" src="d&lt;3>"/>
+<mapping dst="BL&lt;6>" src="bl&lt;6>"/>
+<mapping dst="WEN" src="wen"/>
+<mapping dst="D&lt;1>" src="d&lt;1>"/>
+<mapping dst="BLb&lt;7>" src="blb&lt;7>"/>
+<mapping dst="D&lt;0>" src="d&lt;0>"/>
+<mapping dst="BLb&lt;5>" src="blb&lt;5>"/>
+<mapping dst="Ab" src="ab"/>
+<mapping dst="BLb&lt;2>" src="blb&lt;2>"/>
+<mapping dst="BLb&lt;6>" src="blb&lt;6>"/>
+<mapping dst="BLb&lt;3>" src="blb&lt;3>"/>
+<mapping dst="BLb&lt;0>" src="blb&lt;0>"/>
+<mapping dst="BLb&lt;1>" src="blb&lt;1>"/>
+<mapping dst="BL&lt;5>" src="bl&lt;5>"/>
+<mapping dst="BL&lt;7>" src="bl&lt;7>"/>
+<mapping dst="BL&lt;2>" src="bl&lt;2>"/>
+<mapping dst="BL&lt;1>" src="bl&lt;1>"/>
+<mapping dst="BL&lt;4>" src="bl&lt;4>"/>
+<mapping dst="BL&lt;3>" src="bl&lt;3>"/>
+<mapping dst="BL&lt;0>" src="bl&lt;0>"/>
+<mapping dst="BLb&lt;4>" src="blb&lt;4>"/>
+<mapping dst="A&lt;4>" src="a&lt;4>"/>
+</reverse>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="A&lt;4> BL&lt;0> BL&lt;1> BL&lt;2> BL&lt;3> BL&lt;4> BL&lt;5> BL&lt;6> BL&lt;7> BLb&lt;0> BLb&lt;1> BLb&lt;2> BLb&lt;3> BLb&lt;4> BLb&lt;5> BLb&lt;6> BLb&lt;7> D&lt;0> D&lt;1> D&lt;2> D&lt;3> WENB" src="&lt;unmappedTermOrder>"/>
+<mapping dst="blb&lt;3>" src="BLb&lt;3>"/>
+<mapping dst="a&lt;4> bl&lt;0> bl&lt;1> bl&lt;2> bl&lt;3> bl&lt;4> bl&lt;5> bl&lt;6> bl&lt;7> blb&lt;0> blb&lt;1> blb&lt;2> blb&lt;3> blb&lt;4> blb&lt;5> blb&lt;6> blb&lt;7> d&lt;0> d&lt;1> d&lt;2> d&lt;3> wenb" src="&lt;termOrder>"/>
+<mapping dst="d&lt;3>" src="D&lt;3>"/>
+<mapping dst="wenb" src="WENB"/>
+<mapping dst="d&lt;2>" src="D&lt;2>"/>
+<mapping dst="d&lt;1>" src="D&lt;1>"/>
+<mapping dst="d&lt;0>" src="D&lt;0>"/>
+<mapping dst="blb&lt;4>" src="BLb&lt;4>"/>
+<mapping dst="blb&lt;0>" src="BLb&lt;0>"/>
+<mapping dst="bl&lt;7>" src="BL&lt;7>"/>
+<mapping dst="blb&lt;2>" src="BLb&lt;2>"/>
+<mapping dst="blb&lt;6>" src="BLb&lt;6>"/>
+<mapping dst="bl&lt;4>" src="BL&lt;4>"/>
+<mapping dst="bl&lt;3>" src="BL&lt;3>"/>
+<mapping dst="blb" src="BLb"/>
+<mapping dst="blb&lt;1>" src="BLb&lt;1>"/>
+<mapping dst="d" src="D"/>
+<mapping dst="blb&lt;5>" src="BLb&lt;5>"/>
+<mapping dst="bl&lt;1>" src="BL&lt;1>"/>
+<mapping dst="bl&lt;5>" src="BL&lt;5>"/>
+<mapping dst="bl&lt;6>" src="BL&lt;6>"/>
+<mapping dst="bl&lt;0>" src="BL&lt;0>"/>
+<mapping dst="bl&lt;2>" src="BL&lt;2>"/>
+<mapping dst="a&lt;4>" src="A&lt;4>"/>
+<mapping dst="bl" src="BL"/>
+<mapping dst="blb&lt;7>" src="BLb&lt;7>"/>
+<mapping dst="a" src="A"/>
+</forward>
+<reverse>
+<mapping dst="WENB" src="wenb"/>
+<mapping dst="BLb" src="blb"/>
+<mapping dst="&lt;unmappedTermOrder>" src="A&lt;4> BL&lt;0> BL&lt;1> BL&lt;2> BL&lt;3> BL&lt;4> BL&lt;5> BL&lt;6> BL&lt;7> BLb&lt;0> BLb&lt;1> BLb&lt;2> BLb&lt;3> BLb&lt;4> BLb&lt;5> BLb&lt;6> BLb&lt;7> D&lt;0> D&lt;1> D&lt;2> D&lt;3> WENB"/>
+<mapping dst="D&lt;2>" src="d&lt;2>"/>
+<mapping dst="D&lt;3>" src="d&lt;3>"/>
+<mapping dst="BL&lt;6>" src="bl&lt;6>"/>
+<mapping dst="D&lt;1>" src="d&lt;1>"/>
+<mapping dst="BLb&lt;7>" src="blb&lt;7>"/>
+<mapping dst="D&lt;0>" src="d&lt;0>"/>
+<mapping dst="BLb&lt;6>" src="blb&lt;6>"/>
+<mapping dst="BLb&lt;0>" src="blb&lt;0>"/>
+<mapping dst="BLb&lt;3>" src="blb&lt;3>"/>
+<mapping dst="&lt;termOrder>" src="a&lt;4> bl&lt;0> bl&lt;1> bl&lt;2> bl&lt;3> bl&lt;4> bl&lt;5> bl&lt;6> bl&lt;7> blb&lt;0> blb&lt;1> blb&lt;2> blb&lt;3> blb&lt;4> blb&lt;5> blb&lt;6> blb&lt;7> d&lt;0> d&lt;1> d&lt;2> d&lt;3> wenb"/>
+<mapping dst="BLb&lt;5>" src="blb&lt;5>"/>
+<mapping dst="BLb&lt;1>" src="blb&lt;1>"/>
+<mapping dst="BL&lt;5>" src="bl&lt;5>"/>
+<mapping dst="BL&lt;2>" src="bl&lt;2>"/>
+<mapping dst="BL&lt;7>" src="bl&lt;7>"/>
+<mapping dst="BL&lt;1>" src="bl&lt;1>"/>
+<mapping dst="BL&lt;3>" src="bl&lt;3>"/>
+<mapping dst="BL&lt;4>" src="bl&lt;4>"/>
+<mapping dst="BL&lt;0>" src="bl&lt;0>"/>
+<mapping dst="BLb&lt;4>" src="blb&lt;4>"/>
+<mapping dst="BL" src="bl"/>
+<mapping dst="A&lt;4>" src="a&lt;4>"/>
+<mapping dst="D" src="d"/>
+<mapping dst="A" src="a"/>
+<mapping dst="BLb&lt;2>" src="blb&lt;2>"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="column_decoder_write_cell">
+<instance name="I26"/>
+<instance name="I27"/>
+<instance name="I28"/>
+<instance name="I29"/>
+<instance name="I30"/>
+<instance name="I31"/>
+<instance name="I32"/>
+<instance name="I9"/>
+</instance_header>
+<instance_header master="inverter">
+<instance name="I17"/>
+<instance name="I8"/>
+</instance_header>
+<instance_header master="write_buffer_cell">
+<instance name="I22"/>
+<instance name="I23"/>
+<instance name="I24"/>
+<instance name="I25"/>
+</instance_header>
+</master_instances>
+</module>

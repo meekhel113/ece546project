@@ -1,0 +1,98 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : row_decoder_4_16
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt row_decoder_4_16 CLK IN<0> IN<1> IN<2> IN<3> WL<0> WL<1> WL<2> WL<3>
++ WL<4> WL<5> WL<6> WL<7> WL<8> WL<9> WL<10> WL<11> WL<12> WL<13> WL<14> WL<15>
+*.PININFO CLK:I IN<0>:I IN<1>:I IN<2>:I IN<3>:I WL<0>:O WL<1>:O WL<2>:O WL<3>:O
+*.PININFO WL<4>:O WL<5>:O WL<6>:O WL<7>:O WL<8>:O WL<9>:O WL<10>:O WL<11>:O
+*.PININFO WL<12>:O WL<13>:O WL<14>:O WL<15>:O
+MM195 WL<15> net697 gnd! nmos
+MM194 WL<13> net697 gnd! nmos
+MM193 WL<11> net697 gnd! nmos
+MM192 WL<9> net697 gnd! nmos
+MM191 WL<7> net697 gnd! nmos
+MM190 WL<5> net697 gnd! nmos
+MM189 WL<3> net697 gnd! nmos
+MM188 WL<1> net697 gnd! nmos
+MM187 WL<2> net698 gnd! nmos
+MM186 WL<3> net698 gnd! nmos
+MM185 WL<6> net698 gnd! nmos
+MM184 WL<7> net698 gnd! nmos
+MM183 WL<10> net698 gnd! nmos
+MM182 WL<11> net698 gnd! nmos
+MM181 WL<14> net698 gnd! nmos
+MM180 WL<15> net698 gnd! nmos
+MM173 WL<4> net699 gnd! nmos
+MM172 WL<5> net699 gnd! nmos
+MM171 WL<6> net699 gnd! nmos
+MM170 WL<7> net699 gnd! nmos
+MM169 WL<12> net699 gnd! nmos
+MM168 WL<13> net699 gnd! nmos
+MM167 WL<14> net699 gnd! nmos
+MM166 WL<15> net699 gnd! nmos
+MM159 WL<8> net700 gnd! nmos
+MM158 WL<9> net700 gnd! nmos
+MM157 WL<10> net700 gnd! nmos
+MM156 WL<11> net700 gnd! nmos
+MM155 WL<12> net700 gnd! nmos
+MM154 WL<13> net700 gnd! nmos
+MM153 WL<14> net700 gnd! nmos
+MM152 WL<15> net700 gnd! nmos
+MM131 WL<0> IN<0> gnd! nmos
+MM130 WL<2> IN<0> gnd! nmos
+MM129 WL<4> IN<0> gnd! nmos
+MM128 WL<6> IN<0> gnd! nmos
+MM127 WL<8> IN<0> gnd! nmos
+MM126 WL<10> IN<0> gnd! nmos
+MM125 WL<12> IN<0> gnd! nmos
+MM124 WL<14> IN<0> gnd! nmos
+MM119 WL<5> IN<1> gnd! nmos
+MM118 WL<4> IN<1> gnd! nmos
+MM117 WL<1> IN<1> gnd! nmos
+MM115 WL<9> IN<1> gnd! nmos
+MM114 WL<8> IN<1> gnd! nmos
+MM116 WL<0> IN<1> gnd! nmos
+MM112 WL<12> IN<1> gnd! nmos
+MM111 WL<13> IN<1> gnd! nmos
+MM106 WL<3> IN<2> gnd! nmos
+MM105 WL<2> IN<2> gnd! nmos
+MM104 WL<1> IN<2> gnd! nmos
+MM103 WL<0> IN<2> gnd! nmos
+MM102 WL<8> IN<2> gnd! nmos
+MM101 WL<9> IN<2> gnd! nmos
+MM100 WL<10> IN<2> gnd! nmos
+MM99 WL<11> IN<2> gnd! nmos
+MM94 WL<0> IN<3> gnd! nmos
+MM93 WL<1> IN<3> gnd! nmos
+MM92 WL<2> IN<3> gnd! nmos
+MM91 WL<3> IN<3> gnd! nmos
+MM90 WL<4> IN<3> gnd! nmos
+MM89 WL<5> IN<3> gnd! nmos
+MM88 WL<6> IN<3> gnd! nmos
+MM87 WL<7> IN<3> gnd! nmos
+XI232 IN<0> net697 inverter_row_decoder
+XI233 IN<1> net698 inverter_row_decoder
+XI234 IN<2> net699 inverter_row_decoder
+XI235 IN<3> net700 inverter_row_decoder
+MM11 WL<11> CLK vdd! pmos
+MM4 WL<4> CLK vdd! pmos
+MM15 WL<15> CLK vdd! pmos
+MM14 WL<14> CLK vdd! pmos
+MM13 WL<13> CLK vdd! pmos
+MM12 WL<12> CLK vdd! pmos
+MM10 WL<10> CLK vdd! pmos
+MM9 WL<9> CLK vdd! pmos
+MM8 WL<8> CLK vdd! pmos
+MM7 WL<7> CLK vdd! pmos
+MM6 WL<6> CLK vdd! pmos
+MM5 WL<5> CLK vdd! pmos
+MM3 WL<3> CLK vdd! pmos
+MM2 WL<2> CLK vdd! pmos
+MM1 WL<1> CLK vdd! pmos
+MM0 WL<0> CLK vdd! pmos
+.ends row_decoder_4_16
+

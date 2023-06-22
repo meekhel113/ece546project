@@ -1,0 +1,35 @@
+18334:21 Apr 16:33:37.383 : Launched Redis process 18335 on port 35191. Attempting to connect...
+18335:C 21 Apr 2022 16:33:37.390 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+18335:C 21 Apr 2022 16:33:37.390 # Redis version=6.0.9, bits=64, commit=00000000, modified=0, pid=18335, just started
+18335:C 21 Apr 2022 16:33:37.390 # Configuration loaded
+18335:M 21 Apr 2022 16:33:37.392 # You requested maxclients of 10000 requiring at least 10032 max file descriptors.
+18335:M 21 Apr 2022 16:33:37.392 # Server can't set maximum open files to 10032 because of OS error: Operation not permitted.
+18335:M 21 Apr 2022 16:33:37.392 # Current maximum open files is 4096. maxclients has been reduced to 4064 to compensate for low ulimit. If you need higher maxclients increase 'ulimit -n'.
+18335:M 21 Apr 2022 16:33:37.392 * Running mode=standalone, port=35191.
+18335:M 21 Apr 2022 16:33:37.392 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+18335:M 21 Apr 2022 16:33:37.392 # Server initialized
+18335:M 21 Apr 2022 16:33:37.392 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+18335:M 21 Apr 2022 16:33:37.392 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo madvise > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled (set to 'madvise' or 'never').
+18335:M 21 Apr 2022 16:33:37.393 * Ready to accept connections
+18334:21 Apr 16:33:37.394 : Successfully connected to Redis at 127.0.0.1:35191
+18334:21 Apr 16:33:37.403 : Successfully connected to local Redis instance at grendel28.ece.ncsu.edu:35191
+18341:21 Apr 16:33:47.408 : [21 Apr 16:33:37.437] Service 'lock_manager' registered on grendel28.ece.ncsu.edu:48479
+18340:21 Apr 16:33:47.409 : [21 Apr 16:33:37.437] Service 'cluster' registered on grendel28.ece.ncsu.edu:38693
+18343:21 Apr 16:33:47.409 : [21 Apr 16:33:37.441] Service 'memory_manager' registered on grendel28.ece.ncsu.edu:54919
+18344:21 Apr 16:33:47.409 : [21 Apr 16:33:37.442] Service 'cleanup' registered on grendel28.ece.ncsu.edu:56366
+18342:21 Apr 16:33:47.409 : [21 Apr 16:33:37.460] Service 'hdb' registered on grendel28.ece.ncsu.edu:36107
+18434:21 Apr 16:33:47.409 : [21 Apr 16:33:40.013] Service 'license_manager' registered on grendel28.ece.ncsu.edu:39433
+18323:21 Apr 16:33:47.410 : [21 Apr 16:33:40.429] Service 'add_host' registered on grendel28.ece.ncsu.edu:37331
+18472:21 Apr 16:33:47.410 : [21 Apr 16:33:40.435] Per-host service 'worker_pool' registered on grendel28.ece.ncsu.edu:41753
+18472:21 Apr 16:33:47.410 : [21 Apr 16:33:40.440] Per-host service 'host_stats' registered on grendel28.ece.ncsu.edu:34607
+18340:21 Apr 16:33:47.727 : [21 Apr 16:33:47.636] Removing service 'service:cluster'
+18341:21 Apr 16:33:47.727 : [21 Apr 16:33:47.636] Removing service 'service:lock_manager'
+18342:21 Apr 16:33:47.727 : [21 Apr 16:33:47.636] Removing service 'service:hdb'
+18343:21 Apr 16:33:47.727 : [21 Apr 16:33:47.636] Removing service 'service:memory_manager'
+18434:21 Apr 16:33:47.728 : [21 Apr 16:33:47.639] Removing service 'service:license_manager'
+18472:21 Apr 16:33:47.728 : [21 Apr 16:33:47.640] Removing service 'service:worker_pool:grendel28.ece.ncsu.edu'
+18472:21 Apr 16:33:47.728 : [21 Apr 16:33:47.640] Removing service 'service:host_stats:grendel28.ece.ncsu.edu'
+18323:21 Apr 16:33:47.728 : [21 Apr 16:33:47.679] Removing service 'service:add_host'
+18334:21 Apr 16:33:47.728 : Parent died. Exiting.
+18335:M 21 Apr 2022 16:33:47.728 # User requested shutdown...
+18335:M 21 Apr 2022 16:33:47.728 # Redis is now ready to exit, bye bye...

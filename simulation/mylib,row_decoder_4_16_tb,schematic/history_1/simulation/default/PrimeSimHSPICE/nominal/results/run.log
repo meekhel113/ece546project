@@ -1,0 +1,5 @@
+Using: /mnt/apps/public/COE/synopsys_apps/hspice/S-2021.09/hspice/linux64/hspice  -i '/afs/unity.ncsu.edu/users/m/mapatel3/Documents/546/ece546project/simulation/mylib,row_decoder_4_16_tb,schematic/history_1/simulation/default/PrimeSimHSPICE/nominal/netlist/input.spi' -o hspice
+
+40.03% Tran Time= 1.60119e-09s Estimated Time Left: 0:00:01        
+93.35% Tran Time= 3.73414e-09s Estimated Time Left: 0:00:00        
+>info:         ***** hspice job concluded

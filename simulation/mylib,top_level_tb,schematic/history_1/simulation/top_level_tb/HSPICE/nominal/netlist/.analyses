@@ -1,0 +1,1 @@
+.tran 3p '(clkperiod*32)' start=0

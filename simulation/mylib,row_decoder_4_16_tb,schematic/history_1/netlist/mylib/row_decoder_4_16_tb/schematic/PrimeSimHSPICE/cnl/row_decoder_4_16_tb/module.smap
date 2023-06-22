@@ -1,0 +1,125 @@
+<module name="vsl: mylib row_decoder_4_16_tb schematic vl: hspice hspiceD schematic spice veriloga">
+<scope name="Instance">
+<forward>
+<mapping dst="v5" src="V5"/>
+<mapping dst="v4" src="V4"/>
+<mapping dst="xi0" src="I0"/>
+</forward>
+<reverse>
+<mapping dst="V5" src="v5"/>
+<mapping dst="V4" src="v4"/>
+<mapping dst="I0" src="xi0"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward>
+<mapping dst="wl&lt;15>" src="WL&lt;15>"/>
+<mapping dst="wl&lt;14>" src="WL&lt;14>"/>
+<mapping dst="wl&lt;10>" src="WL&lt;10>"/>
+<mapping dst="wl&lt;11>" src="WL&lt;11>"/>
+<mapping dst="wl&lt;9>" src="WL&lt;9>"/>
+<mapping dst="wl&lt;13>" src="WL&lt;13>"/>
+<mapping dst="wl&lt;5>" src="WL&lt;5>"/>
+<mapping dst="wl&lt;2>" src="WL&lt;2>"/>
+<mapping dst="wl&lt;1>" src="WL&lt;1>"/>
+<mapping dst="wl&lt;3>" src="WL&lt;3>"/>
+<mapping dst="wl&lt;8>" src="WL&lt;8>"/>
+<mapping dst="wl&lt;6>" src="WL&lt;6>"/>
+<mapping dst="wl&lt;12>" src="WL&lt;12>"/>
+<mapping dst="wl&lt;0>" src="WL&lt;0>"/>
+<mapping dst="a&lt;3>" src="A&lt;3>"/>
+<mapping dst="wl&lt;7>" src="WL&lt;7>"/>
+<mapping dst="a&lt;2>" src="A&lt;2>"/>
+<mapping dst="wl&lt;4>" src="WL&lt;4>"/>
+<mapping dst="a&lt;1>" src="A&lt;1>"/>
+<mapping dst="a&lt;0>" src="A&lt;0>"/>
+</forward>
+<reverse>
+<mapping dst="WL&lt;13>" src="wl&lt;13>"/>
+<mapping dst="WL&lt;9>" src="wl&lt;9>"/>
+<mapping dst="WL&lt;14>" src="wl&lt;14>"/>
+<mapping dst="WL&lt;6>" src="wl&lt;6>"/>
+<mapping dst="WL&lt;5>" src="wl&lt;5>"/>
+<mapping dst="WL&lt;2>" src="wl&lt;2>"/>
+<mapping dst="WL&lt;7>" src="wl&lt;7>"/>
+<mapping dst="WL&lt;8>" src="wl&lt;8>"/>
+<mapping dst="WL&lt;12>" src="wl&lt;12>"/>
+<mapping dst="WL&lt;1>" src="wl&lt;1>"/>
+<mapping dst="WL&lt;4>" src="wl&lt;4>"/>
+<mapping dst="WL&lt;10>" src="wl&lt;10>"/>
+<mapping dst="WL&lt;0>" src="wl&lt;0>"/>
+<mapping dst="A&lt;3>" src="a&lt;3>"/>
+<mapping dst="WL&lt;3>" src="wl&lt;3>"/>
+<mapping dst="A&lt;2>" src="a&lt;2>"/>
+<mapping dst="WL&lt;15>" src="wl&lt;15>"/>
+<mapping dst="A&lt;1>" src="a&lt;1>"/>
+<mapping dst="WL&lt;11>" src="wl&lt;11>"/>
+<mapping dst="A&lt;0>" src="a&lt;0>"/>
+</reverse>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="A&lt;0> A&lt;1> A&lt;2> A&lt;3> WL&lt;0> WL&lt;1> WL&lt;2> WL&lt;3> WL&lt;4> WL&lt;5> WL&lt;6> WL&lt;7> WL&lt;8> WL&lt;9> WL&lt;10> WL&lt;11> WL&lt;12> WL&lt;13> WL&lt;14> WL&lt;15>" src="&lt;unmappedTermOrder>"/>
+<mapping dst="a&lt;0> a&lt;1> a&lt;2> a&lt;3> wl&lt;0> wl&lt;1> wl&lt;2> wl&lt;3> wl&lt;4> wl&lt;5> wl&lt;6> wl&lt;7> wl&lt;8> wl&lt;9> wl&lt;10> wl&lt;11> wl&lt;12> wl&lt;13> wl&lt;14> wl&lt;15>" src="&lt;termOrder>"/>
+<mapping dst="wl&lt;14>" src="WL&lt;14>"/>
+<mapping dst="wl&lt;11>" src="WL&lt;11>"/>
+<mapping dst="wl&lt;10>" src="WL&lt;10>"/>
+<mapping dst="wl&lt;9>" src="WL&lt;9>"/>
+<mapping dst="wl&lt;2>" src="WL&lt;2>"/>
+<mapping dst="wl&lt;1>" src="WL&lt;1>"/>
+<mapping dst="wl&lt;3>" src="WL&lt;3>"/>
+<mapping dst="wl&lt;8>" src="WL&lt;8>"/>
+<mapping dst="wl&lt;6>" src="WL&lt;6>"/>
+<mapping dst="wl&lt;12>" src="WL&lt;12>"/>
+<mapping dst="wl&lt;0>" src="WL&lt;0>"/>
+<mapping dst="wl&lt;15>" src="WL&lt;15>"/>
+<mapping dst="wl" src="WL"/>
+<mapping dst="a&lt;3>" src="A&lt;3>"/>
+<mapping dst="wl&lt;7>" src="WL&lt;7>"/>
+<mapping dst="a&lt;2>" src="A&lt;2>"/>
+<mapping dst="wl&lt;4>" src="WL&lt;4>"/>
+<mapping dst="a&lt;1>" src="A&lt;1>"/>
+<mapping dst="a&lt;0>" src="A&lt;0>"/>
+<mapping dst="wl&lt;13>" src="WL&lt;13>"/>
+<mapping dst="wl&lt;5>" src="WL&lt;5>"/>
+<mapping dst="a" src="A"/>
+</forward>
+<reverse>
+<mapping dst="&lt;unmappedTermOrder>" src="A&lt;0> A&lt;1> A&lt;2> A&lt;3> WL&lt;0> WL&lt;1> WL&lt;2> WL&lt;3> WL&lt;4> WL&lt;5> WL&lt;6> WL&lt;7> WL&lt;8> WL&lt;9> WL&lt;10> WL&lt;11> WL&lt;12> WL&lt;13> WL&lt;14> WL&lt;15>"/>
+<mapping dst="&lt;termOrder>" src="a&lt;0> a&lt;1> a&lt;2> a&lt;3> wl&lt;0> wl&lt;1> wl&lt;2> wl&lt;3> wl&lt;4> wl&lt;5> wl&lt;6> wl&lt;7> wl&lt;8> wl&lt;9> wl&lt;10> wl&lt;11> wl&lt;12> wl&lt;13> wl&lt;14> wl&lt;15>"/>
+<mapping dst="WL&lt;13>" src="wl&lt;13>"/>
+<mapping dst="WL&lt;11>" src="wl&lt;11>"/>
+<mapping dst="WL&lt;9>" src="wl&lt;9>"/>
+<mapping dst="WL&lt;14>" src="wl&lt;14>"/>
+<mapping dst="WL&lt;6>" src="wl&lt;6>"/>
+<mapping dst="WL&lt;5>" src="wl&lt;5>"/>
+<mapping dst="WL&lt;2>" src="wl&lt;2>"/>
+<mapping dst="WL&lt;7>" src="wl&lt;7>"/>
+<mapping dst="WL&lt;8>" src="wl&lt;8>"/>
+<mapping dst="WL&lt;12>" src="wl&lt;12>"/>
+<mapping dst="WL&lt;10>" src="wl&lt;10>"/>
+<mapping dst="WL&lt;1>" src="wl&lt;1>"/>
+<mapping dst="WL&lt;4>" src="wl&lt;4>"/>
+<mapping dst="WL&lt;0>" src="wl&lt;0>"/>
+<mapping dst="WL" src="wl"/>
+<mapping dst="A&lt;3>" src="a&lt;3>"/>
+<mapping dst="WL&lt;3>" src="wl&lt;3>"/>
+<mapping dst="A&lt;2>" src="a&lt;2>"/>
+<mapping dst="WL&lt;15>" src="wl&lt;15>"/>
+<mapping dst="A&lt;1>" src="a&lt;1>"/>
+<mapping dst="A&lt;0>" src="a&lt;0>"/>
+<mapping dst="A" src="a"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="row_decoder_4_16">
+<instance name="I0"/>
+</instance_header>
+<instance_header master="vdc">
+<instance name="V4"/>
+</instance_header>
+<instance_header master="vpulse">
+<instance name="V5"/>
+</instance_header>
+</master_instances>
+</module>

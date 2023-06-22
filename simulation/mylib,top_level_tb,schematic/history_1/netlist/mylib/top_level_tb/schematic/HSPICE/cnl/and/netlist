@@ -1,0 +1,16 @@
+********************************************************************************
+* Library          : mylib
+* Cell             : and
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt and a b z
+m11 net27 b net7 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m13 z net27 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m12 net7 a gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m15 net27 b vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m14 net27 a vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m16 z net27 vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+.ends and
+

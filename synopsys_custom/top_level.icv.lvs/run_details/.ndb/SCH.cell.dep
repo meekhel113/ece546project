@@ -1,0 +1,17 @@
+sram_6T { }
+row_decoder_4_16 { inverter_row_decoder }
+buffer_array { buffer }
+write_buffer_cell { and inverter }
+column_decoder_write { inverter write_buffer_cell column_decoder_write_cell }
+inverter_row_decoder { }
+sram_array_16r_8c { sram_array_1r_4c }
+column_decoder_read_cell { }
+sram_array_1r_4c { sram_6T }
+equalizer { }
+top_level { row_decoder_4_16 sram_array_16r_8c bitline_conditioning column_decoder_write buffer_array column_decoder_read }
+and { }
+column_decoder_write_cell { }
+buffer { inverter }
+bitline_conditioning { equalizer }
+inverter { }
+column_decoder_read { inverter_row_decoder column_decoder_read_cell }

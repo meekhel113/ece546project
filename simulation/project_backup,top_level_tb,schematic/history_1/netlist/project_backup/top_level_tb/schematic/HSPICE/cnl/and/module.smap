@@ -1,0 +1,60 @@
+<module name="vsl: project_backup and schematic vl: hspice hspiceD schematic spice veriloga">
+<scope name="Instance">
+<forward>
+<mapping dst="m16" src="M16"/>
+<mapping dst="m11" src="M11"/>
+<mapping dst="m15" src="M15"/>
+<mapping dst="m12" src="M12"/>
+<mapping dst="m14" src="M14"/>
+<mapping dst="m13" src="M13"/>
+</forward>
+<reverse>
+<mapping dst="M14" src="m14"/>
+<mapping dst="M15" src="m15"/>
+<mapping dst="M13" src="m13"/>
+<mapping dst="M16" src="m16"/>
+<mapping dst="M12" src="m12"/>
+<mapping dst="M11" src="m11"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward>
+<mapping dst="z" src="Z"/>
+<mapping dst="b" src="B"/>
+<mapping dst="a" src="A"/>
+</forward>
+<reverse>
+<mapping dst="Z" src="z"/>
+<mapping dst="B" src="b"/>
+<mapping dst="A" src="a"/>
+</reverse>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="A B Z" src="&lt;unmappedTermOrder>"/>
+<mapping dst="a" src="A"/>
+<mapping dst="a b z" src="&lt;termOrder>"/>
+<mapping dst="z" src="Z"/>
+<mapping dst="b" src="B"/>
+</forward>
+<reverse>
+<mapping dst="&lt;unmappedTermOrder>" src="A B Z"/>
+<mapping dst="&lt;termOrder>" src="a b z"/>
+<mapping dst="B" src="b"/>
+<mapping dst="Z" src="z"/>
+<mapping dst="A" src="a"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="nmos">
+<instance name="M11"/>
+<instance name="M12"/>
+<instance name="M13"/>
+</instance_header>
+<instance_header master="pmos">
+<instance name="M14"/>
+<instance name="M15"/>
+<instance name="M16"/>
+</instance_header>
+</master_instances>
+</module>

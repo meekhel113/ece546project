@@ -1,0 +1,1 @@
+sessionName "saeSession0" masterResultsDir "oa:0x3a593a80" sweepData "clkperiod=0.21n:clkrise=5p:vdd=0.8" cornerName "" cornerParams "" monteRun "" monteIter "" sessionDbFile /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/project_backup,top_level_tb,schematic/history_1/simulation/top_level_tb/HSPICE/nominal/resultsDatabase

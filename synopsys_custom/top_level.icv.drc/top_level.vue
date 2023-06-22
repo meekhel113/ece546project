@@ -1,0 +1,15 @@
+ICV_HOME_DIR      = /mnt/apps/public/COE/synopsys_apps/icvalidator/S-2021.06-SP2
+ICV_COORDS_BIT    = 32
+WORKING_DIR       = .
+INLIB             = /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/top_level.icv.drc/top_level.custom_compiler.gds
+INLIB_PATH        = 
+BLOCK             = top_level
+CREATE_VUE_OUTPUT = TRUE
+PYDB_PATH         = run_details/pydb
+RUN_DETAILS_DIR   = run_details
+NDB_PATH          = run_details/.ndb
+REPORT_LAYOUT_ERRORS = HIERARCHICAL
+FORMAT            = GDSII
+SCHEMATIC_FORMAT  = ICV
+GROUP_PATH        = run_details/group
+RUNSET_FILE_NAME  = FreePDK3_main.drc.drc.rs

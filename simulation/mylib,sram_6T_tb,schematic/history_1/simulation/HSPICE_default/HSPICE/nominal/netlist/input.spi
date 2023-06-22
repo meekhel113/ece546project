@@ -1,0 +1,70 @@
+*  Generated for: PrimeSim
+*  Design library name: mylib
+*  Design cell name: sram_6T_tb
+*  Design view name: schematic
+.option search='/afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK3/hspice/models'
+
+.param VDD_VAL=0.8
+.option PARHIER = LOCAL
+.option PORT_VOLTAGE_SCALE_TO_2X = 1
+
+.option WDF=1
+.temp 25
+.lib 'fet.mod' nfet_typ
+.lib 'fet.mod' pfet_typ
+.vec '/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/sram.dat'
+
+
+*Custom Compiler Version S-2021.09
+*Tue Apr 19 04:33:15 2022
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : sram
+* Cell             : sram_6T
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt sram_6t bl blb wl
+m3 q qb gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m1 qb q gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m11 q wl bl nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m10 qb wl blb nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m4 q qb vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m2 qb q vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+.ends sram_6t
+
+********************************************************************************
+* Library          : mylib
+* Cell             : sram_6T_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 bl_out blb_out wl sram_6t
+c2 bl_out gnd! c=0.2f
+c1 blb_out gnd! c=0.2f
+v5 vdd! gnd! dc='VDD_VAL'
+m12 bl_out bl_en bl_in nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m11 blb_out bl_en blb_in nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+
+
+
+
+
+
+
+
+
+
+.tran 0.01p 1n start=0
+.option opfile=1 split_dp=1
+.option probe=1
+.probe tran v(*) level=1
+.probe tran v(bl_en) v(bl_in) v(bl_out) v(blb_in) v(blb_out) v(wl)
+
+
+
+
+.end

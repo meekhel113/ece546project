@@ -1,0 +1,19 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : bitline_conditioning
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt bitline_conditioning bl<0> bl<1> bl<2> bl<3> bl<4> bl<5> bl<6> bl<7>
++ blb<0> blb<1> blb<2> blb<3> blb<4> blb<5> blb<6> blb<7> clk
+xi7 blb<7> bl<7> clk equalizer
+xi6 blb<6> bl<6> clk equalizer
+xi5 blb<5> bl<5> clk equalizer
+xi4 blb<4> bl<4> clk equalizer
+xi3 blb<3> bl<3> clk equalizer
+xi2 blb<2> bl<2> clk equalizer
+xi1 blb<1> bl<1> clk equalizer
+xi0 blb<0> bl<0> clk equalizer
+.ends bitline_conditioning
+

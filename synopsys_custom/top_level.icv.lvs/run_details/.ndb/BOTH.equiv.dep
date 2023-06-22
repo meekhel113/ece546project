@@ -1,0 +1,3 @@
+pmos::PMOS { }
+nmos::NMOS { }
+top_level::top_level { nmos::NMOS pmos::PMOS }

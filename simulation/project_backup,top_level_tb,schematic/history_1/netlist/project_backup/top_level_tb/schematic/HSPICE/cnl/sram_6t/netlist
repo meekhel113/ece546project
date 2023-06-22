@@ -1,0 +1,16 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : sram_6T
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt sram_6t bl blb wl
+m4 q qb vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m2 qb q vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m3 q qb gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m1 qb q gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m11 q wl bl nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m10 qb wl blb nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+.ends sram_6t
+

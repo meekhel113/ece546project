@@ -1,0 +1,63 @@
+<module name="vsl: mylib tri_state_buffer schematic vl: hspice hspiceD schematic spice veriloga">
+<scope name="Instance">
+<forward>
+<mapping src="I6" dst="xi6"/>
+<mapping src="M2" dst="m2"/>
+<mapping src="M3" dst="m3"/>
+<mapping src="M0" dst="m0"/>
+<mapping src="M1" dst="m1"/>
+</forward>
+<reverse>
+<mapping src="xi6" dst="I6"/>
+<mapping src="m2" dst="M2"/>
+<mapping src="m3" dst="M3"/>
+<mapping src="m0" dst="M0"/>
+<mapping src="m1" dst="M1"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward>
+<mapping src="IN" dst="in"/>
+<mapping src="OUT" dst="out"/>
+<mapping src="ENb" dst="enb"/>
+<mapping src="EN" dst="en"/>
+</forward>
+<reverse>
+<mapping src="out" dst="OUT"/>
+<mapping src="in" dst="IN"/>
+<mapping src="enb" dst="ENb"/>
+<mapping src="en" dst="EN"/>
+</reverse>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping src="&lt;unmappedTermOrder>" dst="EN ENb IN OUT"/>
+<mapping src="&lt;termOrder>" dst="en enb in out"/>
+<mapping src="IN" dst="in"/>
+<mapping src="OUT" dst="out"/>
+<mapping src="ENb" dst="enb"/>
+<mapping src="EN" dst="en"/>
+</forward>
+<reverse>
+<mapping src="en enb in out" dst="&lt;termOrder>"/>
+<mapping src="out" dst="OUT"/>
+<mapping src="EN ENb IN OUT" dst="&lt;unmappedTermOrder>"/>
+<mapping src="in" dst="IN"/>
+<mapping src="enb" dst="ENb"/>
+<mapping src="en" dst="EN"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="inverter">
+<instance name="I6"/>
+</instance_header>
+<instance_header master="nmos">
+<instance name="M2"/>
+<instance name="M3"/>
+</instance_header>
+<instance_header master="pmos">
+<instance name="M0"/>
+<instance name="M1"/>
+</instance_header>
+</master_instances>
+</module>

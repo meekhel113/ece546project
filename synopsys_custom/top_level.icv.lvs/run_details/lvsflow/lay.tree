@@ -1,0 +1,63 @@
+TOP_LEVEL Level=0 Count=1
+   COLUMN_DECODER_WRITE Level=1 Count=1
+      WRITE_BUFFER_CELL Level=2 Count=4
+         AND_V1 Level=3 Count=4
+         AND Level=3 Count=4
+         INVERTER_WRITE Level=3 Count=4
+   SRAM_ARRAY_16R_8C Level=1 Count=1
+      VCELLR4 Level=2 Count=8
+   BITLINE_CONDITIONING Level=1 Count=1
+   BUFFER_ARRAY Level=1 Count=1
+   ROW_DECODER_4_16 Level=1 Count=1
+      VCELLR3 Level=2 Count=8
+
++--------------------------------------------------------------------------+
+|                             CELL STATISTICS                              |
++--------------------------------------------------------------------------+
+
+
+CELL = TOP_LEVEL
+	Flat Placements      =	1
+
+CELL = COLUMN_DECODER_WRITE
+	Flat Placements      =	1
+
+CELL = ROW_DECODER_4_16
+	Flat Placements      =	1
+
+CELL = SRAM_ARRAY_16R_8C
+	Flat Placements      =	1
+
+CELL = WRITE_BUFFER_CELL
+	Flat Placements      =	4
+
+CELL = BUFFER_ARRAY
+	Flat Placements      =	1
+
+CELL = VCELLR3
+	Flat Placements      =	8
+
+CELL = BITLINE_CONDITIONING
+	Flat Placements      =	1
+
+CELL = INVERTER_WRITE
+	Flat Placements      =	4
+
+CELL = AND
+	Flat Placements      =	4
+
+CELL = VCELLR4
+	Flat Placements      =	8
+
+CELL = AND_V1
+	Flat Placements      =	4
+
+TOP CELL = TOP_LEVEL
+	Ports                =	69
+
++--------------------------------------------------------------------------+
+|                            DEVICE STATISTICS                             |
++--------------------------------------------------------------------------+
+
+	NMOS[NMOS] = 738
+	PMOS[PMOS] = 442

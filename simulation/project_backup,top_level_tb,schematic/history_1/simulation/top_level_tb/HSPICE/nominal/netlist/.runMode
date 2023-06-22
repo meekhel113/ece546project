@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Thu Apr 21 18:06:00 2022-->
+<file-format version="1.0" name="cacheCategory">
+ <attribute name="runMode" value="new" type="giString"/>
+</file-format>

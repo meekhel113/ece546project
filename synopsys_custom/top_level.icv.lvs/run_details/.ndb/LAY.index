@@ -1,0 +1,13 @@
+V2009.12 1650579060
+and_v1 34 0 0
+VCELLR4 677 0 0
+and 11859 0 0
+inverter_write 12499 0 0
+bitline_conditioning 12807 0 0
+VCELLR3 21146 0 0
+buffer_array 22281 0 0
+write_buffer_cell 25164 0 0
+sram_array_16r_8c 27144 0 0
+row_decoder_4_16 63264 0 0
+column_decoder_write 70208 0 0
+top_level 72285 0 0

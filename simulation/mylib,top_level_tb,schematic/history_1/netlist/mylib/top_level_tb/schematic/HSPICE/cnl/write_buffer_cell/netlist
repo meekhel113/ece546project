@@ -1,0 +1,15 @@
+********************************************************************************
+* Library          : mylib
+* Cell             : write_buffer_cell
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt write_buffer_cell en in out outb
+m5 outb net54 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+m4 out net52 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=1.17e-07 pseo=1.17e-07
+xi23 in net62 inverter
+xi24 en net62 net52 and
+xi25 en in net54 and
+.ends write_buffer_cell
+

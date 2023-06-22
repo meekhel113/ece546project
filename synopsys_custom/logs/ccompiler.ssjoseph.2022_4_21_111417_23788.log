@@ -1,0 +1,157 @@
+[11:14:22.67] /o 
+              /c                                 Custom Compiler 
+              /c 
+              /c                  Version S-2021.09 for linux64 - Aug 25, 2021 
+              /c 
+              /c                     Copyright (c) 2004 - 2021 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 6809741 compiled on Wed Aug 25 11:47:50 2021 for CentOS64 7.3
+              /c Invocation: /mnt/apps/public/COE/synopsys_apps/customcompiler/S-2021.09/linux64/platform/bin/custom_compiler
+              /c Execution time: Thu Apr 21 11:14:17 2022
+              /c Host: grendel25.ece.ncsu.edu
+              /c Working directory: /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project
+              /c 
+[11:14:37.97] /r giShowFrameTabs true
+[11:14:37.97] /r giWindowId 1
+[11:14:37.98] /r giWindowGeometry 1040x800
+[11:14:38.48] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x744+199+81
+[11:15:16.97] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[11:15:17.28] /i db::setAttr geometry -of [gi::getFrames 1] -value 1042x744+199+81
+[11:15:17.66] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x744+5+81
+[11:15:18.57] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/dmLibraryManager} -in [gi::getWindows 1]
+[11:15:18.57] /# 
+[11:15:18.88] /i gi::addWindow [dm::openLibraryManager] -to 1
+[11:15:18.88] /r giWindowId 2
+[11:15:18.88] /r giWindowGeometry 660x600+50+75
+[11:15:21.13] /i gi::setCurrentIndex {libs} -index {mylib} -in [gi::getWindows 2]
+[11:15:21.13] /i gi::setItemSelection {libs} -index {mylib} -in [gi::getWindows 2]
+[11:15:25.83] /i gi::setCurrentIndex {cells} -index {top_level} -in [gi::getWindows 2]
+[11:15:25.85] /i gi::setItemSelection {cells} -index {top_level} -in [gi::getWindows 2]
+[11:15:29.08] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 2]
+[11:15:29.08] /i gi::setItemSelection {views} -index {layout} -in [gi::getWindows 2]
+[11:15:29.19] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[11:15:29.25] /m Information: License 'Apex' checked out. (LICENSE-003)
+[11:15:29.30] /o Loading: Callback files...
+[11:15:29.31] /o Loading: scripts/callbacks/callbacks.tcl
+[11:15:29.31] /o 
+              /c [INFO] : Loading display.drf from /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK3/syncust/NCSU_TechLib_FreePDK3
+              /c 
+              /c  if you wish to Load other display.drf, please set shell environment valiable "iPDK_load_display_NCSU_TechLib_FreePDK3" to value = 0
+[11:15:29.31] /o 
+[11:15:29.38] /o 	#######################################
+[11:15:29.38] /o 	CC-PDK Library Name	: FreePDK3
+[11:15:29.38] /o 	#######################################
+[11:15:29.38] /o 
+[11:15:29.45] /r giWindowId 3
+[11:15:29.45] /r giWindowGeometry 1224x723
+[11:15:37.44] /# gi::executeAction {leDisplayAllLevels} -in [gi::getWindows 3]
+[11:15:37.44] /i db::setPrefValue leStopLevel -value 32 -scope [db::getNext [de::getContexts -window 3]]
+[11:15:50.49] /# gi::executeAction {deSelectActive} -in [gi::getWindows 3]
+[11:15:50.49] /i de::deselectAll [db::getNext [de::getContexts -window 3]]
+[11:15:50.49] /i de::select [de::getActiveFigure [gi::getWindows 3] -point {-0.0475 3.8575} -index 0 -intent none]
+[11:15:50.49] /o oa:0x2b7d01c0
+[11:15:52.76] /i gi::executeAction {dePropertyEditorToggleExtended} -in [gi::getWindows 3]
+[11:15:52.76] /# db::setAttr shown -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 3]] -value true
+[11:15:53.06] /i db::setAttr dockSize -of [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]] -value 200x530
+[11:15:53.14] /i db::setAttr dockSize -of [gi::getAssistants dePropertyEditor -from [gi::getWindows 3]] -value 290x530
+[11:16:07.47] /# gi::executeAction {deDescendInPlace} -in [gi::getWindows 3]
+[11:16:07.47] /i ide::descend 3 -type instance -inPlace true -readOnly auto
+[11:16:07.51] /# Navigating to mylib/row_decoder_4_16/layout (row_decoder)
+[11:16:07.59] /# gi::setItemSelection {sets} -index {Valid} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:16:07.59] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:16:25.48] /# gi::executeAction {deReturn} -in [gi::getWindows 3]
+[11:16:25.48] /i de::return [db::getNext [de::getContexts -window 3]] -errorOnFail false
+[11:16:25.48] /# Navigating to mylib/top_level/layout
+[11:16:25.53] /# gi::setItemSelection {sets} -index {Valid} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:16:25.53] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:16:38.54] /# gi::executeAction {deDescendInPlace} -in [gi::getWindows 3]
+[11:16:38.54] /i ide::descend 3 -type instance -inPlace true -readOnly auto
+[11:16:38.58] /# Navigating to mylib/row_decoder_4_16/layout (row_decoder)
+[11:16:38.64] /# gi::setItemSelection {sets} -index {Valid} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:16:38.64] /# gi::setItemSelection {lpps} -index {BPR drawing} -in [gi::getAssistants leObjectLayerPanel -from [gi::getWindows 3]]
+[11:17:27.32] /i gi::setActiveWindow 2
+[11:17:27.32] /i gi::setActiveWindow 2 -raise true
+[11:17:31.98] /i gi::setActiveWindow 3
+[11:17:31.98] /i gi::setActiveWindow 3 -raise true
+[11:17:45.18] /i gi::setActiveWindow 2
+[11:17:45.18] /i gi::setActiveWindow 2 -raise true
+[11:17:48.14] /i gi::setCurrentIndex {cells} -index {row_decoder_4_16} -in [gi::getWindows 2]
+[11:17:48.16] /i gi::setItemSelection {cells} -index {row_decoder_4_16} -in [gi::getWindows 2]
+[11:17:50.44] /i gi::setCurrentIndex {views} -index {layout} -in [gi::getWindows 2]
+[11:17:50.59] /i gi::executeAction {dmOpen} -in [gi::getWindows 2]
+[11:17:50.59] /r giWindowId 4
+[11:17:50.61] /r giWindowGeometry 1224x723
+[11:17:58.87] /i gi::setActiveWindow 2
+[11:17:58.87] /i gi::setActiveWindow 2 -raise true
+[11:18:03.75] /i gi::setActiveWindow 4
+[11:18:03.75] /i gi::setActiveWindow 4 -raise true
+[11:18:05.13] /i gi::setActiveWindow 3
+[11:18:05.13] /i gi::setActiveWindow 3 -raise true
+[11:18:07.15] /i gi::setActiveWindow 2
+[11:18:07.15] /i gi::setActiveWindow 2 -raise true
+[11:29:43.51] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[11:29:43.51] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[11:30:19.24] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[11:31:11.78] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[11:31:11.78] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[11:31:12.22] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x746+5+81
+[11:31:30.86] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[11:31:31.14] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x744+5+81
+[11:31:31.43] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[11:31:31.75] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x748+5+81
+[11:31:52.32] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[11:31:52.57] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x744+5+81
+[11:31:52.91] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[11:31:53.23] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x750+5+81
+[11:32:17.10] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[11:32:17.36] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x744+5+81
+[11:32:25.17] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[11:32:25.63] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x752+5+81
+[11:40:42.79] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[11:40:43.06] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x744+5+81
+[11:40:43.38] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[11:40:43.67] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x754+5+81
+[11:41:12.05] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[11:41:12.34] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x744+5+81
+[11:41:12.66] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[11:41:12.96] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x756+5+81
+[11:43:08.78] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[11:43:09.06] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x744+5+81
+[11:43:09.36] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[11:43:09.66] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x758+5+81
+[11:51:53.33] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[11:51:53.58] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x744+5+81
+[11:51:53.94] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[11:51:54.25] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x760+5+81
+[11:52:14.82] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[11:52:15.06] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x744+5+81
+[11:52:15.38] /i db::setAttr maximized -of [gi::getFrames 1] -value false
+[11:52:15.67] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x762+5+81
+[12:00:05.67] /i db::setAttr maximized -of [gi::getFrames 1] -value true
+[12:00:05.89] /i db::setAttr geometry -of [gi::getFrames 1] -value 1430x744+5+81
+[12:00:52.00] /i gi::executeAction giCloseWindow -in [gi::getWindows 4]
+[12:00:59.50] /r giDialog gi::setActiveDialog [gi::getDialogs {giCloseFrame}]
+[12:00:59.84] /r giDialog db::setAttr geometry -of [gi::getDialogs {giCloseFrame}] -value 299x110+571+372
+[12:01:01.22] /r giDialog gi::pressButton {giCloseTabsButton} -in [gi::getDialogs {giCloseFrame}]
+[12:01:01.23] /i exit
+[12:01:01.25] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]]
+[12:01:01.56] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]] -value 419x207+501+298
+[12:01:01.86] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]] -value 419x207+511+323
+[12:01:02.85] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 2]]
+[12:01:04.17] /o Shutdown time: Thu Apr 21 12:01:04 2022
+[12:01:04.17] /o Elapsed session real time: 46.7 minutes
+[12:01:04.17] /o Session terminated. Log is at /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/logs/ccompiler.ssjoseph.2022_4_21_111417_23788.log

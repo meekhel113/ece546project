@@ -1,0 +1,18 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : column_decoder_read
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt column_decoder_read A<4> BL<0> BL<1> BL<2> BL<3> BL<4> BL<5> BL<6> BL<7>
++  Q<0> Q<1> Q<2> Q<3> WENB
+*.PININFO A<4>:I BL<0>:I BL<1>:I BL<2>:I BL<3>:I BL<4>:I BL<5>:I BL<6>:I BL<7>:I
+*.PININFO Q<0>:O Q<1>:O Q<2>:O Q<3>:O WENB:I
+XI30 A<4> Ab<4> inverter_row_decoder
+XI25 WENB BL<0> BL<4> Q<0> A<4> Ab<4> column_decoder_read_cell
+XI24 WENB BL<1> BL<5> Q<1> A<4> Ab<4> column_decoder_read_cell
+XI23 WENB BL<2> BL<6> Q<2> A<4> Ab<4> column_decoder_read_cell
+XI22 WENB BL<3> BL<7> Q<3> A<4> Ab<4> column_decoder_read_cell
+.ends column_decoder_read
+

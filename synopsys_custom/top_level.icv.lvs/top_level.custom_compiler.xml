@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file-format version="1.0" synopsysExportStream="1.0">
+    <exportStream>
+        <options lib="mylib" gds="/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/top_level.icv.lvs/top_level.custom_compiler.gds" cell="top_level" view="layout" keepPcells="1" keepVias="1" keepAbuts="1" colorMapping="honor" hierDepth="256" referenceMap="/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/top_level.icv.lvs/top_level.custom_compiler.xml" useTechLayerMap="1" useTechObjectMap="1" textHeight="matchOABBox"/>
+        <mapping cellType="design" streamName="nmos" lib="project_backup" cell="nmos" view="layout"/>
+        <mapping cellType="design" streamName="GATE_M0B" lib="project_backup" cell="GATE_M0B" view="layout"/>
+        <mapping cellType="design" streamName="BPR_M0A" lib="project_backup" cell="BPR_M0A" view="layout"/>
+        <mapping cellType="design" streamName="M0A_M0B" lib="project_backup" cell="M0A_M0B" view="layout"/>
+        <mapping cellType="design" streamName="sram_6T_1finger_inverted" lib="project_backup" cell="sram_6T_1finger_inverted" view="layout"/>
+        <mapping cellType="design" streamName="fill_sram_inverted" lib="project_backup" cell="fill_sram_inverted" view="layout"/>
+        <mapping cellType="design" streamName="M0B_M1" lib="project_backup" cell="M0B_M1" view="layout"/>
+        <mapping cellType="design" streamName="M1_M2" lib="project_backup" cell="M1_M2" view="layout"/>
+        <mapping cellType="design" streamName="sram_array_1r_4c_inverted" lib="project_backup" cell="sram_array_1r_4c_inverted" view="layout"/>
+        <mapping cellType="design" streamName="fill_sram" lib="project_backup" cell="fill_sram" view="layout"/>
+        <mapping cellType="design" streamName="M2_M3" lib="project_backup" cell="M2_M3" view="layout"/>
+        <mapping cellType="design" streamName="sram_array_16r_8c_routing" lib="project_backup" cell="sram_array_16r_8c_routing" view="layout"/>
+        <mapping cellType="design" streamName="sram_6T_1finger" lib="project_backup" cell="sram_6T_1finger" view="layout"/>
+        <mapping cellType="design" streamName="sram_array_1r_4c" lib="project_backup" cell="sram_array_1r_4c" view="layout"/>
+        <mapping cellType="design" streamName="sram_array_16r_8c" lib="project_backup" cell="sram_array_16r_8c" view="layout"/>
+        <mapping cellType="design" streamName="pmos" lib="project_backup" cell="pmos" view="layout"/>
+        <mapping cellType="design" streamName="fill_sram_nmos" lib="project_backup" cell="fill_sram_nmos" view="layout"/>
+        <mapping cellType="design" streamName="equalizer" lib="project_backup" cell="equalizer" view="layout"/>
+        <mapping cellType="design" streamName="M3_M4" lib="project_backup" cell="M3_M4" view="layout"/>
+        <mapping cellType="design" streamName="bitline_conditioning" lib="project_backup" cell="bitline_conditioning" view="layout"/>
+        <mapping cellType="design" streamName="inverter_buf_top_leve" lib="project_backup" cell="inverter_buf_top_leve" view="layout"/>
+        <mapping cellType="design" streamName="inverter_buf_top_level_v1" lib="project_backup" cell="inverter_buf_top_level_v1" view="layout"/>
+        <mapping cellType="design" streamName="buffer_top" lib="project_backup" cell="buffer_top" view="layout"/>
+        <mapping cellType="design" streamName="buffer_array" lib="project_backup" cell="buffer_array" view="layout"/>
+        <mapping cellType="design" streamName="fill_sram_inverted_read" lib="project_backup" cell="fill_sram_inverted_read" view="layout"/>
+        <mapping cellType="design" streamName="fill_sram_inverted_pmos_read" lib="project_backup" cell="fill_sram_inverted_pmos_read" view="layout"/>
+        <mapping cellType="design" streamName="column_decoder_read_cell" lib="project_backup" cell="column_decoder_read_cell" view="layout"/>
+        <mapping cellType="design" streamName="inverter_column_decoder_read" lib="project_backup" cell="inverter_column_decoder_read" view="layout"/>
+        <mapping cellType="design" streamName="column_decoder_read" lib="project_backup" cell="column_decoder_read" view="layout"/>
+        <mapping cellType="design" streamName="buffer_top_inverted" lib="project_backup" cell="buffer_top_inverted" view="layout"/>
+        <mapping cellType="design" streamName="buffer_array_top_routing" lib="project_backup" cell="buffer_array_top_routing" view="layout"/>
+        <mapping cellType="design" streamName="buffer_array_top" lib="project_backup" cell="buffer_array_top" view="layout"/>
+        <mapping cellType="design" streamName="fill_sram_column_decoder_write" lib="project_backup" cell="fill_sram_column_decoder_write" view="layout"/>
+        <mapping cellType="design" streamName="M4_M5" lib="project_backup" cell="M4_M5" view="layout"/>
+        <mapping cellType="design" streamName="top_level_routing" lib="project_backup" cell="top_level_routing" view="layout"/>
+        <mapping cellType="design" streamName="sram_lvs_grid" lib="project_backup" cell="sram_lvs_grid" view="layout"/>
+        <mapping cellType="design" streamName="inverter_row_decoder" lib="project_backup" cell="inverter_row_decoder" view="layout"/>
+        <mapping cellType="design" streamName="row_decoder_4_16_routing" lib="project_backup" cell="row_decoder_4_16_routing" view="layout"/>
+        <mapping cellType="design" streamName="fill_sram_pmos" lib="project_backup" cell="fill_sram_pmos" view="layout"/>
+        <mapping cellType="design" streamName="fill_sram_inverted_nmos" lib="project_backup" cell="fill_sram_inverted_nmos" view="layout"/>
+        <mapping cellType="design" streamName="row_decoder_4_16_oneword" lib="project_backup" cell="row_decoder_4_16_oneword" view="layout"/>
+        <mapping cellType="design" streamName="row_decoder_4_16" lib="project_backup" cell="row_decoder_4_16" view="layout"/>
+        <mapping cellType="design" streamName="and" lib="project_backup" cell="and" view="layout"/>
+        <mapping cellType="design" streamName="and_v1" lib="project_backup" cell="and_v1" view="layout"/>
+        <mapping cellType="design" streamName="fill_sram_inverted_pmos_write" lib="project_backup" cell="fill_sram_inverted_pmos_write" view="layout"/>
+        <mapping cellType="design" streamName="inverter_write" lib="project_backup" cell="inverter_write" view="layout"/>
+        <mapping cellType="design" streamName="write_buffer_cell" lib="project_backup" cell="write_buffer_cell" view="layout"/>
+        <mapping cellType="design" streamName="column_decoder_write_routing" lib="project_backup" cell="column_decoder_write_routing" view="layout"/>
+        <mapping cellType="design" streamName="fill_sram_inverted_write_pmos" lib="project_backup" cell="fill_sram_inverted_write_pmos" view="layout"/>
+        <mapping cellType="design" streamName="column_decoder_write_cell" lib="project_backup" cell="column_decoder_write_cell" view="layout"/>
+        <mapping cellType="design" streamName="inverter_column_decoder_write" lib="project_backup" cell="inverter_column_decoder_write" view="layout"/>
+        <mapping cellType="design" streamName="column_decoder_write" lib="project_backup" cell="column_decoder_write" view="layout"/>
+        <mapping cellType="design" streamName="top_level" lib="mylib" cell="top_level" view="layout"/>
+    </exportStream>
+</file-format>

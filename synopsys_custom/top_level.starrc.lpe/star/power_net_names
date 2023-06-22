@@ -1,0 +1,4 @@
+begin_power_nets
+vdd!
+gnd!
+end_power_nets

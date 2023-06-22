@@ -1,0 +1,31 @@
+<module name="vsl: project_backup buffer schematic vl: hspice hspiceD schematic spice veriloga">
+<scope name="Instance">
+<forward>
+<mapping dst="xi0" src="I0"/>
+<mapping dst="xi1" src="I1"/>
+</forward>
+<reverse>
+<mapping dst="I0" src="xi0"/>
+<mapping dst="I1" src="xi1"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward/>
+<reverse/>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="in out" src="&lt;termOrder>"/>
+<mapping dst="in out" src="&lt;unmappedTermOrder>"/>
+</forward>
+<reverse>
+<mapping dst="&lt;unmappedTermOrder>" src="in out"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="inverter">
+<instance name="I0"/>
+<instance name="I1"/>
+</instance_header>
+</master_instances>
+</module>

@@ -1,0 +1,22 @@
+* "simulator" "PrimeSim HSPICE"
+* "version" "S-2021.09 linux64"
+* "format" "HSP"
+* "rundate" "04:33:17 04/19/2022 "
+* "netlist" "/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/simulation/mylib,sram_6T_tb,schematic/history_1/simulation/HSPICE_default/HSPICE/nominal/netlist/input.spi "
+* "runtitle" "*  generated for: primesim"
+* time =    0.            
+* temperature =   25.0000        
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc=   1.0000p       
+.nodeset
++ bl_en = 800.0000m       
++ bl_in =   0.            
++ bl_out =   2.7836u       
++ blb_in = 800.0000m       
++ blb_out = 799.9930m       
++ vdd! = 800.0000m       
++ wl = 800.0000m       
++ xi0.q =   5.5673u       
++ xi0.qb = 799.9859m       
+***   END: Saved Operating Point ***                     

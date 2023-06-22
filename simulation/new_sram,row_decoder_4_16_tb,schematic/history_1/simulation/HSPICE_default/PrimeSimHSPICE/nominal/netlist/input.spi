@@ -1,0 +1,166 @@
+*  Generated for: PrimeSim
+*  Design library name: new_sram
+*  Design cell name: row_decoder_4_16_tb
+*  Design view name: schematic
+.option search='/afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK3/hspice/models'
+
+.param VDD=0.8 period=200p
+.option PARHIER = LOCAL
+.include '/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/decode.dat'
+.option PORT_VOLTAGE_SCALE_TO_2X = 1
+
+.option WDF=1
+.temp 25
+.lib 'fet.mod' nfet_typ
+.lib 'fet.mod' pfet_typ
+
+*Custom Compiler Version S-2021.09
+*Tue Apr 19 05:49:08 2022
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : new_sram
+* Cell             : inverter
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt inverter in out
+m0 out in gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m1 out in vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+.ends inverter
+
+********************************************************************************
+* Library          : new_sram
+* Cell             : row_decoder_4_16
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt row_decoder_4_16 clk in<0> in<1> in<2> in<3> wl<0> wl<1> wl<2> wl<3>
++ wl<4> wl<5> wl<6> wl<7> wl<8> wl<9> wl<10> wl<11> wl<12> wl<13> wl<14> wl<15>
+m11 wl<11> clk vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07
++ pseo=2.34e-07
+m4 wl<4> clk vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m15 wl<15> clk vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07
++ pseo=2.34e-07
+m14 wl<14> clk vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07
++ pseo=2.34e-07
+m13 wl<13> clk vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07
++ pseo=2.34e-07
+m12 wl<12> clk vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07
++ pseo=2.34e-07
+m10 wl<10> clk vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07
++ pseo=2.34e-07
+m9 wl<9> clk vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m8 wl<8> clk vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m7 wl<7> clk vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m6 wl<6> clk vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m5 wl<5> clk vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m3 wl<3> clk vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m2 wl<2> clk vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m1 wl<1> clk vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m0 wl<0> clk vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+m195 wl<15> net697 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m194 wl<13> net697 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m193 wl<11> net697 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m192 wl<9> net697 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m191 wl<7> net697 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m190 wl<5> net697 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m189 wl<3> net697 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m188 wl<1> net697 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m187 wl<2> net698 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m186 wl<3> net698 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m185 wl<6> net698 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m184 wl<7> net698 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m183 wl<10> net698 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m182 wl<11> net698 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m181 wl<14> net698 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m180 wl<15> net698 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m173 wl<4> net699 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m172 wl<5> net699 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m171 wl<6> net699 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m170 wl<7> net699 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m169 wl<12> net699 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m168 wl<13> net699 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m167 wl<14> net699 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m166 wl<15> net699 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m159 wl<8> net700 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m158 wl<9> net700 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m157 wl<10> net700 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m156 wl<11> net700 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m155 wl<12> net700 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m154 wl<13> net700 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m153 wl<14> net700 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m152 wl<15> net700 gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m131 wl<0> in<0> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m130 wl<2> in<0> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m129 wl<4> in<0> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m128 wl<6> in<0> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m127 wl<8> in<0> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m126 wl<10> in<0> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m125 wl<12> in<0> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m124 wl<14> in<0> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m119 wl<5> in<1> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m118 wl<4> in<1> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m117 wl<1> in<1> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m115 wl<9> in<1> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m114 wl<8> in<1> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m116 wl<0> in<1> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m112 wl<12> in<1> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m111 wl<13> in<1> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m106 wl<3> in<2> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m105 wl<2> in<2> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m104 wl<1> in<2> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m103 wl<0> in<2> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m102 wl<8> in<2> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m101 wl<9> in<2> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m100 wl<10> in<2> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m99 wl<11> in<2> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m94 wl<0> in<3> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m93 wl<1> in<3> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m92 wl<2> in<3> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m91 wl<3> in<3> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m90 wl<4> in<3> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m89 wl<5> in<3> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m88 wl<6> in<3> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m87 wl<7> in<3> gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+xi231 in<3> net700 inverter
+xi230 in<2> net699 inverter
+xi229 in<1> net698 inverter
+xi228 in<0> net697 inverter
+.ends row_decoder_4_16
+
+********************************************************************************
+* Library          : new_sram
+* Cell             : row_decoder_4_16_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+v4 vdd! gnd! dc='VDD'
+v5 clk gnd! dc=0 pulse ( 0 'VDD' 0 0 0 '(period/2)' 'period' )
+xi0 clk a<0> a<1> a<2> a<3> wl<0> wl<1> wl<2> wl<3> wl<4> wl<5> wl<6> wl<7>
++ wl<8> wl<9> wl<10> wl<11> wl<12> wl<13> wl<14> wl<15> row_decoder_4_16
+
+
+
+
+
+
+
+
+
+
+.tran 1p 4n start=0
+.option opfile=1 split_dp=1
+.option probe=1
+.probe tran v(*) level=1
+.probe tran v(a<0>) v(a<1>) v(a<2>) v(a<3>) v(wl<0>) v(wl<10>) v(wl<11>)
++ v(wl<12>) v(wl<13>) v(wl<14>) v(wl<15>) v(wl<1>) v(wl<2>) v(wl<3>) v(wl<4>)
++ v(wl<5>) v(wl<6>) v(wl<7>) v(wl<8>) v(wl<9>) v(clk)
+
+
+
+
+.end

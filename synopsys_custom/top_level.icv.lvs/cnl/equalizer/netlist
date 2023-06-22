@@ -1,0 +1,14 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : equalizer
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt equalizer !BL BL clk
+*.PININFO !BL:B BL:B clk:I
+MM2 BL clk !BL pmos
+MM1 BL clk vdd! pmos
+MM0 !BL clk vdd! pmos
+.ends equalizer
+

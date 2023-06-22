@@ -1,0 +1,14 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : sram_array_1r_4c
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt sram_array_1r_4c bl<0> bl<1> bl<2> bl<3> blb<0> blb<1> blb<2> blb<3> wl
+xi3 bl<3> blb<3> wl sram_6t
+xi2 bl<2> blb<2> wl sram_6t
+xi1 bl<1> blb<1> wl sram_6t
+xi0 bl<0> blb<0> wl sram_6t
+.ends sram_array_1r_4c
+

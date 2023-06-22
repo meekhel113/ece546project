@@ -1,0 +1,71 @@
+<module name="vsl: project_backup column_decoder_write schematic vl: auCdl schematic symbol">
+<scope name="Instance">
+<forward>
+<mapping dst="XI32" src="I32"/>
+<mapping dst="XI30" src="I30"/>
+<mapping dst="XI26" src="I26"/>
+<mapping dst="XI31" src="I31"/>
+<mapping dst="XI27" src="I27"/>
+<mapping dst="XI29" src="I29"/>
+<mapping dst="XI25" src="I25"/>
+<mapping dst="XI28" src="I28"/>
+<mapping dst="XI24" src="I24"/>
+<mapping dst="XI22" src="I22"/>
+<mapping dst="XI23" src="I23"/>
+<mapping dst="XI8" src="I8"/>
+<mapping dst="XI9" src="I9"/>
+<mapping dst="XI17" src="I17"/>
+</forward>
+<reverse>
+<mapping dst="I32" src="XI32"/>
+<mapping dst="I30" src="XI30"/>
+<mapping dst="I9" src="XI9"/>
+<mapping dst="I26" src="XI26"/>
+<mapping dst="I27" src="XI27"/>
+<mapping dst="I25" src="XI25"/>
+<mapping dst="I24" src="XI24"/>
+<mapping dst="I29" src="XI29"/>
+<mapping dst="I23" src="XI23"/>
+<mapping dst="I28" src="XI28"/>
+<mapping dst="I22" src="XI22"/>
+<mapping dst="I8" src="XI8"/>
+<mapping dst="I31" src="XI31"/>
+<mapping dst="I17" src="XI17"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward/>
+<reverse/>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="A&lt;4> BL BLb D WENB" src="&lt;unmappedTermOrder>"/>
+<mapping dst="A&lt;4> BL BLb D WENB" src="&lt;termOrder>"/>
+</forward>
+<reverse>
+<mapping dst="&lt;unmappedTermOrder>" src="A&lt;4> BL BLb D WENB"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="column_decoder_write_cell">
+<instance name="I26"/>
+<instance name="I27"/>
+<instance name="I28"/>
+<instance name="I29"/>
+<instance name="I30"/>
+<instance name="I31"/>
+<instance name="I32"/>
+<instance name="I9"/>
+</instance_header>
+<instance_header master="inverter">
+<instance name="I17"/>
+<instance name="I8"/>
+</instance_header>
+<instance_header master="write_buffer_cell">
+<instance name="I22"/>
+<instance name="I23"/>
+<instance name="I24"/>
+<instance name="I25"/>
+</instance_header>
+</master_instances>
+</module>

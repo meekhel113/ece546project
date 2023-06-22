@@ -1,0 +1,19 @@
+********************************************************************************
+* Library          : mylib
+* Cell             : column_decoder_array_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 a<4> bl<0> bl<1> bl<2> bl<3> bl<4> bl<5> bl<6> bl<7> net41 net39 net37 net35
++ net33 net31 net29 net27 q<3> q<2> q<1> q<0> qb<3> qb<2> qb<1> qb<0>
++ column_decoder_array
+xi8 bl<0> net41 inverter
+xi7 bl<1> net39 inverter
+xi6 bl<2> net37 inverter
+xi5 bl<3> net35 inverter
+xi4 bl<4> net33 inverter
+xi3 bl<5> net31 inverter
+xi2 bl<6> net29 inverter
+xi1 bl<7> net27 inverter
+v11 vdd! gnd! dc='VDD'

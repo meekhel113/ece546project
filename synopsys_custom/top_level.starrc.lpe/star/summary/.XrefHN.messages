@@ -1,0 +1,29 @@
+NEW_CDB_PARSER
+sortTrie = 0
+_sort_def = 0
+checks = 0
+sortTrie = 0
+_sortInsArray = 0
+idxInit = 0
+dumpSigTokens = 0
+token_task (20018) = 0
+_open = 0
+_write_globals = 0
+_write_defs = 0
+combine_loc (20047) = 0
+_close = 0
+main_thread (20018) = 0
+free = 0
+  
+ReadHNdb      Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=400.5 
+LoadXF        Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=404.7 
+BldXrefHN     Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=412.7 
+ReadXHNdb     Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=412.7 
+BldXrefTab    Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=412.7 
+SNetSel       Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=412.7 
+XrefHN        Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=412.7 
+  
+Done          Elp=00:00:00 Cpu=00:00:00 Usr=0.0    Sys=0.0    Mem=412.7 
+
+End Time: Thu Apr 21 06:36:34 2022
+

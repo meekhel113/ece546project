@@ -1,0 +1,12 @@
+********************************************************************************
+* Library          : mylib
+* Cell             : Column_Decoder_2to1
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt column_decoder_2to1 in0 in1 out s sb
+m1 in0 sb out nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m0 in1 s out nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+.ends column_decoder_2to1
+

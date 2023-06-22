@@ -1,0 +1,12 @@
+row_decoder_4_16 { VCELLR3 }
+inverter_write { }
+buffer_array { }
+write_buffer_cell { inverter_write and and_v1 }
+column_decoder_write { write_buffer_cell }
+sram_array_16r_8c { VCELLR4 }
+top_level { row_decoder_4_16 buffer_array bitline_conditioning sram_array_16r_8c column_decoder_write }
+and_v1 { }
+and { }
+VCELLR3 { }
+VCELLR4 { }
+bitline_conditioning { }

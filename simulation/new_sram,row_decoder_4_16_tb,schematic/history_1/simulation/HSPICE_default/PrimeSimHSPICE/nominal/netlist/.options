@@ -1,0 +1,3 @@
+.option PARHIER = LOCAL
+.include '/afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/decode.dat'
+.option PORT_VOLTAGE_SCALE_TO_2X = 1

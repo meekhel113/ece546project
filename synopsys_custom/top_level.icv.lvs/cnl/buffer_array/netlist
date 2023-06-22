@@ -1,0 +1,15 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : buffer_array
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt buffer_array in<0> in<1> in<2> in<3> out<0> out<1> out<2> out<3>
+*.PININFO in<0>:I in<1>:I in<2>:I in<3>:I out<0>:O out<1>:O out<2>:O out<3>:O
+XI3 in<3> out<3> buffer
+XI2 in<2> out<2> buffer
+XI1 in<1> out<1> buffer
+XI0 in<0> out<0> buffer
+.ends buffer_array
+

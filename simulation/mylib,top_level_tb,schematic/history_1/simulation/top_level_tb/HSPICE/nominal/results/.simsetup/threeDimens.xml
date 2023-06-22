@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--Created by Custom Compiler (TM), build , on Thu Apr 21 06:55:40 2022-->
+<file-format name="stateCategory" version="1.0">
+ <object name="threeDimens" type="saThreeDimensSetup" version="1">
+  <collection name="saThreeDimensCellRows"/>
+  <object name="saThreeDimensInstances" type="saThreeDimensSetupIntanceNode" version="1">
+   <attribute name="instanceName" value="root" type="giString"/>
+   <attribute name="moduleType" value="" type="giString"/>
+   <object name="sa3DicModel" type="saThreeDimensTableRow" version="1">
+    <attribute name="enabled" value="1" type="giBoolean"/>
+    <attribute name="geoshrink" value="" type="giString"/>
+    <attribute name="moduleType" value="" type="giString"/>
+    <attribute name="name" value="" type="giString"/>
+    <attribute name="processLib" value="" type="giString"/>
+    <object name="saModelGroup" type="saModelGroup" version="1">
+     <attribute name="enabled" value="1" type="giBoolean"/>
+     <attribute name="name" value="" type="giString"/>
+     <attribute name="nominalSection" value="" type="giString"/>
+    </object>
+    <object name="saModelGroupDef" type="saModelGroupDef" version="1">
+     <collection name="files"/>
+     <attribute name="includePath" value="" type="giString"/>
+     <attribute name="name" value="" type="giString"/>
+     <attribute name="readOnly" value="0" type="giBoolean"/>
+     <collection name="sections"/>
+    </object>
+    <attribute name="scale" value="" type="giString"/>
+    <attribute name="temperature" value="" type="giString"/>
+    <attribute name="tnom" value="" type="giString"/>
+   </object>
+   <collection name="saThreeDimensSubNodes"/>
+   <attribute name="sonHasVar" value="0" type="giBoolean"/>
+  </object>
+  <collection name="saThreeDimensTableRows"/>
+ </object>
+</file-format>

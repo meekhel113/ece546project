@@ -1,0 +1,76 @@
+<module name="vsl: mylib sram_6T_tb schematic vl: hspice hspiceD schematic spice veriloga">
+<scope name="Instance">
+<forward>
+<mapping src="M12" dst="m12"/>
+<mapping src="V5" dst="v5"/>
+<mapping src="C1" dst="c1"/>
+<mapping src="M11" dst="m11"/>
+<mapping src="C2" dst="c2"/>
+<mapping src="I0" dst="xi0"/>
+</forward>
+<reverse>
+<mapping src="m11" dst="M11"/>
+<mapping src="m12" dst="M12"/>
+<mapping src="v5" dst="V5"/>
+<mapping src="c1" dst="C1"/>
+<mapping src="c2" dst="C2"/>
+<mapping src="xi0" dst="I0"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward>
+<mapping src="WL" dst="wl"/>
+<mapping src="BLb_out" dst="blb_out"/>
+<mapping src="BLb_in" dst="blb_in"/>
+<mapping src="BL_out" dst="bl_out"/>
+<mapping src="BL_in" dst="bl_in"/>
+<mapping src="BL_en" dst="bl_en"/>
+</forward>
+<reverse>
+<mapping src="wl" dst="WL"/>
+<mapping src="blb_out" dst="BLb_out"/>
+<mapping src="blb_in" dst="BLb_in"/>
+<mapping src="bl_out" dst="BL_out"/>
+<mapping src="bl_in" dst="BL_in"/>
+<mapping src="bl_en" dst="BL_en"/>
+</reverse>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping src="&lt;termOrder>" dst="bl_en bl_in bl_out blb_in blb_out wl"/>
+<mapping src="WL" dst="wl"/>
+<mapping src="BLb_out" dst="blb_out"/>
+<mapping src="BLb_in" dst="blb_in"/>
+<mapping src="BL_out" dst="bl_out"/>
+<mapping src="BL_in" dst="bl_in"/>
+<mapping src="&lt;unmappedTermOrder>" dst="BL_en BL_in BL_out BLb_in BLb_out WL"/>
+<mapping src="BL_en" dst="bl_en"/>
+</forward>
+<reverse>
+<mapping src="BL_en BL_in BL_out BLb_in BLb_out WL" dst="&lt;unmappedTermOrder>"/>
+<mapping src="bl_en bl_in bl_out blb_in blb_out wl" dst="&lt;termOrder>"/>
+<mapping src="wl" dst="WL"/>
+<mapping src="blb_out" dst="BLb_out"/>
+<mapping src="blb_in" dst="BLb_in"/>
+<mapping src="bl_out" dst="BL_out"/>
+<mapping src="bl_in" dst="BL_in"/>
+<mapping src="bl_en" dst="BL_en"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="cap">
+<instance name="C1"/>
+<instance name="C2"/>
+</instance_header>
+<instance_header master="nmos">
+<instance name="M11"/>
+<instance name="M12"/>
+</instance_header>
+<instance_header master="sram_6t">
+<instance name="I0"/>
+</instance_header>
+<instance_header master="vdc">
+<instance name="V5"/>
+</instance_header>
+</master_instances>
+</module>

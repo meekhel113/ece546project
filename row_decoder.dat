@@ -1,0 +1,56 @@
+; Digital input pattern for HSPICE
+; ";" is a flag for comments line
+;
+; To use this digital input pattern, in your Hspice netlist,
+; add one line: .VEC 'vectors.dat'
+; Don't connect any voltage source to the pin/terminal which
+; you want to feed with this digital stream.
+;
+; This file can be used for any system-level simulation.
+; Just modify the patterns below.
+;
+; For more information, see the section title "Specifying
+; a Digital Vector File" in the HSPICE Simulation and
+; Analysis User Guide (linked from the HSPICE "documentation
+; page" link on the course web-page, under "tool tips")
+;
+; Define the radix for each pin (1 for each pin)
+radix 1 1 1 1
+; List the pin names
+vname A<0> A<1> A<2> A<3>
+; Define pin I/O (i for each pin)
+io i i i i
+; Define time unit (ns in this example)
+tunit ns
+; Define slope of signal edge (5 ps rising/falling
+; time in this example)
+slope 0.0
+; Define high voltage (0.8V)
+vih 0.8
+; Define low voltage (0V)
+vil 0.0
+; Define the delay for the first instruction
+; (10 ps in this example, to shift away from the clock edge)
+tdelay 0.11
+; Define the period for the vectors (100 ps in this example)
+period 0.2
+;
+; The following are the vectors
+; A<0> A<1> A<2> A<3>
+;
+0 0 0 0
+1 0 0 0
+0 1 0 0
+1 1 0 0
+0 0 1 0
+1 0 1 0
+0 1 1 0
+1 1 1 0
+0 0 0 1
+1 0 0 1
+0 1 0 1
+1 1 0 1
+0 0 1 1
+1 0 1 1
+0 1 1 1
+1 1 1 1

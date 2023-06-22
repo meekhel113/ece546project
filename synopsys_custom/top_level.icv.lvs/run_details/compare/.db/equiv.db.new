@@ -1,0 +1,3 @@
+M nmos NMOS M M.nmos.NMOS.bincdb N
+M pmos PMOS M M.pmos.PMOS.bincdb N
+E top_level top_level M E.top_level.top_level.bincdb N

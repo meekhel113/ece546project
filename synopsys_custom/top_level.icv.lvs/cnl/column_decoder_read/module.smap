@@ -1,0 +1,42 @@
+<module name="vsl: project_backup column_decoder_read schematic vl: auCdl schematic symbol">
+<scope name="Instance">
+<forward>
+<mapping dst="XI22" src="I22"/>
+<mapping dst="XI23" src="I23"/>
+<mapping dst="XI24" src="I24"/>
+<mapping dst="XI25" src="I25"/>
+<mapping dst="XI30" src="I30"/>
+</forward>
+<reverse>
+<mapping dst="I22" src="XI22"/>
+<mapping dst="I23" src="XI23"/>
+<mapping dst="I24" src="XI24"/>
+<mapping dst="I25" src="XI25"/>
+<mapping dst="I30" src="XI30"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward/>
+<reverse/>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="A&lt;4> BL Q WENB" src="&lt;unmappedTermOrder>"/>
+<mapping dst="A&lt;4> BL Q WENB" src="&lt;termOrder>"/>
+</forward>
+<reverse>
+<mapping dst="&lt;unmappedTermOrder>" src="A&lt;4> BL Q WENB"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="column_decoder_read_cell">
+<instance name="I22"/>
+<instance name="I23"/>
+<instance name="I24"/>
+<instance name="I25"/>
+</instance_header>
+<instance_header master="inverter_row_decoder">
+<instance name="I30"/>
+</instance_header>
+</master_instances>
+</module>

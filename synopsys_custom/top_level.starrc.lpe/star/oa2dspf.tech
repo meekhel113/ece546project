@@ -1,0 +1,9 @@
+-oa2dspf
+-oa_lib_name mylib
+-oa_cell_name top_level
+-oa_view_name starrc
+-o ../starrc.dspf
+-oa_output_file ../starrc.oa.out
+-netlist_header_file netlist.hdr
+-oa_lib_def /afs/unity.ncsu.edu/users/s/ssjoseph/ECE546/PROJECT/ece546project/synopsys_custom/top_level.starrc.lpe/lib.defs
+-ground_node_name 0

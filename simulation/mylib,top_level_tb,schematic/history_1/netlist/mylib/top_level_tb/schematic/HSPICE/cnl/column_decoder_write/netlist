@@ -1,0 +1,26 @@
+********************************************************************************
+* Library          : mylib
+* Cell             : column_decoder_write
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt column_decoder_write a<4> bl<0> bl<1> bl<2> bl<3> bl<4> bl<5> bl<6>
++ bl<7> blb<0> blb<1> blb<2> blb<3> blb<4> blb<5> blb<6> blb<7> d<0> d<1> d<2>
++ d<3> wenb
+xi29 net271 blb<3> blb<7> a<4> ab<4> column_decoder_write_cell
+xi27 net255 bl<1> bl<5> a<4> ab<4> column_decoder_write_cell
+xi26 net269 bl<3> bl<7> a<4> ab<4> column_decoder_write_cell
+xi9 net250 bl<2> bl<6> a<4> ab<4> column_decoder_write_cell
+xi30 net264 blb<2> blb<6> a<4> ab<4> column_decoder_write_cell
+xi31 net263 blb<1> blb<5> a<4> ab<4> column_decoder_write_cell
+xi32 net262 blb<0> blb<4> a<4> ab<4> column_decoder_write_cell
+xi28 net254 bl<0> bl<4> a<4> ab<4> column_decoder_write_cell
+xi17 wenb wen inverter
+xi8 a<4> ab<4> inverter
+xi22 wen d<3> net269 net271 write_buffer_cell
+xi23 wen d<2> net250 net264 write_buffer_cell
+xi24 wen d<1> net255 net263 write_buffer_cell
+xi25 wen d<0> net254 net262 write_buffer_cell
+.ends column_decoder_write
+

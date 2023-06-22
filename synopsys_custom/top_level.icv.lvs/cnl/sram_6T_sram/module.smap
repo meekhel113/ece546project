@@ -1,0 +1,45 @@
+<module name="vsl: final_project sram_6T_sram schematic vl: auCdl schematic symbol">
+<scope name="Instance">
+<forward>
+<mapping src="M10" dst="MM10"/>
+<mapping src="M11" dst="MM11"/>
+<mapping src="M1" dst="MM1"/>
+<mapping src="M3" dst="MM3"/>
+<mapping src="M2" dst="MM2"/>
+<mapping src="M4" dst="MM4"/>
+</forward>
+<reverse>
+<mapping src="MM10" dst="M10"/>
+<mapping src="MM3" dst="M3"/>
+<mapping src="MM1" dst="M1"/>
+<mapping src="MM2" dst="M2"/>
+<mapping src="MM11" dst="M11"/>
+<mapping src="MM4" dst="M4"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward/>
+<reverse/>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping src="&lt;unmappedTermOrder>" dst="BL BLb WL"/>
+<mapping src="&lt;termOrder>" dst="BL BLb WL"/>
+</forward>
+<reverse>
+<mapping src="BL BLb WL" dst="&lt;unmappedTermOrder>"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="nmos">
+<instance name="M1"/>
+<instance name="M10"/>
+<instance name="M11"/>
+<instance name="M3"/>
+</instance_header>
+<instance_header master="pmos">
+<instance name="M2"/>
+<instance name="M4"/>
+</instance_header>
+</master_instances>
+</module>

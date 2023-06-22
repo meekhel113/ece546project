@@ -1,0 +1,4 @@
+.tran 3p '(clkperiod*32)' start=0
+.measure tran Qtot INTEG 'i(vdd)' FROM='0' TO='32*clkperiod'
+.measure tran Etot PARAM='-Qtot*vdd'
+.measure tran EDP PARAM='Etot*clkperiod*32'

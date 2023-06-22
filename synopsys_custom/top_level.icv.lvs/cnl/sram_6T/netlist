@@ -1,0 +1,17 @@
+********************************************************************************
+* Library          : project_backup
+* Cell             : sram_6T
+* View             : schematic
+* View Search List : auCdl schematic symbol
+* View Stop List   : auCdl
+********************************************************************************
+.subckt sram_6T BL BLb WL
+*.PININFO BL:B BLb:B WL:I
+MM4 Q Qb vdd! pmos
+MM2 Qb Q vdd! pmos
+MM3 Q Qb gnd! nmos
+MM1 Qb Q gnd! nmos
+MM11 Q WL BL nmos
+MM10 Qb WL BLb nmos
+.ends sram_6T
+

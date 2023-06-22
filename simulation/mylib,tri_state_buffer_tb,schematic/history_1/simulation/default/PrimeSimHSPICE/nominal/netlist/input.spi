@@ -1,0 +1,78 @@
+*  Generated for: PrimeSim
+*  Design library name: mylib
+*  Design cell name: tri_state_buffer_tb
+*  Design view name: schematic
+.option search='/afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK3/hspice/models'
+
+.param VDD=0.8
+.option PARHIER = LOCAL
+.option PORT_VOLTAGE_SCALE_TO_2X = 1
+
+.option WDF=1
+.temp 25
+.lib 'fet.mod' nfet_typ
+.lib 'fet.mod' pfet_typ
+.vec '/afs/unity.ncsu.edu/users/m/mapatel3/Documents/546/ece546project/tri.dat'
+
+
+*Custom Compiler Version S-2021.09
+*Thu Apr  7 18:04:01 2022
+
+.global gnd! vdd!
+********************************************************************************
+* Library          : mylib
+* Cell             : inverter
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt inverter in out
+m0 out in gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m1 out in vdd! pfet nfin=4 adeo=1.134e-15 aseo=1.134e-15 pdeo=2.34e-07 pseo=2.34e-07
+.ends inverter
+
+********************************************************************************
+* Library          : mylib
+* Cell             : tri_state_buffer
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt tri_state_buffer en enb in out
+m1 net13 in net4 pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m0 net4 enb vdd! pfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m3 net10 en gnd! nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+m2 net13 in net10 nfet nfin=2 adeo=5.67e-16 aseo=5.67e-16 pdeo=117n pseo=117n
+xi6 net13 out inverter
+.ends tri_state_buffer
+
+********************************************************************************
+* Library          : mylib
+* Cell             : tri_state_buffer_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 en net5 in out tri_state_buffer
+xi1 en net5 inverter
+v3 vdd! gnd! dc='VDD'
+
+
+
+
+
+
+
+
+
+
+.tran 1p 2n start=0
+.option opfile=1 split_dp=1
+.option probe=1
+.probe tran v(*) level=1
+.probe tran v(en) v(in) v(out)
+
+
+
+
+.end

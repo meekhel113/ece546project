@@ -1,0 +1,162 @@
+* Description of frequently used terms in hierarchy_analysis files*
+M indicates that the value of that column is in millions
+Hier Plc Count(Hierarchical Placement Count) : Number of unique instances of the cell in another cell (Parent)
+Flat Plc Count(Flat Placement Count)         : Total number of instances of the cell in the layout
+
+Example : 
+                               A                     
+                              / \                   Cell  Hier Plc Count Flat Plc Count 
+                             /   \                     A               1              1 
+                            B     B                    B               2              2 
+                           / \  /  \                   C               2              4 
+                          C   C C   C                
+------------------------------------------------------------------------------------------------------ 
+
+
+* Cells with flat area > 0.01 of top cell *
+Reports cells with flat area > 0.01 of top cell
+
+Flat A(Flat Area) : Total area covered by this cell in the layout(cell area * flat placement count)
+Cell A(Cell Area) : Area of this cell
+Percent of top    : Percentage of area of this cell w.r.t area of top cell
+This table contains 44 entries
+Original table contains 44 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Flat Plc Count, Hier Plc Count, Percent of top
+-----------------------------------------------
+ top_level                                     |         0.000,         0.000,              1,              1,       100.00 %
+ top_level_routing                             |         0.000,         0.000,              1,              1,        96.25 %
+ nmos                                          |         0.000,         0.000,            818,             44,        49.55 %
+ sram_array_16r_8c                             |         0.000,         0.000,              1,              1,        45.17 %
+ sram_array_16r_8c_routing                     |         0.000,         0.000,              1,              1,        43.27 %
+ fill_sram_inverted                            |         0.000,         0.000,            278,            121,        31.89 %
+ sram_array_1r_4c_inverted                     |         0.000,         0.000,             16,             16,        26.42 %
+ fill_sram                                     |         0.000,         0.000,            220,            135,        25.24 %
+ sram_6T_1finger_inverted                      |         0.000,         0.000,             64,              4,        25.22 %
+ pmos                                          |         0.000,         0.000,            354,             44,        21.44 %
+ row_decoder_4_16_oneword                      |         0.000,         0.000,             16,             16,        17.75 %
+ row_decoder_4_16                              |         0.000,         0.000,              1,              1,        16.75 %
+ row_decoder_4_16_routing                      |         0.000,         0.000,              1,              1,        16.07 %
+ fill_sram_pmos                                |         0.000,         0.000,            128,              8,        12.13 %
+ BPR_M0A                                       |         0.000,         0.000,            648,             24,         9.86 %
+ column_decoder_write                          |         0.000,         0.000,              1,              1,         9.47 %
+ sram_lvs_grid                                 |         0.000,         0.000,              2,              2,         7.18 %
+ column_decoder_write_routing                  |         0.000,         0.000,              1,              1,         7.06 %
+ fill_sram_nmos                                |         0.000,         0.000,             64,              8,         6.70 %
+ buffer_array_top                              |         0.000,         0.000,              1,              1,         6.30 %
+ bitline_conditioning                          |         0.000,         0.000,              1,              1,         6.12 %
+ buffer_top                                    |         0.000,         0.000,             12,             12,         5.57 %
+ buffer_array_top_routing                      |         0.000,         0.000,              1,              1,         5.52 %
+ write_buffer_cell                             |         0.000,         0.000,              4,              4,         5.47 %
+ inverter_buf_top_leve                         |         0.000,         0.000,             20,              2,         5.09 %
+ equalizer                                     |         0.000,         0.000,              8,              8,         4.83 %
+ fill_sram_column_decoder_write                |         0.000,         0.000,             41,             39,         4.70 %
+ buffer_top_inverted                           |         0.000,         0.000,              8,              8,         3.71 %
+ fill_sram_inverted_write_pmos                 |         0.000,         0.000,             32,              4,         3.67 %
+ column_decoder_read                           |         0.000,         0.000,              1,              1,         3.54 %
+ GATE_M0B                                      |         0.000,         0.000,            802,             44,         3.46 %
+ fill_sram_inverted_read                       |         0.000,         0.000,             27,             27,         3.10 %
+ buffer_array                                  |         0.000,         0.000,              1,              1,         3.05 %
+ fill_sram_inverted_nmos                       |         0.000,         0.000,             32,              2,         3.03 %
+ column_decoder_write_cell                     |         0.000,         0.000,              8,              8,         2.59 %
+ M0A_M0B                                       |         0.000,         0.000,            851,             85,         2.36 %
+ fill_sram_inverted_pmos_read                  |         0.000,         0.000,             20,              5,         2.29 %
+ M0B_M1                                        |         0.000,         0.000,            777,            317,         2.19 %
+ M1_M2                                         |         0.000,         0.000,            609,            249,         2.08 %
+ fill_sram_inverted_pmos_write                 |         0.000,         0.000,             16,              4,         1.84 %
+ column_decoder_read_cell                      |         0.000,         0.000,              4,              4,         1.58 %
+ and                                           |         0.000,         0.000,              4,              1,         1.30 %
+ M2_M3                                         |         0.000,         0.000,            366,            366,         1.25 %
+ inverter_row_decoder                          |         0.000,         0.000,              4,              4,         1.02 %
+===============================================
+
+* Large-Area cells and child area ratio *
+This table reports cells with large areas and ratio of its area with total area covered by its children
+
+Num Inst(Number of instances) : Total Number of instances of the cell
+Child A(Child Area)           : Total area covered by all the children of the cell
+Pct of parent(Percent of area): Percentage of total area covered by its childern w.r.t area of this cell
+This table contains 44 entries
+Original table contains 44 entries
+
+ Name                                          | Flat A (mm^2), Cell A (mm^2), Num Inst (M), Child A (mm^2), Pct of parent
+-----------------------------------------------
+ top_level                                     |         0.000,         0.000,        0.000,         0.000,      208.73 %
+ top_level_routing                             |         0.000,         0.000,        0.000,         0.000,        0.45 %
+ nmos                                          |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ sram_array_16r_8c                             |         0.000,         0.000,        0.000,         0.000,      216.83 %
+ sram_array_16r_8c_routing                     |         0.000,         0.000,        0.000,         0.000,        2.02 %
+ fill_sram_inverted                            |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ sram_array_1r_4c_inverted                     |         0.000,         0.000,        0.000,         0.000,      120.84 %
+ fill_sram                                     |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ sram_6T_1finger_inverted                      |         0.000,         0.000,        0.000,         0.000,       84.13 %
+ pmos                                          |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ row_decoder_4_16_oneword                      |         0.000,         0.000,        0.000,         0.000,      207.13 %
+ row_decoder_4_16                              |         0.000,         0.000,        0.000,         0.000,      210.72 %
+ row_decoder_4_16_routing                      |         0.000,         0.000,        0.000,         0.000,        6.77 %
+ fill_sram_pmos                                |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ BPR_M0A                                       |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ column_decoder_write                          |         0.000,         0.000,        0.000,         0.000,      203.90 %
+ sram_lvs_grid                                 |         0.000,         0.000,        0.000,         0.000,      154.20 %
+ column_decoder_write_routing                  |         0.000,         0.000,        0.000,         0.000,        2.66 %
+ fill_sram_nmos                                |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ buffer_array_top                              |         0.000,         0.000,        0.000,         0.000,      205.47 %
+ bitline_conditioning                          |         0.000,         0.000,        0.000,         0.000,      139.34 %
+ buffer_top                                    |         0.000,         0.000,        0.000,         0.000,      109.68 %
+ buffer_array_top_routing                      |         0.000,         0.000,        0.000,         0.000,        3.61 %
+ write_buffer_cell                             |         0.000,         0.000,        0.000,         0.000,      157.88 %
+ inverter_buf_top_leve                         |         0.000,         0.000,        0.000,         0.000,      147.35 %
+ equalizer                                     |         0.000,         0.000,        0.000,         0.000,      253.35 %
+ fill_sram_column_decoder_write                |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ buffer_top_inverted                           |         0.000,         0.000,        0.000,         0.000,      109.68 %
+ fill_sram_inverted_write_pmos                 |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ column_decoder_read                           |         0.000,         0.000,        0.000,         0.000,      141.11 %
+ GATE_M0B                                      |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ fill_sram_inverted_read                       |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ buffer_array                                  |         0.000,         0.000,        0.000,         0.000,      132.41 %
+ fill_sram_inverted_nmos                       |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ column_decoder_write_cell                     |         0.000,         0.000,        0.000,         0.000,      259.71 %
+ M0A_M0B                                       |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ fill_sram_inverted_pmos_read                  |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ M0B_M1                                        |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ M1_M2                                         |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ fill_sram_inverted_pmos_write                 |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ column_decoder_read_cell                      |         0.000,         0.000,        0.000,         0.000,      213.55 %
+ and                                           |         0.000,         0.000,        0.000,         0.000,      190.52 %
+ M2_M3                                         |         0.000,         0.000,        0.000,         0.000,        0.00 %
+ inverter_row_decoder                          |         0.000,         0.000,        0.000,         0.000,      147.35 %
+===============================================
+
+* Layer Report with Estimated Data *
+Reports information of layers present in the layout
+
+Trap        : Number of hierarchical trapezoids in the layer
+Poly        : Number of hierarchical polygons in the layer
+Text        : Number of hierarchical text primitives in the layer
+Flat Trap   : Number of flat trapezoids 
+Flat Poly   : Number of flat polygons
+Flat Text   : Number of flat text primitives 
+Trap F/H    : Ratio of flat and hierarchical placements of the trapezoids
+Base, Metal, Via, Fill, Colored : Indicates layer intent
+This table contains 15 entries
+Original table contains 15 entries
+
+ Name                                          | Trap (M), Poly (M), Text (M), Flat Trap (M), Flat Poly (M), Flat Text (M), Trap F/H, Base, Metal, Via, Fill, Colored
+-----------------------------------------------
+ aM0B                                          |    0.000,    0.000,    0.000,         0.004,         0.004,         0.000,    11.95,    0,     0,   0,    0,       0
+ aM2                                           |    0.000,    0.000,    0.000,         0.002,         0.002,         0.000,     5.07,    0,     0,   0,    0,       0
+ aM1                                           |    0.000,    0.000,    0.000,         0.002,         0.002,         0.000,     7.90,    0,     0,   0,    0,       0
+ aGATE                                         |    0.000,    0.000,    0.000,         0.009,         0.009,         0.000,    50.72,    0,     0,   0,    0,       0
+ aM0A                                          |    0.000,    0.000,    0.000,         0.008,         0.008,         0.000,    61.73,    0,     0,   0,    0,       0
+ aM3                                           |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,     4.24,    0,     0,   0,    0,       0
+ aBPR                                          |    0.000,    0.000,    0.000,         0.005,         0.005,         0.000,    52.86,    0,     0,   0,    0,       0
+ aNW                                           |    0.000,    0.000,    0.000,         0.002,         0.002,         0.000,    53.70,    0,     0,   0,    0,       0
+ aGCUT                                         |    0.000,    0.000,    0.000,         0.002,         0.002,         0.000,    47.45,    0,     0,   0,    0,       0
+ aVBPR                                         |    0.000,    0.000,    0.000,         0.002,         0.002,         0.000,    61.30,    0,     0,   0,    0,       0
+ aACT                                          |    0.000,    0.000,    0.000,         0.004,         0.004,         0.000,   122.81,    0,     0,   0,    0,       0
+ aM4                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     2.56,    0,     0,   0,    0,       0
+ aM5                                           |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     2.67,    0,     0,   0,    0,       0
+ aV0A                                          |    0.000,    0.000,    0.000,         0.001,         0.001,         0.000,   851.00,    0,     0,   0,    0,       0
+ aM1_color1                                    |    0.000,    0.000,    0.000,         0.000,         0.000,         0.000,     0.00,    0,     0,   0,    0,       0
+===============================================
+

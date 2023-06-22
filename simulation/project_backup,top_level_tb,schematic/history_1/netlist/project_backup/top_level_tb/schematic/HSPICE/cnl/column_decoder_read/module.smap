@@ -1,0 +1,111 @@
+<module name="vsl: project_backup column_decoder_read schematic vl: hspice hspiceD schematic spice veriloga">
+<scope name="Instance">
+<forward>
+<mapping dst="xi22" src="I22"/>
+<mapping dst="xi23" src="I23"/>
+<mapping dst="xi24" src="I24"/>
+<mapping dst="xi25" src="I25"/>
+<mapping dst="xi30" src="I30"/>
+</forward>
+<reverse>
+<mapping dst="I22" src="xi22"/>
+<mapping dst="I24" src="xi24"/>
+<mapping dst="I23" src="xi23"/>
+<mapping dst="I25" src="xi25"/>
+<mapping dst="I30" src="xi30"/>
+</reverse>
+</scope>
+<scope name="Net">
+<forward>
+<mapping dst="ab" src="Ab"/>
+<mapping dst="q&lt;3>" src="Q&lt;3>"/>
+<mapping dst="wenb" src="WENB"/>
+<mapping dst="q&lt;2>" src="Q&lt;2>"/>
+<mapping dst="q&lt;0>" src="Q&lt;0>"/>
+<mapping dst="bl&lt;7>" src="BL&lt;7>"/>
+<mapping dst="ab&lt;4>" src="Ab&lt;4>"/>
+<mapping dst="bl&lt;4>" src="BL&lt;4>"/>
+<mapping dst="q&lt;1>" src="Q&lt;1>"/>
+<mapping dst="bl&lt;3>" src="BL&lt;3>"/>
+<mapping dst="bl&lt;5>" src="BL&lt;5>"/>
+<mapping dst="bl&lt;1>" src="BL&lt;1>"/>
+<mapping dst="bl&lt;6>" src="BL&lt;6>"/>
+<mapping dst="bl&lt;2>" src="BL&lt;2>"/>
+<mapping dst="bl&lt;0>" src="BL&lt;0>"/>
+<mapping dst="a&lt;4>" src="A&lt;4>"/>
+</forward>
+<reverse>
+<mapping dst="Ab" src="ab"/>
+<mapping dst="WENB" src="wenb"/>
+<mapping dst="Q&lt;0>" src="q&lt;0>"/>
+<mapping dst="Q&lt;1>" src="q&lt;1>"/>
+<mapping dst="BL&lt;6>" src="bl&lt;6>"/>
+<mapping dst="BL&lt;5>" src="bl&lt;5>"/>
+<mapping dst="BL&lt;7>" src="bl&lt;7>"/>
+<mapping dst="BL&lt;2>" src="bl&lt;2>"/>
+<mapping dst="Ab&lt;4>" src="ab&lt;4>"/>
+<mapping dst="BL&lt;1>" src="bl&lt;1>"/>
+<mapping dst="Q&lt;2>" src="q&lt;2>"/>
+<mapping dst="BL&lt;4>" src="bl&lt;4>"/>
+<mapping dst="BL&lt;3>" src="bl&lt;3>"/>
+<mapping dst="BL&lt;0>" src="bl&lt;0>"/>
+<mapping dst="Q&lt;3>" src="q&lt;3>"/>
+<mapping dst="A&lt;4>" src="a&lt;4>"/>
+</reverse>
+</scope>
+<scope name="Terminal">
+<forward>
+<mapping dst="q&lt;0>" src="Q&lt;0>"/>
+<mapping dst="A&lt;4> BL&lt;0> BL&lt;1> BL&lt;2> BL&lt;3> BL&lt;4> BL&lt;5> BL&lt;6> BL&lt;7> Q&lt;0> Q&lt;1> Q&lt;2> Q&lt;3> WENB" src="&lt;unmappedTermOrder>"/>
+<mapping dst="a&lt;4> bl&lt;0> bl&lt;1> bl&lt;2> bl&lt;3> bl&lt;4> bl&lt;5> bl&lt;6> bl&lt;7> q&lt;0> q&lt;1> q&lt;2> q&lt;3> wenb" src="&lt;termOrder>"/>
+<mapping dst="q&lt;2>" src="Q&lt;2>"/>
+<mapping dst="wenb" src="WENB"/>
+<mapping dst="q&lt;3>" src="Q&lt;3>"/>
+<mapping dst="q" src="Q"/>
+<mapping dst="bl&lt;7>" src="BL&lt;7>"/>
+<mapping dst="bl&lt;4>" src="BL&lt;4>"/>
+<mapping dst="q&lt;1>" src="Q&lt;1>"/>
+<mapping dst="bl&lt;3>" src="BL&lt;3>"/>
+<mapping dst="bl&lt;1>" src="BL&lt;1>"/>
+<mapping dst="bl&lt;5>" src="BL&lt;5>"/>
+<mapping dst="bl&lt;6>" src="BL&lt;6>"/>
+<mapping dst="bl&lt;0>" src="BL&lt;0>"/>
+<mapping dst="bl&lt;2>" src="BL&lt;2>"/>
+<mapping dst="a&lt;4>" src="A&lt;4>"/>
+<mapping dst="bl" src="BL"/>
+<mapping dst="a" src="A"/>
+</forward>
+<reverse>
+<mapping dst="&lt;unmappedTermOrder>" src="A&lt;4> BL&lt;0> BL&lt;1> BL&lt;2> BL&lt;3> BL&lt;4> BL&lt;5> BL&lt;6> BL&lt;7> Q&lt;0> Q&lt;1> Q&lt;2> Q&lt;3> WENB"/>
+<mapping dst="&lt;termOrder>" src="a&lt;4> bl&lt;0> bl&lt;1> bl&lt;2> bl&lt;3> bl&lt;4> bl&lt;5> bl&lt;6> bl&lt;7> q&lt;0> q&lt;1> q&lt;2> q&lt;3> wenb"/>
+<mapping dst="WENB" src="wenb"/>
+<mapping dst="Q&lt;0>" src="q&lt;0>"/>
+<mapping dst="Q" src="q"/>
+<mapping dst="Q&lt;1>" src="q&lt;1>"/>
+<mapping dst="BL&lt;6>" src="bl&lt;6>"/>
+<mapping dst="BL&lt;5>" src="bl&lt;5>"/>
+<mapping dst="BL&lt;2>" src="bl&lt;2>"/>
+<mapping dst="BL&lt;7>" src="bl&lt;7>"/>
+<mapping dst="BL&lt;1>" src="bl&lt;1>"/>
+<mapping dst="BL&lt;3>" src="bl&lt;3>"/>
+<mapping dst="BL&lt;4>" src="bl&lt;4>"/>
+<mapping dst="Q&lt;2>" src="q&lt;2>"/>
+<mapping dst="BL&lt;0>" src="bl&lt;0>"/>
+<mapping dst="A&lt;4>" src="a&lt;4>"/>
+<mapping dst="Q&lt;3>" src="q&lt;3>"/>
+<mapping dst="BL" src="bl"/>
+<mapping dst="A" src="a"/>
+</reverse>
+</scope>
+<master_instances>
+<instance_header master="column_decoder_read_cell">
+<instance name="I22"/>
+<instance name="I23"/>
+<instance name="I24"/>
+<instance name="I25"/>
+</instance_header>
+<instance_header master="inverter_row_decoder">
+<instance name="I30"/>
+</instance_header>
+</master_instances>
+</module>
